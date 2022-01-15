@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AttributeDefinition xsi:noNamespaceSchemaLocation="DaVinciEx_GenericAttributes_1_0.xsd" dvSchemaVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AttributeDefinitionTable Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}">
+		<Attribute Name="AR_UUID_DataType" ObjectType="DataType">
+			<STRING Default=""></STRING>
+		</Attribute>
+	</AttributeDefinitionTable>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/FETPHASETYPE_ENUM"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/FETFAULTTYPE_ENUM"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/CurrTempOffsetType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/CurrTempOffsetTblType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/HwTrqStatusType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/MtrSnsrLearned_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/Spi_DataPtr"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Spi_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="uint8"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Spi_NumberOfDataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="uint16"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Spi_ChannelType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="uint8"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Spi_SequenceType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="uint8"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WdgM_GlobalStatusType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WdgM_ModeType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WdgM_LocalStatusType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WdgM_SupervisedEntityIdType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WdgM_CheckpointIdType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StOpRamp_User"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/APA_State_enum"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/EnergyModeStateType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Haptic_State_enum"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/PinionCtrStateType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/LKA_State_enum"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/LktoLkStrStateType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/NxtrDiagMgr_NTCStatusType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/OscTrajCmdStateType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/PersonalizationType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="REAL-TYPE" Reference="/DataType/Double"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/ST_OFFS_QUAD_EPS"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/TurnsCntrValStateType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_Driving_Mode_Control_HS"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/DrvMdCntrlState"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_DTC_Triggered_778"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/DTCTriggered"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/DTCSource"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/DTCNumber"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/DTCFailType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/DTCWrnIndRqdSt"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/DTCTstFldPwrUpSt"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/DTCTstNPsdPwrUpSt"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/DTCHistStat"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/DTCTstFldCdClrdStat"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/DTCTstNPsdCdClrdSt"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/DTCCurrentStatus"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/DTCCodeSupported"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/DTCFaultType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/DummyRxSignal"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/ElPwDStatStrtStopType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_Engine_General_Status_1"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/EngRunAtv"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_Power_Steering_Information_HS"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/PwrStrIO"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_PPEI_NonDrivn_Whl_Rotationl_Stat"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/WhlRotStat"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WRSSeqNum"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WRSWhlDistPCntr"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WRSWhlDisTpRC"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WRSWhlDistTstm"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WRSWhlDistVal"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WRSWhlRotStatRst"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_PPEI_Platform_General_Status"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/SysPwrMd"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/SysBkupPwrMdEn"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/BkupPwrModeMstrVDA"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_PPEI_Steering_Wheel_Angle_CE"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrAngSnsChksm"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhAng"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StWhlAngAliveRollCnt"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhAngGrd"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhAngGrdMsk"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhAngGrdV"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhAngMsk"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhlAngSenCalStat"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhlAngSenTyp"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhAngV"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhlAngMsgUnused1"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhlAngMsgUnused2"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StrWhlAngMsgUnused3"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_PPEI_Vheicle_Speed_and_Distance"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_VehSpdAvgNonDrvnGroup"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/VehSpdAvgNDrvn"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/VehSpdAvgNDrvnV"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/PwPckTqDStatType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_Trans_General_Status_2"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/TrnShftPtrnActStat"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_Wheel_Pulses_HS"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WhlRotStatTmstmpRes"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/WhlPlsPerRevNonDrvn"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/DT_SinTanLkpTbl_f32"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/CMDIgnStatType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/CrossCheckOpModeType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_InitMonitorKindType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="DCE:7dd6916e-bec7-43dd-bc4e-de29dedac161"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_ReturnGetDTCOfEventType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="DCE:7dd6916e-bec7-43dd-bc4e-de29dedac161"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/DistRollCntAvgDrvnSrc"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/ENUM_ResetCause"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/IoHwAb_CurrentType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/IoHwAb_DiscreteGroupType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/IoHwAb_PwxDutyCycleType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/IoHwAb_PwxPeriodType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/IoHwAb_ResistanceType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/IoHwAb_SignalDiagnosisType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/IoHwAb_VoltageType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/NvM_ServiceIdType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/OFFS_GRD_MID_EPS"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/PersonalityType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/RoutineStatus"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/SInt4"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/TrStLgMdAtv"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/UInt4"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/DT_Array2_u16"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/DT_Array3_u32"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/IPMCoggingCancTrq"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/TypeHRamBufferType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/DiagSettings_Str"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/MtrParamCal_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/MtrParmLearned_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RackCenterType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/RT_RampCmd"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/ShCurrCal_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/WhlImbAmp_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/WhlImbComp_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="BOOLEAN-TYPE" Reference="/DataType/Boolean"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="REAL-TYPE" Reference="/DataType/Float"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/NTCNumber"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/UInt8"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/NxtrDiagMgrStatus"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/UInt32"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/UInt16"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/TuningSessionAddrPtrEnum"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/FltInjectionLocType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/ManufModeType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/NvM_RequestResultType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/NvM_DestPtr"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/AvgFricLrnType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/AvgFricLrnRangeCounterType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/AvgFricLrnRangeCounterSubType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/AvgFricLrnThetaType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/AvgFricLrnThetaSubType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/AvgFricLrnVehLearnedFricType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/OvervoltageDataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/SInt8"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/SInt16"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/EOLNomMtrParamType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/NxtrOpCycle"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/NxtrOpCycleState"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="DCE:7dd6916e-bec7-43dd-bc4e-de29dedac161"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_OperationCycleStateType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="DCE:7dd6916e-bec7-43dd-bc4e-de29dedac161"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/SInt32"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/StaMd_Users"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/EOTLearned_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/Polarity_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/TOC_STATE"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/IoHwAb_BoolType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/CoggingCancTrq"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/CoggingCancTrqRplComp"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/EcuM_StateType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/ComM_InhibitionStatusType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/ComM_NetworkHandleType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/ComM_ModeType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/ComM_UserHandleType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_DTCKindType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="DCE:7dd6916e-bec7-43dd-bc4e-de29dedac161"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_DTCType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_EventStatusExtendedType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_FaultDetectionCounterType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_EventStatusType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+		<AttributeValue Name="AR_UUID_DataType" Value="DCE:7dd6916e-bec7-43dd-bc4e-de29dedac161"></AttributeValue>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_EventIdType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_IndicatorStatusType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/Dem_OperationCycleIdType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/EcuM_UserType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/MtrCurrOffProcessFlag"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/PhaseCurrCal_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/HwTrqTrim_Datatype"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/EOLTrqStepType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/HwTrqScale_Datatype"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="RECORD-TYPE" Reference="/DataType/MtrPosCal_DataType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="ARRAY-TYPE" Reference="/DataType/DT_Array144_s8"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+	<ObjectAttributeReference ObjectType="DataType">
+		<ARObjectReference Type="INTEGER-TYPE" Reference="/DataType/NvM_BlockIdType"></ARObjectReference>
+		<AttributeDefinitionTableRef Version="1.0" ID="{932D3FD0-2F6C-49BF-80CB-D1C3756D3868}"></AttributeDefinitionTableRef>
+	</ObjectAttributeReference>
+</AttributeDefinition>

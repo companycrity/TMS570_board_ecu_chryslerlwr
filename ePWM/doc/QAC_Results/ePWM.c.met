@@ -1,0 +1,609 @@
+<RDEF> I Includes
+<R>I C:\SynergyProjects\CBD\ePWM\src\ePWM.c C:\SynergyProjects\CBD\ePWM\include\ePwm.h 38
+<DEFINE> EPWM_H C:\SynergyProjects\CBD\ePWM\include\ePwm.h 34 I DF OM - - - O
+<R>I C:\SynergyProjects\CBD\ePWM\include\ePwm.h C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 37
+<DEFINE> STD_TYPES_H C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 50 I DF OM - - - O
+<R>I C:\SynergyProjects\CBD\StdDef\include\Std_Types.h C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 56
+<DEFINE> PLATFORM_TYPES_H C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 47 I DF OM - - - O
+<DEFINE> COMMONASR_TMS470_IMPL_PLATFORMTYPES_VERSION C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 58 I DF OM - - - O
+<LIT> 0x0101 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 58 53 I HN - F M
+<DEFINE> COMMONASR_TMS470_IMPL_PLATFORMTYPES_RELEASE_VERSION C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 59 I DF OM - - - O
+<LIT> 0x00 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 59 61 I HN - F M
+<DEFINE> PLATFORM_VENDOR_ID C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 61 I DF OM - - - O
+<LIT> 30 u P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 61 31 I DN - F M
+<DEFINE> PLATFORM_AR_MAJOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 65 I DF OM - - - O
+<LIT> 2 u P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 65 42 I DN - F M
+<DEFINE> PLATFORM_AR_MINOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 66 I DF OM - - - O
+<LIT> 2 u P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 66 42 I DN - F M
+<DEFINE> PLATFORM_AR_PATCH_VERSION C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 67 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 67 42 I DN - F M
+<DEFINE> PLATFORM_SW_MAJOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 70 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 70 42 I DN - F M
+<DEFINE> PLATFORM_SW_MINOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 71 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 71 42 I DN - F M
+<DEFINE> PLATFORM_SW_PATCH_VERSION C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 72 I DF OM - - - O
+<LIT> 0 u P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 72 42 I ON - F M
+<DEFINE> CPU_TYPE_8 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 75 I DF OM - - - O
+<LIT> 8 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 75 26 I DN - F M
+<DEFINE> CPU_TYPE_16 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 76 I DF OM - - - O
+<LIT> 16 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 76 26 I DN - F M
+<DEFINE> CPU_TYPE_32 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 77 I DF OM - - - O
+<LIT> 32 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 77 26 I DN - F M
+<DEFINE> MSB_FIRST C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 80 I DF OM - - - O
+<LIT> 0 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 80 27 I ON - F M
+<DEFINE> LSB_FIRST C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 81 I DF OM - - - O
+<LIT> 1 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 81 27 I DN - F M
+<DEFINE> HIGH_BYTE_FIRST C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 84 I DF OM - - - O
+<LIT> 0 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 84 27 I ON - F M
+<DEFINE> LOW_BYTE_FIRST C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 85 I DF OM - - - O
+<LIT> 1 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 85 27 I DN - F M
+<DEFINE> TRUE C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 89 I DF OM - - - O
+<LIT> 1 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 89 30 I DN - F M
+<DEFINE> FALSE C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 93 I DF OM - - - O
+<LIT> 0 - P C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 93 30 I ON - F M
+<DEFINE> CPU_TYPE C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 97 I DF OM - - - O
+<DEFINE> CPU_BIT_ORDER C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 98 I DF OM - - - O
+<DEFINE> CPU_BYTE_ORDER C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 99 I DF OM - - - O
+<DEFINE> boolean C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 111 I DC OT F N uc -
+<DEFINE> sint8 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 113 I DC OT F N nc -
+<DEFINE> uint8 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 114 I DC OT F N uc -
+<DEFINE> sint16 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 115 I DC OT F N ns -
+<DEFINE> uint16 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 116 I DC OT F N us -
+<DEFINE> sint32 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 117 I DC OT F N nl -
+<DEFINE> uint32 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 118 I DC OT F N ul -
+<DEFINE> sint64 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 119 I DC OT F N nll -
+<DEFINE> uint64 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 120 I DC OT F N ull -
+<DEFINE> uint8_least C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 122 I DC OT F N ul -
+<DEFINE> uint16_least C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 123 I DC OT F N ul -
+<DEFINE> uint32_least C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 124 I DC OT F N ul -
+<DEFINE> uint64_least C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 125 I DC OT F N ull -
+<DEFINE> sint8_least C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 126 I DC OT F N nl -
+<DEFINE> sint16_least C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 127 I DC OT F N nl -
+<DEFINE> sint32_least C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 128 I DC OT F N nl -
+<DEFINE> sint64_least C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 129 I DC OT F N nll -
+<DEFINE> float32 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 132 I DC OT F N fs -
+<DEFINE> float64 C:\SynergyProjects\CBD\StdDef\include\Platform_Types.h 133 I DC OT F N ff -
+<R>I C:\SynergyProjects\CBD\StdDef\include\Std_Types.h C:\SynergyProjects\CBD\StdDef\include\Compiler.h 57
+<DEFINE> COMPILER_H C:\SynergyProjects\CBD\StdDef\include\Compiler.h 48 I DF OM - - - O
+<R>I C:\SynergyProjects\CBD\StdDef\include\Compiler.h C:\SynergyProjects\CBD\ePWM\utp\contract\Compiler_Cfg.h 54
+<DEFINE> COMPILER_CFG_H C:\SynergyProjects\CBD\ePWM\utp\contract\Compiler_Cfg.h 19 I DF OM - - - O
+<DEFINE> COMMONASR_TMS470_IMPL_COMPABSTRACT_VERSION C:\SynergyProjects\CBD\StdDef\include\Compiler.h 63 I DF OM - - - O
+<LIT> 0x0101 - P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 63 52 I HN - F M
+<DEFINE> COMMONASR_TMS470_IMPL_COMPABSTRACT_RELEASE_VERSION C:\SynergyProjects\CBD\StdDef\include\Compiler.h 64 I DF OM - - - O
+<LIT> 0x00 - P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 64 60 I HN - F M
+<DEFINE> COMPILER_VENDOR_ID C:\SynergyProjects\CBD\StdDef\include\Compiler.h 66 I DF OM - - - O
+<LIT> 30 u P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 66 31 I DN - F M
+<DEFINE> COMPILER_AR_MAJOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Compiler.h 69 I DF OM - - - O
+<LIT> 2 u P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 69 42 I DN - F M
+<DEFINE> COMPILER_AR_MINOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Compiler.h 70 I DF OM - - - O
+<LIT> 0 u P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 70 42 I ON - F M
+<DEFINE> COMPILER_AR_PATCH_VERSION C:\SynergyProjects\CBD\StdDef\include\Compiler.h 71 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 71 42 I DN - F M
+<DEFINE> COMPILER_SW_MAJOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Compiler.h 74 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 74 42 I DN - F M
+<DEFINE> COMPILER_SW_MINOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Compiler.h 75 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 75 42 I DN - F M
+<DEFINE> COMPILER_SW_PATCH_VERSION C:\SynergyProjects\CBD\StdDef\include\Compiler.h 76 I DF OM - - - O
+<LIT> 0 u P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 76 42 I ON - F M
+<DEFINE> _TEXAS_INSTRUMENTS_C_TMS470_ C:\SynergyProjects\CBD\StdDef\include\Compiler.h 79 I DF OM - - - O
+<DEFINE> AUTOMATIC C:\SynergyProjects\CBD\StdDef\include\Compiler.h 82 I DF OM - - - O
+<DEFINE> TYPEDEF C:\SynergyProjects\CBD\StdDef\include\Compiler.h 85 I DF OM - - - O
+<DEFINE> STATIC C:\SynergyProjects\CBD\StdDef\include\Compiler.h 87 I DF OM - - - O
+<DEFINE> NULL_PTR C:\SynergyProjects\CBD\StdDef\include\Compiler.h 91 I DF OM - - - O
+<LIT> 0 - P C:\SynergyProjects\CBD\StdDef\include\Compiler.h 91 31 I ON - F M
+<DEFINE> INLINE C:\SynergyProjects\CBD\StdDef\include\Compiler.h 95 I DF OM - - - O
+<DEFINE> FUNC C:\SynergyProjects\CBD\StdDef\include\Compiler.h 101 I DF OM - - - F
+<DEFINE> P2VAR C:\SynergyProjects\CBD\StdDef\include\Compiler.h 108 I DF OM - - - F
+<DEFINE> P2CONST C:\SynergyProjects\CBD\StdDef\include\Compiler.h 115 I DF OM - - - F
+<DEFINE> CONSTP2VAR C:\SynergyProjects\CBD\StdDef\include\Compiler.h 122 I DF OM - - - F
+<DEFINE> CONSTP2CONST C:\SynergyProjects\CBD\StdDef\include\Compiler.h 129 I DF OM - - - F
+<DEFINE> P2FUNC C:\SynergyProjects\CBD\StdDef\include\Compiler.h 136 I DF OM - - - F
+<DEFINE> CONST C:\SynergyProjects\CBD\StdDef\include\Compiler.h 142 I DF OM - - - F
+<DEFINE> VAR C:\SynergyProjects\CBD\StdDef\include\Compiler.h 148 I DF OM - - - F
+<DEFINE> COMMONASR__COMMON_IMPL_STDTYPES_VERSION C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 64 I DF OM - - - O
+<LIT> 0x0303 - P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 64 50 I HN - F M
+<DEFINE> COMMONASR__COMMON_IMPL_STDTYPES_RELEASE_VERSION C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 65 I DF OM - - - O
+<LIT> 0x01 - P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 65 58 I HN - F M
+<DEFINE> STD_TYPES_AR_MAJOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 69 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 69 44 I DN - F M
+<DEFINE> STD_TYPES_AR_MINOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 70 I DF OM - - - O
+<LIT> 2 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 70 44 I DN - F M
+<DEFINE> STD_TYPES_AR_PATCH_VERSION C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 71 I DF OM - - - O
+<LIT> 0 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 71 44 I ON - F M
+<DEFINE> STD_TYPES_SW_MAJOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 74 I DF OM - - - O
+<LIT> 3 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 74 44 I DN - F M
+<DEFINE> STD_TYPES_SW_MINOR_VERSION C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 75 I DF OM - - - O
+<LIT> 3 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 75 44 I DN - F M
+<DEFINE> STD_TYPES_SW_PATCH_VERSION C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 76 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 76 44 I DN - F M
+<DEFINE> STD_HIGH C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 78 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 78 23 I DN - F M
+<DEFINE> STD_LOW C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 79 I DF OM - - - O
+<LIT> 0 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 79 23 I ON - F M
+<DEFINE> STD_ACTIVE C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 81 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 81 23 I DN - F M
+<DEFINE> STD_IDLE C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 82 I DF OM - - - O
+<LIT> 0 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 82 23 I ON - F M
+<DEFINE> STD_ON C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 84 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 84 23 I DN - F M
+<DEFINE> STD_OFF C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 85 I DF OM - - - O
+<LIT> 0 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 85 23 I ON - F M
+<DEFINE> STATUSTYPEDEFINED C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 98 I DF OM - - - O
+<DEFINE> E_OK C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 99 I DF OM - - - O
+<LIT> 0 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 99 21 I ON - F M
+<DEFINE> StatusType C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 100 I DC OT F N uc -
+<DEFINE> E_NOT_OK C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 103 I DF OM - - - O
+<LIT> 1 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 103 20 I DN - F M
+<DEFINE> E_PENDING C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 105 I DF OM - - - O
+<LIT> 2 u P C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 105 21 I DN - F M
+<DEFINE> Std_ReturnType C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 107 I DC OT F N uc -
+<DEFINE> vendorID C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 111 I DC MB F N us -
+<DEFINE> moduleID C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 112 I DC MB F N us -
+<DEFINE> instanceID C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 113 I DC MB F N uc -
+<DEFINE> sw_major_version C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 114 I DC MB F N uc -
+<DEFINE> sw_minor_version C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 115 I DC MB F N uc -
+<DEFINE> sw_patch_version C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 116 I DC MB F N uc -
+<DEFINE> Std_VersionInfoType C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 117 I DC OT F N {s} -
+<EXTN> ePWM_Init1 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 40
+<DEFINE> ePWM_Init1 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 40 I DC OF F X (.,.) -
+<EXTN> ePWM_Per1 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 41
+<DEFINE> ePWM_Per1 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 41 I DC OF F X (.,.) -
+<DEFINE> etpwmBASE C:\SynergyProjects\CBD\ePWM\include\ePwm.h 44 I DC TG F N {setpwmBASE} -
+<DEFINE> etpwmBASE C:\SynergyProjects\CBD\ePWM\include\ePwm.h 44 I DF TG F N {setpwmBASE} -
+<DEFINE> TBSTS C:\SynergyProjects\CBD\ePWM\include\ePwm.h 46 I DC MB F N us -
+<DEFINE> TBCTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 47 I DC MB F N us -
+<DEFINE> TBPHS C:\SynergyProjects\CBD\ePWM\include\ePwm.h 48 I DC MB F N us -
+<DEFINE> TBPHSHR C:\SynergyProjects\CBD\ePWM\include\ePwm.h 49 I DC MB F N us -
+<DEFINE> TBPRD C:\SynergyProjects\CBD\ePWM\include\ePwm.h 50 I DC MB F N us -
+<DEFINE> TBCTR C:\SynergyProjects\CBD\ePWM\include\ePwm.h 51 I DC MB F N us -
+<DEFINE> CMPCTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 52 I DC MB F N us -
+<DEFINE> TBPRDHR C:\SynergyProjects\CBD\ePWM\include\ePwm.h 53 I DC MB F N us -
+<DEFINE> CMPA C:\SynergyProjects\CBD\ePWM\include\ePwm.h 54 I DC MB F N us -
+<DEFINE> CMPAHR C:\SynergyProjects\CBD\ePWM\include\ePwm.h 55 I DC MB F N us -
+<DEFINE> AQCTLA C:\SynergyProjects\CBD\ePWM\include\ePwm.h 56 I DC MB F N us -
+<DEFINE> CMPB C:\SynergyProjects\CBD\ePWM\include\ePwm.h 57 I DC MB F N us -
+<DEFINE> AQSFRC C:\SynergyProjects\CBD\ePWM\include\ePwm.h 58 I DC MB F N us -
+<DEFINE> AQCTLB C:\SynergyProjects\CBD\ePWM\include\ePwm.h 59 I DC MB F N us -
+<DEFINE> DBCTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 60 I DC MB F N us -
+<DEFINE> AQCSFRC C:\SynergyProjects\CBD\ePWM\include\ePwm.h 61 I DC MB F N us -
+<DEFINE> DBFED C:\SynergyProjects\CBD\ePWM\include\ePwm.h 62 I DC MB F N us -
+<DEFINE> DBRED C:\SynergyProjects\CBD\ePWM\include\ePwm.h 63 I DC MB F N us -
+<DEFINE> TZDCSEL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 64 I DC MB F N us -
+<DEFINE> TZSEL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 65 I DC MB F N us -
+<DEFINE> TZEINT C:\SynergyProjects\CBD\ePWM\include\ePwm.h 66 I DC MB F N us -
+<DEFINE> TZCTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 67 I DC MB F N us -
+<DEFINE> TZCLR C:\SynergyProjects\CBD\ePWM\include\ePwm.h 68 I DC MB F N us -
+<DEFINE> TZFLG C:\SynergyProjects\CBD\ePWM\include\ePwm.h 69 I DC MB F N us -
+<DEFINE> ETSEL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 70 I DC MB F N us -
+<DEFINE> TZFRC C:\SynergyProjects\CBD\ePWM\include\ePwm.h 71 I DC MB F N us -
+<DEFINE> ETFLG C:\SynergyProjects\CBD\ePWM\include\ePwm.h 72 I DC MB F N us -
+<DEFINE> ETPS C:\SynergyProjects\CBD\ePWM\include\ePwm.h 73 I DC MB F N us -
+<DEFINE> ETFRC C:\SynergyProjects\CBD\ePWM\include\ePwm.h 74 I DC MB F N us -
+<DEFINE> ETCLR C:\SynergyProjects\CBD\ePWM\include\ePwm.h 75 I DC MB F N us -
+<DEFINE> rsvd_1 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 76 I DC MB F N us -
+<DEFINE> PCCTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 77 I DC MB F N us -
+<DEFINE> HRPWR C:\SynergyProjects\CBD\ePWM\include\ePwm.h 78 I DC MB F N us -
+<DEFINE> HRCNFG C:\SynergyProjects\CBD\ePWM\include\ePwm.h 79 I DC MB F N us -
+<DEFINE> rsvd_3 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 80 I DC MB F N us -
+<DEFINE> rsvd_2 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 81 I DC MB F N us -
+<DEFINE> rsvd_5 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 82 I DC MB F N us -
+<DEFINE> rsvd_4 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 83 I DC MB F N us -
+<DEFINE> rsvd_6 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 84 I DC MB F N us -
+<DEFINE> HRMSTEP C:\SynergyProjects\CBD\ePWM\include\ePwm.h 85 I DC MB F N us -
+<DEFINE> rsvd_7 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 86 I DC MB F N us -
+<DEFINE> HRPCTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 87 I DC MB F N us -
+<DEFINE> TBPRDM C:\SynergyProjects\CBD\ePWM\include\ePwm.h 88 I DC MB F N us -
+<DEFINE> TBPRDHRM C:\SynergyProjects\CBD\ePWM\include\ePwm.h 89 I DC MB F N us -
+<DEFINE> CMPAM C:\SynergyProjects\CBD\ePWM\include\ePwm.h 90 I DC MB F N us -
+<DEFINE> CMPAHRM C:\SynergyProjects\CBD\ePWM\include\ePwm.h 91 I DC MB F N us -
+<DEFINE> DCACTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 92 I DC MB F N us -
+<DEFINE> DCTRIPSEL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 93 I DC MB F N us -
+<DEFINE> DCFCTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 94 I DC MB F N us -
+<DEFINE> DCBCTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 95 I DC MB F N us -
+<DEFINE> DCFOFFSET C:\SynergyProjects\CBD\ePWM\include\ePwm.h 96 I DC MB F N us -
+<DEFINE> DCCAPCTL C:\SynergyProjects\CBD\ePWM\include\ePwm.h 97 I DC MB F N us -
+<DEFINE> DCFWINDOW C:\SynergyProjects\CBD\ePWM\include\ePwm.h 98 I DC MB F N us -
+<DEFINE> DCFOFFSETCNT C:\SynergyProjects\CBD\ePWM\include\ePwm.h 99 I DC MB F N us -
+<DEFINE> DCCAP C:\SynergyProjects\CBD\ePWM\include\ePwm.h 100 I DC MB F N us -
+<DEFINE> DCFWINDOWCNT C:\SynergyProjects\CBD\ePWM\include\ePwm.h 101 I DC MB F N us -
+<DEFINE> etpwmBASE_t C:\SynergyProjects\CBD\ePWM\include\ePwm.h 102 I DC OT F N {setpwmBASE} -
+<DEFINE> ePWM1 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 106 I DF OM - - - O
+<LIT> 0xFCF78C00 UL P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 106 31 I HN - F M
+<DEFINE> ePWM2 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 107 I DF OM - - - O
+<LIT> 0xFCF78D00 UL P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 107 31 I HN - F M
+<DEFINE> ePWM3 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 108 I DF OM - - - O
+<LIT> 0xFCF78E00 UL P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 108 31 I HN - F M
+<DEFINE> ePWM4 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 109 I DF OM - - - O
+<LIT> 0xFCF78F00 UL P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 109 31 I HN - F M
+<DEFINE> ePWM5 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 110 I DF OM - - - O
+<LIT> 0xFCF79000 UL P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 110 31 I HN - F M
+<DEFINE> ePWM6 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 111 I DF OM - - - O
+<LIT> 0xFCF79100 UL P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 111 31 I HN - F M
+<DEFINE> ePWM7 C:\SynergyProjects\CBD\ePWM\include\ePwm.h 112 I DF OM - - - O
+<LIT> 0xFCF79200 UL P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 112 31 I HN - F M
+<DEFINE> ePWM_DisableOutputs C:\SynergyProjects\CBD\ePWM\include\ePwm.h 125 I DF OM - - - F
+<LIT> 5 U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 119 26 I DN - F M
+<LIT> 0xFFFC U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 120 25 I HN - F M
+<LIT> 5 U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 121 26 I DN - F M
+<LIT> 0xFFFC U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 122 25 I HN - F M
+<LIT> 5 U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 123 26 I DN - F M
+<LIT> 0xFFFC U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 124 25 I HN - F M
+<DEFINE> ePWM_EnableOutputs C:\SynergyProjects\CBD\ePWM\include\ePwm.h 138 I DF OM - - - F
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 132 26 I ON - F M
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 133 25 I DN - F M
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 134 26 I ON - F M
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 135 25 I DN - F M
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 136 26 I ON - F M
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\include\ePwm.h 137 25 I DN - F M
+<R>I C:\SynergyProjects\CBD\ePWM\src\ePWM.c C:\SynergyProjects\CBD\ePWM\utp\contract\CDD_Data.h 39
+<DEFINE> CDD_DATA_H C:\SynergyProjects\CBD\ePWM\utp\contract\CDD_Data.h 20 I DF OM - - - O
+<R>I C:\SynergyProjects\CBD\ePWM\utp\contract\CDD_Data.h C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 22
+<EXTN> CDD_PWMPeriod_Cnt_G_u16 C:\SynergyProjects\CBD\ePWM\utp\contract\CDD_Data.h 25
+<DEFINE> CDD_PWMPeriod_Cnt_G_u16 C:\SynergyProjects\CBD\ePWM\utp\contract\CDD_Data.h 25 I DC OV F X us S
+<LIT> 3 - P C:\SynergyProjects\CBD\ePWM\utp\contract\CDD_Data.h 26 56 I DN ni F D
+<EXTN> CDD_DCPhsComp_Cnt_G_u16 C:\SynergyProjects\CBD\ePWM\utp\contract\CDD_Data.h 26
+<DEFINE> CDD_DCPhsComp_Cnt_G_u16 C:\SynergyProjects\CBD\ePWM\utp\contract\CDD_Data.h 26 I DC OV F X [3,us] S
+<R>I C:\SynergyProjects\CBD\ePWM\src\ePWM.c C:\SynergyProjects\CBD\ePWM\utp\contract\CalConstants.h 40
+<DEFINE> CALCONSTANTS_H C:\SynergyProjects\CBD\ePWM\utp\contract\CalConstants.h 20 I DF OM - - - O
+<R>I C:\SynergyProjects\CBD\ePWM\utp\contract\CalConstants.h C:\SynergyProjects\CBD\StdDef\include\Std_Types.h 22
+<EXTN> k_ADCTrig1Offset_Cnt_s16 C:\SynergyProjects\CBD\ePWM\utp\contract\CalConstants.h 30
+<DEFINE> k_ADCTrig1Offset_Cnt_s16 C:\SynergyProjects\CBD\ePWM\utp\contract\CalConstants.h 30 I DC OV F X =ns S
+<EXTN> k_PwmDeadBand_Cnt_u16 C:\SynergyProjects\CBD\ePWM\utp\contract\CalConstants.h 31
+<DEFINE> k_PwmDeadBand_Cnt_u16 C:\SynergyProjects\CBD\ePWM\utp\contract\CalConstants.h 31 I DC OV F X =us S
+<EXTN> k_PwmRelay_Cnt_u16 C:\SynergyProjects\CBD\ePWM\utp\contract\CalConstants.h 32
+<DEFINE> k_PwmRelay_Cnt_u16 C:\SynergyProjects\CBD\ePWM\utp\contract\CalConstants.h 32 I DC OV F X =us S
+<DEFINE> D_PHSAIDX_CNT_U16 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 42 N DF OM - - - O
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 42 28 N ON - F M
+<DEFINE> D_PHSBIDX_CNT_U16 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 43 N DF OM - - - O
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 43 28 N DN - F M
+<DEFINE> D_PHSCIDX_CNT_U16 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 44 N DF OM - - - O
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 44 28 N DN - F M
+<DEFINE> EPWM_START_SEC_CODE C:\SynergyProjects\CBD\ePWM\src\ePWM.c 51 N DF OM - - - O
+<R>I C:\SynergyProjects\CBD\ePWM\src\ePWM.c C:\SynergyProjects\CBD\ePWM\utp\contract\MemMap.h 52
+<DEFINE> MEMMAP_H C:\SynergyProjects\CBD\ePWM\utp\contract\MemMap.h 19 I DF OM - - - O
+<EXTD> ePWM_Init1 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 64
+<DEFINE> ePWM_Init1 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 64 N DR OF F X (.,.) -
+<DEFINE> ePWM_Init1 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 64 N DF OF F X (.,.) -
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 74 25 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 75 37 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 75 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 76 37 N ON ui B X
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 76 43 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 77 37 N DN ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 77 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 78 37 N ON ui B X
+<LIT> 7 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 78 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 79 37 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 79 43 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 80 37 N DN ui B X
+<LIT> 13 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 80 43 N DN ui B X
+<LIT> 2499 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 82 24 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 84 24 N ON ui B X
+<LIT> 2499 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 86 23 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 88 26 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 89 38 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 89 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 91 26 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 92 38 N ON ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 92 44 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 93 38 N DN ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 93 44 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 94 38 N DN ui B X
+<LIT> 6 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 94 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 95 38 N ON ui B X
+<LIT> 8 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 95 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 96 38 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 96 44 N DN ui B X
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 98 25 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 99 37 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 99 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 100 37 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 100 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 101 37 N ON ui B X
+<LIT> 15 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 101 43 N DN ui B X
+<RDEF> X Refers-to
+<R>X ePWM_Init1 k_PwmDeadBand_Cnt_u16 103 R
+<R>X ePWM_Init1 k_PwmDeadBand_Cnt_u16 105 R
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 107 24 N ON ui B X
+<LIT> 0x0FFF - P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 109 24 N HN ni B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 111 23 N ON ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 116 25 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 117 37 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 117 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 118 37 N ON ui B X
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 118 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 119 37 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 119 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 120 37 N ON ui B X
+<LIT> 7 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 120 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 121 37 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 121 43 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 122 37 N DN ui B X
+<LIT> 13 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 122 43 N DN ui B X
+<LIT> 2499 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 124 24 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 126 24 N ON ui B X
+<LIT> 2499 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 128 23 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 130 26 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 131 38 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 131 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 133 26 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 134 38 N ON ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 134 44 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 135 38 N DN ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 135 44 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 136 38 N DN ui B X
+<LIT> 6 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 136 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 137 38 N ON ui B X
+<LIT> 8 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 137 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 138 38 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 138 44 N DN ui B X
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 140 25 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 141 37 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 141 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 142 37 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 142 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 143 37 N ON ui B X
+<LIT> 15 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 143 43 N DN ui B X
+<R>X ePWM_Init1 k_PwmDeadBand_Cnt_u16 145 R
+<R>X ePWM_Init1 k_PwmDeadBand_Cnt_u16 147 R
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 149 24 N ON ui B X
+<LIT> 0x0FFF - P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 151 24 N HN ni B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 153 23 N ON ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 158 25 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 159 37 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 159 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 160 37 N ON ui B X
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 160 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 161 37 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 161 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 162 37 N ON ui B X
+<LIT> 7 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 162 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 163 37 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 163 43 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 164 37 N DN ui B X
+<LIT> 13 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 164 43 N DN ui B X
+<LIT> 2499 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 166 24 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 168 24 N ON ui B X
+<LIT> 2499 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 170 23 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 172 26 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 173 38 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 173 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 175 26 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 176 38 N ON ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 176 44 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 177 38 N DN ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 177 44 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 178 38 N DN ui B X
+<LIT> 6 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 178 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 179 38 N ON ui B X
+<LIT> 8 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 179 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 180 38 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 180 44 N DN ui B X
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 182 25 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 183 37 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 183 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 184 37 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 184 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 185 37 N ON ui B X
+<LIT> 15 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 185 43 N DN ui B X
+<R>X ePWM_Init1 k_PwmDeadBand_Cnt_u16 187 R
+<R>X ePWM_Init1 k_PwmDeadBand_Cnt_u16 189 R
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 191 24 N ON ui B X
+<LIT> 0x0FFF - P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 193 24 N HN ni B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 195 24 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 200 25 N ON ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 201 37 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 201 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 202 37 N ON ui B X
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 202 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 203 37 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 203 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 204 37 N ON ui B X
+<LIT> 7 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 204 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 205 37 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 205 43 N DN ui B X
+<LIT> 65535 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 207 24 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 209 24 N ON ui B X
+<LIT> 2499 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 211 23 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 213 26 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 214 38 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 214 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 216 26 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 217 38 N ON ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 217 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 218 38 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 218 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 219 38 N ON ui B X
+<LIT> 6 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 219 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 220 38 N ON ui B X
+<LIT> 8 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 220 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 221 38 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 221 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 223 24 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 225 24 N ON ui B X
+<LIT> 0x0FFF - P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 227 24 N HN ni B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 229 25 N ON ui B X
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 229 31 N DN ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 230 37 N DN ui B X
+<LIT> 8 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 230 43 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 231 37 N DN ui B X
+<LIT> 11 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 231 43 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 232 37 N DN ui B X
+<LIT> 12 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 232 43 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 233 37 N DN ui B X
+<LIT> 15 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 233 43 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 235 24 N DN ui B X
+<LIT> 8 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 235 30 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 236 36 N DN ui B X
+<LIT> 12 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 236 42 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 241 25 N ON ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 242 37 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 242 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 243 37 N ON ui B X
+<LIT> 3 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 243 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 244 37 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 244 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 245 37 N ON ui B X
+<LIT> 7 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 245 43 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 246 37 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 246 43 N DN ui B X
+<LIT> 65535 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 248 24 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 250 24 N ON ui B X
+<R>X ePWM_Init1 k_PwmRelay_Cnt_u16 252 R
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 254 26 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 255 38 N ON ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 255 44 N DN ui B X
+<LIT> 1 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 257 26 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 258 38 N ON ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 258 44 N DN ui B X
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 259 38 N DN ui B X
+<LIT> 4 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 259 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 260 38 N ON ui B X
+<LIT> 6 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 260 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 261 38 N ON ui B X
+<LIT> 8 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 261 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 262 38 N ON ui B X
+<LIT> 10 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 262 44 N DN ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 264 24 N ON ui B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 266 24 N ON ui B X
+<LIT> 0x0FFF - P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 268 24 N HN ni B X
+<LIT> 0 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 270 24 N ON ui B X
+<CTLG> ePWM_Init1 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 65 282 282 282 
+<S>
+<S>STFIL  C:\SynergyProjects\CBD\ePWM\src\ePWM.c
+<S>STNAM  ePWM_Init1
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  0
+<S>STAKI  1
+<S>STLIN  216
+<S>STXLN  130
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  0
+<S>STPTH  1
+<S>STPDN  0.01   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  12
+<S>STAV2  13
+<S>STAV3  13
+<S>STST1  65
+<S>STST2  63
+<S>STST3  63
+<S>STRET  1
+<S>STPAR  0
+<S>STUNR  0
+<S>STCAL  0
+<S>STFN1  506
+<S>STFN2  318
+
+<EXTD> ePWM_Per1 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 307
+<DEFINE> ePWM_Per1 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 307 N DR OF F X (.,.) -
+<DEFINE> ePWM_Per1 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 307 N DF OF F X (.,.) -
+<DEFINE> halfPWMPeriod_Cnt_T_u16 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 315 N DC OV B N us -
+<DEFINE> halfPWMPeriod_Cnt_T_u16 C:\SynergyProjects\CBD\ePWM\src\ePWM.c 315 N DF OV B N us -
+<R>X ePWM_Per1 CDD_DCPhsComp_Cnt_G_u16 320 R
+<R>X ePWM_Per1 CDD_PWMPeriod_Cnt_G_u16 320 R
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 320 97 N DN ui B X
+<R>X ePWM_Per1 CDD_DCPhsComp_Cnt_G_u16 321 R
+<R>X ePWM_Per1 CDD_PWMPeriod_Cnt_G_u16 321 R
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 321 97 N DN ui B X
+<R>X ePWM_Per1 CDD_DCPhsComp_Cnt_G_u16 322 R
+<R>X ePWM_Per1 CDD_PWMPeriod_Cnt_G_u16 322 R
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 322 97 N DN ui B X
+<R>X ePWM_Per1 CDD_PWMPeriod_Cnt_G_u16 323 R
+<LIT> 2 U P C:\SynergyProjects\CBD\ePWM\src\ePWM.c 323 69 N DN ui B X
+<R>X ePWM_Per1 k_ADCTrig1Offset_Cnt_s16 332 R
+<CTLG> ePWM_Per1 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 308 338 338 338 
+<S>
+<S>STFIL  C:\SynergyProjects\CBD\ePWM\src\ePWM.c
+<S>STNAM  ePWM_Per1
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  0
+<S>STAKI  1
+<S>STLIN  29
+<S>STXLN  8
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.13   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  13
+<S>STAV2  13
+<S>STAV3  14
+<S>STST1  9
+<S>STST2  9
+<S>STST3  8
+<S>STRET  1
+<S>STPAR  0
+<S>STUNR  0
+<S>STCAL  0
+<S>STFN1  77
+<S>STFN2  41
+
+<DEFINE> EPWM_STOP_SEC_CODE C:\SynergyProjects\CBD\ePWM\src\ePWM.c 340 N DF OM - - - O
+<R>I C:\SynergyProjects\CBD\ePWM\src\ePWM.c C:\SynergyProjects\CBD\ePWM\utp\contract\MemMap.h 341
+<S>
+<S>STFIL  C:\SynergyProjects\CBD\ePWM\src\ePWM.c
+<S>STNAM  C:\SynergyProjects\CBD\ePWM\src\ePWM.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  0
+<S>STECT  5
+<S>STFNC  2
+<S>STFCO  0
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  39
+<S>STOPT  18
+<S>STOPN  242
+<S>STTOT  995
+<S>STZIP  1596
+<S>STHAL  1991
+<S>STSHN  7084
+<S>STDIF  36.34  
+<S>STEFF  290069
+<S>STVOL  7982
+<S>STDEV  48.34  
+<S>STPRT  3.49   
+<S>STMOB  92.78  
+<S>STBUG  4
+<S>STTPP  349
+<S>STTLN  145
+<S>STM20  373
+<S>STM21  617
+<S>STM22  67
+<S>STM28  146
+<S>STM33  141
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  0.795  
+<S>STBMS  0.923  
+<S>STBME  1.018  
+<S>STTDO  2.291  
+<S>STTDS  2.431  
+<S>STTDE  2.514  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  3.270  
+

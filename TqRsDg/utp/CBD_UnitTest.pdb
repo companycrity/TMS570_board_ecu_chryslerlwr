@@ -1,0 +1,91 @@
+File Version     : 4.30
+Directory        : "$(PROJECTROOT)\TqRsDg\utp\CBD_UnitTest"
+Backup Directory : "$(PROJECTROOT)\TqRsDg\utp\Tessy\backup"
+Configuration    : "$(PROJECTROOT)\UnitTestEnv\config\TMS570_GCC_UDE_CCS4_Config.xml"
+Author           : "rz3h1n"
+Created          : 01.12.2011 17:45
+Last Changed     : 07.06.2013 11:02
+Comment          : ""
+Project
+   Name    : "CBD_UnitTest"
+   Module
+      Name        : "TqRsDg"
+      Comment     : "***************************Unit Test Description*********************************************************\r\n\r\nName of Tester:Nitin Nighute\r\nCode File(s) Under Test:Ap_TqRsDg.c\r\nCode File(s) Version:4\r\nModule Design Document:TorqueReasonableDiagnostics.docx\r\nModule Design Document Version:5\r\nUnit Test Plan Version:1\r\nOptimization Level:Level 2\r\nCompiler (CodeGen) Version:TMS470_4.9.5\r\nModel Type:Excel Macro\r\nModel Version:Nexteer EPS Unit Test Tool 2.7b/EPS Library 1.28\r\nSpecial Test Requirements:\r\nTest Date:6/7/2013\r\nComments:Note1: Inline functions defined in GlobalMacro.h are not unit tested.\r\n\r\n\r\n*************************************************************************************************************"
+      State       : 0x00000004
+      Environment : "TI TMS 570 PLS UDE (Default)"
+      Properties
+         Property
+            Name  : "Compiler Defines"
+            Type  : "String"
+            Flags : 0x90000049
+            Value : "_DATA_ACCESS=,const="
+         End
+         Property
+            Name  : "Compiler Includes"
+            Type  : "Directory"
+            Flags : 0x90000049
+            Value : "$(PROJECTROOT)\TqRsDg\utp\contract, $(PROJECTROOT)\TqRsDg\utp\contract\Ap_TqRsDg, $(PROJECTROOT)\NxtrLib\include, $(PROJECTROOT)\StdDef\include, $(ProgramFiles)\Texas Instruments\ccsv4\tools\compiler\tms470_4.9.5\include"
+         End
+         Property
+            Name  : "Float Precision"
+            Type  : "Number"
+            Flags : 0x8000016D
+            Value : "9"
+         End
+      End
+      Source File
+         Name : "Ap_TqRsDg.c"
+         Path : "$(PROJECTROOT)\TqRsDg\src\"
+         Properties
+            Property
+               Name  : "Compiler Includes"
+               Type  : "Directory"
+               Flags : 0x90000049
+               Value : "$(PROJECTROOT)\TqRsDg\utp\contract, $(PROJECTROOT)\TqRsDg\utp\contract\Ap_TqRsDg, $(PROJECTROOT)\TqRsDg\include, $(PROJECTROOT)\StdDef\include, $(PROJECTROOT)\NxtrLib\include, $(Compiler Install Path), $(Compiler Install Path)\include"
+            End
+         End
+      End
+      TestObject
+         Name    : "Blend_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "NF_SvUpdate_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "NF_OpUpdate_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "NF_FullUpdate_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "TqRsDg_Init1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "TqRsDg_Per1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+   End
+End

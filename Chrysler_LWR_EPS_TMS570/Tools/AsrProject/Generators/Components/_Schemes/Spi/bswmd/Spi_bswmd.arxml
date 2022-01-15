@@ -1,0 +1,2178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+***********************************************************************************************************************
+COPYRIGHT
+===============================================================================
+Copyright (c) 2012 by Vector Informatik GmbH.                                         All rights reserved.
+
+    This software is copyright protected and proprietary to Vector Informatik GmbH.
+    Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+    All other rights remain with Vector Informatik GmbH.
+===============================================================================
+FILE DESCRIPTION
+===============================================================================
+File:           Spi_bswmd.arxml
+Component:      
+Module:         Spi
+Generator:      
+
+Description:    -
+*********************************************************************************************************************** 
+-->
+<AUTOSAR xmlns="http://autosar.org/3.1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/3.1.4 C:\Programme\VEB4CA~1.0SP\__Engine\AS\3.1.4\autosar.xsd">
+	<TOP-LEVEL-PACKAGES>
+		<AR-PACKAGE UUID="d03fc3c6-1927-40f7-94e2-9003dedf9fa2">
+			<SHORT-NAME>MICROSAR</SHORT-NAME>
+			<ELEMENTS>
+				<MODULE-DEF UUID="64f7193b-5edb-46b4-9b0b-85119bf258aa">
+					<SHORT-NAME>Spi</SHORT-NAME>
+					<DESC>
+						<L-2 L="EN">Configuration of the Spi (Serial Peripheral Interface) module.</L-2>
+					</DESC>
+					<ADMIN-DATA>
+						<DOC-REVISIONS>
+							<DOC-REVISION>
+								<REVISION-LABEL>01.00.00</REVISION-LABEL>
+								<STATE>beta</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2008-11-17T16:08:59</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Initial creation</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">-</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.01.00</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2009-02-16T09:49:00</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Mcu clock selection feature. Fixed default values</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00033057, ESCAN00033025, ESCAN00032772, ESCAN00032755, ESCAN00032327, ESCAN00032326</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.01.01</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2010-02-24T09:55:19</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Version mismatch in Implementation and Description</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00041124</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.02.00</REVISION-LABEL>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2010-03-08T14:19:03</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">BETA delivery</L-2>
+										</CHANGE>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.02.01</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2010-03-23T13:12:17</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">update software version</L-2>
+										</CHANGE>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.02.02</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>virdu</ISSUED-BY>
+								<DATE>2010-04-21T14:50:50</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">update software version</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00042139</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.03.00</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2010-06-23T12:00:06</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Make chip select periods configurable for chip select handling after each word</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00041874</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.04.00</REVISION-LABEL>
+								<STATE>beta</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2010-12-03T14:27:52</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Adapt software version</L-2>
+										</CHANGE>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.04.01</REVISION-LABEL>
+								<STATE>beta</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2011-09-09T12:34:37+02:00</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Adapt software version</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00046707 Add SchM recommended configuration file</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.04.01</REVISION-LABEL>
+								<STATE>beta</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2011-09-09T12:34:37+02:00</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Adapt software version</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00051132 Value of SchMMainFunctionEnableCondition in SchM_Spi_Pre.arxml wrong</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.04.01</REVISION-LABEL>
+								<STATE>beta</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2011-12-02T09:27:40+01:00</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Bugfix</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00052035 Variables SpiTimeEna2Cs and SpiTimeCs2Ena are duplicate in container "SpiExternalDevice"</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.04.01</REVISION-LABEL>
+								<STATE>beta</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2011-12-06T11:37:18+01:00</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Bugfix</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00052654 SchM preconfiguration not correct.</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.05.00</REVISION-LABEL>
+								<STATE>release</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2011-12-06T11:39:47+01:00</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">update software version</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00055367 SPI - add new container SpiClockSettings</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.05.01</REVISION-LABEL>
+								<STATE>release</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2012-04-13T03:35:01+02:00</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Bugfix</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00057894: Dataserver Error regarding  'SpiSupportConcurrentSyncTransmit' .This parameter is missing in the active Ecu configuration. </L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.05.01</REVISION-LABEL>
+								<STATE>release</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2012-04-16T09:22:26+02:00</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Fix admin data</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00058134  Add documentation for ESCAN46707 in admin data</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.05.01</REVISION-LABEL>
+								<STATE>release</STATE>
+								<ISSUED-BY>virva</ISSUED-BY>
+								<DATE>2012-04-17T01:20:25+02:00</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Fix admin data</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00057381: ASR-schema mismatch in SchM-preconfiguration</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+						</DOC-REVISIONS>
+					</ADMIN-DATA>
+					<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+					<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+					<REFINED-MODULE-DEF-REF DEST="MODULE-DEF">/AUTOSAR/Spi</REFINED-MODULE-DEF-REF>
+					<SUPPORTED-CONFIG-VARIANTS>
+						<SUPPORTED-CONFIG-VARIANT>VARIANT-POST-BUILD</SUPPORTED-CONFIG-VARIANT>
+					</SUPPORTED-CONFIG-VARIANTS>
+					<CONTAINERS>
+						<!-- Parameter Container Definition: SpiDriver -->
+						<PARAM-CONF-CONTAINER-DEF UUID="44ed8f27-485a-4efc-9841-18e671b9ba68">
+							<SHORT-NAME>SpiDriver</SHORT-NAME>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>true</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<!-- PARAMETER DEFINITION: SpiMaxChannel -->
+								<INTEGER-PARAM-DEF UUID="52a3f480-f458-405b-869a-7cedb3cf1d8d">
+									<SHORT-NAME>SpiMaxChannel</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter contains the number of Channels configured. It will be gathered by tools during the configuration stage.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>254</DEFAULT-VALUE>
+									<MAX>254</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: SpiMaxJob -->
+								<INTEGER-PARAM-DEF UUID="3db8292d-21b3-48c2-b89f-2a0acf79a111">
+									<SHORT-NAME>SpiMaxJob</SHORT-NAME>
+									<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>254</DEFAULT-VALUE>
+									<MAX>254</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: SpiMaxSequence -->
+								<INTEGER-PARAM-DEF UUID="89d1c03b-a808-4329-9d42-628cbb2b64c4">
+									<SHORT-NAME>SpiMaxSequence</SHORT-NAME>
+									<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>254</DEFAULT-VALUE>
+									<MAX>254</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<INTEGER-PARAM-DEF UUID="206dfda2-ba32-47e7-959c-b3289e7ea134">
+									<SHORT-NAME>SpiMaxHWUnit</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Definition for the availiable hardwareunits.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>4</DEFAULT-VALUE>
+									<MAX>4</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+							</PARAMETERS>
+							<SUB-CONTAINERS>
+								<!-- Parameter Container Definition: SpiChannel -->
+								<PARAM-CONF-CONTAINER-DEF UUID="4e498c76-b5e9-4476-8855-f7a9380d1c62">
+									<SHORT-NAME>SpiChannel</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">All data needed to configure one Spi channel</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>255</UPPER-MULTIPLICITY>
+									<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+									<PARAMETERS>
+										<!-- PARAMETER DEFINITION: SpiChannelId -->
+										<INTEGER-PARAM-DEF UUID="985eaf1b-8695-44dd-9923-31d2c0620591">
+											<SHORT-NAME>SpiChannelId</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Settings for Channel ID</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Unique Id of a SPI channel.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>254</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiChannelType -->
+										<ENUMERATION-PARAM-DEF UUID="b807decf-8bf0-44bf-b516-1563a5ba5c5f">
+											<SHORT-NAME>SpiChannelType</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Select channel type</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Buffer usage with EB/IB channel</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>EB</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="7d6e6b8d-280f-4f7d-9d5c-7ec1ef0497f5">
+													<SHORT-NAME>EB</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>external buffer</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="1e80c51d-7d6f-4995-b7c9-3cde5c9fa64a">
+													<SHORT-NAME>IB</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>internal buffer</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiDataWidth -->
+										<INTEGER-PARAM-DEF UUID="ec7ffe20-434c-445f-926e-15e45017a729">
+											<SHORT-NAME>SpiDataWidth</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Width of one data frame</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter is the width of a transmitted data unit.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>8</DEFAULT-VALUE>
+											<MAX>16</MAX>
+											<MIN>8</MIN>
+										</INTEGER-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiDefaultData -->
+										<INTEGER-PARAM-DEF UUID="caa747ef-2607-4d11-a329-6af2a305be5a">
+											<SHORT-NAME>SpiDefaultData</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Default transmission data</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter is the default value to transmit.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>255</DEFAULT-VALUE>
+											<MAX>65535</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiEbMaxLength -->
+										<INTEGER-PARAM-DEF UUID="177cbbbc-e004-427f-b4a3-e533882061ee">
+											<SHORT-NAME>SpiEbMaxLength</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Maximum length for external channels</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter contains the maximum size of data buffers in case of
+EB Channels and only. This unit is in Bytes.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>255</DEFAULT-VALUE>
+											<MAX>65535</MAX>
+											<MIN>1</MIN>
+										</INTEGER-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiIbNBuffers -->
+										<INTEGER-PARAM-DEF UUID="905a2295-4375-4874-af13-48c260104b26">
+											<SHORT-NAME>SpiIbNBuffers</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Maximum length for internal channels</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter contains the maximum number of data buffers in case
+of IB Channels and only. This unit is in Bytes.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>10</DEFAULT-VALUE>
+											<MAX>20</MAX>
+											<MIN>1</MIN>
+										</INTEGER-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiTransferStart -->
+										<ENUMERATION-PARAM-DEF UUID="1ce8a528-dbd2-45f4-aa25-fdfdd8e41a7f">
+											<SHORT-NAME>SpiTransferStart</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Start transfer with</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter defines the first starting bit for transmission.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>MSB</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="615e6e9c-ee41-478d-81e2-e6ee1339f82f">
+													<SHORT-NAME>LSB</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>least significant bit</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="e81ae597-c869-45d8-8786-cf82802b89ad">
+													<SHORT-NAME>MSB</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>most significant bit</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+									</PARAMETERS>
+								</PARAM-CONF-CONTAINER-DEF>
+								<!-- Parameter Container Definition: SpiExternalDevice -->
+								<PARAM-CONF-CONTAINER-DEF UUID="6b2f5de5-3914-4cd6-a4fe-6c8ac9f1538a">
+									<SHORT-NAME>SpiExternalDevice</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">The communication settings of an external device. Closely linked to SpiJob.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>255</UPPER-MULTIPLICITY>
+									<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+									<PARAMETERS>
+										<!-- PARAMETER DEFINITION: SpiBaudrate -->
+										<FLOAT-PARAM-DEF UUID="6683b80c-f21b-452b-a895-a2f0ac8f0988">
+											<SHORT-NAME>SpiBaudrate</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Baud rate</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter is the communication baudrate - This parameter allows
+using a range of values, from the point of view of configuration tools,
+from kHz up to MHz. Baud rate unit is [kHz].</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>500</DEFAULT-VALUE>
+											<MAX>20000.0</MAX>
+											<MIN>0</MIN>
+										</FLOAT-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiCsIdentifier -->
+										<STRING-PARAM-DEF UUID="9b108229-95cc-47e7-9272-59ca53827e24">
+											<SHORT-NAME>SpiCsIdentifier</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Pin used for chip select</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter is the symbolic name to identify the Chip Select (CS) allocated to this Job.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>PCS0</DEFAULT-VALUE>
+										</STRING-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiCsPolarity -->
+										<ENUMERATION-PARAM-DEF UUID="bf1e0fe8-7c78-44a3-8eff-9b07bdaf7ce1">
+											<SHORT-NAME>SpiCsPolarity</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Level of chip select</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter defines the idle polarity of Chip Select.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>HIGH</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="fa6d10f7-c547-456e-9378-14c076978d7e">
+													<SHORT-NAME>HIGH</SHORT-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="d9fe4d6e-0b45-4738-9f23-390edab09b92">
+													<SHORT-NAME>LOW</SHORT-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiDataShiftEdge -->
+										<ENUMERATION-PARAM-DEF UUID="fa06376f-a565-4c5a-abd2-606a02258b09">
+											<SHORT-NAME>SpiDataShiftEdge</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Data edge</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter define the SPI data recognition at rising or falling edge.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>RAISING</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="498562a4-e003-4fe7-821c-d177bd627e4a">
+													<SHORT-NAME>RAISING</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>data is valid at rising edge</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="34144097-ec09-492b-b7c0-260729664532">
+													<SHORT-NAME>FALLING</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>data is valid at falling edge</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiEnableCs -->
+										<BOOLEAN-PARAM-DEF UUID="c6df38a4-5986-4cb7-ad65-f2c5f222dc1a">
+											<SHORT-NAME>SpiEnableCs</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Chip select is active</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter enables or not the Chip Select handling functions.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiShiftClockIdleLevel -->
+										<ENUMERATION-PARAM-DEF UUID="668f1f71-90fd-4d2a-b645-b838cbd572bb">
+											<SHORT-NAME>SpiShiftClockIdleLevel</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Clock level</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter defines the SPI clock idle level.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>HIGH</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="7b4fb72d-0102-4d8c-a1d6-9ffe2e7e8193">
+													<SHORT-NAME>HIGH</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>clock idle level is high</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="8e5fc74f-d3c8-46ea-9078-a40c4b0c2bc5">
+													<SHORT-NAME>LOW</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>clock idle level is low</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiTimeClk2Cs -->
+										<FLOAT-PARAM-DEF UUID="0656dd09-a521-4d9e-831f-3a546c4ee01b">
+											<SHORT-NAME>SpiTimeClk2Cs</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Clock stop to CS idle delay</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Transmit-end-to-chip-select-inactive-delay.Timing between clock and chip select - This parameter allows to use a range of values from 0 up to 65 micro seconds. Time unit is ns &gt;&gt; max is 65000ns.
+the real configuration-value used in software BSW-SPI is calculated out of this by the generator-tools</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>10</DEFAULT-VALUE>
+											<MAX>65535.0</MAX>
+											<MIN>0</MIN>
+										</FLOAT-PARAM-DEF>
+										<INTEGER-PARAM-DEF UUID="2a2bb36e-68af-4509-a5c2-38a65723b41a">
+											<SHORT-NAME>SpiTimeCs2Clk</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">CS active to Clock start delay</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Chip-select-active-to-transmit-start-delay. See SpiTimeClk2Cs.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>10</DEFAULT-VALUE>
+											<MAX>65535</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<FLOAT-PARAM-DEF UUID="87267894-c439-4535-a241-caf1277f794b">
+											<SHORT-NAME>SpiTimeEna2Cs</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">CS idle to ENA stop timeout</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Transmit-data-finished-to-ENA-pin-inactive-time-out. Value 0 disables this setting.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>65535.0</MAX>
+											<MIN>0</MIN>
+										</FLOAT-PARAM-DEF>
+										<FLOAT-PARAM-DEF UUID="01d17b0c-a26f-4296-8a98-f95c02f979b7">
+											<SHORT-NAME>SpiTimeCs2Ena</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">CS start to ENA active timeout</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Chip-select-active-to-ENA-signal-active-time-out in ns. Value 0 disables this setting.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>65535.0</MAX>
+											<MIN>0</MIN>
+										</FLOAT-PARAM-DEF>
+										<ENUMERATION-PARAM-DEF UUID="f6051209-3ad5-462d-b19c-24ce827e5154">
+											<SHORT-NAME>SpiCsMode</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Chip select mode</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This selcts which CS mode the device should enter. 
+SINGLE: the CS will return to default level after one transmission unit has been sent.
+CONTINOUS: the CS will remain active during the whole transmission.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>CONTINOUS</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="56a174f5-fd80-45c4-b09f-a4bcf4561d45">
+													<SHORT-NAME>SINGLE</SHORT-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="b07d597b-7b78-49f4-9b65-e073f7114da9">
+													<SHORT-NAME>CONTINOUS</SHORT-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+										<INTEGER-PARAM-DEF UUID="665da876-9122-443d-9ced-bfff13c043d3">
+											<SHORT-NAME>SpiMode</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Resulting Spi mode</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Addition to the CS mode of the device. The user can input the amount of time in  [ns] the Spi will insert between two SINGLE transfers. The CS will go IDLE for this given time. This parameter depens on the given VCLK of the Spi peripheral.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>3</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<INTEGER-PARAM-DEF UUID="03005829-3f7a-4859-a3af-57a3bacaf35e">
+											<SHORT-NAME>SpiCsIdleTime</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Idle time between chip selects</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Idle time of CS# between two single transfers. The time can be configured from 0 = disabled to 65536 [ns] nanoseconds if supported by hardware.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>100</DEFAULT-VALUE>
+											<MAX>65535</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+									</PARAMETERS>
+								</PARAM-CONF-CONTAINER-DEF>
+								<!-- Parameter Container Definition: SpiJob -->
+								<PARAM-CONF-CONTAINER-DEF UUID="8cf57826-7ed4-413e-a161-e41a0c1ebec9">
+									<SHORT-NAME>SpiJob</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">All data needed to configure one SPI-Job, amongst others the connection between the internal SPI unit and the special settings for an external device is done.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>255</UPPER-MULTIPLICITY>
+									<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+									<PARAMETERS>
+										<!-- PARAMETER DEFINITION: SpiHwUnit -->
+										<ENUMERATION-PARAM-DEF UUID="7664659b-f540-4a24-b728-c61f02c91ae2">
+											<SHORT-NAME>SpiHwUnit</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">[REPLACED BY: /MICROSAR/Spi/SpiDriver/SpiJob/SpiHwUnitAssignment]</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>CSIB0</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="0c213676-b886-4782-8349-b34c4649c4ce">
+													<SHORT-NAME>CSIB0</SHORT-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiJobEndNotification -->
+										<FUNCTION-NAME-DEF UUID="07afb7a0-5b5c-4de0-b94e-afc5c6ac0354">
+											<SHORT-NAME>SpiJobEndNotification</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Job end may call</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter is a reference to a notification function.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+										</FUNCTION-NAME-DEF>
+										<!-- PARAMETER DEFINITION: SpiJobId -->
+										<INTEGER-PARAM-DEF UUID="db2e35e2-6d2d-4d42-b8a0-277a79ea2ef7">
+											<SHORT-NAME>SpiJobId</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Settings for Job ID</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Unique job Id.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>254</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiJobPriority -->
+										<INTEGER-PARAM-DEF UUID="f14f33f9-43b5-450f-949c-6002be5bfbe9">
+											<SHORT-NAME>SpiJobPriority</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Set prioirity of this job</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Priority of this job.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>3</DEFAULT-VALUE>
+											<MAX>3</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<INTEGER-PARAM-DEF UUID="94722e65-2311-40e2-b0e3-cfebf276d15a">
+											<SHORT-NAME>SpiJobSort</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">Parameter for internal usage. Do not change!</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>3</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<ENUMERATION-PARAM-DEF UUID="3fad2e56-4cd5-4ef2-be44-a0363b8e91e9">
+											<SHORT-NAME>SpiHwUnitSynchronous</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">If SpiHwUnitSynchronous is set to "SYNCHRONOUS", the SpiJob uses its 
+containing SpiDriver in a synchronous manner. If it is set to "ASYNCHRO-
+NOUS", it uses the driver in an asynchronous way. If the parameter is not 
+set, the SpiChannel uses the driver also in an asynchronous way.
+[NOT USED]</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>ASYNCHRONOUS</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="2c61e686-8a77-40b1-b24b-0a2778ea68f1">
+													<SHORT-NAME>ASYNCHRONOUS</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>Hardware unit transmitts asynchronous</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="a6dd90fe-6f6a-466d-927a-9820992483e6">
+													<SHORT-NAME>SYNCHRONOUS</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>ASYNCHRONOUS	Hardware unit transmitts synchronous</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+									</PARAMETERS>
+									<REFERENCES>
+										<!-- Reference Definition: ChannelAssignment -->
+										<REFERENCE-PARAM-DEF UUID="e4465ff7-23fb-4050-99ac-942d4983fbf4">
+											<SHORT-NAME>ChannelAssignment</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Assign channel(s) to job</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">A job references several channels.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>*</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Spi/SpiDriver/SpiChannel</DESTINATION-REF>
+										</REFERENCE-PARAM-DEF>
+										<!-- Reference Definition: DeviceAssignment -->
+										<REFERENCE-PARAM-DEF UUID="95be94a2-33e5-4383-8a8d-e2c84e6a9302">
+											<SHORT-NAME>DeviceAssignment</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Assign device(s) to job</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Reference to the external device used by this job</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Spi/SpiDriver/SpiExternalDevice</DESTINATION-REF>
+										</REFERENCE-PARAM-DEF>
+										<REFERENCE-PARAM-DEF UUID="11d3f562-a685-4e5c-9c04-874956c7d020">
+											<SHORT-NAME>SpiHwUnitAssignment</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Select hardware unit for communication</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter is the symbolic name to identify the HW SPI Hardware
+microcontroller peripheral allocated to this Job.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Spi/SpiDriver/SpiHardwareUnit</DESTINATION-REF>
+										</REFERENCE-PARAM-DEF>
+									</REFERENCES>
+								</PARAM-CONF-CONTAINER-DEF>
+								<!-- Parameter Container Definition: SpiSequence -->
+								<PARAM-CONF-CONTAINER-DEF UUID="125bf60c-b5c8-49b9-bb47-0681dc176332">
+									<SHORT-NAME>SpiSequence</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">All data needed to configure one SPI-sequence</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>255</UPPER-MULTIPLICITY>
+									<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+									<PARAMETERS>
+										<!-- PARAMETER DEFINITION: SpiInterruptibleSequence -->
+										<BOOLEAN-PARAM-DEF UUID="56aa5917-e0e0-4b0c-b9f4-26f8c336b734">
+											<SHORT-NAME>SpiInterruptibleSequence</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">This sequence is interruptible</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter allows or not this Sequence to be interrupted and suspended by another one.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>false</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: SpiSeqEndNotification -->
+										<FUNCTION-NAME-DEF UUID="f69bcabd-aa5e-4350-96c4-be851fe1fe81">
+											<SHORT-NAME>SpiSeqEndNotification</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Sequence end may call</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter is a reference to a notification function.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+										</FUNCTION-NAME-DEF>
+										<!-- PARAMETER DEFINITION: SpiSequenceId -->
+										<INTEGER-PARAM-DEF UUID="01bce927-564d-4704-8add-b4c8c65ec983">
+											<SHORT-NAME>SpiSequenceId</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Settings for Sequence ID</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Unique sequence Id.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>254</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+									</PARAMETERS>
+									<REFERENCES>
+										<!-- Reference Definition: JobAssignment -->
+										<REFERENCE-PARAM-DEF UUID="a3ef5f07-cf47-426a-85da-7a43fd73238e">
+											<SHORT-NAME>JobAssignment</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Assign job(s) to this sequence</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">A sequence references several jobs, which are executed during a communication sequence</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>*</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Spi/SpiDriver/SpiJob</DESTINATION-REF>
+										</REFERENCE-PARAM-DEF>
+									</REFERENCES>
+								</PARAM-CONF-CONTAINER-DEF>
+								<PARAM-CONF-CONTAINER-DEF UUID="28a4eeea-1f92-43c9-8616-c2b6a5cbf3e6">
+									<SHORT-NAME>SpiHardwareUnit</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Container for hardware unit configuration.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>5</UPPER-MULTIPLICITY>
+									<PARAMETERS>
+										<BOOLEAN-PARAM-DEF UUID="2c67cb2d-f48e-4a74-b1ce-ac2dade31267">
+											<SHORT-NAME>SpiUnitHasRam</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Hardware unit shall use RAM</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">If true Spi hardware unt has access to internal RAM buffers</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>false</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<INTEGER-PARAM-DEF UUID="1ea72af9-8fe5-4e1f-ae17-8da3b3dd9756">
+											<SHORT-NAME>SpiUnitId</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Enter a hardware unit Id</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Id of the hardwareunit. Spi unit 0 starts with the id=0, unit 1 has the id=1 and so on.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>4</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="28cf94f7-87f6-4446-957d-b6e4d43bbe4a">
+											<SHORT-NAME>SpiUnitUsesDma</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Hardware unit shall use DMA</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">If true Spi hardware untt uses DMA.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>false</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+									</PARAMETERS>
+								</PARAM-CONF-CONTAINER-DEF>
+								<PARAM-CONF-CONTAINER-DEF UUID="f5cf8615-736f-4532-95eb-23a283b47cd6">
+									<SHORT-NAME>SpiClockSettings</SHORT-NAME>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<PARAMETERS>
+										<FLOAT-PARAM-DEF UUID="1201ca9b-c7e9-4222-b9cc-ff8106fa45ca">
+											<SHORT-NAME>SpiClockFrequency</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Resulting clock for Spi in Mhz</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">operating frequency of Spi, derived from MCU VCLK.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>16</DEFAULT-VALUE>
+											<MAX>180</MAX>
+											<MIN>2</MIN>
+										</FLOAT-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="aaf9a57d-676c-4ed1-bdc9-1426349eb834">
+											<SHORT-NAME>SpiClockSelector</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Select clock source</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Select clock from MCU or manual clock.
+MCU = True,
+manual = false</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+									</PARAMETERS>
+									<REFERENCES>
+										<REFERENCE-PARAM-DEF UUID="ad6eb2bb-b8e2-4839-ad6e-fd18bdee723d">
+											<SHORT-NAME>SpiClockConfiguration</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Select the clock setting configuration</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Clock configuration derived from Mcu</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClocks/McuClockDomains</DESTINATION-REF>
+										</REFERENCE-PARAM-DEF>
+									</REFERENCES>
+								</PARAM-CONF-CONTAINER-DEF>
+							</SUB-CONTAINERS>
+						</PARAM-CONF-CONTAINER-DEF>
+						<!-- Parameter Container Definition: SpiGeneral -->
+						<PARAM-CONF-CONTAINER-DEF UUID="f8f4b8f9-3874-4d26-89a4-1473e06aa148">
+							<SHORT-NAME>SpiGeneral</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">General configuration settings for SPI-Handler</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<BOOLEAN-PARAM-DEF UUID="f8d630be-861b-4c5a-b966-300a5ff95909">
+									<SHORT-NAME>SpiCancelApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Spi_Cancel</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches the Spi_Cancel function ON or OFF.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="50b8aa23-5103-4c2c-85fe-55293cce7449">
+									<SHORT-NAME>SpiHwStatusApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Spi_GetHWUnitStatus</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches the Spi_GetHWUnitStatus function ON or OFF.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="f9b2310f-1d56-4cdd-bf4d-0bd7a7e73d16">
+									<SHORT-NAME>SpiDevErrorDetect</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Development mode</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches the Development Error Detection and Notification ON or OFF.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="bc22ac54-c52e-4f62-8828-8fdf50e91e52">
+									<SHORT-NAME>SpiInterruptibleSeqAllowed</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Global enable interruptible sequences</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches the Interruptible Sequences handling functionality ON or OFF.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="65b4e25f-4bd3-4cf4-bbde-49a1fb48c94a">
+									<SHORT-NAME>SpiVersionInfoApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Spi_GetVersionInfo</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches the Spi_GetVersionInfo function ON or OFF.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="151c2cd8-3a93-4f35-adea-b7f9053f6776">
+									<SHORT-NAME>SpiParamChkConfig</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check configuration pointer</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Wrong config pointer (NULL_PTR) passed to API.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="088c2cb6-b597-4355-806a-721acc230140">
+									<SHORT-NAME>SpiParamChkChannel</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if channel is valid</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Wrong channel ID passed to API.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="6e9188ea-28f3-49e8-a695-b07a435470ee">
+									<SHORT-NAME>SpiParamChkJob</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if job is valid</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Wrong job ID passed to API.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="dc2c33fb-4e70-4f8d-bf55-46284b214962">
+									<SHORT-NAME>SpiParamChkSeq</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if sequence is valid</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Wrong sequence ID passed to API.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="56b45424-3042-40dc-94e8-2ed3ba20860c">
+									<SHORT-NAME>SpiParamChkLength</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if length is valid</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Wrong length passed to API.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="d323b230-8da4-4325-bc2f-9cbc98072b67">
+									<SHORT-NAME>SpiParamChkVersion</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if version pointer is valid</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">A wrong version pointer was passed to the API.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="3db16e21-6108-4d78-a5dc-9d350ad3175c">
+									<SHORT-NAME>SpiParamChkUnit</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if hardware unit is valid</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">A wrong unit was passed to the API.
+</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="43205ad9-40d8-4908-b6b6-27a837c327b5">
+									<SHORT-NAME>SpiChkModuleInit</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if module is initialized</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">API service used without module initialization.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="5cf5943f-7e19-427f-bc19-622704657125">
+									<SHORT-NAME>SpiChkSeqPending</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if sequence is still pending</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Api called in a wrong Sequence.
+</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="2ffd90bb-12b8-4afc-9453-87799d0cdab0">
+									<SHORT-NAME>SpiChkModuleAlreadyInitialized</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if module was already initialized</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">API SPI_Init service called while the SPI driver has already been initialized .</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="ced31ce1-e081-4978-91c2-07f317882e2f">
+									<SHORT-NAME>SpiChkSeqProcessing</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check is a sequence is still busy</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Synchronous transmission service called at wrong time.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="89c3c574-808e-4e41-b6aa-ec122cff891c">
+									<SHORT-NAME>SpiDetErrorReporting</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Det error reporting</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter enables Det configuration and reporting.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="a95294a5-db12-46bb-9cdb-c0cd498ef90c">
+									<SHORT-NAME>SpiDemErrorReporting</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Dem error reporting</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Report errors to the Diagnostic Event Monitor. If off, Dem reporting is still active but will not be logged.
+</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="af72acab-c6aa-46f4-ae4b-57d5e5c9e76c">
+									<SHORT-NAME>SpiParamChk</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable parameter checks</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enable or disable parameter checks of Spi.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="8c003f9b-cfef-43af-be2c-95fac5c92eef">
+									<SHORT-NAME>SpiParamChkBuffer</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if buffer is aligned</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter checks if the buffer is aligned when using 8 or 16 bit frame transfer.
+Using channels with 8 bit frame transfer, alignment does not matter while buffers with 16 bit frame transfer require even aligned buffers.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="15bab44c-478b-4535-954b-7c14b8cc95a1">
+									<SHORT-NAME>SpiParamChkAlignment</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check if length is aligned</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter checks if the lengthis aligned when using 8 or 16 bit frame transfer.
+Using channels with 8 bit frame transfer, length alignment does not matter while buffers 
+with 16 bit frame transfer require even aligned length.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<INTEGER-PARAM-DEF UUID="e4151a0d-bd0c-4165-b778-b480643a3ef7">
+									<SHORT-NAME>SpiChannelBuffersAllowed</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Select allowed channel buffers</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Selects the SPI Handler/Driver Channel Buffers usage allowed and
+delivered.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>1</DEFAULT-VALUE>
+									<MAX>2</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<INTEGER-PARAM-DEF UUID="f82ff7c2-1da2-47f0-8cb5-610f146ef996">
+									<SHORT-NAME>SpiLevelDelivered</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Level of scalable functionality</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Selects the SPI Handler/Driver level of scalable functionality that is
+available and delivered.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>1</DEFAULT-VALUE>
+									<MAX>2</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="a95d3ef4-ddb2-4a10-8359-1392daa75806">
+									<SHORT-NAME>SpiDemIncludeFile</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Dem include file</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Determine the Dem include file of the Errorhook function for development mode.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Dem.h</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="93f9741d-0d8b-4d44-8dfb-3a9bf737b369">
+									<SHORT-NAME>SpiDetIncludeFile</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Det include file</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Determine the Det include file of the Errorhook function for development mode.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Det.h</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="f468ecf7-5a30-460b-a395-8737d7b4c59e">
+									<SHORT-NAME>SpiDetErrorhook</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Det error hook function</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Determine the Errorhook function for development mode.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Det_ReportError</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="64e499bc-0f04-418f-a6b6-d72651950a86">
+									<SHORT-NAME>SpiDemErrorhook</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Dem error hook function</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Determine the Errorhook function for production mode.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Dem_ReportErrorStatus</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="d771ecc7-0e76-4659-9937-df9427aedc3f">
+									<SHORT-NAME>SpiCbkIncludeFile</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Callback include file(s)</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Include the callback include files, to make these functions visible to the Spi.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>3</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>NULL</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="39f02704-55a2-4d98-9a92-f1a60c137c5d">
+									<SHORT-NAME>SpiIrqIncludeFile</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Declaration of interrupt functions</L-4>
+									</LONG-NAME>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Spi_Irq.h</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="cc15c899-8566-4dc7-a2fa-270f4904c42c">
+									<SHORT-NAME>SpiIrqFunction</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Name of the interrupt function</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Main name of the ISR service. The [x] is the id of the hardware unit.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Spi_IrqUnit[x]TxRx</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<ENUMERATION-PARAM-DEF UUID="4a5a7170-fc8d-49ff-b270-2c2b24b3a21f">
+									<SHORT-NAME>SpiIrqType</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Interrupt implementation</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Type of Isr function:
+void functionname(void)
+CAT1  see description in oil tool : interrupt void func(void)
+CAT2  see description in oil tool : ISR(func) </L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>SPI_ISR_CAT2</DEFAULT-VALUE>
+									<LITERALS>
+										<ENUMERATION-LITERAL-DEF UUID="9764b8d3-ea1f-4bf6-87d6-50fd09b25b0a">
+											<SHORT-NAME>SPI_ISR_VOID</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>void Func( void )</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="0bc59b66-e291-40cf-888e-93ec2cc58060">
+											<SHORT-NAME>SPI_ISR_CAT1</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>Category 1</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="f7134dd3-430c-43a7-864c-f581b0be7889">
+											<SHORT-NAME>SPI_ISR_CAT2</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>Category 2</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+									</LITERALS>
+								</ENUMERATION-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="06033de7-ee0b-4e94-9aae-3507ad4eebf3">
+									<SHORT-NAME>SpiSRAEnabled</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Register Access Via OS Functions</L-4>
+									</LONG-NAME>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="7e9396d0-9d44-4279-80f1-e8472b37b481">
+									<SHORT-NAME>SpiSRAOnlyForWrite</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Special Register Access Only For Write</L-4>
+									</LONG-NAME>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="50ff7f83-69b7-4d61-859c-0417f14bf872">
+									<SHORT-NAME>SpiSRAOnlyForPrivilegedMode</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Special Register Access Only For Privileged Mode Registers</L-4>
+									</LONG-NAME>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="d9c84519-7b92-4e59-b51b-22055df8dd09">
+									<SHORT-NAME>SpiSRANotInInit</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Special Register Access Not During Initialization</L-4>
+									</LONG-NAME>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+							</PARAMETERS>
+							<REFERENCES>
+								<REFERENCE-PARAM-DEF UUID="107a387a-c253-4e3c-887d-f1a3e7f03636">
+									<SHORT-NAME>SpiIrqHandling</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Critical section handling</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to determine the IRQ function set which is used to protect critical sections.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Board/InterruptFunctionality/InterruptFunctionSet</DESTINATION-REF>
+								</REFERENCE-PARAM-DEF>
+							</REFERENCES>
+						</PARAM-CONF-CONTAINER-DEF>
+						<PARAM-CONF-CONTAINER-DEF UUID="56da4134-4c73-44e7-89e9-e45ad472a33b">
+							<SHORT-NAME>VectorCommonData</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">This configuration container contains Vector specific vendor data, which are relevant for configuration management purposes.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<PARAMETERS>
+								<STRING-PARAM-DEF UUID="10ef100a-58dc-4afa-9c8f-763d72aadbae">
+									<SHORT-NAME>BswmdVersion</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Version of this description file</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter specifies the version of this bswmd file. </L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>1.05.01</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+							</PARAMETERS>
+						</PARAM-CONF-CONTAINER-DEF>
+					</CONTAINERS>
+				</MODULE-DEF>
+				<BSW-IMPLEMENTATION UUID="2d3fda11-30a3-4702-ba24-d76c60b9b24d">
+					<SHORT-NAME>Spi_Impl</SHORT-NAME>
+					<CODE-GENERATOR>MicrosarGen</CODE-GENERATOR>
+					<PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+					<SW-MAJOR-VERSION>1</SW-MAJOR-VERSION>
+					<SW-MINOR-VERSION>5</SW-MINOR-VERSION>
+					<SW-PATCH-VERSION>0</SW-PATCH-VERSION>
+					<VENDOR-ID>30</VENDOR-ID>
+					<AR-MAJOR-VERSION>2</AR-MAJOR-VERSION>
+					<AR-MINOR-VERSION>3</AR-MINOR-VERSION>
+					<AR-PATCH-VERSION>0</AR-PATCH-VERSION>
+					<PRECONFIGURED-CONFIGURATION-REF DEST="MODULE-CONFIGURATION">/MICROSAR/Spi_Pre</PRECONFIGURED-CONFIGURATION-REF>
+					<RECOMMENDED-CONFIGURATION-REF DEST="MODULE-CONFIGURATION">/MICROSAR/Spi_Rec</RECOMMENDED-CONFIGURATION-REF>
+					<VENDOR-SPECIFIC-MODULE-DEF-REF DEST="MODULE-DEF">/MICROSAR/Spi</VENDOR-SPECIFIC-MODULE-DEF-REF>
+				</BSW-IMPLEMENTATION>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</TOP-LEVEL-PACKAGES>
+</AUTOSAR>

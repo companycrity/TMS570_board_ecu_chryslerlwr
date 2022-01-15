@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--                                                            -->
+<!--  CANdelaStudio.exe 7.1 (7.1.100) -->
+<!--  CdiExport.dll     7.1 Patch 1 (7.1.101) -->
+<!--                                                            -->
+<CANDELAIMPORT dtdfilevers="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <IMPORTDOC>
+    <DTCCOLLECTION formatidentifier="ISO_14229_1">
+      <SERVICEMAPPING diaginstance="Fault_Memory" variant="Common_Diagnostics"/>
+      <RECORDTEMPLATEMAPPING>
+        <ITEMMAPPING id="_1">DTC_OCCURRENCE_FLAG</ITEMMAPPING>
+        <ITEMMAPPING id="_2">DTC_WARNING_INDICATOR_FLAG</ITEMMAPPING>
+        <ITEMMAPPING id="_3">READINESS_INDICATOR</ITEMMAPPING>
+        <ITEMMAPPING id="_4">DTC_PRIORITY_VALUE</ITEMMAPPING>
+        <ITEMMAPPING id="_5">ENGINEERING_NOTES</ITEMMAPPING>
+        <ITEMMAPPING id="_6">CUSTOMER_PERCEPTION_SYMPTOM</ITEMMAPPING>
+        <ITEMMAPPING id="_7">POSSIBLE_CAUSES</ITEMMAPPING>
+        <ITEMMAPPING id="_8">REPAIR_ACTION</ITEMMAPPING>
+        <ITEMMAPPING id="_9">ENABLE_CONDITIONS</ITEMMAPPING>
+        <ITEMMAPPING id="_10">MATURE_THRESHOLD</ITEMMAPPING>
+        <ITEMMAPPING id="_11">MATURE_TIME_VALUE_UNIT</ITEMMAPPING>
+        <ITEMMAPPING id="_12">MONITOR_TYPE</ITEMMAPPING>
+        <ITEMMAPPING id="_13">MONITOR_RATE_VALUE_UNIT</ITEMMAPPING>
+        <ITEMMAPPING id="_14">NUMBER_OF_TRIPS_ACTIVE</ITEMMAPPING>
+        <ITEMMAPPING id="_15">DE_MATURE_CRITERIA</ITEMMAPPING>
+        <ITEMMAPPING id="_16">DE_MATURE_TIME_VALUE_UNIT</ITEMMAPPING>
+        <ITEMMAPPING id="_17">LIMP_IN_ACTION</ITEMMAPPING>
+        <ITEMMAPPING id="_18">STORED_DTC_SELF_HEALING_CRITERIA</ITEMMAPPING>
+        <ITEMMAPPING id="_19">DTC_SUPPRESSED_FLAG</ITEMMAPPING>
+        <ITEMMAPPING id="_20">DATA_RECORD_NUMBER_FIRST_CONFIRMED</ITEMMAPPING>
+        <ITEMMAPPING id="_21">DATA_RECORD_SIZE_FIRST_CONFIRMED</ITEMMAPPING>
+        <ITEMMAPPING id="_22">DATA_RECORD_NUMBER_MOST_RECENT</ITEMMAPPING>
+        <ITEMMAPPING id="_23">DATA_RECORD_SIZE_MOST_RECENT</ITEMMAPPING>
+        <ITEMMAPPING id="_24">DTC_READINESS_GROUP_VALUE</ITEMMAPPING>
+        <ITEMMAPPING id="_25">DTC_ENABLE_CONDITION_GROUP_VALUE</ITEMMAPPING>
+        <ITEMMAPPING id="_26">DTC_DEBOUNCE_MATURE_STEP_SIZE</ITEMMAPPING>
+        <ITEMMAPPING id="_27">DTC_DEBOUNCE_DEMATURE_STEP_SIZE</ITEMMAPPING>
+        <ITEMMAPPING id="_28">DTC_MUTUAL_EXCLUSION_LIST</ITEMMAPPING>
+        <ITEMMAPPING id="_29">DTC_SELF_HEALING_COUNTER</ITEMMAPPING>
+        <ITEMMAPPING id="_30">DTC_ERROR_NAME</ITEMMAPPING>
+      </RECORDTEMPLATEMAPPING>
+      <DTCS>
+        <DTC number="0000000">
+          <ERRORTEXT>FRFM_EVENT_INVALID-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">ECU Level</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="5619968">
+          <ERRORTEXT>EPS Mechanical Performance-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">ECU Level</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="5626624">
+          <ERRORTEXT>Latch Active-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="6" itemmappingref="_25">No Check</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="6367232">
+          <ERRORTEXT>ECU Reset/Recovery Occurred-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+             <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+           <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">ECU Level</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="6367510">
+          <ERRORTEXT>Battery Voltage-Circuit Voltage Below Threshold</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="2" itemmappingref="_25">Power Distribution</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="6367511">
+          <ERRORTEXT>Battery Voltage-Circuit Voltage Above Threshold</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="2" itemmappingref="_25">Power Distribution</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="6367876">
+          <ERRORTEXT>System Voltage-Signal Below Allowable Range</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+             <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+           <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="2" itemmappingref="_25">Power Distribution</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="6367877">
+          <ERRORTEXT>System Voltage-Signal Above Allowable Range</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+             <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+           <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="2" itemmappingref="_25">Power Distribution</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+		<DTC number="6426624">
+          <ERRORTEXT>ECU Overtemperature-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">ECU Level</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="6428416">
+          <ERRORTEXT>Electic Power Steering Module Internal-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">ECU Level</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="6428928">
+          <ERRORTEXT>ECU Unable To Configure/Configuration Not Learned-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">ECU Level</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="13767936">
+          <ERRORTEXT>Lost Communication with Forward Facing Camera-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12671232">
+          <ERRORTEXT>Lost Communication with Parking Assist Control Module-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+           <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12583424">
+          <ERRORTEXT>CAN C Bus Off Performance-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">Network Data</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12648448">
+          <ERRORTEXT>Lost Communication With ECM/PCM-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+             <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+           <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12656896">
+          <ERRORTEXT>Lost Communication With Anti-Lock Brake System (ABS) Control Module-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12664832">
+          <ERRORTEXT>Lost Communication With Body Control Module-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12670208">
+          <ERRORTEXT>Lost Communication With Cluster/CCN-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12718592">
+          <ERRORTEXT>Lost Communication With SCM-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12845312">
+          <ERRORTEXT>Implausible Data Received From ECM/PCM-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12850432">
+          <ERRORTEXT>Implausible Data Received from ABS-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+             <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+           <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12853760">
+          <ERRORTEXT>Implausible Data Received From Body Control Module-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+             <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+           <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12854016">
+          <ERRORTEXT>Implausible Data Received from Cluster/CCN-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="13929728">
+          <ERRORTEXT>Implausible Data Received from Forward Facing Camera/CCN-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="13899008">
+          <ERRORTEXT>Implausible/Missing Vehicle Configuration Data-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">ECU Level</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="13911808">
+          <ERRORTEXT>Implausible Data Recevied from SCM-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+             <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+           <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="12868096">
+          <ERRORTEXT>Implausible Data Received from Parking Assist Module-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+        <DTC number="14024960">
+          <ERRORTEXT>ECU Application Software Code 1 Missing or Corrupted-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_2">active</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_25">ECU Level</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>	
+		<DTC number="6424064">
+          <ERRORTEXT>Vehicle Configuration Mismatch-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+	    <DTC number="12845568">
+          <ERRORTEXT>Implausible Data Received From TCM-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+		<DTC number="12648704">
+          <ERRORTEXT>Lost Communication with TCM-</ERRORTEXT>
+          <RECORD>
+            <RECORDITEM enumindex="0" itemmappingref="_1">Fault</RECORDITEM>
+            <RECORDITEM itemmappingref="_2">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_3">not supported</RECORDITEM>
+            <RECORDITEM itemmappingref="_4">0</RECORDITEM>
+            <RECORDITEM itemmappingref="_14">0</RECORDITEM>
+            <RECORDITEM enumindex="0" itemmappingref="_19">DTC not suppressed</RECORDITEM>
+            <RECORDITEM itemmappingref="_20">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_21">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_22">2</RECORDITEM>
+            <RECORDITEM itemmappingref="_23">17</RECORDITEM>
+            <RECORDITEM itemmappingref="_24">0</RECORDITEM>
+            <RECORDITEM enumindex="1" itemmappingref="_25">Network Commmunication</RECORDITEM>
+            <RECORDITEM itemmappingref="_26">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_27">1</RECORDITEM>
+            <RECORDITEM itemmappingref="_29">100</RECORDITEM>
+          </RECORD>
+        </DTC>
+
+      </DTCS>
+    </DTCCOLLECTION>
+  </IMPORTDOC>
+
+</CANDELAIMPORT>

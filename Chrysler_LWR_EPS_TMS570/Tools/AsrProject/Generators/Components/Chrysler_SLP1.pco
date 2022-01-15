@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Vector Employee (Vector Informatik GmbH) -->
+<config name="Chrysler_SLP1" default="true" guid="123456FF-789a-bcde-f012-3456789abcde" xmlns="http://www.vector-informatik.de/CANGen/ModulePreconfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vector-informatik.de/CANGen/ModulePreconfig
+\\vistrpesfs1\Project2\GENTOOL\NextCANGen\VersionCurrent_Develop\PreconfigFiles\preconfig.xsd" version="1.00.00">
+	<description>Chrysler SLP1</description>
+	<module name="DriverCAN13" version="1.0">
+		<description>Configuration of DriverCAN module</description>
+		<attribute name="ActivePassiveState" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="DriverCAN13" version="1.0">
+		<description>Configuration of DriverCAN module</description>
+		<attribute name="TransmitQueue" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="DrvCan__baseRi15" version="1.0">
+		<description>Configuration of DriverCAN module</description>
+		<attribute name="DlcCheck" class="OTModuleInstance">
+			<default value="2"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="DataCopyMechanism" class="OTModuleInstance">
+			<default value="1"/>
+			<userlevel value="normal"/>
+			<access value="rdonly"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="RamCheck" class="OTModuleInstance">
+			<default value="0"/>
+			<userlevel value="normal"/>
+			<access value="no"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="CancelInHw" class="OTModuleInstance">
+			<default value="0"/>
+			<userlevel value="normal"/>
+			<access value="no"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="SleepWakeup" class="OTModuleInstance">
+			<default value="true"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="NM-OSEK(direct)" version="1.0">
+		<description>Configuration of NmOsekDirect module</description>
+		<attribute name="RingdataAccess" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="NM-OSEK(direct)" version="1.0">
+		<description>Configuration of NmOsekDirect module</description>
+		<attribute name="CopyRingdata" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="NM-OSEK(direct)" version="1.0">
+		<description>Configuration of NmOsekDirect module</description>
+		<attribute name="CanErrorBit" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="NM-OSEK(direct)" version="1.0">
+		<description>Configuration of NmOsekDirect module</description>
+		<attribute name="EnableErrorpinSend" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="NM-OSEK(direct)" version="1.0">
+		<description>Configuration of NmOsekDirect module</description>
+		<attribute name="BusDiagnostics" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="NM-OSEK(direct)" version="1.0">
+		<description>Configuration of NmOsekDirect module</description>
+		<attribute name="ImmediateAlive" class="OTModuleInstance">
+			<default value="true"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="NM-OSEK(direct)" version="1.0">
+		<description>Configuration of NmOsekDirect module</description>
+		<attribute name="NumberOfNmConfigNodes" class="OTModuleInstance">
+			<default value="64"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="FastRetryTime" class="OTChannel">
+			<default value="200"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="NumberOfRetries" class="OTChannel">
+			<default value="5"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="FastBusOffRecoveryChannelSpecific" class="OTChannel">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="FastBusOffRecovery" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="NM-OSEK(direct)" version="1.0">
+		<description>Configuration of NmOsekDirect module</description>
+		<attribute name="CopyRingdataToTempBuffer" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="NM-OSEK [NmUserData]" version="1.0">
+		<description/>
+		<attribute name="NM_MODE_2" class="OTModuleInstance">
+			<attribute name="Sendtype" class="OTModuleInstance">
+				<default value="StartAliveBroadcast"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+			<attribute name="EvalMode" class="OTModuleInstance">
+				<default value="active"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+			<attribute name="IsDpmService" class="OTModuleInstance">
+				<default value="true"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+		</attribute>
+		<attribute name="NM_MODE_15" class="OTModuleInstance">
+			<attribute name="Sendtype" class="OTModuleInstance">
+				<default value="RingBroadcast"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+			<attribute name="EvalMode" class="OTModuleInstance">
+				<default value="active"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+			<attribute name="IsDpmService" class="OTModuleInstance">
+				<default value="true"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+		</attribute>
+		<attribute name="NM_MODE_3" class="OTModuleInstance">
+			<attribute name="Sendtype" class="OTModuleInstance">
+				<default value="RingProtected"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+			<attribute name="EvalMode" class="OTModuleInstance">
+				<default value="change"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+			<attribute name="IsDpmService" class="OTModuleInstance">
+				<default value="false"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+		</attribute>
+		<attribute name="NM_MODE_31" class="OTModuleInstance">
+			<attribute name="Sendtype" class="OTModuleInstance">
+				<default value="RingProtected"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+			<attribute name="EvalMode" class="OTModuleInstance">
+				<default value="change"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+			<attribute name="IsDpmService" class="OTModuleInstance">
+				<default value="false"/>
+				<userlevel value="normal"/>
+				<access value="none"/>
+				<settingkind value="application"/>
+				<configurable value="yes"/>
+			</attribute>
+		</attribute>
+	</module>
+	<module name="DriverCANPartOfflineMgr13" version="1.0">
+		<description>Configuration of DriverCANPartOfflineMgr module</description>
+		<attribute name="OfflineMode0Name" class="OTModuleInstance">
+			<default value="APPL"/>
+			<userlevel value="normal"/>
+			<access value="rdonly"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="DriverCANPartOfflineMgr13" version="1.0">
+		<description>Configuration of DriverCANPartOfflineMgr module</description>
+		<attribute name="OfflineMode1Name" class="OTModuleInstance">
+			<default value="NM"/>
+			<userlevel value="normal"/>
+			<access value="rdonly"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="DriverCANPartOfflineMgr13" version="1.0">
+		<description>Configuration of DriverCANPartOfflineMgr module</description>
+		<attribute name="OfflineMode2Name" class="OTModuleInstance">
+			<default value="DIAG"/>
+			<userlevel value="normal"/>
+			<access value="rdonly"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="DriverCANPartOfflineMgr13" version="1.0">
+		<description>Configuration of DriverCANPartOfflineMgr module</description>
+		<attribute name="MsgClass1" class="OTModuleInstance">
+			<attribute name="OfflineMode0" class="OTModuleInstance">
+				<default value="true"/>
+				<userlevel value="normal"/>
+				<access value="rdonly"/>
+				<settingkind value="application"/>
+				<configurable value="no"/>
+				<description/>
+			</attribute>
+		</attribute>
+	</module>
+	<module name="DriverCANPartOfflineMgr13" version="1.0">
+		<description>Configuration of DriverCANPartOfflineMgr module</description>
+		<attribute name="MsgClass2" class="OTModuleInstance">
+			<attribute name="OfflineMode1" class="OTModuleInstance">
+				<default value="true"/>
+				<userlevel value="normal"/>
+				<access value="rdonly"/>
+				<settingkind value="application"/>
+				<configurable value="no"/>
+				<description/>
+			</attribute>
+		</attribute>
+	</module>
+	<module name="DriverCANPartOfflineMgr13" version="1.0">
+		<description>Configuration of DriverCANPartOfflineMgr module</description>
+		<attribute name="MsgClass3" class="OTModuleInstance">
+			<attribute name="OfflineMode0" class="OTModuleInstance">
+				<default value="true"/>
+				<userlevel value="normal"/>
+				<access value="rdonly"/>
+				<settingkind value="application"/>
+				<configurable value="no"/>
+				<description/>
+			</attribute>
+		</attribute>
+	</module>
+	<module name="DriverCANPartOfflineMgr13" version="1.0">
+		<description>Configuration of DriverCANPartOfflineMgr module</description>
+		<attribute name="MsgClass4" class="OTModuleInstance">
+			<attribute name="OfflineMode2" class="OTModuleInstance">
+				<default value="true"/>
+				<userlevel value="normal"/>
+				<access value="rdonly"/>
+				<settingkind value="application"/>
+				<configurable value="no"/>
+				<description/>
+			</attribute>
+		</attribute>
+	</module>
+	<module name="DriverCANPartOfflineMgr13" version="1.0">
+		<description>Configuration of DriverCANPartOfflineMgr module</description>
+		<attribute name="MsgClass5" class="OTModuleInstance">
+			<attribute name="OfflineMode0" class="OTModuleInstance">
+				<default value="true"/>
+				<userlevel value="normal"/>
+				<access value="rdonly"/>
+				<settingkind value="application"/>
+				<configurable value="no"/>
+				<description/>
+			</attribute>
+		</attribute>
+	</module>
+	<module name="TpMC" version="1.0">
+		<description>Configuration of TpMC module</description>
+		<attribute name="HighestFunctionalAddress" class="OTModuleInstance">
+			<default value="0"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="LowestFunctionalAddress" class="OTModuleInstance">
+			<default value="0"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="TpIsoStandard" class="OTModuleInstance">
+			<default value="ISO 15765-2:2004"/>
+			<userlevel value="normal"/>
+			<access value="rdonly"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="TpNormalFixedAddressInfoPool" class="OTChannel">
+			<attribute name="TpNormalFixedAddressInfo">
+				<attribute name="TpPriority">
+					<default value="6"/>
+					<userlevel value="normal"/>
+					<access value="rdonly"/>
+					<settingkind value="application"/>
+					<configurable value="no"/>
+					<description/>
+				</attribute>
+				<attribute name="TpPGN">
+					<default value="218"/>
+					<userlevel value="normal"/>
+					<access value="rdwr"/>
+					<settingkind value="application"/>
+					<configurable value="no"/>
+					<description/>
+				</attribute>
+			</attribute>
+		</attribute>
+		<attribute name="TpNormalFixedFuncAddrInfoPool" class="OTChannel">
+			<attribute name="TpNormalFixedAddressInfo">
+				<attribute name="TpPriority">
+					<default value="6"/>
+					<userlevel value="normal"/>
+					<access value="rdonly"/>
+					<settingkind value="application"/>
+					<configurable value="no"/>
+					<description/>
+				</attribute>
+				<attribute name="TpPGN">
+					<default value="219"/>
+					<userlevel value="normal"/>
+					<access value="rdwr"/>
+					<settingkind value="application"/>
+					<configurable value="no"/>
+					<description/>
+				</attribute>
+			</attribute>
+		</attribute>
+		<attribute name="TpMixed29AddressInfoPool" class="OTChannel">
+			<attribute name="TpMixed29AddressInfo">
+				<attribute name="TpPriority">
+					<default value="6"/>
+					<userlevel value="normal"/>
+					<access value="rdonly"/>
+					<settingkind value="application"/>
+					<configurable value="no"/>
+					<description/>
+				</attribute>
+				<attribute name="TpPGN">
+					<default value="206"/>
+					<userlevel value="normal"/>
+					<access value="rdwr"/>
+					<settingkind value="application"/>
+					<configurable value="no"/>
+					<description/>
+				</attribute>
+			</attribute>
+		</attribute>
+		<attribute name="TpMixed29FuncAddrInfoPool" class="OTChannel">
+			<attribute name="TpMixed29AddressInfo">
+				<attribute name="TpPriority">
+					<default value="6"/>
+					<userlevel value="normal"/>
+					<access value="rdonly"/>
+					<settingkind value="application"/>
+					<configurable value="no"/>
+					<description/>
+				</attribute>
+			</attribute>
+		</attribute>
+		<attribute name="TpTxHandleChangeable" class="OTModuleInstance">
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="UseGatewayApi" class="OTModuleInstance">
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="UseFastTxTransmission" class="OTModuleInstance">
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="CANMsgConfTimeout" class="OTModuleInstance">
+			<default value="150"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="TpDlcCheck" class="OTModuleInstance">
+			<default value="1"/>
+			<userlevel value="normal"/>
+			<access value="rdonly"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="TpTxMinTimer" class="OTModuleInstance">
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="UseConnTimings" class="OTModuleInstance">
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="AddressingType" class="OTModuleInstance">
+			<default value="1"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="ConnectionAllocation" class="OTModuleInstance">
+			<default value="1"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="TpConnectionDiversity" class="OTModuleInstance">
+			<default value="1"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="CANdescBasic" version="2.0">
+		<description>Configuration of CANdescBasic module</description>
+		<attribute name="S3Timeout" class="OTModuleInstance">
+			<default value="5000"/>
+		</attribute>
+	</module>
+	<module name="Diag_CanDesc__core" version="2.0">
+		<description>Configuration of CANdescBasic module</description>
+		<attribute name="ResponsePendingLimitation" class="OTModuleInstance">
+			<default value="10"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="Diag_CanDesc_ConnectorCAN" version="2.0">
+		<description>Configuration of CANdescBasic module</description>
+		<attribute name="AddressingType" class="OTModuleInstance">
+			<default value="0"/>
+			<userlevel value="normal"/>
+			<access value="rdonly"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="Diag_FaultMemory" version="1.0">
+		<description>Configuration of FRFM Chrysler module</description>
+		<attribute name="IsClearAllDtcsNotificationSupported" class="OTModuleInstance">
+			<default value="true"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="DbKom" version="1.0">
+		<description>Configuration of DbKom module</description>
+		<attribute name="StopChannelSpecific" class="OTModuleInstance">
+			<default value="true"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="DPM" version="1.4">
+		<attribute name="AttrDpmIndicationFct" class="OTModuleInstance">
+			<default value="DpmStatusInd"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrDpmGenTemplate" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="DPM" version="1.4">
+		<description>Configuration of DPM module</description>
+		<attribute name="AttrDpmIndContainerSignal" class="OTModuleInstance">
+			<default value="DPM_Stat"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="FBLDC" version="1.0">
+		<description>Configuration of CANfbl module</description>
+		<attribute name="Timeout for key (ms)" class="OTModuleInstance">
+			<default value="1000"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="Mode" class="OTModuleInstance">
+			<default value="Production"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="Enable Software Interlock II" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="Access Mode" class="OTModuleInstance">
+			<default value="Memory Access"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="FBL" version="1.0">
+		<description>Configuration of FBL module</description>
+		<attribute name="Max segments per block" class="OTModuleInstance">
+			<default value="10"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="Enable flashblock check" class="OTModuleInstance">
+			<default value="0"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="Multiple moduls" class="OTModuleInstance">
+			<default value="1"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+		<attribute name="Fill code illegal opcode" class="OTModuleInstance">
+			<default value="255"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="Diag buffer length (byte)" class="OTModuleInstance">
+			<default value="1024"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="P2 time" class="OTModuleInstance">
+			<default value="40"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="Reload P3 time" class="OTModuleInstance">
+			<default value="5000"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="application"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="CCL" version="1.4">
+		<description>Configuration of CCLmodule</description>
+		<attribute name="AttrUseCCLComStartNotification" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrCclIsrPrefix" class="OTModuleInstance">
+			<default value="Ccl"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrCCLTrcvCanDrvHandlingWithinCanWakeUpIsr" class="OTModuleInstance">
+			<default value="true"/>
+			<userlevel value="normal"/>
+			<access value="rdwr"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="MessageGateway" version="1.0">
+		<attribute name="DlcHandlingAttributeName" class="OTModuleInstance">
+			<default value="GenMsgMinAcceptLength"/>
+			<access value="none"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="Nm_AsrNmCan" version="2.3.1">
+		<description>Configuration of Nm_AsrNmCan module</description>
+		<attribute name="Nm_AsrNmCan_ApiOptimization" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_BusLoadReduction" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_BusLoadReductionActive" class="OTChannel">
+			<default value="true"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_CommunicationControl" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_ComUserData" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_ConfigurationVariant" class="OTModuleInstance">
+			<default value="1"/>
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_DevelopmentErrorDetection" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_DiagnosticEventManager" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_ExtendedRemoteSleepIndication" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_ImmediateRestart" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_ImmediateTxConfirmation" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="none"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_NmMemoryMapping" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="none"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_NmMessageCycleTime" class="OTChannel">
+			<default value="2000"/>
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_NmMessageReducedTime" class="OTChannel">
+			<default value="1000"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_NmMessageTimeoutTime" class="OTChannel">
+			<default value="5000"/>
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_NmMessageTxTimeoutTime" class="OTChannel">
+			<default value="5000"/>
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_NmUserDataPduName" class="OTChannel">
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_NodeDetection" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_NodeIdentifier" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_PduCbvPosition" class="OTChannel">
+			<default value="CANNM_PDU_BYTE_0"/>
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_PduLength" class="OTChannel">
+			<default value="8"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_PduNidPosition" class="OTChannel">
+			<default value="CANNM_PDU_BYTE_1"/>
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_PduRxIndication" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_RemoteSleepIndication" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_RemoteSleepIndicationTime" class="OTChannel">
+			<default value="20000"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_RepeatMessageTime" class="OTChannel">
+			<default value="6000"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_StateChangeNotification" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_UserDataSupport" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmCan_VersionInfoApi" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdonly"/>
+		</attribute>
+	</module>
+	<module name="Nm_AsrNmIf" version="1.0">
+		<description>Configuration of Nm_AsrNmIf module</description>
+		<attribute name="Nm_AsrNmIf_ApiOptimization" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_CommunicationControl" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_ComUserData" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_ConfigurationVariant" class="OTModuleInstance">
+			<default value="1"/>
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_CoordinatorSupport" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_CoordinatorSynchronizationId" class="OTModuleInstance">
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_CoordinatorSynchronizationSupport" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_DevelopmentErrorDetection" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_DiagnosticEventManager" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_NmCoordinationShutdownTimer" class="OTModuleInstance">
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_NmCycleTimeMainFunction" class="OTModuleInstance">
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_NmMemoryMapping" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="none"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_NodeDetection" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_NodeIdentifier" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_PassiveMode" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_PduRxIndication" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_RemoteSleepIndication" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_StateChangeNotification" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_UserDataSupport" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+		</attribute>
+		<attribute name="Nm_AsrNmIf_VersionInfoApi" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdonly"/>
+		</attribute>
+	</module>
+	<module name="DriverLIN" version="1.0">
+		<attribute name="DiagFrameByAppl" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+	</module>
+</config>

@@ -1,0 +1,16 @@
+--- ..\..\..\..\SwProject\Source\GenDataOS\osobjs_init.inc.bak	2013-07-09 16:41:43.071861700 -0400
++++ ..\..\..\..\SwProject\Source\GenDataOS\osobjs_init.inc	2013-07-09 16:42:59.781282700 -0400
+@@ -12,8 +12,12 @@
+      . = align(8192); /* Use 8 subregions with size 1024*/
+ 
+      . = align(8192);   /* align to region size 8192 */
+-     *(.ossDataAp_9:init) {START(_ossAppliDataStartAp_9), SIZE(_ossAppliDataSizeAp_9)}
++    _ossAppliDataStartAp_9=.;
++     /* Nexteer patch to add *.data allocation to Ap_9 */
++     *(.ossDataAp_9:init)
++	 *(.data)
+      _ossAppliDataEndAp_9=.;
++	 _ossAppliDataSizeAp_9 = _ossAppliDataEndAp_9 - _ossAppliDataStartAp_9 +1;
+      . = . + 1;
+      . = align(8192); /* Use 8 subregions with size 1024*/
+ 

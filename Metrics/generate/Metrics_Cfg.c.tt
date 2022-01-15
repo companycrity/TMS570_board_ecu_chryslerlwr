@@ -1,0 +1,94 @@
+<#@ AutosarXml processor="ArDirectiveProcessor" requires="arPrefix='ar';arNamespace='http://autosar.org/2.1.2'" #>
+<#@ template inherits="AutosarDirectiveProcessor.ArGtcBase" debug="false" #>
+<#@ output extension="" #>
+<#@ include file="Helper.tt" #>
+/*****************************************************************************
+* Copyright 2010 Nexteer Automotive, All Rights Reserved.
+* Nexteer Confidential
+*
+* Module File Name  : Metrics_Cfg.c
+* Module Description: Configuration file of Metrics module to define VFB Trace Hook functions
+* Product           : Gen II Plus - EA3.0
+* Generator         : <#= GeneratorName #> <#= GeneratorVersion #>
+* Generation Time   : <#= DateTime.Now.ToString( "dd.MM.yyyy HH:mm:ss" ) #>
+*****************************************************************************/
+/* Version Control:
+ * Date Created:      Fri Jul 13 18:34:17 2012
+ * %version:          2 %
+ * %date_modified:    Thu Aug 30 13:23:34 2012 %
+ *---------------------------------------------------------------------------------------------------------------------
+ * Date      Rev      Author         Change Description                                                        SCR #
+ * -------   -------  --------  ---------------------------------------------------------------------------  ----------
+ * 07/13/12   1       JJW       Initial template creation
+ * 08/30/12   2       BWL       Add Rte_Task_WaitEvent and Rte_Task_WaitEventRet calls for task metrics.
+ */
+
+<#
+	/* Generated Output Formatting Options*/
+//	const int COLWIDTH = 50;
+	ChangeContext( Xp.ModuleConfAtDefRefTo( "Metrics" ) );
+	string runnableTask = LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "OsTaskRef" ));
+#>
+
+/*******************************************************************************
+**                      Include Section                                       **
+*******************************************************************************/
+#include "Metrics.h"
+
+
+/*******************************************************************************
+**                      VFB Trace Hook Functions                              **
+*******************************************************************************/
+
+<#  
+	ChangeContext( Xp.ModuleConfAtDefRefTo( "Rte" ) );
+	int runnableId = 0;
+#> 
+
+FUNC(void, RTE_APPL_CODE) Rte_Task_WaitEvent(TaskType task, EventMaskType ev)
+{
+	Metrics_TaskEnd( task );
+}
+
+FUNC(void, RTE_APPL_CODE) Rte_Task_WaitEventRet(TaskType task, EventMaskType ev)
+{
+	Metrics_TaskStart( task );
+}
+
+<# !LOOP( Xp.ContainerAtDefRefTo( "SwComponentInstance" ) ) #>
+<#
+	string swcName = LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "ImplementationRef" ) );
+	swcName = swcName.Replace("_Implementation", "");
+#>
+<# !LOOP( Xp.ContainerAtDefRefTo( "RunnableEntityMapping" ) ) #>
+<#  
+string mappedToTaskRef = LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "MappedToTaskRef" ));
+if(0 == String.Compare(runnableTask, mappedToTaskRef,  false)) {
+	string rteEventRef = LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "RTEEventRef" ));
+	string delim = "_";
+	string runnable = "";
+
+	/* Assume the Application short name is the last "word" in the Os Application name delimited with '_' */
+	string[] rteEventRefWords = rteEventRef.Split('_');
+	foreach (string word in rteEventRefWords) {
+		if((0 != String.Compare(word, "TMT", false)) && (0 != String.Compare(word, "InitEvent", false))) {
+			runnable = runnable + word + delim;
+		}
+	}
+	string runnableDefine = (runnable.ToUpper() + "ID");
+#>
+/* <#=swcName#>_<#=runnable#> Runnable metrics VFB Hook */
+FUNC(void, RTE_APPL_CODE) Rte_Runnable_<#=swcName#>_<#=runnable#>Start(void)
+{
+	Metrics_RunnableStart( <#=runnableDefine#> );
+}
+
+FUNC(void, RTE_APPL_CODE) Rte_Runnable_<#=swcName#>_<#=runnable#>Return(void)
+{
+	Metrics_RunnableEnd( <#=runnableDefine#> );
+}
+<#
+	runnableId++;
+}#>
+<# !ENDLOOP #>
+<# !ENDLOOP #>

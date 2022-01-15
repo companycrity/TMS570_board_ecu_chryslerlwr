@@ -1,0 +1,278 @@
+File Version     : 4.30
+Directory        : "$(PROJECTROOT)\PAwTO\utp\CBD_UnitTest"
+Backup Directory : "$(PROJECTROOT)\PAwTO_Chrysler\utp\Tessy\backup"
+Configuration    : "$(PROJECTROOT)\UnitTestEnv\config\TMS570_GCC_UDE_CCS4_Config.xml"
+Author           : "rz3h1n"
+Created          : 29.11.2011 13:53
+Last Changed     : 26.10.2013 13:04
+Comment          : ""
+Project
+   Name    : "CBD_UnitTest"
+   Module
+      Name        : "PAwTO"
+      Comment     : "***************************** UNIT TEST DESCRIPTION ********************************************\r\n\r\nName of Tester:Sunita Kore\r\nCode File(s) Under Test:Ap_PAwTO.c\r\nCode File(s) Version:9\r\nModule Design Document:PAwTO_MDD.docx\r\nModule Design Document Version:9\r\nData Dictionary Version:3\r\nUnit Test Plan Version:4\r\nOptimization Level:Level 2\r\nCompiler (CodeGen) Version:TMS470_4.9.5\r\nModel Type:Excel Macro\r\nModel Version:Nexteer EPS Unit Test Tool 2.7c/EPS Library 1.29\r\nSpecial Test Requirements:\r\nTest Date:10/26/2013\r\nComments:\r\n""NOTE1:In function """"""""PAwTO_Per1""""""""Out of range value is given in TC.21(P) to """"""""PAwTO_PrkAssistState_Cnt_M_u08"""""""" to cover the path """"""""Case Else\n      PrkAssistState_Cnt_T_u08 = D_PASTATEINHIBITED_CNT_U08""""""""in select case\n\nNOTE2:In """"""""PAwTO_Per2"""""""" function,the variable """"""""PAManoeuvrePhase_Cnt_u08"""""""" is having similar global as well as temporary name,so to differentiate between them, temporary variable name is changed to """"""""PAManoeuvrePhase_Cnt_T_u08"""""""", in VBA\r\n\n\nNOTE3:In """"""""PAwTO_Per2"""""""" function,the variable """"""""PAManoeuvrePhase_Cnt_u08"""""""" is given out of range in TC.37(P) and TC.38(P)value to cover the path """"""""(PAManoeuvrePhase_Cnt_T_u08 = D_MANOEUVREPAHSEBKWD_CNT_U08)==>False as well as (PAManoeuvrePhase_Cnt_T_u08 = D_MANOEUVREPAHSEFWD_CNT_U08)==>False to attain 100 % MC/DC coverage.\r\nNOTE4: In """"""""PAwTO_Per2"""""""" function the variables """"""""PAWhlDirRLStat_Cnt_u08"""""""" and """"""""PAWhlDirRRStat_Cnt_u08"""""""" are also given out of range in TC.37(P)value to cover the path """"""""PAWhlDirRLStat_Cnt_T_u08 = Min_m(PAWhlDirRLStat_Cnt_T_u08, D_INVALID_CNT_U08)\n    """""""" and """"""""PAWhlDirRRStat_Cnt_T_u08 = Min_m(PAWhlDirRRStat_Cnt_T_u08, D_INVALID_CNT_U08)"""""""",for MC/DC coverage.\r\n\n\nNOTE5: In per2 function 100% MCC coverage is not possible due to following conditions\n“(PAManoeuvrePhase_Cnt_T_u08 = D_MANOEUVREPAHSEBKWD_CNT_U08)” and “(PAManoeuvrePhase_Cnt_T_u08 = D_MANOEUVREPAHSEFWD_CNT_U08)” cannot be made true at a time in same condition.\r\n\n\nNOTE6: Inline functions defined in GlobalMacro.h are not unit tested.\n""\r\n\r\n\r\n*************************************************************************************************************\r\n"
+      State       : 0x00000004
+      Environment : "TI TMS 570 PLS UDE (Default)"
+      Properties
+         Property
+            Name  : "Compiler Defines"
+            Type  : "String"
+            Flags : 0x90000049
+            Value : "_DATA_ACCESS=,const=,SKIP_MAGIC_NUMBER="
+         End
+         Property
+            Name  : "Compiler Includes"
+            Type  : "Directory"
+            Flags : 0x90000049
+            Value : "$(PROJECTROOT)\NxtrLib\include, $(PROJECTROOT)\StdDef\include, $(PROJECTROOT)\PAwTO_Chrysler\utp\contract, $(PROJECTROOT)\PAwTO_Chrysler\utp\contract\Ap_PAwTO, $(ProgramFiles)\Texas Instruments\ccsv4\tools\compiler\tms470\include"
+         End
+      End
+      Source File
+         Name : "Ap_PAwTO.c"
+         Path : "$(PROJECTROOT)\PAwTO_Chrysler\src\"
+         Properties
+         End
+      End
+      Source File
+         Name : "interpolation.c"
+         Path : "$(PROJECTROOT)\NxtrLib\src\"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0x00000000
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "Blend_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "NF_SvUpdate_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "NF_OpUpdate_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "NF_FullUpdate_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "PAwTO_Init1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "PAwTO_Per1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "PAwTO_Per2"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_s16_u16Xs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_u16_u16Xu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_s16_s16Xs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_u16_s16Xu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_u16_u16XMu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_s16_u16XMs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_s16_s16XMs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_u16_s16XMu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_u16_u16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_u16_s16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_s16_s16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_s16_u16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_u16_u16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_u16_s16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_s16_s16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_s16_u16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+   End
+End

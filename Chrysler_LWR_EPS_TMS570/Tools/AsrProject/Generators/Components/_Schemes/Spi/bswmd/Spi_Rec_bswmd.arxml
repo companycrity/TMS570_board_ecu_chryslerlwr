@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+***********************************************************************************************************************
+COPYRIGHT
+===============================================================================
+Copyright (c) 2012 by Vector Informatik GmbH.                                         All rights reserved.
+
+    This software is copyright protected and proprietary to Vector Informatik GmbH.
+    Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+    All other rights remain with Vector Informatik GmbH.
+===============================================================================
+FILE DESCRIPTION
+===============================================================================
+File:       Spi_Rec_bswmd.arxml
+Component:  Spi_bswmd
+Module:     Spi
+Generator:  
+
+Description:    -
+*********************************************************************************************************************** 
+-->
+<AUTOSAR xmlns="http://autosar.org/3.1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/3.1.4 C:\Programme\VEB4CA~1.0SP\__Engine\AS\3.1.4\autosar.xsd">
+	<TOP-LEVEL-PACKAGES>
+		<AR-PACKAGE UUID="d03fc3c6-1927-40f7-94e2-9003dedf9fa2">
+			<SHORT-NAME>MICROSAR</SHORT-NAME>
+			<ELEMENTS>
+				<MODULE-CONFIGURATION UUID="713b1081-133d-4ebd-a9a9-487863558fe0">
+					<SHORT-NAME>Spi_Rec</SHORT-NAME>
+					<ADMIN-DATA>
+						<SDGS>
+							<SDG GID="DV:ClassConfiguration">
+								<SD>/MICROSAR/Spi_Rec_Class1/Spi_Runtime</SD>
+							</SDG>
+						</SDGS>
+					</ADMIN-DATA>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/Spi</DEFINITION-REF>
+					<CONTAINERS>
+						<CONTAINER UUID="9d288a12-34ab-413d-8460-fca33c0d46a5">
+							<SHORT-NAME>SpiGeneral</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Spi/SpiGeneral</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiCancelApi</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiChannelBuffersAllowed</DEFINITION-REF>
+									<VALUE>1</VALUE>
+								</INTEGER-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiDevErrorDetect</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiHwStatusApi</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiInterruptibleSeqAllowed</DEFINITION-REF>
+									<VALUE>false</VALUE>
+								</BOOLEAN-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiLevelDelivered</DEFINITION-REF>
+									<VALUE>1</VALUE>
+								</INTEGER-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiVersionInfoApi</DEFINITION-REF>
+									<VALUE>false</VALUE>
+								</BOOLEAN-VALUE>
+								<STRING-VALUE>
+									<DEFINITION-REF DEST="STRING-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiDemIncludeFile</DEFINITION-REF>
+									<VALUE>Dem.h</VALUE>
+								</STRING-VALUE>
+								<STRING-VALUE>
+									<DEFINITION-REF DEST="STRING-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiDetIncludeFile</DEFINITION-REF>
+									<VALUE>Det.h</VALUE>
+								</STRING-VALUE>
+								<STRING-VALUE>
+									<DEFINITION-REF DEST="STRING-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiDetErrorhook</DEFINITION-REF>
+									<VALUE>Det_ReportError</VALUE>
+								</STRING-VALUE>
+								<STRING-VALUE>
+									<DEFINITION-REF DEST="STRING-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiDemErrorhook</DEFINITION-REF>
+									<VALUE>Dem_ReportErrorStatus</VALUE>
+								</STRING-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiIrqType</DEFINITION-REF>
+									<VALUE>SPI_ISR_CAT2</VALUE>
+								</ENUMERATION-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChkConfig</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChkChannel</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChkJob</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChkSeq</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChkLength</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChkVersion</DEFINITION-REF>
+									<VALUE>false</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChkUnit</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiChkModuleInit</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiChkSeqPending</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiChkDriverInit</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiChkSeqProcessing</DEFINITION-REF>
+									<VALUE>false</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiDetErrorReporting</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiDemErrorReporting</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChk</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChkAlignment</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiParamChkBuffer</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiGeneral/SpiChkModuleAlreadyInitialized</DEFINITION-REF>
+									<VALUE>true</VALUE>
+								</BOOLEAN-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+					</CONTAINERS>
+				</MODULE-CONFIGURATION>
+				<MODULE-CONFIGURATION UUID="21994715-14a8-466c-a6d5-a2819c9645e3">
+					<SHORT-NAME>Spi_Rec_Class1</SHORT-NAME>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/Spi</DEFINITION-REF>
+					<CONTAINERS>
+						<CONTAINER UUID="15149e51-302d-4214-bba1-88055097595b">
+							<SHORT-NAME>Spi_Runtime</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Spi/SpiDriver</DEFINITION-REF>
+							<SUB-CONTAINERS>
+								<CONTAINER UUID="6bf0e74d-c1a0-4019-b0a7-273e3bbc914f">
+									<SHORT-NAME>SpiChannel</SHORT-NAME>
+									<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Spi/SpiDriver/SpiChannel</DEFINITION-REF>
+									<PARAMETER-VALUES>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiChannel/SpiChannelId</DEFINITION-REF>
+											<VALUE>0</VALUE>
+										</INTEGER-VALUE>
+										<ENUMERATION-VALUE>
+											<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiChannel/SpiChannelType</DEFINITION-REF>
+											<VALUE>EB</VALUE>
+										</ENUMERATION-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiChannel/SpiDataWidth</DEFINITION-REF>
+											<VALUE>8</VALUE>
+										</INTEGER-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiChannel/SpiDefaultData</DEFINITION-REF>
+											<VALUE>255</VALUE>
+										</INTEGER-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiChannel/SpiEbMaxLength</DEFINITION-REF>
+											<VALUE>255</VALUE>
+										</INTEGER-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiChannel/SpiIbNBuffers</DEFINITION-REF>
+											<VALUE>20</VALUE>
+										</INTEGER-VALUE>
+										<ENUMERATION-VALUE>
+											<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiChannel/SpiTransferStart</DEFINITION-REF>
+											<VALUE>MSB</VALUE>
+										</ENUMERATION-VALUE>
+									</PARAMETER-VALUES>
+								</CONTAINER>
+								<CONTAINER UUID="aeb4063d-e582-4fbd-9db1-cf4231801163">
+									<SHORT-NAME>SpiExternalDevice</SHORT-NAME>
+									<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice</DEFINITION-REF>
+									<PARAMETER-VALUES>
+										<FLOAT-VALUE>
+											<DEFINITION-REF DEST="FLOAT-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiBaudrate</DEFINITION-REF>
+											<VALUE>500.0</VALUE>
+										</FLOAT-VALUE>
+										<STRING-VALUE>
+											<DEFINITION-REF DEST="STRING-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiCsIdentifier</DEFINITION-REF>
+											<VALUE>PCS0</VALUE>
+										</STRING-VALUE>
+										<ENUMERATION-VALUE>
+											<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiCsPolarity</DEFINITION-REF>
+											<VALUE>HIGH</VALUE>
+										</ENUMERATION-VALUE>
+										<ENUMERATION-VALUE>
+											<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiDataShiftEdge</DEFINITION-REF>
+											<VALUE>RAISING</VALUE>
+										</ENUMERATION-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiEnableCs</DEFINITION-REF>
+											<VALUE>true</VALUE>
+										</BOOLEAN-VALUE>
+										<ENUMERATION-VALUE>
+											<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiShiftClockIdleLevel</DEFINITION-REF>
+											<VALUE>LOW</VALUE>
+										</ENUMERATION-VALUE>
+										<FLOAT-VALUE>
+											<DEFINITION-REF DEST="FLOAT-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiTimeClk2Cs</DEFINITION-REF>
+											<VALUE>1000.0</VALUE>
+										</FLOAT-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiTimeCs2Clk</DEFINITION-REF>
+											<VALUE>1000</VALUE>
+										</INTEGER-VALUE>
+										<FLOAT-VALUE>
+											<DEFINITION-REF DEST="FLOAT-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiTimeEna2Cs</DEFINITION-REF>
+											<VALUE>0.0</VALUE>
+										</FLOAT-VALUE>
+										<FLOAT-VALUE>
+											<DEFINITION-REF DEST="FLOAT-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiTimeCs2Ena</DEFINITION-REF>
+											<VALUE>0.0</VALUE>
+										</FLOAT-VALUE>
+										<ENUMERATION-VALUE>
+											<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiCsMode</DEFINITION-REF>
+											<VALUE>CONTINOUS</VALUE>
+										</ENUMERATION-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiExternalDevice/SpiCsIdleTime</DEFINITION-REF>
+											<VALUE>100</VALUE>
+										</INTEGER-VALUE>
+									</PARAMETER-VALUES>
+								</CONTAINER>
+								<CONTAINER UUID="74332dcb-670a-4352-93c4-96aa5be41014">
+									<SHORT-NAME>SpiJob</SHORT-NAME>
+									<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Spi/SpiDriver/SpiJob</DEFINITION-REF>
+									<PARAMETER-VALUES>
+										<FUNCTION-NAME-VALUE>
+											<DEFINITION-REF DEST="FUNCTION-NAME-DEF">/MICROSAR/Spi/SpiDriver/SpiJob/SpiJobEndNotification</DEFINITION-REF>
+											<VALUE>NULL_PTR</VALUE>
+										</FUNCTION-NAME-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiJob/SpiJobId</DEFINITION-REF>
+											<VALUE>0</VALUE>
+										</INTEGER-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiJob/SpiJobPriority</DEFINITION-REF>
+											<VALUE>0</VALUE>
+										</INTEGER-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiJob/SpiJobSort</DEFINITION-REF>
+											<VALUE>3</VALUE>
+										</INTEGER-VALUE>
+									</PARAMETER-VALUES>
+									<REFERENCE-VALUES>
+										<REFERENCE-VALUE>
+											<DEFINITION-REF DEST="REFERENCE-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiJob/DeviceAssignment</DEFINITION-REF>
+											<VALUE-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Spi/SpiDriver/SpiExternalDevice</VALUE-REF>
+										</REFERENCE-VALUE>
+										<REFERENCE-VALUE>
+											<DEFINITION-REF DEST="REFERENCE-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiJob/ChannelAssignment</DEFINITION-REF>
+											<VALUE-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Spi/SpiDriver/SpiChannel</VALUE-REF>
+										</REFERENCE-VALUE>
+										<REFERENCE-VALUE>
+											<DEFINITION-REF DEST="REFERENCE-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiJob/SpiHwUnitAssignment</DEFINITION-REF>
+											<VALUE-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/Spi/SpiDriver/SpiHardwareUnit</VALUE-REF>
+										</REFERENCE-VALUE>
+									</REFERENCE-VALUES>
+								</CONTAINER>
+								<CONTAINER UUID="bacb271b-582a-4cdc-b7cd-8bbfa50d96fa">
+									<SHORT-NAME>SpiSequence</SHORT-NAME>
+									<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Spi/SpiDriver/SpiSequence</DEFINITION-REF>
+									<PARAMETER-VALUES>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiSequence/SpiInterruptibleSequence</DEFINITION-REF>
+											<VALUE>false</VALUE>
+										</BOOLEAN-VALUE>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiSequence/SpiSequenceId</DEFINITION-REF>
+											<VALUE>0</VALUE>
+										</INTEGER-VALUE>
+									</PARAMETER-VALUES>
+									<REFERENCE-VALUES>
+										<REFERENCE-VALUE>
+											<DEFINITION-REF DEST="REFERENCE-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiSequence/JobAssignment</DEFINITION-REF>
+											<VALUE-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Spi/SpiDriver/SpiJob</VALUE-REF>
+										</REFERENCE-VALUE>
+									</REFERENCE-VALUES>
+								</CONTAINER>
+								<CONTAINER UUID="b8b3cad6-dd27-4388-9bb6-f2b5c6f9250a">
+									<SHORT-NAME>SpiHardwareUnit</SHORT-NAME>
+									<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Spi/SpiDriver/SpiHardwareUnit</DEFINITION-REF>
+									<PARAMETER-VALUES>
+										<INTEGER-VALUE>
+											<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiHardwareUnit/SpiUnitId</DEFINITION-REF>
+											<VALUE>0</VALUE>
+										</INTEGER-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiHardwareUnit/SpiUnitHasRam</DEFINITION-REF>
+											<VALUE>false</VALUE>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiHardwareUnit/SpiUnitUsesDma</DEFINITION-REF>
+											<VALUE>false</VALUE>
+										</BOOLEAN-VALUE>
+									</PARAMETER-VALUES>
+								</CONTAINER>
+								<CONTAINER UUID="11f9f6be-131e-442a-9f2b-e40b5871183b">
+									<SHORT-NAME>SpiClockSettings</SHORT-NAME>
+									<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Spi/SpiDriver/SpiClockSettings</DEFINITION-REF>
+									<PARAMETER-VALUES>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiClockConfiguration/SpiClockSelector</DEFINITION-REF>
+											<VALUE>true</VALUE>
+										</BOOLEAN-VALUE>
+									</PARAMETER-VALUES>
+									<REFERENCE-VALUES>
+										<REFERENCE-VALUE>
+											<DEFINITION-REF DEST="REFERENCE-PARAM-DEF">/MICROSAR/Spi/SpiDriver/SpiClockSettings/SpiClockConfiguration</DEFINITION-REF>
+											<VALUE-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/R/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClocks/McuClockDomains</VALUE-REF>
+										</REFERENCE-VALUE>
+									</REFERENCE-VALUES>
+								</CONTAINER>
+							</SUB-CONTAINERS>
+						</CONTAINER>
+					</CONTAINERS>
+				</MODULE-CONFIGURATION>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</TOP-LEVEL-PACKAGES>
+</AUTOSAR>

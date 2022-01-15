@@ -1,0 +1,1571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+***********************************************************************************************************************
+COPYRIGHT
+===============================================================================
+Copyright (c) 2010 by Vector Informatik GmbH.                                         All rights reserved.
+
+    This software is copyright protected and proprietary to Vector Informatik GmbH.
+    Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+    All other rights remain with Vector Informatik GmbH.
+===============================================================================
+FILE DESCRIPTION
+===============================================================================
+File:           		Eep_30_At25128_bswmd.arxml
+Component:      
+Module:         	EepAt25128
+Generator:     	
+
+Description:    -
+*********************************************************************************************************************** 
+-->
+<AUTOSAR xmlns="http://autosar.org/3.0.2">
+	<TOP-LEVEL-PACKAGES>
+		<AR-PACKAGE UUID="fbdbf194-0b72-4def-85e3-f91aadc653d6">
+			<SHORT-NAME>MICROSAR</SHORT-NAME>
+			<ELEMENTS>
+				<BSW-IMPLEMENTATION UUID="3a8ffc35-fbc6-47d2-a454-c62d38f39068">
+					<SHORT-NAME>Eep_Impl</SHORT-NAME>
+					<CODE-GENERATOR>cMICROSAR</CODE-GENERATOR>
+					<PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+					<SW-MAJOR-VERSION>4</SW-MAJOR-VERSION>
+					<SW-MINOR-VERSION>0</SW-MINOR-VERSION>
+					<SW-PATCH-VERSION>0</SW-PATCH-VERSION>
+					<VENDOR-ID>30</VENDOR-ID>
+					<AR-MAJOR-VERSION>2</AR-MAJOR-VERSION>
+					<AR-MINOR-VERSION>2</AR-MINOR-VERSION>
+					<AR-PATCH-VERSION>0</AR-PATCH-VERSION>
+					<PRECONFIGURED-CONFIGURATION-REF DEST="MODULE-CONFIGURATION">/MICROSAR/EepAt25128_Pre</PRECONFIGURED-CONFIGURATION-REF>
+					<RECOMMENDED-CONFIGURATION-REF DEST="MODULE-CONFIGURATION">/MICROSAR/EepAt25128_Rec</RECOMMENDED-CONFIGURATION-REF>
+					<VENDOR-API-INFIX>At25128</VENDOR-API-INFIX>
+					<VENDOR-SPECIFIC-MODULE-DEF-REF DEST="MODULE-DEF">/MICROSAR/EepAt25128</VENDOR-SPECIFIC-MODULE-DEF-REF>
+				</BSW-IMPLEMENTATION>
+				<MODULE-DEF UUID="e4f2c151-c202-4da0-8c0e-71be6c2ccac0">
+					<SHORT-NAME>EepAt25128</SHORT-NAME>
+					<DESC>
+						<L-2 L="EN">Configuration of the Eep (internal or external EEPROM driver) module.
+Its multiplicity describes the number of EEPROM drivers present, so there will be one container for each EEPROM driver in the ECUC template. When no EEPROM driver is present then the multiplicity is 0.</L-2>
+					</DESC>
+					<ADMIN-DATA>
+						<DOC-REVISIONS>
+							<DOC-REVISION>
+								<REVISION-LABEL>4.00.00</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>virtsd</ISSUED-BY>
+								<DATE>2010-06-24T09:39:14</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Added version history</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">-</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>4.00.00</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>virtsd</ISSUED-BY>
+								<DATE>2010-07-02T09:37:32</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Update to AUTOSAR Release 3.0</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">-</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>4.00.00</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>virtsd</ISSUED-BY>
+								<DATE>2010-07-02T09:38:39</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Updated file information header</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00027415</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>4.00.00</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>virtsd</ISSUED-BY>
+								<DATE>2010-07-02T09:39:45</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Added pre- and recommended configuration</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN000</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+						</DOC-REVISIONS>
+					</ADMIN-DATA>
+					<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+					<UPPER-MULTIPLICITY>*</UPPER-MULTIPLICITY>
+					<REFINED-MODULE-DEF-REF DEST="MODULE-DEF">/AUTOSAR/Eep</REFINED-MODULE-DEF-REF>
+					<SUPPORTED-CONFIG-VARIANTS>
+						<SUPPORTED-CONFIG-VARIANT>VARIANT-POST-BUILD</SUPPORTED-CONFIG-VARIANT>
+					</SUPPORTED-CONFIG-VARIANTS>
+					<CONTAINERS>
+						<!-- Parameter Container Definition: EepGeneral -->
+						<PARAM-CONF-CONTAINER-DEF UUID="0b9a765a-ffdf-45a0-b2cb-4c889eb69ae5">
+							<SHORT-NAME>EepGeneral</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">Container for general configuration parameters of the EEPROM driver. These parameters are always pre-compile.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<!-- PARAMETER DEFINITION: EepDevErrorDetect -->
+								<BOOLEAN-PARAM-DEF UUID="8a4c774d-7acf-4b33-896d-deab43d477ab">
+									<SHORT-NAME>EepDevErrorDetect</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Development Mode</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Pre-processor switch to enable and disable development error detection.
+
+true:	Development error detection enabled.
+false:	Development error detection disabled.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepDriverIndex -->
+								<INTEGER-PARAM-DEF UUID="774b8e66-96d8-466c-b396-d7b6fd6ada86">
+									<SHORT-NAME>EepDriverIndex</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EepDriverIndex is not used</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Index of the driver, used by EA.
+Not used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+									<MAX>254</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepUseInterrupts -->
+								<BOOLEAN-PARAM-DEF UUID="6ba628e7-cf37-44c4-bf25-aab66d42e487">
+									<SHORT-NAME>EepUseInterrupts</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EepUseInterrupts is not supported</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches to activate or deactivate interrupt controlled job processing.
+Not used (within external EEPROM).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepVersionInfoApi -->
+								<BOOLEAN-PARAM-DEF UUID="3f76bf28-64ae-4537-ac9e-d3e2db96c1f8">
+									<SHORT-NAME>EepVersionInfoApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Eep_GetVersionInfo API</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Pre-processor switch to enable / disable the API to read out the modules version information.
+
+true:	Version info API enabled.
+false:	Version info API disabled.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepWriteCycleReduction -->
+								<BOOLEAN-PARAM-DEF UUID="8a2e161e-055b-4215-8b1c-d5ed1b5f6dc1">
+									<SHORT-NAME>EepWriteCycleReduction</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EepWriteCycleReduction is not supported</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches to activate or deactivate write cycle reduction (EEPROM value is read and compared before being overwritten).
+Not used (always deactivated).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="1ebe73f6-dc57-4113-b55e-e1d647965504">
+									<SHORT-NAME>EepCfgDoParamChk</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Parameter</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to enable/disable the parameter check of the API services.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="e7b5aa30-20ad-4213-aed7-04eb00edae4e">
+									<SHORT-NAME>EepCfgChkParamConfig</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Parameter Configuration Pointer</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to enable/disable the check of the Configuration pointer.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="5531e77c-5cfb-43ba-aa80-223fc55eb924">
+									<SHORT-NAME>EepCfgChkParamData</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Parameter Data</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to enable/disable the check of the data buffer parameters which points to the corresponding buffer.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="05429503-ac11-47c1-a874-ab086c428474">
+									<SHORT-NAME>EepCfgChkParamLength</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Parameter Length</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to enable/disable the check of the Length parameter of the correspondig API services whether value is in range.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="9266ee96-02a8-4970-b74e-df497102beb3">
+									<SHORT-NAME>EepCfgChkParamAddress</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Parameter Address</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to enable/disable the check of Address parameter of the correspondign API services whether value is in range.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="0f0cc8b7-415f-4cfa-9277-2a61b3093115">
+									<SHORT-NAME>EepCfgChkUninit</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Uninitialised Module</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to enable/disable the check whether Eep module is inititialized before using it.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="97423cb2-b7d6-40dd-8320-a1da588fe9d0">
+									<SHORT-NAME>EepDebugReporting</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Report Development Errors</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to enable/disable reporting of development errors.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<FUNCTION-NAME-DEF UUID="40190e49-7eff-472d-b002-a81db0ce2a29">
+									<SHORT-NAME>EepErrorhook</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Errorhook</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Specifies the name of the debug error hook function (Det).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Det_ReportError</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<STRING-PARAM-DEF UUID="7297d7f1-5534-41f2-b747-d69b51234ca3">
+									<SHORT-NAME>EepCfgIncludeDet</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Include File</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Specifies the include file which contains the Debug error hook function (Det).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Det.h</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="530171eb-1974-4e7b-b08c-0b017fccae36">
+									<SHORT-NAME>EepCfgProdReporting</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Report Production Errors</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to enable/disable production error reporting. Shall be used to remove unneeded code segments regarding DEM features.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<FUNCTION-NAME-DEF UUID="e925eb6b-7849-457e-867a-33e0abc1a965">
+									<SHORT-NAME>EepSetError</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Errorhook</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Specifies the name of the Error Manager´s (Dem) error function.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Dem_ReportErrorStatus</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<STRING-PARAM-DEF UUID="1e87dc0d-8310-409a-baa7-44bf0072d65f">
+									<SHORT-NAME>EepCfgIncludeDem</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Include File</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Specifies the include file which contains the Error Manager´s (Dem) error function.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Dem.h</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<INTEGER-PARAM-DEF UUID="1f908678-d445-412e-8cac-0b6c46ebf162">
+									<SHORT-NAME>EepLocalBufferSize</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Compare Buffer Size [Bytes]</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">The local buffer size specifies the size in bytes of the buffer, which temporarily stores the data for compare jobs. The higher the buffer size the more data can be compared in one cycle (limited by configuration of parameter ReadSize)</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>LINK</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>16</DEFAULT-VALUE>
+									<MAX>255</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="620aad03-ac50-4ddc-8b9b-dfd99c2efb84">
+									<SHORT-NAME>EepCfgChkParamVInfo</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Parameter Version Info</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Preprocessor switch to enable/disable checking of the parameter versioninof in API service Eep_30_At25128_GetVersionInfo().</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="e6743b58-429b-4f87-8233-3ef40d5115cc">
+									<SHORT-NAME>EepTestEeprom</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Test EEPROM communication after initialisation</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables a simple communication test with the EEPROM after initialisation. This test is performed during some of the first calls to Eep_30_At25128_MainFunction(). Hence it is possible, that although the first job is accepted right after initialisation, it is delayed some mainfunction cycles by this test.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+							</PARAMETERS>
+							<REFERENCES>
+								<REFERENCE-PARAM-DEF UUID="ea78c19f-0c80-47b0-9217-5390ed69c103">
+									<SHORT-NAME>EepGlobalIrqS</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Critical Section Handling</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This specifies the functions used to handle critical sections.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Board/InterruptFunctionality/InterruptFunctionSet</DESTINATION-REF>
+								</REFERENCE-PARAM-DEF>
+								<REFERENCE-PARAM-DEF UUID="850ec6bf-1526-4e90-8c19-7df771ccb6dc">
+									<SHORT-NAME>EepDeviceInformationRef</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Select EEPROM Device</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Select a EEPROM device from the list or pick "custom" in case none of the listed EEPROM devices are compatible. In the latter case it is necessary to enter the device's properties manually.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>LINK</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DESTINATION-REF>
+								</REFERENCE-PARAM-DEF>
+							</REFERENCES>
+						</PARAM-CONF-CONTAINER-DEF>
+						<!-- Parameter Container Definition: EepInitConfiguration -->
+						<PARAM-CONF-CONTAINER-DEF UUID="a716df00-ebd6-4d16-84f9-ee75ee4d5c64">
+							<SHORT-NAME>EepInitConfiguration</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">Container for runtime configuration parameters of the EEPROM driver.
+
+Implementation Type: Eep_ConfigType.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>*</UPPER-MULTIPLICITY>
+							<POST-BUILD-CHANGEABLE>true</POST-BUILD-CHANGEABLE>
+							<MULTIPLE-CONFIGURATION-CONTAINER>true</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<!-- PARAMETER DEFINITION: EepBaseAddress -->
+								<INTEGER-PARAM-DEF UUID="e305c475-e1af-44ca-9a97-07bf0b5e8242">
+									<SHORT-NAME>EepBaseAddress</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EepBaseAddress is not used</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter is the EEPROM device base address.
+
+Implementation Type: Eep_AddressType.
+
+Not used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>0</DEFAULT-VALUE>
+									<MAX>4294967295</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepDefaultMode -->
+								<ENUMERATION-PARAM-DEF UUID="e0331dbd-1a98-4911-a3ac-5ea6316dcdb2">
+									<SHORT-NAME>EepDefaultMode</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Default Mode after Eep_Init()</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter is the default EEPROM device mode after initialization.
+
+Implementation Type: MemIf_ModeType.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>MEMIF_MODE_FAST</DEFAULT-VALUE>
+									<LITERALS>
+										<ENUMERATION-LITERAL-DEF UUID="289e2377-293d-4a65-9690-6691ebc993f8">
+											<SHORT-NAME>MEMIF_MODE_FAST</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>fast</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="a0198d09-b5c4-4a74-9a01-56ba661e2c6a">
+											<SHORT-NAME>MEMIF_MODE_SLOW</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>slow</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+									</LITERALS>
+								</ENUMERATION-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepFastReadBlockSize -->
+								<INTEGER-PARAM-DEF UUID="22248f5b-9c53-4f3f-a769-5d66569d9fd1">
+									<SHORT-NAME>EepFastReadBlockSize</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Read Block Size</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Number of bytes read within one job processing cycle
+
+Implementation Type: Eep_LengthType.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>64</DEFAULT-VALUE>
+									<MAX>65536</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepFastWriteBlockSize -->
+								<INTEGER-PARAM-DEF UUID="961e5da5-d492-43c1-8174-a31430418cef">
+									<SHORT-NAME>EepFastWriteBlockSize</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EepFastWriteBlockSize is not used</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter is the number of bytes written within one job processing cycle in fast mode.
+
+Implementation Type: Eep_LengthType.
+
+Not used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>64</DEFAULT-VALUE>
+									<MAX>4294967295</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepJobCallCycle -->
+								<FLOAT-PARAM-DEF UUID="a34e6fd3-29d9-4182-9e25-45cad521e285">
+									<SHORT-NAME>EepJobCallCycle</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EepJobCallCycle is not used</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter is the call cycle of the job processing function during write/erase operations.
+Unit: [s]
+
+Not used (no use case).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+								</FLOAT-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepJobEndNotification -->
+								<FUNCTION-NAME-DEF UUID="d23b271a-87c0-442c-8d67-13251b6a0617">
+									<SHORT-NAME>EepJobEndNotification</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Job End Notification</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter is a reference to a callback function for positive job result (see EEP045).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Ea_JobEndNotification</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<!-- PARAMETER DEFINITION: EepJobErrorNotification -->
+								<FUNCTION-NAME-DEF UUID="7aa8af0a-8748-4e48-b482-c13692537be1">
+									<SHORT-NAME>EepJobErrorNotification</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Job Error Notification</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter is a reference to a callback function for negative job result (see EEP046).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Ea_JobErrorNotification</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<!-- PARAMETER DEFINITION: EepNormalReadBlockSize -->
+								<INTEGER-PARAM-DEF UUID="49a5da84-2337-47ba-a531-f171aba9b709">
+									<SHORT-NAME>EepNormalReadBlockSize</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EepNormalReadBlockSize is not used</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter is the number of bytes read within one job processing cycle in normal mode.
+
+Implementation Type: Eep_LengthType.
+
+Not used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepNormalWriteBlockSize -->
+								<INTEGER-PARAM-DEF UUID="11f8b532-7d8e-40c7-8e3e-5a187e7abc44">
+									<SHORT-NAME>EepNormalWriteBlockSize</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EepNormalWriteBlockSize is not used</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Number of bytes written within one job processing cycle in normal mode.
+
+Implementation Type: Eep_LengthType.
+
+Not used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepSize -->
+								<INTEGER-PARAM-DEF UUID="4509c16c-169e-4ea1-a131-d6ef7c7fcf39">
+									<SHORT-NAME>EepSize</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EepSize is not used</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter is the used size of EEPROM device in bytes.
+
+Implementation Type: Eep_LengthType.
+
+Not used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>65536</DEFAULT-VALUE>
+									<MAX>65536</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<INTEGER-PARAM-DEF UUID="63d9d652-ea94-4d04-be83-84832b722266">
+									<SHORT-NAME>EepJobTimeoutNormal</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Time Out in Normal Mode</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Time out value for normal mode operation in number of SPI communication attempts. If this number of attempts is exceeded connection to the external device is assumed to be broken and the error EEP_E_COM_FAILURE is reported to DEM.
+
+Zero means, that timeout supervision is disabled.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>0</DEFAULT-VALUE>
+									<MAX>65535</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<INTEGER-PARAM-DEF UUID="0651ed50-80d4-4623-b826-702f42a51e9e">
+									<SHORT-NAME>EepJobTimeoutFast</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Time Out in Fast Mode</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Time out value for fast mode operation in number of SPI communication attempts. If this number of attempts is exceeded connection to the external device is assumed to be broken and the error EEP_E_COM_FAILURE is reported to DEM.
+
+Zero means, that timeout supervision is disabled.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>0</DEFAULT-VALUE>
+									<MAX>65535</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="0cb2af77-a315-4f5c-976e-afc495dc0984">
+									<SHORT-NAME>EepCfgIncludeList</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Include File</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Specify header files containing the prototypes of notification functions.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+								</STRING-PARAM-DEF>
+							</PARAMETERS>
+							<SUB-CONTAINERS>
+								<!-- Parameter Container Definition: EepExternalDriver -->
+								<PARAM-CONF-CONTAINER-DEF UUID="abf61cdd-05d4-4abd-9512-1f809e7fe63d">
+									<SHORT-NAME>EepExternalDriver</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">This container is present for external EEPROM drivers only. Internal EEPROM drivers do not use the parameter listed in this container, hence its multiplicity is 0 for internal drivers.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+									<REFERENCES>
+										<!-- Symbolic Name Reference Definition: SpiReference -->
+										<SYMBOLIC-NAME-REFERENCE-PARAM-DEF UUID="9f9958cf-1bdf-4297-b2af-cb682f946087">
+											<SHORT-NAME>SpiReference</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Spi Sequences</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter specifies the two Spi sequences which are necessary to communicate with the external EEPROM device. One sequence is used for data transmission, a second is used to exchange status information with the EEPROM device.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>2</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>2</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Spi/SpiDriver/SpiSequence</DESTINATION-REF>
+										</SYMBOLIC-NAME-REFERENCE-PARAM-DEF>
+									</REFERENCES>
+								</PARAM-CONF-CONTAINER-DEF>
+							</SUB-CONTAINERS>
+						</PARAM-CONF-CONTAINER-DEF>
+						<!-- Parameter Container Definition: EepPublishedInformation -->
+						<PARAM-CONF-CONTAINER-DEF UUID="faca88b8-39be-4552-bc72-7387c3bfaa4b">
+							<SHORT-NAME>EepPublishedInformation</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">Additional published parameters not covered by CommonPublishedInformation container.
+
+Note that these parameters do not have any configuration class setting, since they are published information.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<!-- PARAMETER DEFINITION: EepAllowedWriteCycles -->
+								<INTEGER-PARAM-DEF UUID="19746415-a112-4fe8-9649-227f28231eb1">
+									<SHORT-NAME>EepAllowedWriteCycles</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Maximum allowed write cycles per EEPROM cell</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Specified maximum number of write cycles under worst case conditions of specific EEPROM hardware (e.g. +90°C)</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>100000</DEFAULT-VALUE>
+									<MAX>1000000</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepEraseTime -->
+								<FLOAT-PARAM-DEF UUID="bdfc7a65-7933-467f-a8c9-e6e4b014a2b2">
+									<SHORT-NAME>EepEraseTime</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Time for erasing one EEPROM data unit.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>10000.0</DEFAULT-VALUE>
+									<MAX>20000.0</MAX>
+									<MIN>1.0</MIN>
+								</FLOAT-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepEraseUnitSize -->
+								<INTEGER-PARAM-DEF UUID="73c733ec-b5a9-41ac-80b4-e083e29ac31c">
+									<SHORT-NAME>EepEraseUnitSize</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Size of smallest erasable EEPROM data unit in bytes.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>1</DEFAULT-VALUE>
+									<MAX>65536</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepEraseValue -->
+								<INTEGER-PARAM-DEF UUID="e6f1e9c1-e9e2-4d93-a1d9-7755b37a3504">
+									<SHORT-NAME>EepEraseValue</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">EEPROM Erase Value</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Value of an erased EEPROM cell.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>255</DEFAULT-VALUE>
+									<MAX>255</MAX>
+									<MIN>255</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepMinimumAddressType -->
+								<INTEGER-PARAM-DEF UUID="e6a1bcbb-35ea-41b2-a3fd-13a2fffa643d">
+									<SHORT-NAME>EepMinimumAddressType</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Minimum expected size of Eep_AddressType.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>16</DEFAULT-VALUE>
+									<MAX>32</MAX>
+									<MIN>8</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepMinimumLengthType -->
+								<INTEGER-PARAM-DEF UUID="b57f1f13-b5a5-44c6-9ab4-5fb2c80d8cdd">
+									<SHORT-NAME>EepMinimumLengthType</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Minimum expected size of Eep_LengthType.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>16</DEFAULT-VALUE>
+									<MAX>32</MAX>
+									<MIN>8</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepReadUnitSize -->
+								<INTEGER-PARAM-DEF UUID="d229828f-6e82-4257-b819-0cd2abb22453">
+									<SHORT-NAME>EepReadUnitSize</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Size of smallest readable EEPROM data unit in bytes.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>1</DEFAULT-VALUE>
+									<MAX>65356</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepSpecifiedEraseCycles -->
+								<INTEGER-PARAM-DEF UUID="d932d9d7-e8e8-4071-b353-ba04e4620519">
+									<SHORT-NAME>EepSpecifiedEraseCycles</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Maximum number of erase cycles</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Number of erase cycles specified for the EEP device (usually given in the device data sheet).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>100000</DEFAULT-VALUE>
+									<MAX>1000000</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepTotalSize -->
+								<INTEGER-PARAM-DEF UUID="19319087-b775-4e3a-b33b-4af51ca42e8c">
+									<SHORT-NAME>EepTotalSize</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Total size of EEPROM in bytes.
+
+Implementation Type: Eep_LengthType.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>65536</DEFAULT-VALUE>
+									<MAX>65536</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepWriteTime -->
+								<FLOAT-PARAM-DEF UUID="5c6cb0e3-1d65-468f-8ca2-1f74d4cab6bc">
+									<SHORT-NAME>EepWriteTime</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Time for writing one EEPROM data unit.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>10000.0</DEFAULT-VALUE>
+									<MAX>20000.0</MAX>
+									<MIN>1</MIN>
+								</FLOAT-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: EepWriteUnitSize -->
+								<INTEGER-PARAM-DEF UUID="d7f8a5f0-a850-4283-bbbd-aa5d878b9182">
+									<SHORT-NAME>EepWriteUnitSize</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Size of smallest writeable EEPROM data unit in bytes.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>1</DEFAULT-VALUE>
+									<MAX>65536</MAX>
+									<MIN>1</MIN>
+								</INTEGER-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="c5f382a5-8989-4fcf-ad38-6e3a2c4a5929">
+									<SHORT-NAME>EepIncludeFile</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Header File of the Driver</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This header file has to be included in order to use the driver's API services.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Eep_30_At25128.h</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<FUNCTION-NAME-DEF UUID="7f6d99e4-1d7c-4a9c-872f-46d453ce3b38">
+									<SHORT-NAME>EepSetMode</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Eep_SetMode() API Service</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Eep_SetMode() API Service</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Eep_30_At25128_SetMode</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<FUNCTION-NAME-DEF UUID="ec1c16a8-c133-4ccd-8e52-4884963af75b">
+									<SHORT-NAME>EepRead</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Eep_Read() API Service</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Eep_Read() API Service</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Eep_30_At25128_Read</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<FUNCTION-NAME-DEF UUID="48f85ddf-6803-4020-9e65-99fd596dbaf9">
+									<SHORT-NAME>EepWrite</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Eep_Write() API Service</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Eep_Write() API Service</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Eep_30_At25128_Write</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<FUNCTION-NAME-DEF UUID="c90e72ed-9ca0-4e04-8648-b60017117d45">
+									<SHORT-NAME>EepErase</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Eep_Erase() API Service</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Eep_Erase() API Service</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Eep_30_At25128_Erase</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<FUNCTION-NAME-DEF UUID="3e1cd1bd-c4d0-4d12-ba56-c444719b4d09">
+									<SHORT-NAME>EepCompare</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Eep_Compare() API Service</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Eep_Compare() API Service</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Eep_30_At25128_Compare</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<FUNCTION-NAME-DEF UUID="fd36c91d-f050-408e-b1b6-6a28d5a0af91">
+									<SHORT-NAME>EepCancel</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Eep_Cancel() API Service</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Eep_Cancel() API Service</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Eep_30_At25128_Cancel</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<FUNCTION-NAME-DEF UUID="e8a9b17b-c7ea-4e72-8600-f858f2da9e4b">
+									<SHORT-NAME>EepGetStatus</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Eep_GetStatus() API Service</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Eep_GetStatus() API Service</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Eep_30_At25128_GetStatus</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<FUNCTION-NAME-DEF UUID="6625b79c-682e-42a6-bee9-610fceacedc6">
+									<SHORT-NAME>EepGetJobResult</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Eep_GetJobResult() API Service</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Eep_GetJobResult() API Service</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Eep_30_At25128_GetJobResult</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+							</PARAMETERS>
+						</PARAM-CONF-CONTAINER-DEF>
+						<PARAM-CONF-CONTAINER-DEF UUID="67ff0150-8df1-4afd-8992-b732b50db4a9">
+							<SHORT-NAME>EepDeviceInformation</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">EEPROM Device Information</L-4>
+							</LONG-NAME>
+							<DESC>
+								<L-2 L="EN">Information about a supported EEPROM device used for automated configuration.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>*</UPPER-MULTIPLICITY>
+							<PARAMETERS>
+								<INTEGER-PARAM-DEF UUID="ce634277-ac12-47b2-b467-3c171e015962">
+									<SHORT-NAME>EepChipSize</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Size [bytes]</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">EEPROM device's memory size in bytes.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>LINK</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>16384</DEFAULT-VALUE>
+									<MAX>65536</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<ENUMERATION-PARAM-DEF UUID="3ceb2923-f804-4396-8022-656f97ecc348">
+									<SHORT-NAME>EepAddressBitWidth</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Addressing [bits]</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Number of bits building up an address as it is expected by the EEPROM device.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>LINK</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>EepAddressing16Bit</DEFAULT-VALUE>
+									<LITERALS>
+										<ENUMERATION-LITERAL-DEF UUID="b45e9918-cdb0-4649-81db-5be35ececff9">
+											<SHORT-NAME>EepAddressing8Bit</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>8</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="5a8a20c1-8fa5-4e3b-8db1-6cf1013be98f">
+											<SHORT-NAME>EepAddressing9Bit</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>9</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="1a5d24cc-7ee1-4ec6-aa9c-c90221c5b72e">
+											<SHORT-NAME>EepAddressing16Bit</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>16</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+									</LITERALS>
+								</ENUMERATION-PARAM-DEF>
+								<INTEGER-PARAM-DEF UUID="5034f68d-20f9-457c-a697-8167581e3009">
+									<SHORT-NAME>EepChipOffset</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Offset [bytes]</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This offset may be used for EEPROM devices which have some special memory areas at the beginning of their address spaces.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>LINK</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>0</DEFAULT-VALUE>
+									<MAX>65536</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<ENUMERATION-PARAM-DEF UUID="b1b72832-4d91-4e95-923b-660e5f00a2dd">
+									<SHORT-NAME>EepPageSize</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Page Size [bytes]</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Page size supported by the EEPROM device.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>LINK</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>EepPageSize32</DEFAULT-VALUE>
+									<LITERALS>
+										<ENUMERATION-LITERAL-DEF UUID="0fff9fe9-a220-4d8e-8002-3b9256a8307c">
+											<SHORT-NAME>EepPageSize16</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>16</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="17287424-ab34-42c8-959c-518f7c4584b6">
+											<SHORT-NAME>EepPageSize32</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>32</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="b58a7891-9cb5-41fa-bed6-6b750571c163">
+											<SHORT-NAME>EepPageSize64</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>64</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="5c53adad-5668-49b2-9500-8346700ee75b">
+											<SHORT-NAME>EepPageSize128</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>128</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+									</LITERALS>
+								</ENUMERATION-PARAM-DEF>
+							</PARAMETERS>
+						</PARAM-CONF-CONTAINER-DEF>
+						<PARAM-CONF-CONTAINER-DEF UUID="2c830106-3936-48d4-8179-1e8466d46196">
+							<SHORT-NAME>VectorCommonData</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">Vector Informatik GmbH internal management data </L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<PARAMETERS>
+								<STRING-PARAM-DEF UUID="5ec320f3-2d6b-480f-9acf-9f843339466c">
+									<SHORT-NAME>BswmdVersion</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter specifies the version of this bswmd file. </L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik GmbH</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>4.00.00</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+							</PARAMETERS>
+						</PARAM-CONF-CONTAINER-DEF>
+					</CONTAINERS>
+				</MODULE-DEF>
+				<MODULE-CONFIGURATION UUID="e4aea715-9033-473f-aefe-1323a8babe27">
+					<SHORT-NAME>EepAt25128_Rec</SHORT-NAME>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/EepAt25128</DEFINITION-REF>
+					<IMPLEMENTATION-CONFIG-VARIANT>VARIANT-POST-BUILD</IMPLEMENTATION-CONFIG-VARIANT>
+					<CONTAINERS></CONTAINERS>
+				</MODULE-CONFIGURATION>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</TOP-LEVEL-PACKAGES>
+</AUTOSAR>

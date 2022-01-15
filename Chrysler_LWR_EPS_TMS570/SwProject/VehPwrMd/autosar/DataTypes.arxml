@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xsi:schemaLocation="http://autosar.org/3.2.1 autosar_321.xsd" xmlns="http://autosar.org/3.2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TOP-LEVEL-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>DataType</SHORT-NAME>
+			<ELEMENTS>
+				<BOOLEAN-TYPE>
+					<SHORT-NAME>Boolean</SHORT-NAME>
+					<DESC>
+						<L-2 L="FOR-ALL">Boolean has the value space required to support the mathematical concept of 
+binary-valued logic: {true, false}.</L-2>
+					</DESC>
+				</BOOLEAN-TYPE>
+				<INTEGER-TYPE>
+					<SHORT-NAME>EcuM_StateType</SHORT-NAME>
+					<SW-DATA-DEF-PROPS>
+						<COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/EcuM_StateType</COMPU-METHOD-REF>
+					</SW-DATA-DEF-PROPS>
+					<LOWER-LIMIT INTERVAL-TYPE="CLOSED">16</LOWER-LIMIT>
+					<UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+				</INTEGER-TYPE>
+				<INTEGER-TYPE>
+					<SHORT-NAME>IoHwAb_BoolType</SHORT-NAME>
+					<LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+					<UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+				</INTEGER-TYPE>
+				<INTEGER-TYPE>
+					<SHORT-NAME>UInt16</SHORT-NAME>
+					<DESC>
+						<L-2 L="FOR-ALL">UInt16 represents integers with a minimum value of 0 and a maximum value of 65535.
+The order-relation on UInt16 is: x &lt; y if y - x is positive.
+UInt16 has a lexical representation consisting of a finite-length sequence 
+of decimal digits (#x30-#x39).
+
+For example: 1, 0, 1267, +10000.</L-2>
+					</DESC>
+					<LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+					<UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+				</INTEGER-TYPE>
+				<REAL-TYPE>
+					<SHORT-NAME>Float</SHORT-NAME>
+					<DESC>
+						<L-2 L="FOR-ALL">Float corresponds to the IEEE single-precision 32-bit floating point type
+[IEEE 754-1985]. The basic value space of float consists of the values 
+m × 2^e, where m is an integer whose absolute value is less than 2^24, 
+and e is an integer between -149 and 104, inclusive. In addition to the basic
+value space described above, the value space of Float also contains the 
+following special values: positive and negative zero, positive and negative 
+infinity and not-a-number. The order-relation on Float is: 
+x &lt; y if y - x is positive. Positive zero is greater than negative zero.
+Not-a-number equals itself and is greater than all float values including positive infinity. 
+
+Float values have a lexical representation consisting of a mantissa followed, 
+optionally, by the character "E" or "e", followed by an exponent. The exponent
+must be an integer. The mantissa must be a decimal number. The representations
+for exponent and mantissa must follow the lexical rules for integer and decimal.
+If the "E" or "e" and the following exponent are omitted, an exponent value 
+of 0 is assumed. 
+
+The special values positive and negative zero, positive and negative infinity
+and not-a-number have lexical representations 0, -0, INF, -INF and NaN, 
+respectively. 
+
+For example, -1E4, 1267.43233E12, 12.78e-2, 12 and INF are all legal literals
+for Float.</L-2>
+					</DESC>
+					<LOWER-LIMIT INTERVAL-TYPE="INFINITE"></LOWER-LIMIT>
+					<UPPER-LIMIT INTERVAL-TYPE="INFINITE"></UPPER-LIMIT>
+					<ALLOW-NAN>false</ALLOW-NAN>
+					<ENCODING>SINGLE</ENCODING>
+				</REAL-TYPE>
+			</ELEMENTS>
+			<SUB-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>DataTypeSemantics</SHORT-NAME>
+					<ELEMENTS>
+						<COMPU-METHOD>
+							<SHORT-NAME>EcuM_StateType</SHORT-NAME>
+							<CATEGORY>TEXTTABLE</CATEGORY>
+							<COMPU-INTERNAL-TO-PHYS>
+								<COMPU-SCALES>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>16</LOWER-LIMIT>
+										<UPPER-LIMIT>16</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_STARTUP</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>17</LOWER-LIMIT>
+										<UPPER-LIMIT>17</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_STARTUP_ONE</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>18</LOWER-LIMIT>
+										<UPPER-LIMIT>18</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_STARTUP_TWO</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>32</LOWER-LIMIT>
+										<UPPER-LIMIT>32</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_WAKEUP</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>33</LOWER-LIMIT>
+										<UPPER-LIMIT>33</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_WAKEUP_ONE</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>34</LOWER-LIMIT>
+										<UPPER-LIMIT>34</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_WAKEUP_VALIDATION</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>35</LOWER-LIMIT>
+										<UPPER-LIMIT>35</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_WAKEUP_REACTION</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>36</LOWER-LIMIT>
+										<UPPER-LIMIT>36</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_WAKEUP_TWO</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>37</LOWER-LIMIT>
+										<UPPER-LIMIT>37</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_WAKEUP_WAKESLEEP</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>38</LOWER-LIMIT>
+										<UPPER-LIMIT>38</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_WAKEUP_TTII</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>48</LOWER-LIMIT>
+										<UPPER-LIMIT>48</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_RUN</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>50</LOWER-LIMIT>
+										<UPPER-LIMIT>50</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_APP_RUN</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>51</LOWER-LIMIT>
+										<UPPER-LIMIT>51</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_APP_POST_RUN</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>64</LOWER-LIMIT>
+										<UPPER-LIMIT>64</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_SHUTDOWN</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>68</LOWER-LIMIT>
+										<UPPER-LIMIT>68</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_PREP_SHUTDOWN</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>73</LOWER-LIMIT>
+										<UPPER-LIMIT>73</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_GO_SLEEP</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>77</LOWER-LIMIT>
+										<UPPER-LIMIT>77</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_GO_OFF_ONE</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>78</LOWER-LIMIT>
+										<UPPER-LIMIT>78</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_GO_OFF_TWO</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>80</LOWER-LIMIT>
+										<UPPER-LIMIT>80</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_SLEEP</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>128</LOWER-LIMIT>
+										<UPPER-LIMIT>128</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_OFF</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>144</LOWER-LIMIT>
+										<UPPER-LIMIT>144</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_RESET</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+									<COMPU-SCALE>
+										<LOWER-LIMIT>255</LOWER-LIMIT>
+										<UPPER-LIMIT>255</UPPER-LIMIT>
+										<COMPU-CONST>
+											<VT>ECUM_STATE_ERROR</VT>
+										</COMPU-CONST>
+									</COMPU-SCALE>
+								</COMPU-SCALES>
+							</COMPU-INTERNAL-TO-PHYS>
+						</COMPU-METHOD>
+					</ELEMENTS>
+				</AR-PACKAGE>
+			</SUB-PACKAGES>
+		</AR-PACKAGE>
+		<AR-PACKAGE>
+			<SHORT-NAME>DaVinci</SHORT-NAME>
+			<ELEMENTS/>
+		</AR-PACKAGE>
+	</TOP-LEVEL-PACKAGES>
+</AUTOSAR>

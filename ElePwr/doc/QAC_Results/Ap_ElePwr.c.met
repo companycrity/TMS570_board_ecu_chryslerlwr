@@ -1,0 +1,443 @@
+<RDEF> I Includes
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 41
+<DEFINE> _RTE_AP_ELEPWR_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 25 I DF OM - - - O
+<DEFINE> RTE_APPLICATION_HEADER_FILE "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 30 I DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 39
+<DEFINE> _RTE_TYPE_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 25 I DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 27
+<DEFINE> _RTE_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 26 I DF OM - - - O
+<DEFINE> RTE_SW_MAJOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 28 I DF OM - - - O
+<LIT> 0x02 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 28 32 I HN - F M
+<DEFINE> RTE_SW_MINOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 29 I DF OM - - - O
+<LIT> 0x11 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 29 32 I HN - F M
+<DEFINE> RTE_SW_PATCH_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 30 I DF OM - - - O
+<LIT> 0x02 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 30 32 I HN - F M
+<DEFINE> RTE_VENDOR_ID "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 32 I DF OM - - - O
+<LIT> 0x001E u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 32 25 I HN - F M
+<DEFINE> RTE_AR_MAJOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 34 I DF OM - - - O
+<LIT> 0x02 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 34 32 I HN - F M
+<DEFINE> RTE_AR_MINOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 35 I DF OM - - - O
+<LIT> 0x02 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 35 32 I HN - F M
+<DEFINE> RTE_AR_PATCH_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 36 I DF OM - - - O
+<LIT> 0x00 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 36 32 I HN - F M
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 38
+<DEFINE> STD_TYPES_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 50 I DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 56
+<DEFINE> PLATFORM_TYPES_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 47 I DF OM - - - O
+<DEFINE> COMMONASR_TMS470_IMPL_PLATFORMTYPES_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 58 I DF OM - - - O
+<LIT> 0x0101 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 58 53 I HN - F M
+<DEFINE> COMMONASR_TMS470_IMPL_PLATFORMTYPES_RELEASE_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 59 I DF OM - - - O
+<LIT> 0x00 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 59 61 I HN - F M
+<DEFINE> PLATFORM_VENDOR_ID "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 61 I DF OM - - - O
+<LIT> 30 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 61 31 I DN - F M
+<DEFINE> PLATFORM_AR_MAJOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 65 I DF OM - - - O
+<LIT> 2 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 65 42 I DN - F M
+<DEFINE> PLATFORM_AR_MINOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 66 I DF OM - - - O
+<LIT> 2 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 66 42 I DN - F M
+<DEFINE> PLATFORM_AR_PATCH_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 67 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 67 42 I DN - F M
+<DEFINE> PLATFORM_SW_MAJOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 70 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 70 42 I DN - F M
+<DEFINE> PLATFORM_SW_MINOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 71 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 71 42 I DN - F M
+<DEFINE> PLATFORM_SW_PATCH_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 72 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 72 42 I ON - F M
+<DEFINE> CPU_TYPE_8 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 75 I DF OM - - - O
+<LIT> 8 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 75 26 I DN - F M
+<DEFINE> CPU_TYPE_16 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 76 I DF OM - - - O
+<LIT> 16 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 76 26 I DN - F M
+<DEFINE> CPU_TYPE_32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 77 I DF OM - - - O
+<LIT> 32 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 77 26 I DN - F M
+<DEFINE> MSB_FIRST "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 80 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 80 27 I ON - F M
+<DEFINE> LSB_FIRST "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 81 I DF OM - - - O
+<LIT> 1 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 81 27 I DN - F M
+<DEFINE> HIGH_BYTE_FIRST "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 84 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 84 27 I ON - F M
+<DEFINE> LOW_BYTE_FIRST "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 85 I DF OM - - - O
+<LIT> 1 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 85 27 I DN - F M
+<DEFINE> TRUE "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 89 I DF OM - - - O
+<LIT> 1 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 89 30 I DN - F M
+<DEFINE> FALSE "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 93 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 93 30 I ON - F M
+<DEFINE> CPU_TYPE "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 97 I DF OM - - - O
+<DEFINE> CPU_BIT_ORDER "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 98 I DF OM - - - O
+<DEFINE> CPU_BYTE_ORDER "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 99 I DF OM - - - O
+<DEFINE> boolean "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 111 I DC OT F N uc -
+<DEFINE> sint8 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 113 I DC OT F N nc -
+<DEFINE> uint8 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 114 I DC OT F N uc -
+<DEFINE> sint16 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 115 I DC OT F N ns -
+<DEFINE> uint16 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 116 I DC OT F N us -
+<DEFINE> sint32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 117 I DC OT F N nl -
+<DEFINE> uint32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 118 I DC OT F N ul -
+<DEFINE> sint64 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 119 I DC OT F N nll -
+<DEFINE> uint64 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 120 I DC OT F N ull -
+<DEFINE> uint8_least "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 122 I DC OT F N ul -
+<DEFINE> uint16_least "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 123 I DC OT F N ul -
+<DEFINE> uint32_least "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 124 I DC OT F N ul -
+<DEFINE> uint64_least "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 125 I DC OT F N ull -
+<DEFINE> sint8_least "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 126 I DC OT F N nl -
+<DEFINE> sint16_least "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 127 I DC OT F N nl -
+<DEFINE> sint32_least "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 128 I DC OT F N nl -
+<DEFINE> sint64_least "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 129 I DC OT F N nll -
+<DEFINE> float32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 132 I DC OT F N fs -
+<DEFINE> float64 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Platform_Types.h" 133 I DC OT F N ff -
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 57
+<DEFINE> COMPILER_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 48 I DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Compiler_Cfg.h" 54
+<DEFINE> COMPILER_CFG_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Compiler_Cfg.h" 19 I DF OM - - - O
+<DEFINE> COMMONASR_TMS470_IMPL_COMPABSTRACT_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 63 I DF OM - - - O
+<LIT> 0x0101 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 63 52 I HN - F M
+<DEFINE> COMMONASR_TMS470_IMPL_COMPABSTRACT_RELEASE_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 64 I DF OM - - - O
+<LIT> 0x00 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 64 60 I HN - F M
+<DEFINE> COMPILER_VENDOR_ID "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 66 I DF OM - - - O
+<LIT> 30 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 66 31 I DN - F M
+<DEFINE> COMPILER_AR_MAJOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 69 I DF OM - - - O
+<LIT> 2 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 69 42 I DN - F M
+<DEFINE> COMPILER_AR_MINOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 70 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 70 42 I ON - F M
+<DEFINE> COMPILER_AR_PATCH_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 71 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 71 42 I DN - F M
+<DEFINE> COMPILER_SW_MAJOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 74 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 74 42 I DN - F M
+<DEFINE> COMPILER_SW_MINOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 75 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 75 42 I DN - F M
+<DEFINE> COMPILER_SW_PATCH_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 76 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 76 42 I ON - F M
+<DEFINE> _TEXAS_INSTRUMENTS_C_TMS470_ "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 79 I DF OM - - - O
+<DEFINE> AUTOMATIC "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 82 I DF OM - - - O
+<DEFINE> TYPEDEF "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 85 I DF OM - - - O
+<DEFINE> STATIC "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 87 I DF OM - - - O
+<DEFINE> NULL_PTR "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 91 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 91 31 I ON - F M
+<DEFINE> INLINE "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 95 I DF OM - - - O
+<DEFINE> FUNC "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 101 I DF OM - - - F
+<DEFINE> P2VAR "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 108 I DF OM - - - F
+<DEFINE> P2CONST "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 115 I DF OM - - - F
+<DEFINE> CONSTP2VAR "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 122 I DF OM - - - F
+<DEFINE> CONSTP2CONST "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 129 I DF OM - - - F
+<DEFINE> P2FUNC "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 136 I DF OM - - - F
+<DEFINE> CONST "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 142 I DF OM - - - F
+<DEFINE> VAR "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Compiler.h" 148 I DF OM - - - F
+<DEFINE> COMMONASR__COMMON_IMPL_STDTYPES_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 64 I DF OM - - - O
+<LIT> 0x0303 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 64 50 I HN - F M
+<DEFINE> COMMONASR__COMMON_IMPL_STDTYPES_RELEASE_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 65 I DF OM - - - O
+<LIT> 0x01 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 65 58 I HN - F M
+<DEFINE> STD_TYPES_AR_MAJOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 69 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 69 44 I DN - F M
+<DEFINE> STD_TYPES_AR_MINOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 70 I DF OM - - - O
+<LIT> 2 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 70 44 I DN - F M
+<DEFINE> STD_TYPES_AR_PATCH_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 71 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 71 44 I ON - F M
+<DEFINE> STD_TYPES_SW_MAJOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 74 I DF OM - - - O
+<LIT> 3 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 74 44 I DN - F M
+<DEFINE> STD_TYPES_SW_MINOR_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 75 I DF OM - - - O
+<LIT> 3 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 75 44 I DN - F M
+<DEFINE> STD_TYPES_SW_PATCH_VERSION "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 76 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 76 44 I DN - F M
+<DEFINE> STD_HIGH "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 78 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 78 23 I DN - F M
+<DEFINE> STD_LOW "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 79 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 79 23 I ON - F M
+<DEFINE> STD_ACTIVE "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 81 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 81 23 I DN - F M
+<DEFINE> STD_IDLE "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 82 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 82 23 I ON - F M
+<DEFINE> STD_ON "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 84 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 84 23 I DN - F M
+<DEFINE> STD_OFF "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 85 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 85 23 I ON - F M
+<DEFINE> STATUSTYPEDEFINED "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 98 I DF OM - - - O
+<DEFINE> E_OK "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 99 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 99 21 I ON - F M
+<DEFINE> StatusType "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 100 I DC OT F N uc -
+<DEFINE> E_NOT_OK "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 103 I DF OM - - - O
+<LIT> 1 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 103 20 I DN - F M
+<DEFINE> E_PENDING "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 105 I DF OM - - - O
+<LIT> 2 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 105 21 I DN - F M
+<DEFINE> Std_ReturnType "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 107 I DC OT F N uc -
+<DEFINE> vendorID "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 111 I DC MB F N us -
+<DEFINE> moduleID "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 112 I DC MB F N us -
+<DEFINE> instanceID "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 113 I DC MB F N uc -
+<DEFINE> sw_major_version "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 114 I DC MB F N uc -
+<DEFINE> sw_minor_version "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 115 I DC MB F N uc -
+<DEFINE> sw_patch_version "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 116 I DC MB F N uc -
+<DEFINE> Std_VersionInfoType "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\StdDef\include\Std_Types.h" 117 I DC OT F N {s} -
+<DEFINE> RTE_E_OK "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 54 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 54 52 I ON - F M
+<DEFINE> RTE_E_INVALID "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 55 I DF OM - - - O
+<LIT> 1 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 55 52 I DN - F M
+<DEFINE> RTE_E_LOST_DATA "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 58 I DF OM - - - O
+<LIT> 64 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 58 51 I DN - F M
+<DEFINE> RTE_E_MAX_AGE_EXCEEDED "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 59 I DF OM - - - O
+<LIT> 64 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 59 51 I DN - F M
+<DEFINE> RTE_E_COM_STOPPED "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 62 I DF OM - - - O
+<LIT> 128 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 62 50 I DN - F M
+<DEFINE> RTE_E_COMMS_ERROR "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 63 I DF OM - - - O
+<LIT> 128 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 63 50 I DN - F M
+<DEFINE> RTE_E_TIMEOUT "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 64 I DF OM - - - O
+<LIT> 129 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 64 50 I DN - F M
+<DEFINE> RTE_E_LIMIT "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 65 I DF OM - - - O
+<LIT> 130 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 65 50 I DN - F M
+<DEFINE> RTE_E_NO_DATA "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 66 I DF OM - - - O
+<LIT> 131 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 66 50 I DN - F M
+<DEFINE> RTE_E_TRANSMIT_ACK "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 67 I DF OM - - - O
+<LIT> 132 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 67 50 I DN - F M
+<DEFINE> RTE_MAGIC_NUMBER "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 76 I DF OM - - - O
+<LIT> 1355171371 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte.h" 76 29 I DN - F M
+<DEFINE> Rte_TypeDef_Float "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 34 I DF OM - - - O
+<DEFINE> Float "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 35 I DC OT F N fs -
+<DEFINE> Float_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 36 I DF OM - - - O
+<DEFINE> Float_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 37 I DF OM - - - O
+<DEFINE> Rte_TypeDef_Boolean "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 45 I DF OM - - - O
+<DEFINE> Boolean "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 46 I DC OT F N uc -
+<DEFINE> Rte_TypeDef_Double "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 48 I DF OM - - - O
+<DEFINE> Double "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 49 I DC OT F N ff -
+<DEFINE> Double_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 50 I DF OM - - - O
+<DEFINE> Double_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 51 I DF OM - - - O
+<DEFINE> Rte_TypeDef_SInt16 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 53 I DF OM - - - O
+<DEFINE> SInt16 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 54 I DC OT F N ns -
+<DEFINE> SInt16_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 55 I DF OM - - - O
+<LIT> 32768 - N "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 55 39 I DN - F M
+<DEFINE> SInt16_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 56 I DF OM - - - O
+<LIT> 32767 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 56 38 I DN - F M
+<DEFINE> Rte_TypeDef_SInt32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 58 I DF OM - - - O
+<DEFINE> SInt32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 59 I DC OT F N nl -
+<DEFINE> SInt32_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 60 I DF OM - - - O
+<LIT> 2147483648 - N "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 60 39 I DN - F M
+<DEFINE> SInt32_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 61 I DF OM - - - O
+<LIT> 2147483647 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 61 38 I DN - F M
+<DEFINE> Rte_TypeDef_SInt4 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 63 I DF OM - - - O
+<DEFINE> SInt4 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 64 I DC OT F N nc -
+<DEFINE> SInt4_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 65 I DF OM - - - O
+<LIT> 8 - N "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 65 37 I DN - F M
+<DEFINE> SInt4_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 66 I DF OM - - - O
+<LIT> 7 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 66 36 I DN - F M
+<DEFINE> Rte_TypeDef_SInt8 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 68 I DF OM - - - O
+<DEFINE> SInt8 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 69 I DC OT F N nc -
+<DEFINE> SInt8_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 70 I DF OM - - - O
+<LIT> 128 - N "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 70 37 I DN - F M
+<DEFINE> SInt8_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 71 I DF OM - - - O
+<LIT> 127 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 71 36 I DN - F M
+<DEFINE> Rte_TypeDef_UInt16 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 73 I DF OM - - - O
+<DEFINE> UInt16 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 74 I DC OT F N us -
+<DEFINE> UInt16_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 75 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 75 38 I ON - F M
+<DEFINE> UInt16_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 76 I DF OM - - - O
+<LIT> 65535 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 76 38 I DN - F M
+<DEFINE> Rte_TypeDef_UInt32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 78 I DF OM - - - O
+<DEFINE> UInt32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 79 I DC OT F N ul -
+<DEFINE> UInt32_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 80 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 80 38 I ON - F M
+<DEFINE> UInt32_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 81 I DF OM - - - O
+<LIT> 4294967295 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 81 38 I DN - F M
+<DEFINE> Rte_TypeDef_UInt4 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 83 I DF OM - - - O
+<DEFINE> UInt4 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 84 I DC OT F N uc -
+<DEFINE> UInt4_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 85 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 85 36 I ON - F M
+<DEFINE> UInt4_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 86 I DF OM - - - O
+<LIT> 15 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 86 36 I DN - F M
+<DEFINE> Rte_TypeDef_UInt8 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 88 I DF OM - - - O
+<DEFINE> UInt8 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 89 I DC OT F N uc -
+<DEFINE> UInt8_LowerLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 90 I DF OM - - - O
+<LIT> 0 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 90 36 I ON - F M
+<DEFINE> UInt8_UpperLimit "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 91 I DF OM - - - O
+<LIT> 255 u P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 91 36 I DN - F M
+<DEFINE> RTE_CONST_D_ZERO_ULS_F32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 105 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 105 37 I ON - F M
+<DEFINE> D_ZERO_ULS_F32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 106 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 106 34 I ON - F M
+<DEFINE> value "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 118 I DC MB F N fs -
+<DEFINE> Rte_DE_Float "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 119 I DC OT F N {s} -
+<DEFINE> Rte_CDS_Ap_ElePwr "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 126 I DC TG F N {sRte_CDS_Ap_ElePwr} -
+<DEFINE> Rte_CDS_Ap_ElePwr "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 126 I DF TG F N {sRte_CDS_Ap_ElePwr} -
+<DEFINE> ElePwr_Per1_ElectricPower_Watt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 129 I DC MB F N p{sRte_DE_Float} -
+<DEFINE> ElePwr_Per1_MtrCurrDax_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 130 I DC MB F N p{sRte_DE_Float} -
+<DEFINE> ElePwr_Per1_MtrCurrQax_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 131 I DC MB F N p{sRte_DE_Float} -
+<DEFINE> ElePwr_Per1_MtrVoltDax_Volt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 132 I DC MB F N p{sRte_DE_Float} -
+<DEFINE> ElePwr_Per1_MtrVoltQax_Volt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 133 I DC MB F N p{sRte_DE_Float} -
+<DEFINE> ElePwr_Per1_SupplyCurrent_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 134 I DC MB F N p{sRte_DE_Float} -
+<DEFINE> ElePwr_Per1_Vecu_Volt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 135 I DC MB F N p{sRte_DE_Float} -
+<DEFINE> RTE_START_SEC_CONST_UNSPECIFIED "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 139 I DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\MemMap.h" 140
+<DEFINE> MEMMAP_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\MemMap.h" 19 I DF OM - - - O
+<EXTN> Rte_Inst_Ap_ElePwr "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 142
+<DEFINE> Rte_Inst_Ap_ElePwr "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 142 I DC OV F X =p={sRte_CDS_Ap_ElePwr} S
+<DEFINE> RTE_STOP_SEC_CONST_UNSPECIFIED "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 144 I DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\MemMap.h" 145
+<LIT> 1355171371 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Type.h" 150 28 I DN - F P
+<DEFINE> Rte_Instance "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 41 I DC OT F N p={sRte_CDS_Ap_ElePwr} -
+<DEFINE> Rte_InitValue_ElectricPower_Watt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 48 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 48 55 I ON - F M
+<DEFINE> Rte_InitValue_MtrCurrDax_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 49 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 49 51 I ON - F M
+<DEFINE> Rte_InitValue_MtrCurrQax_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 50 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 50 51 I ON - F M
+<DEFINE> Rte_InitValue_MtrVoltDax_Volt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 51 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 51 52 I ON - F M
+<DEFINE> Rte_InitValue_MtrVoltQax_Volt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 52 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 52 52 I ON - F M
+<DEFINE> Rte_InitValue_SupplyCurrent_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 53 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 53 54 I ON - F M
+<DEFINE> Rte_InitValue_Vecu_Volt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 54 I DF OM - - - O
+<LIT> 0 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 54 46 I ON - F M
+<DEFINE> Rte_IRead_ElePwr_Per1_MtrCurrDax_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 67 I DF OM - - - F
+<DEFINE> Rte_IRead_ElePwr_Per1_MtrCurrQax_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 70 I DF OM - - - F
+<DEFINE> Rte_IRead_ElePwr_Per1_MtrVoltDax_Volt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 73 I DF OM - - - F
+<DEFINE> Rte_IRead_ElePwr_Per1_MtrVoltQax_Volt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 76 I DF OM - - - F
+<DEFINE> Rte_IRead_ElePwr_Per1_Vecu_Volt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 79 I DF OM - - - F
+<DEFINE> Rte_IWrite_ElePwr_Per1_ElectricPower_Watt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 84 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ElePwr_Per1_ElectricPower_Watt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 87 I DF OM - - - F
+<DEFINE> Rte_IWrite_ElePwr_Per1_SupplyCurrent_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 92 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ElePwr_Per1_SupplyCurrent_Amp_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 95 I DF OM - - - F
+<DEFINE> RTE_START_SEC_AP_ELEPWR_APPL_CODE "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 100 I DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\MemMap.h" 101
+<EXTN> ElePwr_Per1 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 136
+<DEFINE> ElePwr_Per1 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 136 I DC OF F X (.,.) -
+<DEFINE> RTE_STOP_SEC_AP_ELEPWR_APPL_CODE "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 138 I DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\MemMap.h" 139
+<LIT> 1355171371 - P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Rte_Ap_ElePwr.h" 148 28 I DN - F P
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Ap_ElePwr_Cfg.h" 47
+<DEFINE> AP_ELEPWR_CFG_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Ap_ElePwr_Cfg.h" 2 I DF OM - - - O
+<EXTN> Rte_Call_ElePwr_Per1_CP0_CheckpointReached "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Ap_ElePwr_Cfg.h" 4
+<DEFINE> Rte_Call_ElePwr_Per1_CP0_CheckpointReached "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Ap_ElePwr_Cfg.h" 4 I DC OF F X (.,.) -
+<EXTN> Rte_Call_ElePwr_Per1_CP1_CheckpointReached "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Ap_ElePwr_Cfg.h" 5
+<DEFINE> Rte_Call_ElePwr_Per1_CP1_CheckpointReached "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\Ap_ElePwr\Ap_ElePwr_Cfg.h" 5 I DC OF F X (.,.) -
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\CalConstants.h" 48
+<DEFINE> CALCONSTANTS_H "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\CalConstants.h" 20 I DF OM - - - O
+<EXTN> k_CntlrInResist_Ohm_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\CalConstants.h" 29
+<DEFINE> k_CntlrInResist_Ohm_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\CalConstants.h" 29 I DC OV F X =fs S
+<EXTN> k_PstcPowerLoss_Watt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\CalConstants.h" 30
+<DEFINE> k_PstcPowerLoss_Watt_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\CalConstants.h" 30 I DC OV F X =fs S
+<DEFINE> D_SQRT3OVR2_ULS_F32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 51 N DF OM - - - O
+<LIT> 0.866025403784 F P "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 51 65 N FN - F M
+<DEFINE> ELEPWR_START_SEC_VAR_CLEARED_32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 53 N DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\MemMap.h" 54
+<EXTT> ModInPower_Watt_D_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 55
+<DEFINE> ModInPower_Watt_D_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 55 N DC OV F I ^fs S
+<EXTT> DropInPower_Watt_D_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 56
+<DEFINE> DropInPower_Watt_D_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 56 N DC OV F I ^fs S
+<DEFINE> ELEPWR_STOP_SEC_VAR_CLEARED_32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 57 N DF OM - - - O
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\MemMap.h" 58
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\MemMap.h" 92
+<EXTD> ElePwr_Per1 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 126
+<DEFINE> ElePwr_Per1 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 126 N DR OF F X (.,.) -
+<DEFINE> ElePwr_Per1 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 126 N DF OF F X (.,.) -
+<DEFINE> Vecu_Volt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 132 N DC OV B N fs -
+<DEFINE> Vecu_Volt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 132 N DF OV B N fs -
+<DEFINE> MtrCurrDax_Amp_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 133 N DC OV B N fs -
+<DEFINE> MtrCurrDax_Amp_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 133 N DF OV B N fs -
+<DEFINE> MtrCurrQax_Amp_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 134 N DC OV B N fs -
+<DEFINE> MtrCurrQax_Amp_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 134 N DF OV B N fs -
+<DEFINE> MtrVoltDax_Volt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 135 N DC OV B N fs -
+<DEFINE> MtrVoltDax_Volt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 135 N DF OV B N fs -
+<DEFINE> MtrVoltQax_Volt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 136 N DC OV B N fs -
+<DEFINE> MtrVoltQax_Volt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 136 N DF OV B N fs -
+<DEFINE> ModInPower_Watt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 137 N DC OV B N fs -
+<DEFINE> ModInPower_Watt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 137 N DF OV B N fs -
+<DEFINE> DropInPower_Watt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 138 N DC OV B N fs -
+<DEFINE> DropInPower_Watt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 138 N DF OV B N fs -
+<DEFINE> DropInPower_Amp_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 139 N DC OV B N fs -
+<DEFINE> DropInPower_Amp_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 139 N DF OV B N fs -
+<DEFINE> ElecPower_Watt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 140 N DC OV B N fs -
+<DEFINE> ElecPower_Watt_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 140 N DF OV B N fs -
+<DEFINE> SupplyCurrent_Amp_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 141 N DC OV B N fs -
+<DEFINE> SupplyCurrent_Amp_T_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 141 N DF OV B N fs -
+<RDEF> C Calls
+<R>C ElePwr_Per1 Rte_Call_ElePwr_Per1_CP0_CheckpointReached 144
+<RDEF> X Refers-to
+<R>X ElePwr_Per1 Rte_Call_ElePwr_Per1_CP0_CheckpointReached 144 R
+<R>X ElePwr_Per1 Rte_Inst_Ap_ElePwr 147 R
+<R>X ElePwr_Per1 Rte_Inst_Ap_ElePwr 148 R
+<R>X ElePwr_Per1 Rte_Inst_Ap_ElePwr 149 R
+<R>X ElePwr_Per1 Rte_Inst_Ap_ElePwr 150 R
+<R>X ElePwr_Per1 Rte_Inst_Ap_ElePwr 151 R
+<R>X ElePwr_Per1 k_CntlrInResist_Ohm_f32 162 R
+<R>X ElePwr_Per1 k_PstcPowerLoss_Watt_f32 167 R
+<R>X ElePwr_Per1 Rte_Inst_Ap_ElePwr 173 R
+<R>X ElePwr_Per1 Rte_Inst_Ap_ElePwr 174 R
+<R>C ElePwr_Per1 Rte_Call_ElePwr_Per1_CP1_CheckpointReached 179
+<R>X ElePwr_Per1 Rte_Call_ElePwr_Per1_CP1_CheckpointReached 179 R
+<CTLG> ElePwr_Per1 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 127 183 183 183 
+<S>
+<S>STFIL  "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c"
+<S>STNAM  ElePwr_Per1
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  2
+<S>STAKI  3
+<S>STLIN  55
+<S>STXLN  17
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  10
+<S>STPTH  1
+<S>STPDN  0.06   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  6
+<S>STAV2  6
+<S>STAV3  10
+<S>STST1  27
+<S>STST2  27
+<S>STST3  17
+<S>STRET  1
+<S>STPAR  0
+<S>STUNR  0
+<S>STCAL  2
+<S>STFN1  104
+<S>STFN2  82
+
+<R>I "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\utp\contract\MemMap.h" 187
+<DEFINE> DropInPower_Watt_D_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 56 N DI OV F I ^fs S
+<DEFINE> ModInPower_Watt_D_f32 "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c" 55 N DI OV F I ^fs S
+<S>
+<S>STFIL  "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c"
+<S>STNAM  "C:\Documents and Settings\nzt9hv\My Documents\Synergy\ccm_wa\ESG_Dev_65\ElePwr-nzt9hv\ElePwr\src\Ap_ElePwr.c"
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  2
+<S>STECT  3
+<S>STFNC  1
+<S>STFCO  2
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  33
+<S>STOPT  17
+<S>STOPN  34
+<S>STTOT  247
+<S>STZIP  230
+<S>STHAL  242
+<S>STSHN  798
+<S>STDIF  7.80   
+<S>STEFF  10935
+<S>STVOL  1401
+<S>STDEV  1.82   
+<S>STPRT  0.03   
+<S>STMOB  98.57  
+<S>STBUG  0
+<S>STTPP  207
+<S>STTLN  32
+<S>STM20  97
+<S>STM21  144
+<S>STM22  29
+<S>STM28  23
+<S>STM33  14
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  0.459  
+<S>STBMS  0.514  
+<S>STBME  0.544  
+<S>STTDO  1.860  
+<S>STTDS  1.981  
+<S>STTDE  2.057  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  3.519  
+

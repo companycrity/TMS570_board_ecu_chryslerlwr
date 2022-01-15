@@ -1,0 +1,2 @@
+1)  In "Tools\AsrProject\Generators\Components" 
+     Rename file  "xerces_c_2_7.dll" to "xerces-c_2_7.dll".

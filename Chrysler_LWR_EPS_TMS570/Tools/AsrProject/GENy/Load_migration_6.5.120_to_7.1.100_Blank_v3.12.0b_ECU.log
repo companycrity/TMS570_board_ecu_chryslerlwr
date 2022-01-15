@@ -1,0 +1,34 @@
+Encoding: iso-8859-1
+D: Detected dtd version 6.5.120
+D: VCANdelaPersistorImpl::GetFileVersion: DTD version '6.5.120' detected
+I: Loading 'E:\__SandBox__\MyCustomerProjects\Nexteer\SMW_Chrysler_LWR_Working\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\Blank_v3.12.0b_ECU.cdd'...
+I:   dtd version: file 6.5.120, program 7.1.100
+D: Document supports the languages (en-US)
+D: Document contains the uptodate languages (en-US)
+D: Base64::decode: raw length 64
+D: Base64::decode: 64 groups
+D: Base64::decode: decoded is 48 bytes
+D: Template: Qualifier : Ford_GGDS, SaveNo : 4, Label : 1.2.0
+I:   template data loaded
+I:   variant 'CommonDiagnostics' loaded
+I: Done loading.
+I: Service prefix checker is deactivated for editing.
+I: Checking consistency of document. This may take a while, please be patient...
+W: Warning: Text table data type 'SID-RQ-NR' contains 1 entries without any assigned text.
+W: Warning: Text table data type 'Identifier' contains 1 entries without any assigned text.
+W: Warning: Text table data type 'Address' contains 1 entries without any assigned text.
+W: Warning: Text table data type 'CDID_CDP_Identifier' contains 1 entries without any assigned text.
+D: ComParamMan: Unidentified ComParam CAN_Identifier
+D: ComParamMan: Unidentified ComParam Periodic_Response_ID_1
+D: ComParamMan: Unidentified ComParam Periodic_Response_ID_2
+D: ComParamMan: Unidentified ComParam Periodic_Response_ID_3
+D: ComParamMan: Unidentified ComParam Periodic_Response_ID_4
+D: ComParamMan: Unidentified ComParam Diagnostic_Gateway
+D: ComParamMan: Unidentified ComParam Diagnostic_Sub_node
+D: ComParamMan: Unidentified ComParam Sub_node_Address
+D: ComParamMan: Unidentified ComParam Delta_P2
+D: ComParamMan: Unidentified ComParam Secondary_Functional_Diagnostic_Reception_ID
+D: ComParamMan: Unidentified ComParam Legislated_OBD_Supported
+D: ComParamMan: Unidentified ComParam Bootloader_Supported
+D: ComParamMan: Unidentified ComParam Application_Diag_Supported
+I: Document is consistent.

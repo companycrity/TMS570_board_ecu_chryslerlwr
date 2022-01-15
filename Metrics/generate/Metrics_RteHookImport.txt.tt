@@ -1,0 +1,63 @@
+<#@ AutosarXml processor="ArDirectiveProcessor" requires="arPrefix='ar';arNamespace='http://autosar.org/2.1.2'" #>
+<#@ template inherits="AutosarDirectiveProcessor.ArGtcBase" debug="false" #>
+<#@ output extension="" #>
+<#@ include file="Helper.tt" #>
+/*****************************************************************************
+* Copyright 2010 Nexteer Automotive, All Rights Reserved.
+* Nexteer Confidential
+*
+* Module File Name  : Metrics_RteHookImport.txt
+* Module Description: Enabled RteHook definitions for import into the Rte Generator (i.e. DaVinci Developer)
+* Product           : Gen II Plus - EA3.0
+* Generator         : <#= GeneratorName #> <#= GeneratorVersion #>
+* Generation Time   : <#= DateTime.Now.ToString( "dd.MM.yyyy HH:mm:ss" ) #>
+*****************************************************************************/
+/* Version Control:
+ * Date Created:      Fri Jul 13 18:34:17 2012
+ * %version:          1 %
+ * %date_modified:    Fri Aug 24 11:49:37 2012 %
+ *---------------------------------------------------------------------------------------------------------------------
+ * Date      Rev      Author         Change Description                                                        SCR #
+ * -------   -------  --------  ---------------------------------------------------------------------------  ----------
+ * 07/13/12   1       JJW       Initial template creation
+ */
+
+/* Enable Hooks for Extended Task Monitoring */
+Rte_Task_WaitEvent
+Rte_Task_WaitEventRet 
+ 
+/* Enable Hooks for Configured Runnable Monitoring */ 
+<#
+	ChangeContext( Xp.ModuleConfAtDefRefTo( "Metrics" ) );
+	string runnableTask = LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "OsTaskRef" ));
+
+	ChangeContext( Xp.ModuleConfAtDefRefTo( "Rte" ) ); 
+#> 
+<# !LOOP( Xp.ContainerAtDefRefTo( "SwComponentInstance" ) ) #>
+<#
+	string swcName = LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "ImplementationRef" ) );
+	swcName = swcName.Replace("_Implementation", "");
+#>
+<# !LOOP( Xp.ContainerAtDefRefTo( "RunnableEntityMapping" ) ) #>
+<#  
+	string mappedToTaskRef = LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "MappedToTaskRef" ));
+	if(0 == String.Compare(runnableTask, mappedToTaskRef,  false)) {
+		string rteEventRef = LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "RTEEventRef" ));
+		string runnable = "Rte_Runnable_" + swcName;
+		string delim = "_";
+
+		/* Assume the Application short name is the last "word" in the Os Application name delimited with '_' */
+		string[] rteEventRefWords = rteEventRef.Split('_');
+		foreach (string word in rteEventRefWords) {
+			if((0 != String.Compare(word, "TMT", false)) && (0 != String.Compare(word, "InitEvent", false))) {
+				runnable = runnable + delim + word;
+			}
+		}
+#>
+<#=runnable#>_Start
+<#=runnable#>_Return
+<#}#>
+<# !ENDLOOP #>
+<# !ENDLOOP #>
+
+/*** End of file **************************************************************/

@@ -1,0 +1,205 @@
+
+/* Version Control:
+ * Date Created:      Fri Sep  21 08:20:17 2012
+ * %version:          EA3#2.2.8 %
+ * %derived_by:       gz324f %
+ * %date_modified:    Tue May 28 10:09:32 2013 %
+ *---------------------------------------------------------------------------------------------------------------------
+ * Date      Rev      Author         Change Description                                                        SCR #
+ * -------   -------  --------  ---------------------------------------------------------------------------  ----------
+ * 09/03/11   1       JJW       Initial template creation
+ * 09/27/12   2       JJW       Addition of Global transition vector generation
+ * 01/04/13   3       JJW       Addition of Global transition Inital/Final style generation and outlines to all nodes
+ *								Updated generation looping process to ensure all checkpoint nodes are defined, regardless
+ *                              of whether they are used in a transition.
+ * 05/28/13   5       JJW       Addition of diagram legend
+ */
+digraph G {
+/* Specify a drawing size for 11x17 paper with 0.5 in margins */
+page="11,16";
+ranksep="0.2"; /* Reduce the separation between entities from default to reduce drawing size */
+
+
+
+/* Supervised Entities */
+		subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"CtrlTemp_Per2_CP0(0)" [fillcolor=white, style=filled]/* Checkpoint */
+				"ThrmlDutyCycle_Per1_CP1(1)" [fillcolor=pink, style=filled]/* Checkpoint */
+		/* Local transition vectors */
+				"CtrlTemp_Per2_CP0(0)" -> "ThrmlDutyCycle_Per1_CP1(1)" [ label="LT_01" ];
+		label = "SE100ms_9(0)";
+	}
+		subgraph cluster_1 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"HwTrq_Per3_CP0(0)" [fillcolor=pink, style=filled]/* Checkpoint */
+				"uDiagStaticRegs_Per_CP1(1)" [fillcolor=white, style=filled]/* Checkpoint */
+		/* Local transition vectors */
+				"HwTrq_Per3_CP0(0)" -> "uDiagStaticRegs_Per_CP1(1)" [ label="LT_01" ];
+		label = "SE100ms_10(1)";
+	}
+		subgraph cluster_2 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"HwTrq2_Per3_CP0(0)" [fillcolor=white, style=filled]/* Checkpoint */
+		/* Local transition vectors */
+		label = "SE100ms_8(2)";
+	}
+		subgraph cluster_3 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"TuningSelAuth_Per1_CP0(0)" [fillcolor=white, style=filled]/* Checkpoint */
+				"PAwTO_Per2_CP1(1)" [fillcolor=pink, style=filled]/* Checkpoint */
+		/* Local transition vectors */
+				"TuningSelAuth_Per1_CP0(0)" -> "PAwTO_Per2_CP1(1)" [ label="LT_01" ];
+		label = "SE10ms_10(3)";
+	}
+		subgraph cluster_4 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"SrlComInput_Per1_CP0(0)" [fillcolor=pink, style=filled]/* Checkpoint */
+				"BVDiag_Per1_CP1(1)" [fillcolor=white, style=filled]/* Checkpoint */
+		/* Local transition vectors */
+				"SrlComInput_Per1_CP0(0)" -> "BVDiag_Per1_CP1(1)" [ label="LT_01" ];
+		label = "SE10ms_9(4)";
+	}
+		subgraph cluster_5 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"MtrVel2_Per2_CP0(0)" [fillcolor=white, style=filled]/* Checkpoint */
+				"MtrPos3_Per2_CP1(1)" [fillcolor=pink, style=filled]/* Checkpoint */
+		/* Local transition vectors */
+				"MtrVel2_Per2_CP0(0)" -> "MtrPos3_Per2_CP1(1)" [ label="LT_01" ];
+		label = "SE4ms_8(5)";
+	}
+		subgraph cluster_6 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"uDiagLossOfExec_per3_CP0(0)" [fillcolor=pink, style=filled]/* Checkpoint */
+				"ArbLmt_Per1_CP1(1)" [fillcolor=white, style=filled]/* Checkpoint */
+		/* Local transition vectors */
+				"uDiagLossOfExec_per3_CP0(0)" -> "ArbLmt_Per1_CP1(1)" [ label="LT_01" ];
+		label = "SE4ms_10(6)";
+	}
+		subgraph cluster_7 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"MtrVel_Per1_CP0(0)" [fillcolor=pink, style="filled,bold" color=darkgreen]/* Checkpoint */
+				"StaMd_Per1_CP1(1)" [fillcolor=white, style=filled]/* Checkpoint */
+				"GlbFinal_CP0(2)" [fillcolor=white, style="filled,dashed" color=darkgreen]/* Checkpoint */
+		/* Local transition vectors */
+				"MtrVel_Per1_CP0(0)" -> "StaMd_Per1_CP1(1)" [ label="LT01" ];
+		label = "SE2ms_10(7)";
+	}
+		subgraph cluster_8 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"BatterVoltage_Per1_CP0(0)" [fillcolor=white, style=filled]/* Checkpoint */
+				"VehPwrMd_Per1_CP1(1)" [fillcolor=pink, style=filled]/* Checkpoint */
+		/* Local transition vectors */
+				"BatterVoltage_Per1_CP0(0)" -> "VehPwrMd_Per1_CP1(1)" [ label="LT_01" ];
+		label = "SE2ms_9(8)";
+	}
+		subgraph cluster_9 {
+		style=filled;
+		color=lightgrey;
+		fontname=Helvetica
+		node [height=0.3, fontname=Helvetica, fontcolor=black, fontsize=10];
+		edge [color=blue, fontname=Helvetica, fontcolor=blue, fontsize=8];
+	/* Checkpoint nodes and formatting */
+				"MtrVel2_Per1_CP0(0)" [fillcolor=white, style=filled]/* Checkpoint */
+				"TmprlMon2_Per1_CP1(1)" [fillcolor=white, style=filled]/* Checkpoint */
+		/* Local transition vectors */
+				"MtrVel2_Per1_CP0(0)" -> "TmprlMon2_Per1_CP1(1)" [ label="LT_01" ];
+		label = "SE2ms_8(9)";
+	}
+/* Global Transition Vectors */
+		fontname=Helvetica
+		edge [color=darkgreen, style=dashed, fontname=Helvetica, fontcolor=darkgreen, fontsize=8];
+/* WdgMConfigSet - WdgM_Runtime */
+	/* WdgMMode - WdgMMode */
+		/* WdgMGlobalTransition - WdgMProgramFlowSupervision */
+			"StaMd_Per1_CP1(1)" -> "MtrVel2_Per1_CP0(0)" [ label="GT_01" ];
+			"TmprlMon2_Per1_CP1(1)" -> "BatterVoltage_Per1_CP0(0)" [ label="GT_02" ];
+			"ArbLmt_Per1_CP1(1)" -> "MtrVel2_Per2_CP0(0)" [ label="GT_04" ];
+			"BVDiag_Per1_CP1(1)" -> "TuningSelAuth_Per1_CP0(0)" [ label="GT_06" ];
+			"uDiagStaticRegs_Per_CP1(1)" -> "HwTrq2_Per3_CP0(0)" [ label="GT_08" ];
+			"HwTrq2_Per3_CP0(0)" -> "CtrlTemp_Per2_CP0(0)" [ label="GT_09" ];
+
+/* Create a Legend to describe drawing elements and the drawing template version*/
+  node [shape=plaintext]
+  subgraph cluster_99 { 
+    label = "Legend, Template v5";
+	{rank=same;key;key2}
+    key [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+      <tr><td align="right" port="i1">Local transition</td></tr>
+      <tr><td align="right" port="i2">Global transition</td></tr>
+      <tr><td align="right" port="i3">Global inital CP</td></tr>
+      <tr><td align="right" port="i4">Global final CP</td></tr>
+      </table>>]
+    key2 [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+      <tr><td port="i1"> </td></tr>
+      <tr><td port="i2"> </td></tr>
+      <tr><td port="i3"> </td></tr>
+      <tr><td port="i4"> </td></tr>
+      </table>>]
+	  
+	/* Supervised Entity shape */
+	node [height=0.2, fontname=Helvetica, fontcolor=black, fontsize=8];
+	"Supervised Entity(ID)" [fillcolor=lightgrey, style=filled]
+
+	/* Alive monitoring point color */
+	node [height=0.2, fontname=Helvetica, fontcolor=black, fontsize=8];
+	"Alive Monitor" [fillcolor=pink, style=filled]
+
+	/* Visible edges in the key */  
+    key:i1:e -> key2:i1:w [color=blue]
+    key:i2:e -> key2:i2:w [color=darkgreen, style=dashed]
+    key:i3:e -> key2:i3:w [color=darkgreen, style=bold, arrowhead=none]
+    key:i4:e -> key2:i4:w [color=darkgreen, style=dashed, arrowhead=none]
+	
+	/* Invisible edges for layout purposes */
+	key:i4 -> "Supervised Entity(ID)" [style="invis"]
+	"Supervised Entity(ID)" -> "Alive Monitor" [style="invis"]
+  }
+
+}
+

@@ -1,0 +1,3072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Engine="4.2.2.6" TimeStamp="2016-08-12 06:01 pm" CS="270845872066">
+	<General>
+		<ProjectName Value="EPS.ecuc"/>
+		<ProjectFolder Value="C:\Sankar\Chrysler\Synergy\CL\Temp_work\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\Config\ECUC\"/>
+		<RootTargetFolder Value=""/>
+		<PackageLicense Value=""/>
+		<Author Value=""/>
+		<Company Value=""/>
+		<Description/>
+		<CreationDate Value="2011-03-16 01:28 pm"/>
+		<Revision Value=""/>
+		<LogGeneral Value="False"/>
+		<LogChanges Value="False"/>
+		<LogGeneration Value="False"/>
+		<LogValidation Value="False"/>
+		<LogImport Value="False"/>
+		<Controller Value="Tmsx70_Tms570ls30306uzwt"/>
+		<Phase Value="PreCompile"/>
+	</General>
+	<Group Value="_Board" Version="x.x.x" Active="True" PurgeSave="False" TargetDirectory=""/>
+	<Group Value="AbsHwPosScom" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="ActivePull" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Adc" Version="1.3.1" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="ApXcp" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="ArbLmt" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Assist" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="AssistFirewall" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="AstLmt" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="AvgFricLrn" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="BatteryVoltage" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="BkCpPc" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="BVDiag" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Can_Tms470Dcan" Version="" Active="False" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)">
+		<Container Name="Can_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Identifier Name="CAN_TMS470DCAN_GROUP_CLASSNAME">
+				<Entry Value="Can_Group" Display="Can_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="CanIf" Version="" Active="False" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)">
+		<Container Name="CanIf_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Identifier Name="CANIF_GROUP_CLASSNAME">
+				<Entry Value="CanIf_Group" Display="CanIf_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="CanXcp" Version="" Active="False" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)">
+		<Container Name="CanXcp_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Identifier Name="CANXCP_GROUP_CLASSNAME">
+				<Entry Value="CanXcp_Group" Display="CanXcp_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="CmMtrCurr" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Com" Version="3.0.1" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Crc" Version="4.1.1" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="CtrldDisShtdn" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="CtrlTemp" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="CurrCmd" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="CurrParamComp" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Damping" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="DampingFirewall" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Dem" Version="" Active="False" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)">
+		<Container Name="Dem_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Identifier Name="DEM_GROUP_CLASSNAME">
+				<Entry Value="Dem_Group" Display="Dem_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="Det" Version="" Active="False" PurgeSave="False" TargetDirectory=".">
+		<Container Name="Det_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Identifier Name="DET_GROUP_CLASSNAME">
+				<Entry Value="Det_Group" Display="Det_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="DiagMgr" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="DigPhsReasDiag" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Dio" Version="2.1.0" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Ea" Version="" Active="False" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)">
+		<Container Name="Ea_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Container Name="Ea" Type="ctInstance" Active="False" Id="0" Class="">
+				<Container Name="EaPublishedInformation" Type="ctSpecial" Active="True" Id="0" Class="EaPublishedInformation">
+					<Identifier Name="EA_EAPUBLISHEDINFORMATION_CLASSNAME">
+						<Entry Value="EaPublishedInformation" Display="EaPublishedInformation"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_OVERHEAD">
+						<Entry Value="2" Display="2"/>
+					</Identifier>
+					<Identifier Name="EA_PAGE_OVERHEAD">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EA_INCLUDE_FILE">
+						<Entry Value="Ea.h" Display="Ea.h"/>
+					</Identifier>
+					<Identifier Name="EA_CBK_INCLUDE_FILE">
+						<Entry Value="Ea_Cbk.h" Display="Ea_Cbk.h"/>
+					</Identifier>
+					<Identifier Name="EA_SETMODE">
+						<Entry Value="Ea_SetMode" Display="Ea_SetMode"/>
+					</Identifier>
+					<Identifier Name="EA_READ">
+						<Entry Value="Ea_Read" Display="Ea_Read"/>
+					</Identifier>
+					<Identifier Name="EA_WRITE">
+						<Entry Value="Ea_Write" Display="Ea_Write"/>
+					</Identifier>
+					<Identifier Name="EA_CANCEL">
+						<Entry Value="Ea_Cancel" Display="Ea_Cancel"/>
+					</Identifier>
+					<Identifier Name="EA_GETSTATUS">
+						<Entry Value="Ea_GetStatus" Display="Ea_GetStatus"/>
+					</Identifier>
+					<Identifier Name="EA_GETJOBRESULT">
+						<Entry Value="Ea_GetJobResult" Display="Ea_GetJobResult"/>
+					</Identifier>
+					<Identifier Name="EA_ERASEIMMEDIATEBLOCK">
+						<Entry Value="Ea_EraseImmediateBlock" Display="Ea_EraseImmediateBlock"/>
+					</Identifier>
+					<Identifier Name="EA_INVALIDATEBLOCK">
+						<Entry Value="Ea_InvalidateBlock" Display="Ea_InvalidateBlock"/>
+					</Identifier>
+					<Identifier Name="EA_MAXIMUM_BLOCKING_TIME">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_CONFIG_BLOCK" Type="ctSpecial" Active="True" Id="0" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_CONFIG_BLOCK" Display="EA_CONFIG_BLOCK"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="ConfigBlock" Display="ConfigBlock"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="32" Display="32"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="2" Display="2"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_ACTVDIAGINFO_BOOT" Type="ctSpecial" Active="True" Id="1" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_ACTVDIAGINFO_BOOT" Display="EA_BLOCK_SER_ACTVDIAGINFO_BOOT"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_ACTIVEDIAGINFO_BOOT" Display="NVM_BLOCK_SER_ACTIVEDIAGINFO_BOOT"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="64" Display="64"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="12" Display="12"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_CONFIG_BLOCK1" Type="ctSpecial" Active="True" Id="2" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_CONFIG_BLOCK1" Display="EA_CONFIG_BLOCK1"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_PROGRAMMINGINFO" Display="NVM_BLOCK_SER_PROGRAMMINGINFO"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="96" Display="96"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="18" Display="18"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="9" Display="9"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="11" Display="11"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_METADATA_APPLICATION" Type="ctSpecial" Active="True" Id="3" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_METADATA_APPLICATION" Display="EA_BLOCK_SER_METADATA_APPLICATION"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_METADATA_APPLICATION" Display="NVM_BLOCK_SER_METADATA_APPLICATION"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="128" Display="128"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="29" Display="29"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="32" Display="32"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="34" Display="34"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_METADATA_CAL1" Type="ctSpecial" Active="True" Id="4" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_METADATA_CAL1" Display="EA_BLOCK_SER_METADATA_CAL1"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_METADATA_CAL1" Display="NVM_BLOCK_SER_METADATA_CAL1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="160" Display="160"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="63" Display="63"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="32" Display="32"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="34" Display="34"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_METADATA_CAL2" Type="ctSpecial" Active="True" Id="5" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_METADATA_CAL2" Display="EA_BLOCK_SER_METADATA_CAL2"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_METADATA_CAL2" Display="NVM_BLOCK_SER_METADATA_CAL2"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="192" Display="192"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="97" Display="97"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="32" Display="32"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="34" Display="34"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_HWPARTNUMBER" Type="ctSpecial" Active="True" Id="6" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_HWPARTNUMBER" Display="EA_BLOCK_SER_HWPARTNUMBER"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_HWPARTNUMBER" Display="NVM_BLOCK_SER_HWPARTNUMBER"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="224" Display="224"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="131" Display="131"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="10" Display="10"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="12" Display="12"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_HWVERSIONINFO" Type="ctSpecial" Active="True" Id="7" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_HWVERSIONINFO" Display="EA_BLOCK_SER_HWVERSIONINFO"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_HWVERSIONINFO" Display="NVM_BLOCK_SER_HWVERSIONINFO"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="256" Display="256"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="143" Display="143"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="3" Display="3"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="5" Display="5"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_BOOTSWVERSIONINFO" Type="ctSpecial" Active="True" Id="8" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_BOOTSWVERSIONINFO" Display="EA_BLOCK_SER_BOOTSWVERSIONINFO"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_BOOTSWVERSIONINFO" Display="NVM_BLOCK_SER_BOOTSWVERSIONINFO"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="288" Display="288"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="148" Display="148"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="3" Display="3"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="5" Display="5"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_HWSUPPID" Type="ctSpecial" Active="True" Id="9" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_HWSUPPID" Display="EA_BLOCK_SER_HWSUPPID"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_HWSUPPID" Display="NVM_BLOCK_SER_HWSUPPID"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="320" Display="320"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="153" Display="153"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="2" Display="2"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_ACTVDIAGINFO_APPL" Type="ctSpecial" Active="True" Id="10" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_ACTVDIAGINFO_APPL" Display="EA_BLOCK_SER_ACTVDIAGINFO_APPL"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_ACTIVEDIAGINFO_APPL" Display="NVM_BLOCK_SER_ACTIVEDIAGINFO_APPL"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="352" Display="352"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="157" Display="157"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_RESPONEVENTACTVSTATE" Type="ctSpecial" Active="True" Id="11" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_RESPONEVENTACTVSTATE" Display="EA_BLOCK_SER_RESPONEVENTACTVSTATE"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_RESPONEVENTACTVSTATE" Display="NVM_BLOCK_SER_RESPONEVENTACTVSTATE"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="384" Display="384"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="163" Display="163"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="2" Display="2"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_VINODOCOUNTER" Type="ctSpecial" Active="True" Id="12" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_VINODOCOUNTER" Display="EA_BLOCK_SER_VINODOCOUNTER"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_VINODOMETERCOUNTER" Display="NVM_BLOCK_SER_VINODOMETERCOUNTER"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="416" Display="416"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="167" Display="167"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="2" Display="2"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_DIAGSPECINFO" Type="ctSpecial" Active="True" Id="13" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_DIAGSPECINFO" Display="EA_BLOCK_SER_DIAGSPECINFO"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_DIAGSPECINFO" Display="NVM_BLOCK_SER_DIAGSPECINFO"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="448" Display="448"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="171" Display="171"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_ECUSERIALNUMBER" Type="ctSpecial" Active="True" Id="14" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_ECUSERIALNUMBER" Display="EA_BLOCK_SER_ECUSERIALNUMBER"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_ECUSERIALNUMBER" Display="NVM_BLOCK_SER_ECUSERIALNUMBER"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="480" Display="480"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="177" Display="177"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="12" Display="12"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="14" Display="14"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_VEHICLEINFO" Type="ctSpecial" Active="True" Id="15" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_VEHICLEINFO" Display="EA_BLOCK_SER_VEHICLEINFO"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_VEHICLEINFO" Display="NVM_BLOCK_SER_VEHICLEINFO"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="512" Display="512"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="191" Display="191"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_VINCURRENT" Type="ctSpecial" Active="True" Id="16" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_VINCURRENT" Display="EA_BLOCK_SER_VINCURRENT"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_VINCURRENT" Display="NVM_BLOCK_SER_VINCURRENT"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="544" Display="544"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="197" Display="197"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="17" Display="17"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="19" Display="19"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SER_VINORIGINAL" Type="ctSpecial" Active="True" Id="17" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SER_VINORIGINAL" Display="EA_BLOCK_SER_VINORIGINAL"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_VINORIGINAL" Display="NVM_BLOCK_SER_VINORIGINAL"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="576" Display="576"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="216" Display="216"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="17" Display="17"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="19" Display="19"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_CMS_NXTRMEC" Type="ctSpecial" Active="True" Id="18" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_CMS_NXTRMEC" Display="EA_BLOCK_CMS_NXTRMEC"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_CMS_NXTRMEC" Display="NVM_BLOCK_CMS_NXTRMEC"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="608" Display="608"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="235" Display="235"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="3" Display="3"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_CMS_ECUSRLNUM" Type="ctSpecial" Active="True" Id="19" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_CMS_ECUSRLNUM" Display="EA_BLOCK_CMS_ECUSRLNUM"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_CMS_ECUSRLNUM" Display="NVM_BLOCK_CMS_ECUSRLNUM"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="640" Display="640"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="238" Display="238"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_CMS_EPSSRLNUM" Type="ctSpecial" Active="True" Id="20" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_CMS_EPSSRLNUM" Display="EA_BLOCK_CMS_EPSSRLNUM"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_CMS_EPSSRLNUM" Display="NVM_BLOCK_CMS_EPSSRLNUM"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="672" Display="672"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="244" Display="244"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_CMS_ECUHWPN" Type="ctSpecial" Active="True" Id="21" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_CMS_ECUHWPN" Display="EA_BLOCK_CMS_ECUHWPN"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_SER_ECUPN" Display="NVM_BLOCK_SER_ECUPN"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="704" Display="704"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="250" Display="250"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="10" Display="10"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="12" Display="12"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_CMS_NXTRMANUFSCRATCHPAD" Type="ctSpecial" Active="True" Id="22" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_CMS_NXTRMANUFSCRATCHPAD" Display="EA_BLOCK_CMS_NXTRMANUFSCRATCHPAD"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_CMS_NXTRMANUFSCRATCHPAD" Display="NVM_BLOCK_CMS_NXTRMANUFSCRATCHPAD"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="736" Display="736"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="262" Display="262"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="64" Display="64"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="66" Display="66"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_CMS_IGNCNTR" Type="ctSpecial" Active="True" Id="23" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_CMS_IGNCNTR" Display="EA_BLOCK_CMS_IGNCNTR"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_CMS_IGNCNTR" Display="NVM_BLOCK_CMS_IGNCNTR"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="768" Display="768"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="328" Display="328"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="2" Display="2"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_EPS_DEFEATS" Type="ctSpecial" Active="True" Id="24" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_EPS_DEFEATS" Display="EA_BLOCK_EPS_DEFEATS"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_EPSDEFEATS" Display="NVM_BLOCK_EPSDEFEATS"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="800" Display="800"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="332" Display="332"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_EOLCTRLPOLARITY" Type="ctSpecial" Active="True" Id="25" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_EOLCTRLPOLARITY" Display="EA_BLOCK_EOLCTRLPOLARITY"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_Polarity_EOLCtrlPolarity" Display="Rte_NvmBlock_Polarity_EOLCtrlPolarity"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="832" Display="832"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="338" Display="338"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_TRQCMDSF" Type="ctSpecial" Active="True" Id="26" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_TRQCMDSF" Display="EA_BLOCK_TRQCMDSF"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_TrqCmdScl_TorqueCmdSF_Uls_f32" Display="Rte_NvmBlock_TrqCmdScl_TorqueCmdSF_Uls_f32"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="864" Display="864"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="344" Display="344"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_CURRTEMPOFFSET" Type="ctSpecial" Active="True" Id="27" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_CURRTEMPOFFSET" Display="EA_BLOCK_CURRTEMPOFFSET"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_CmMtrCurr_CurrTempOffset" Display="Rte_NvmBlock_CmMtrCurr_CurrTempOffset"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="896" Display="896"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="350" Display="350"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="96" Display="96"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="98" Display="98"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_SHCURRCAL" Type="ctSpecial" Active="True" Id="28" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_SHCURRCAL" Display="EA_BLOCK_SHCURRCAL"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_CmMtrCurr_ShCurrCal" Display="Rte_NvmBlock_CmMtrCurr_ShCurrCal"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="928" Display="928"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="448" Display="448"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="28" Display="28"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="30" Display="30"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_HWTRQSCALE" Type="ctSpecial" Active="True" Id="29" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_HWTRQSCALE" Display="EA_BLOCK_HWTRQSCALE"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_HwTrq_HwTrqScaleData" Display="Rte_NvmBlock_HwTrq_HwTrqScaleData"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="960" Display="960"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="478" Display="478"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="5" Display="5"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="7" Display="7"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_HWTRQTRIM" Type="ctSpecial" Active="True" Id="30" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_HWTRQTRIM" Display="EA_BLOCK_HWTRQTRIM"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_HwTrq_HwTrqTrimData" Display="Rte_NvmBlock_HwTrq_HwTrqTrimData"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="992" Display="992"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="485" Display="485"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="18" Display="18"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="20" Display="20"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_CONFIG_BLOCK4" Type="ctSpecial" Active="True" Id="31" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_CONFIG_BLOCK4" Display="EA_CONFIG_BLOCK4"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_BatteryVoltage_OvervoltageData" Display="Rte_NvmBlock_BatteryVoltage_OvervoltageData"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1024" Display="1024"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="505" Display="505"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="8" Display="8"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_MTRPARMLEARNED" Type="ctSpecial" Active="True" Id="32" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_MTRPARMLEARNED" Display="EA_BLOCK_MTRPARMLEARNED"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_ParameterEst_MtrParmLearned" Display="Rte_NvmBlock_ParameterEst_MtrParmLearned"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1056" Display="1056"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="513" Display="513"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="8" Display="8"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="10" Display="10"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_EOLTRQSTEPDATA" Type="ctSpecial" Active="True" Id="33" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_EOLTRQSTEPDATA" Display="EA_BLOCK_EOLTRQSTEPDATA"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_HwTrq_EOLTrqStepData" Display="Rte_NvmBlock_HwTrq_EOLTrqStepData"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1088" Display="1088"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="523" Display="523"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="40" Display="40"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="42" Display="42"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_COGTRQCAL" Type="ctSpecial" Active="True" Id="34" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_COGTRQCAL" Display="EA_BLOCK_COGTRQCAL"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_IPMTrqCanc_CogTrqCal" Display="Rte_NvmBlock_IPMTrqCanc_CogTrqCal"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1120" Display="1120"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="565" Display="565"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="1024" Display="1024"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="1026" Display="1026"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_LRNEOT" Type="ctSpecial" Active="True" Id="35" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_LRNEOT" Display="EA_BLOCK_LRNEOT"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_LrnEOT_LearnedEOT" Display="Rte_NvmBlock_LrnEOT_LearnedEOT"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1152" Display="1152"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="1591" Display="1591"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="10" Display="10"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="12" Display="12"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_TYPEH" Type="ctSpecial" Active="True" Id="36" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_TYPEH" Display="EA_BLOCK_TYPEH"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_StaMd_TypeHRamBuffer" Display="Rte_NvmBlock_StaMd_TypeHRamBuffer"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1184" Display="1184"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="1603" Display="1603"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="100" Display="100"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="102" Display="102"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_CLOSECHECKDATA" Type="ctSpecial" Active="True" Id="37" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_CLOSECHECKDATA" Display="EA_BLOCK_CLOSECHECKDATA"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_StaMd_CloseCheckData" Display="Rte_NvmBlock_StaMd_CloseCheckData"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1216" Display="1216"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="1705" Display="1705"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="6" Display="6"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_CONFIG_AVGFRICLRN" Type="ctSpecial" Active="True" Id="38" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_CONFIG_AVGFRICLRN" Display="EA_CONFIG_AVGFRICLRN"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_Ap_AvgFricLrn_AvgFricLrnData" Display="Rte_NvmBlock_Ap_AvgFricLrn_AvgFricLrnData"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1248" Display="1248"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="1711" Display="1711"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="204" Display="204"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="206" Display="206"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_NTCSTRG" Type="ctSpecial" Active="True" Id="39" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_NTCSTRG" Display="EA_BLOCK_NTCSTRG"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_DIAGMGR_NTCSTRG" Display="NVM_BLOCK_DIAGMGR_NTCSTRG"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1280" Display="1280"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="1917" Display="1917"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="60" Display="60"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="62" Display="62"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_BLACKBOX" Type="ctSpecial" Active="True" Id="40" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_BLACKBOX" Display="EA_BLOCK_BLACKBOX"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_DIAGMGR_BLACKBOX" Display="NVM_BLOCK_DIAGMGR_BLACKBOX"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1312" Display="1312"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="1979" Display="1979"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="192" Display="192"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="194" Display="194"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_EOLMTRPOSSNSR" Type="ctSpecial" Active="True" Id="41" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_EOLMTRPOSSNSR" Display="EA_BLOCK_EOLMTRPOSSNSR"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_MtrPos_MtrPosSnsr_EOLData" Display="Rte_NvmBlock_MtrPos_MtrPosSnsr_EOLData"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1344" Display="1344"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="2173" Display="2173"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="314" Display="314"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="316" Display="316"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_MTRPARMCAL" Type="ctSpecial" Active="True" Id="42" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_MTRPARMCAL" Display="EA_BLOCK_MTRPARMCAL"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_CurrParamComp_EOLNomMtrParam" Display="Rte_NvmBlock_CurrParamComp_EOLNomMtrParam"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1376" Display="1376"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="2489" Display="2489"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="8" Display="8"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="10" Display="10"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_CONFIG_BLOCK5" Type="ctSpecial" Active="True" Id="43" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_CONFIG_BLOCK5" Display="EA_CONFIG_BLOCK5"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_DIAGMGR_LATCHCNTRS" Display="NVM_BLOCK_DIAGMGR_LATCHCNTRS"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1440" Display="1440"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="2503" Display="2503"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="16" Display="16"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="18" Display="18"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_BLOCK_DEM" Type="ctSpecial" Active="True" Id="44" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_BLOCK_DEM" Display="EA_BLOCK_DEM"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NvM_NVM_BLOCK_DEM" Display="NvM_NVM_BLOCK_DEM"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1472" Display="1472"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="2521" Display="2521"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="330" Display="330"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="332" Display="332"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_CONFIG_BLOCK7" Type="ctSpecial" Active="True" Id="45" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_CONFIG_BLOCK7" Display="EA_CONFIG_BLOCK7"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_Ap_TrqCanc_CogTrqRplComp" Display="Rte_NvmBlock_Ap_TrqCanc_CogTrqRplComp"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1504" Display="1504"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="2853" Display="2853"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="18" Display="18"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="20" Display="20"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_CONFIG_BLOCK8" Type="ctSpecial" Active="True" Id="46" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_CONFIG_BLOCK8" Display="EA_CONFIG_BLOCK8"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="Rte_NvmBlock_Ap_AstLmt_SteerAsstDefeat" Display="Rte_NvmBlock_Ap_AstLmt_SteerAsstDefeat"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1536" Display="1536"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="2873" Display="2873"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="3" Display="3"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EA_CONFIG_CUSTECUPN" Type="ctSpecial" Active="True" Id="47" Class="EaBlockConfiguration">
+					<Identifier Name="EA_EABLOCKCONFIGURATION_CLASSNAME">
+						<Entry Value="EA_CONFIG_CUSTECUPN" Display="EA_CONFIG_CUSTECUPN"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_BLOCK_NAME">
+						<Entry Value="NVM_BLOCK_CMS_ECUPN" Display="NVM_BLOCK_CMS_ECUPN"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_NUMBER">
+						<Entry Value="1568" Display="1568"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_ADDRESS">
+						<Entry Value="2876" Display="2876"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_DATASETS">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_BLOCK_SIZE">
+						<Entry Value="12" Display="12"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGES">
+						<Entry Value="14" Display="14"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_INSTANCES">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_NUMBER_OF_WRITE_CYCLES">
+						<Entry Value="10000" Display="10000"/>
+					</Identifier>
+					<Identifier Name="EA_IMMEDIATE_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERIFY_WRITTEN_DATA">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_DEVICE_INDEX_BLOCK">
+						<Entry Value="" Display=""/>
+					</Identifier>
+				</Container>
+				<Container Name="EaGeneral" Type="ctSpecial" Active="True" Id="0" Class="EaGeneral">
+					<Identifier Name="EA_EAGENERAL_CLASSNAME">
+						<Entry Value="EaGeneral" Display="EaGeneral"/>
+					</Identifier>
+					<Identifier Name="EA_DEV_ERROR_DETECT">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_JOB_END_NOTIFICATION">
+						<Entry Value="NvM_JobEndNotification" Display="NvM_JobEndNotification"/>
+					</Identifier>
+					<Identifier Name="EA_JOB_ERROR_NOTIFICATION">
+						<Entry Value="NvM_JobErrorNotification" Display="NvM_JobErrorNotification"/>
+					</Identifier>
+					<Identifier Name="EA_POLLING_MODE">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EA_VERSION_INFO_API">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_VIRTUAL_PAGE_SIZE">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_ADDRESS_TYPE">
+						<Entry Value="uint16" Display="uint16"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_LENGTH_TYPE">
+						<Entry Value="uint16" Display="uint16"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_CHK_UNINIT">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_CHK_IMMEDIATE_DATA">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_DO_PARAM_CHK">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_CHK_PARAM_BLOCK_NUMBER">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_CHK_PARAM_LENGTH_OFFSET">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_CHK_PARAM_DATABUFFERPTR">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_CHK_PARAM_MODE">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_CFG_CHK_PARAM_VINFO">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_DET_ERRORHOOK">
+						<Entry Value="Det_ReportError" Display="Det_ReportError"/>
+					</Identifier>
+					<Identifier Name="EA_DET_INCLUDE_FILE">
+						<Entry Value="Det.h" Display="Det.h"/>
+					</Identifier>
+					<Identifier Name="EA_IRQ_HANDLING">
+						<Entry Value="InterruptFunctionSet" Display="InterruptFunctionSet"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_POLLING_MODE">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_NVM_CALLBACK_INCLUDE_FILE">
+						<Entry Value="NvM_Cbk.h" Display="NvM_Cbk.h"/>
+					</Identifier>
+					<Identifier Name="EA_CORRECT_SINGLE_BIT_FLIPS">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_USE_RECOVERY_MECHANISM">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_EEP_ERASE_UNIT_SIZE">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EA_DATASET_SELECTION_BITS">
+						<Entry Value="5" Display="5"/>
+					</Identifier>
+					<Identifier Name="EA_DEV_ERROR_REPORT">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EA_INDEX">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+				</Container>
+				<Identifier Name="EA_INSTANCE_CLASSNAME">
+					<Entry Value="Ea" Display="Ea"/>
+				</Identifier>
+				<Identifier Name="EA_DEVICE_INDEX">
+					<Entry Value="EepAT25128" Display="EepAT25128"/>
+				</Identifier>
+			</Container>
+			<Identifier Name="EA_GROUP_CLASSNAME">
+				<Entry Value="Ea_Group" Display="Ea_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="EcuM" Version="5.7.1" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="EepAt25128" Version="" Active="False" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)">
+		<Container Name="EepAt25128_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Container Name="EepAT25128" Type="ctInstance" Active="False" Id="0" Class="">
+				<Container Name="EepAt25128_Runtime" Type="ctRuntime" Active="True" Id="0" Class="">
+					<Container Name="EepExternalDriver" Type="ctSpecial" Active="True" Id="0" Class="EepExternalDriver">
+						<Identifier Name="EEPAT25128_EEPEXTERNALDRIVER_CLASSNAME">
+							<Entry Value="EepExternalDriver" Display="EepExternalDriver"/>
+						</Identifier>
+						<Identifier Name="EEPAT25128_SPI_REFERENCE">
+							<Entry Value="Spi_EeStatus_Seq" Display="Spi_EeStatus_Seq"/>
+							<Entry Value="Spi_EeData_Seq" Display="Spi_EeData_Seq"/>
+						</Identifier>
+					</Container>
+					<Identifier Name="EEPAT25128_RUNTIME_CLASSNAME">
+						<Entry Value="EepAt25128_Runtime" Display="EepAt25128_Runtime"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_BASE_ADDRESS">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_DEFAULT_MODE">
+						<Entry Value="MEMIF_MODE_FAST" Display="fast"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_FAST_READ_BLOCK_SIZE">
+						<Entry Value="255" Display="255"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_FAST_WRITE_BLOCK_SIZE"/>
+					<Identifier Name="EEPAT25128_JOB_CALL_CYCLE">
+						<Entry Value="" Display=""/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_JOB_END_NOTIFICATION">
+						<Entry Value="Ea_JobEndNotification" Display="Ea_JobEndNotification"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_JOB_ERROR_NOTIFICATION">
+						<Entry Value="Ea_JobErrorNotification" Display="Ea_JobErrorNotification"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_NORMAL_READ_BLOCK_SIZE">
+						<Entry Value="" Display=""/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_NORMAL_WRITE_BLOCK_SIZE"/>
+					<Identifier Name="EEPAT25128_SIZE">
+						<Entry Value="8192" Display="8192"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_JOB_TIMEOUT_FAST">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_JOB_TIMEOUT_NORMAL">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_INCLUDE_LIST">
+						<Entry Value="Ea_Cbk.h" Display="Ea_Cbk.h"/>
+					</Identifier>
+				</Container>
+				<Container Name="EepPublishedInformation" Type="ctSpecial" Active="True" Id="0" Class="EepPublishedInformation">
+					<Identifier Name="EEPAT25128_EEPPUBLISHEDINFORMATION_CLASSNAME">
+						<Entry Value="EepPublishedInformation" Display="EepPublishedInformation"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ALLOWED_WRITE_CYCLES">
+						<Entry Value="100000" Display="100000"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ERASE_TIME">
+						<Entry Value="1E+04" Display="10000.0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ERASE_UNIT_SIZE">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ERASE_VALUE">
+						<Entry Value="255" Display="255"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_MINIMUM_ADDRESS_TYPE">
+						<Entry Value="16" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_MINIMUM_LENGTH_TYPE">
+						<Entry Value="16" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_READ_UNIT_SIZE">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_SPECIFIED_ERASE_CYCLES">
+						<Entry Value="100000" Display="100000"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_TOTAL_SIZE">
+						<Entry Value="65536" Display="65536"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_WRITE_TIME">
+						<Entry Value="1E+04" Display="10000.0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_WRITE_UNIT_SIZE">
+						<Entry Value="1" Display="1"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_INCLUDE_FILE">
+						<Entry Value="Eep_30_At25128.h" Display="Eep_30_At25128.h"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_SETMODE">
+						<Entry Value="Eep_30_At25128_SetMode" Display="Eep_30_At25128_SetMode"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_READ">
+						<Entry Value="Eep_30_At25128_Read" Display="Eep_30_At25128_Read"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_WRITE">
+						<Entry Value="Eep_30_At25128_Write" Display="Eep_30_At25128_Write"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ERASE">
+						<Entry Value="Eep_30_At25128_Erase" Display="Eep_30_At25128_Erase"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_COMPARE">
+						<Entry Value="Eep_30_At25128_Compare" Display="Eep_30_At25128_Compare"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CANCEL">
+						<Entry Value="Eep_30_At25128_Cancel" Display="Eep_30_At25128_Cancel"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_GETSTATUS">
+						<Entry Value="Eep_30_At25128_GetStatus" Display="Eep_30_At25128_GetStatus"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_GETJOBRESULT">
+						<Entry Value="Eep_30_At25128_GetJobResult" Display="Eep_30_At25128_GetJobResult"/>
+					</Identifier>
+				</Container>
+				<Container Name="Atmel_At25128" Type="ctSpecial" Active="True" Id="0" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Atmel_At25128" Display="Atmel_At25128"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="16384" Display="16384"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize64" Display="64"/>
+					</Identifier>
+				</Container>
+				<Container Name="Atmel_At25256" Type="ctSpecial" Active="True" Id="1" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Atmel_At25256" Display="Atmel_At25256"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="32768" Display="32768"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize64" Display="64"/>
+					</Identifier>
+				</Container>
+				<Container Name="Microchip_25LC080A" Type="ctSpecial" Active="True" Id="2" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Microchip_25LC080A" Display="Microchip_25LC080A"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="1024" Display="1024"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize16" Display="16"/>
+					</Identifier>
+				</Container>
+				<Container Name="Microchip_25LC080B" Type="ctSpecial" Active="True" Id="3" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Microchip_25LC080B" Display="Microchip_25LC080B"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="1024" Display="1024"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="Microchip_25LC160A" Type="ctSpecial" Active="True" Id="4" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Microchip_25LC160A" Display="Microchip_25LC160A"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="2048" Display="2048"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize16" Display="16"/>
+					</Identifier>
+				</Container>
+				<Container Name="Microchip_25LC160B" Type="ctSpecial" Active="True" Id="5" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Microchip_25LC160B" Display="Microchip_25LC160B"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="2048" Display="2048"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="Microchip_25LC320A" Type="ctSpecial" Active="True" Id="6" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Microchip_25LC320A" Display="Microchip_25LC320A"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="4096" Display="4096"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="Microchip_25LC640A" Type="ctSpecial" Active="True" Id="7" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Microchip_25LC640A" Display="Microchip_25LC640A"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="8192" Display="8192"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="Microchip_25LC128" Type="ctSpecial" Active="True" Id="8" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Microchip_25LC128" Display="Microchip_25LC128"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="16384" Display="16384"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize64" Display="64"/>
+					</Identifier>
+				</Container>
+				<Container Name="Microchip_25LC256" Type="ctSpecial" Active="True" Id="9" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Microchip_25LC256" Display="Microchip_25LC256"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="32768" Display="32768"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize64" Display="64"/>
+					</Identifier>
+				</Container>
+				<Container Name="Seiko_S25C010A" Type="ctSpecial" Active="True" Id="10" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Seiko_S25C010A" Display="Seiko_S25C010A"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="128" Display="128"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing8Bit" Display="8"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize16" Display="16"/>
+					</Identifier>
+				</Container>
+				<Container Name="Seiko_S25C020A" Type="ctSpecial" Active="True" Id="11" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Seiko_S25C020A" Display="Seiko_S25C020A"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="256" Display="256"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing8Bit" Display="8"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize16" Display="16"/>
+					</Identifier>
+				</Container>
+				<Container Name="Seiko_S25C040A" Type="ctSpecial" Active="True" Id="12" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="Seiko_S25C040A" Display="Seiko_S25C040A"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="512" Display="512"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing9Bit" Display="9"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize16" Display="16"/>
+					</Identifier>
+				</Container>
+				<Container Name="STMicroelectronics_M35SW08" Type="ctSpecial" Active="True" Id="13" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="STMicroelectronics_M35SW08" Display="STMicroelectronics_M35SW08"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="2048" Display="2048"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="32" Display="32"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="STMicroelectronics_M35SW16" Type="ctSpecial" Active="True" Id="14" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="STMicroelectronics_M35SW16" Display="STMicroelectronics_M35SW16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="4096" Display="4096"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="32" Display="32"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="STMicroelectronics_M95080" Type="ctSpecial" Active="True" Id="15" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="STMicroelectronics_M95080" Display="STMicroelectronics_M95080"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="1024" Display="1024"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="STMicroelectronics_M95160" Type="ctSpecial" Active="True" Id="16" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="STMicroelectronics_M95160" Display="STMicroelectronics_M95160"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="2048" Display="2048"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="STMicroelectronics_M95320" Type="ctSpecial" Active="True" Id="17" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="STMicroelectronics_M95320" Display="STMicroelectronics_M95320"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="4096" Display="4096"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="STMicroelectronics_M95640" Type="ctSpecial" Active="True" Id="18" Class="EepDeviceInformation">
+					<Identifier Name="EEPAT25128_EEPDEVICEINFORMATION_CLASSNAME">
+						<Entry Value="STMicroelectronics_M95640" Display="STMicroelectronics_M95640"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_SIZE">
+						<Entry Value="8192" Display="8192"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ADDRESS_BIT_WIDTH">
+						<Entry Value="EepAddressing16Bit" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CHIP_OFFSET">
+						<Entry Value="0" Display="0"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_PAGE_SIZE">
+						<Entry Value="EepPageSize32" Display="32"/>
+					</Identifier>
+				</Container>
+				<Container Name="EepGeneral" Type="ctSpecial" Active="True" Id="0" Class="EepGeneral">
+					<Identifier Name="EEPAT25128_EEPGENERAL_CLASSNAME">
+						<Entry Value="EepGeneral" Display="EepGeneral"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_DEV_ERROR_DETECT">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_DRIVER_INDEX">
+						<Entry Value="" Display=""/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_USE_INTERRUPTS">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_VERSION_INFO_API">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_WRITE_CYCLE_REDUCTION">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_DO_PARAM_CHK">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_CHK_PARAM_CONFIG">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_CHK_PARAM_DATA">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_CHK_PARAM_LENGTH">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_CHK_PARAM_ADDRESS">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_CHK_UNINIT">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_DEBUG_REPORTING">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_ERRORHOOK">
+						<Entry Value="Det_ReportError" Display="Det_ReportError"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_INCLUDE_DET">
+						<Entry Value="Det.h" Display="Det.h"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_PROD_REPORTING">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_SETERROR">
+						<Entry Value="Dem_ReportErrorStatus" Display="Dem_ReportErrorStatus"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_INCLUDE_DEM">
+						<Entry Value="Dem.h" Display="Dem.h"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_LOCAL_BUFFER_SIZE">
+						<Entry Value="16" Display="16"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_CFG_CHK_PARAM_VINFO">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_TEST_EEPROM">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_GLOBAL_IRQS">
+						<Entry Value="" Display=""/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_DEVICE_INFORMATION_REF">
+						<Entry Value="STMicroelectronics_M95640" Display="STMicroelectronics_M95640"/>
+					</Identifier>
+				</Container>
+				<Container Name="VectorCommonData" Type="ctSpecial" Active="True" Id="0" Class="VectorCommonData">
+					<Identifier Name="EEPAT25128_VECTORCOMMONDATA_CLASSNAME">
+						<Entry Value="VectorCommonData" Display="VectorCommonData"/>
+					</Identifier>
+					<Identifier Name="EEPAT25128_BSWMD_VERSION">
+						<Entry Value="4.00.00" Display="4.00.00"/>
+					</Identifier>
+				</Container>
+				<Identifier Name="EEPAT25128_INSTANCE_CLASSNAME">
+					<Entry Value="EepAT25128" Display="EepAT25128"/>
+				</Identifier>
+			</Container>
+			<Identifier Name="EEPAT25128_GROUP_CLASSNAME">
+				<Entry Value="EepAt25128_Group" Display="EepAt25128_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="ElePwr" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="EOTActuatorMng" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Fee" Version="2.4.0" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="FlsTst" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="FrqDepDmpnInrtCmp" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Gpt" Version="1.0.4" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Gsod" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="HaLFTO" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="HighFreqAssist" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="HiLoadStall" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="HwPwUp" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="HwTrq" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="HwTrq2" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="HystComp" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Icu" Version="" Active="False" PurgeSave="False" TargetDirectory=".">
+		<Container Name="Icu_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Identifier Name="ICU_GROUP_CLASSNAME">
+				<Entry Value="Icu_Group" Display="Icu_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="IoHwAb" Version="1.6.3" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="LmtCod" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="LrnEOT" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Mcu" Version="2.3.x" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="MemIf" Version="2.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="MtrDrvDiag" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="MtrPos2" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="MtrPos3" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="MtrTempEst" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="MtrVel" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="MtrVel2" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="NvM" Version="3.7.1" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="NvMMgr" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="NvMProxy" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Os" Version="4.1.0" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)\..\GenDataOs" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="OvrVoltMon" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="PAwTO" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="PduR" Version="" Active="False" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)">
+		<Container Name="PduR_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Identifier Name="PDUR_GROUP_CLASSNAME">
+				<Entry Value="PduR_Group" Display="PduR_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="PeakCurrEst" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="PICurrCntrl" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Polarity" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Port" Version="1.2.0" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Pwm" Version="" Active="False" PurgeSave="False" TargetDirectory=".">
+		<Container Name="Pwm_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Identifier Name="PWM_GROUP_CLASSNAME">
+				<Entry Value="Pwm_Group" Display="Pwm_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="PwrLmtFuncCr" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="QuadDet" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Return" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="ReturnFirewall" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Rte" Version="3.2.1" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="ShtdnMech" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="SignlCondn" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Spi" Version="" Active="False" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)">
+		<Container Name="Spi_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Container Name="Spi" Type="ctInstance" Active="False" Id="0" Class="">
+				<Container Name="SpiRuntime" Type="ctRuntime" Active="True" Id="0" Class="">
+					<Container Name="Spi_EeAddr_Ch" Type="ctSpecial" Active="True" Id="0" Class="SpiChannel">
+						<Identifier Name="SPI_SPICHANNEL_CLASSNAME">
+							<Entry Value="Spi_EeAddr_Ch" Display="Spi_EeAddr_Ch"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_ID">
+							<Entry Value="0" Display="0"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_TYPE">
+							<Entry Value="EB" Display="external buffer"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_TYPE_SAVE">
+							<Entry Value="EB" Display="external buffer"/>
+						</Identifier>
+						<Identifier Name="SPI_DATA_WIDTH">
+							<Entry Value="8" Display="a frame transfers 8bit"/>
+						</Identifier>
+						<Identifier Name="SPI_DEFAULT_DATA">
+							<Entry Value="255" Display="255"/>
+						</Identifier>
+						<Identifier Name="SPI_EB_MAX_LENGTH">
+							<Entry Value="3" Display="3"/>
+						</Identifier>
+						<Identifier Name="SPI_IB_N_BUFFERS">
+							<Entry Value="10" Display="10"/>
+						</Identifier>
+						<Identifier Name="SPI_TRANSFER_START">
+							<Entry Value="MSB" Display="most significant bit"/>
+						</Identifier>
+					</Container>
+					<Container Name="Spi_EeData_Ch" Type="ctSpecial" Active="True" Id="1" Class="SpiChannel">
+						<Identifier Name="SPI_SPICHANNEL_CLASSNAME">
+							<Entry Value="Spi_EeData_Ch" Display="Spi_EeData_Ch"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_ID">
+							<Entry Value="1" Display="1"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_TYPE">
+							<Entry Value="EB" Display="external buffer"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_TYPE_SAVE">
+							<Entry Value="EB" Display="external buffer"/>
+						</Identifier>
+						<Identifier Name="SPI_DATA_WIDTH">
+							<Entry Value="8" Display="a frame transfers 8bit"/>
+						</Identifier>
+						<Identifier Name="SPI_DEFAULT_DATA">
+							<Entry Value="255" Display="255"/>
+						</Identifier>
+						<Identifier Name="SPI_EB_MAX_LENGTH">
+							<Entry Value="255" Display="255"/>
+						</Identifier>
+						<Identifier Name="SPI_IB_N_BUFFERS">
+							<Entry Value="20" Display="20"/>
+						</Identifier>
+						<Identifier Name="SPI_TRANSFER_START">
+							<Entry Value="MSB" Display="most significant bit"/>
+						</Identifier>
+					</Container>
+					<Container Name="Spi_EeStatus_Ch" Type="ctSpecial" Active="True" Id="2" Class="SpiChannel">
+						<Identifier Name="SPI_SPICHANNEL_CLASSNAME">
+							<Entry Value="Spi_EeStatus_Ch" Display="Spi_EeStatus_Ch"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_ID">
+							<Entry Value="2" Display="2"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_TYPE">
+							<Entry Value="EB" Display="external buffer"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_TYPE_SAVE">
+							<Entry Value="EB" Display="external buffer"/>
+						</Identifier>
+						<Identifier Name="SPI_DATA_WIDTH">
+							<Entry Value="8" Display="a frame transfers 8bit"/>
+						</Identifier>
+						<Identifier Name="SPI_DEFAULT_DATA">
+							<Entry Value="255" Display="255"/>
+						</Identifier>
+						<Identifier Name="SPI_EB_MAX_LENGTH">
+							<Entry Value="1" Display="1"/>
+						</Identifier>
+						<Identifier Name="SPI_IB_N_BUFFERS">
+							<Entry Value="10" Display="10"/>
+						</Identifier>
+						<Identifier Name="SPI_TRANSFER_START">
+							<Entry Value="MSB" Display="most significant bit"/>
+						</Identifier>
+					</Container>
+					<Container Name="SpiEepAT25128" Type="ctSpecial" Active="True" Id="0" Class="SpiExternalDevice">
+						<Identifier Name="SPI_SPIEXTERNALDEVICE_CLASSNAME">
+							<Entry Value="SpiEepAT25128" Display="SpiEepAT25128"/>
+						</Identifier>
+						<Identifier Name="SPI_BAUDRATE">
+							<Entry Value="2000" Display="2000"/>
+						</Identifier>
+						<Identifier Name="SPI_CS_POLARITY">
+							<Entry Value="HIGH" Display="idle, high"/>
+						</Identifier>
+						<Identifier Name="SPI_DATA_SHIFT_EDGE">
+							<Entry Value="RAISING" Display="data is valid at rising edge"/>
+						</Identifier>
+						<Identifier Name="SPI_ENABLE_CS">
+							<Entry Value="true" Display="True"/>
+						</Identifier>
+						<Identifier Name="SPI_SHIFT_CLOCK_IDLE_LEVEL">
+							<Entry Value="HIGH" Display="clock idle level is high"/>
+						</Identifier>
+						<Identifier Name="SPI_TIME_CLK2_CS">
+							<Entry Value="210" Display="210"/>
+						</Identifier>
+						<Identifier Name="SPI_TIME_CS2_CLK">
+							<Entry Value="110" Display="110"/>
+						</Identifier>
+						<Identifier Name="SPI_CS_MODE">
+							<Entry Value="CONTINOUS" Display="CONTINOUS"/>
+						</Identifier>
+						<Identifier Name="SPI_MODE">
+							<Entry Value="3" Display="3"/>
+						</Identifier>
+						<Identifier Name="SPI_TIME_ENA2_CS">
+							<Entry Value="0" Display="0"/>
+						</Identifier>
+						<Identifier Name="SPI_TIME_CS2_ENA">
+							<Entry Value="0" Display="0"/>
+						</Identifier>
+						<Identifier Name="SPI_CS_IDLE_TIME">
+							<Entry Value="100" Display="100"/>
+						</Identifier>
+						<Identifier Name="SPI_CS_IDENTIFIER">
+							<Entry Value="0" Display="PCS0"/>
+						</Identifier>
+					</Container>
+					<Container Name="SpiHardwareUnit" Type="ctSpecial" Active="True" Id="0" Class="SpiHardwareUnit">
+						<Identifier Name="SPI_SPIHARDWAREUNIT_CLASSNAME">
+							<Entry Value="SpiHardwareUnit" Display="SpiHardwareUnit"/>
+						</Identifier>
+						<Identifier Name="SPI_UNIT_HAS_RAM">
+							<Entry Value="true" Display="True"/>
+						</Identifier>
+						<Identifier Name="SPI_UNIT_USES_DMA">
+							<Entry Value="false" Display="False"/>
+						</Identifier>
+						<Identifier Name="SPI_UNIT_ID">
+							<Entry Value="0" Display="0"/>
+						</Identifier>
+					</Container>
+					<Container Name="Spi_EeStatus_Job" Type="ctSpecial" Active="True" Id="0" Class="SpiJob">
+						<Identifier Name="SPI_SPIJOB_CLASSNAME">
+							<Entry Value="Spi_EeStatus_Job" Display="Spi_EeStatus_Job"/>
+						</Identifier>
+						<Identifier Name="SPI_HW_UNIT">
+							<Entry Value="CSIB0" Display="CSIB0"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_END_NOTIFICATION">
+							<Entry Value="NULL_PTR" Display="NULL_PTR"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_ID">
+							<Entry Value="0" Display="0"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_PRIORITY">
+							<Entry Value="3" Display="3"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_SORT">
+							<Entry Value="0" Display="0"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_ASSIGNMENT">
+							<Entry Value="/%ECUC_PROJECT%/Spi/SpiRuntime/Spi_EeStatus_Ch" Display="Spi_EeStatus_Ch"/>
+						</Identifier>
+						<Identifier Name="SPI_DEVICE_ASSIGNMENT">
+							<Entry Value="/%ECUC_PROJECT%/Spi/SpiRuntime/SpiEepAT25128" Display="SpiEepAT25128"/>
+						</Identifier>
+						<Identifier Name="SPI_HW_UNIT_ASSIGNMENT">
+							<Entry Value="/%ECUC_PROJECT%/Spi/SpiRuntime/SpiHardwareUnit" Display="SpiHardwareUnit"/>
+						</Identifier>
+					</Container>
+					<Container Name="Spi_EeData_Job" Type="ctSpecial" Active="True" Id="1" Class="SpiJob">
+						<Identifier Name="SPI_SPIJOB_CLASSNAME">
+							<Entry Value="Spi_EeData_Job" Display="Spi_EeData_Job"/>
+						</Identifier>
+						<Identifier Name="SPI_HW_UNIT">
+							<Entry Value="CSIB0" Display="CSIB0"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_END_NOTIFICATION">
+							<Entry Value="NULL_PTR" Display="NULL_PTR"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_ID">
+							<Entry Value="1" Display="1"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_PRIORITY">
+							<Entry Value="3" Display="3"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_SORT">
+							<Entry Value="0" Display="0"/>
+						</Identifier>
+						<Identifier Name="SPI_CHANNEL_ASSIGNMENT">
+							<Entry Value="/%ECUC_PROJECT%/Spi/SpiRuntime/Spi_EeAddr_Ch" Display="Spi_EeAddr_Ch"/>
+							<Entry Value="/%ECUC_PROJECT%/Spi/SpiRuntime/Spi_EeData_Ch" Display="Spi_EeData_Ch"/>
+						</Identifier>
+						<Identifier Name="SPI_DEVICE_ASSIGNMENT">
+							<Entry Value="/%ECUC_PROJECT%/Spi/SpiRuntime/SpiEepAT25128" Display="SpiEepAT25128"/>
+						</Identifier>
+						<Identifier Name="SPI_HW_UNIT_ASSIGNMENT">
+							<Entry Value="/%ECUC_PROJECT%/Spi/SpiRuntime/SpiHardwareUnit" Display="SpiHardwareUnit"/>
+						</Identifier>
+					</Container>
+					<Container Name="Spi_EeStatus_Seq" Type="ctSpecial" Active="True" Id="0" Class="SpiSequence">
+						<Identifier Name="SPI_SPISEQUENCE_CLASSNAME">
+							<Entry Value="Spi_EeStatus_Seq" Display="Spi_EeStatus_Seq"/>
+						</Identifier>
+						<Identifier Name="SPI_INTERRUPTIBLE_SEQUENCE">
+							<Entry Value="false" Display="False"/>
+						</Identifier>
+						<Identifier Name="SPI_SEQ_END_NOTIFICATION">
+							<Entry Value="Eep_30_At25128_SpiEnd" Display="Eep_30_At25128_SpiEnd"/>
+						</Identifier>
+						<Identifier Name="SPI_SEQUENCE_ID">
+							<Entry Value="0" Display="0"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_ASSIGNMENT">
+							<Entry Value="/%ECUC_PROJECT%/Spi/SpiRuntime/Spi_EeStatus_Job" Display="Spi_EeStatus_Job"/>
+						</Identifier>
+					</Container>
+					<Container Name="Spi_EeData_Seq" Type="ctSpecial" Active="True" Id="1" Class="SpiSequence">
+						<Identifier Name="SPI_SPISEQUENCE_CLASSNAME">
+							<Entry Value="Spi_EeData_Seq" Display="Spi_EeData_Seq"/>
+						</Identifier>
+						<Identifier Name="SPI_INTERRUPTIBLE_SEQUENCE">
+							<Entry Value="false" Display="False"/>
+						</Identifier>
+						<Identifier Name="SPI_SEQ_END_NOTIFICATION">
+							<Entry Value="Eep_30_At25128_SpiEnd" Display="Eep_30_At25128_SpiEnd"/>
+						</Identifier>
+						<Identifier Name="SPI_SEQUENCE_ID">
+							<Entry Value="1" Display="1"/>
+						</Identifier>
+						<Identifier Name="SPI_JOB_ASSIGNMENT">
+							<Entry Value="/%ECUC_PROJECT%/Spi/SpiRuntime/Spi_EeData_Job" Display="Spi_EeData_Job"/>
+						</Identifier>
+					</Container>
+					<Container Name="SpiClockSettings" Type="ctSpecial" Active="True" Id="0" Class="SpiClockSettings">
+						<Identifier Name="SPI_SPICLOCKSETTINGS_CLASSNAME">
+							<Entry Value="SpiClockSettings" Display="SpiClockSettings"/>
+						</Identifier>
+						<Identifier Name="SPI_CLOCK_SELECTOR">
+							<Entry Value="true" Display="True"/>
+						</Identifier>
+						<Identifier Name="SPI_CLOCK_FREQUENCY">
+							<Entry Value="80" Display="80"/>
+						</Identifier>
+						<Identifier Name="SPI_CLOCK_CONFIGURATION">
+							<Entry Value="/%ECUC_PROJECT%/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClocks/ClockDomains" Display="/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClocks/ClockDomains"/>
+						</Identifier>
+					</Container>
+					<Identifier Name="SPI_RUNTIME_CLASSNAME">
+						<Entry Value="SpiRuntime" Display="SpiRuntime"/>
+					</Identifier>
+					<Identifier Name="SPI_MAX_CHANNEL">
+						<Entry Value="254" Display="254"/>
+					</Identifier>
+					<Identifier Name="SPI_MAX_JOB">
+						<Entry Value="254" Display="254"/>
+					</Identifier>
+					<Identifier Name="SPI_MAX_SEQUENCE">
+						<Entry Value="254" Display="254"/>
+					</Identifier>
+					<Identifier Name="SPI_MAX_H_W_UNIT">
+						<Entry Value="4" Display="4"/>
+					</Identifier>
+				</Container>
+				<Container Name="SpiGeneral" Type="ctSpecial" Active="True" Id="0" Class="SpiGeneral">
+					<Identifier Name="SPI_SPIGENERAL_CLASSNAME">
+						<Entry Value="SpiGeneral" Display="SpiGeneral"/>
+					</Identifier>
+					<Identifier Name="SPI_CANCEL_API">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="SPI_CHANNEL_BUFFERS_ALLOWED">
+						<Entry Value="1" Display="External only"/>
+					</Identifier>
+					<Identifier Name="SPI_DEV_ERROR_DETECT">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_HW_STATUS_API">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="SPI_INTERRUPTIBLE_SEQ_ALLOWED">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="SPI_LEVEL_DELIVERED">
+						<Entry Value="1" Display="Async only - LEVEL1"/>
+					</Identifier>
+					<Identifier Name="SPI_VERSION_INFO_API">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="SPI_DET_ERROR_REPORTING">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_DEM_ERROR_REPORTING">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+					<Identifier Name="SPI_DEM_INCLUDE_FILE">
+						<Entry Value="Dem.h" Display="Dem.h"/>
+					</Identifier>
+					<Identifier Name="SPI_DET_INCLUDE_FILE">
+						<Entry Value="Det.h" Display="Det.h"/>
+					</Identifier>
+					<Identifier Name="SPI_DET_ERRORHOOK">
+						<Entry Value="Det_ReportError" Display="Det_ReportError"/>
+					</Identifier>
+					<Identifier Name="SPI_DEM_ERRORHOOK">
+						<Entry Value="Dem_ReportErrorStatus" Display="Dem_ReportErrorStatus"/>
+					</Identifier>
+					<Identifier Name="SPI_CBK_INCLUDE_FILE">
+						<Entry Value="Eep_30_At25128_Cbk.h" Display="Eep_30_At25128_Cbk.h"/>
+					</Identifier>
+					<Identifier Name="SPI_IRQ_INCLUDE_FILE">
+						<Entry Value="Spi_Irq.h" Display="Spi_Irq.h"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK_CONFIG">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK_CHANNEL">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK_JOB">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK_SEQ">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK_LENGTH">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK_VERSION">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK_UNIT">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK_BUFFER">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_PARAM_CHK_ALIGNMENT">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_CHK_MODULE_INIT">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_CHK_SEQ_PENDING">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_CHK_MODULE_ALREADY_INITIALIZED">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_CHK_SEQ_PROCESSING">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_IRQ_FUNCTION">
+						<Entry Value="Spi_Irq_Unit" Display="Spi_Irq_Unit"/>
+					</Identifier>
+					<Identifier Name="SPI_IRQ_TYPE">
+						<Entry Value="SPI_ISR_CAT2" Display="Category 2"/>
+					</Identifier>
+					<Identifier Name="SPI_IRQ_HANDLING">
+						<Entry Value="/%ECUC_PROJECT%/Board/InterruptFunctionality/SuspendAllInterrupts" Display="SuspendAllInterrupts"/>
+					</Identifier>
+					<Identifier Name="SPI_S_R_A_ENABLED">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_S_R_A_ONLY_FOR_WRITE">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_S_R_A_ONLY_FOR_PRIVILEGED_MODE">
+						<Entry Value="true" Display="True"/>
+					</Identifier>
+					<Identifier Name="SPI_S_R_A_NOT_IN_INIT">
+						<Entry Value="false" Display="False"/>
+					</Identifier>
+				</Container>
+				<Container Name="VectorCommonData" Type="ctSpecial" Active="True" Id="0" Class="VectorCommonData">
+					<Identifier Name="SPI_VECTORCOMMONDATA_CLASSNAME">
+						<Entry Value="VectorCommonData" Display="VectorCommonData"/>
+					</Identifier>
+					<Identifier Name="SPI_BSWMD_VERSION">
+						<Entry Value="1.05.01" Display="1.05.01"/>
+					</Identifier>
+				</Container>
+				<Identifier Name="SPI_INSTANCE_CLASSNAME">
+					<Entry Value="Spi" Display="Spi"/>
+				</Identifier>
+			</Container>
+			<Identifier Name="SPI_GROUP_CLASSNAME">
+				<Entry Value="Spi_Group" Display="Spi_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+	<Group Value="SrlComInput" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="StabilityComp" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="StabilityComp2" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="StaMd" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="StbCTO" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="StOpCtrl" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="ThrmlDutyCycle" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="TmprlMon" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="TmprlMon2" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="TqRsDg" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="TrqCanc" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="TrqCmdScl" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="TuningSelAuth" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="uDiag" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="VehPwrMd" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="VehSpdLmt" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Wdg" Version="1.0.0" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="WdgIf" Version="1.0.0" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="WdgM" Version="1.0.0" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="WhlImbRej" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="WIRInputQual" Version="3.1.2" Active="True" PurgeSave="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)"/>
+	<Group Value="Xcp" Version="" Active="False" PurgeSave="False" Unlocked="False" TargetDirectory="$(GenDataFolder)" TargetSwc="$(ServiceSwcFolder)" TargetUser="$(TemplateFolder)">
+		<Container Name="Xcp_Group" Type="ctGroup" Active="True" Id="0" Class="">
+			<Identifier Name="XCP_GROUP_CLASSNAME">
+				<Entry Value="Xcp_Group" Display="Xcp_Group"/>
+			</Identifier>
+		</Container>
+	</Group>
+</Project>

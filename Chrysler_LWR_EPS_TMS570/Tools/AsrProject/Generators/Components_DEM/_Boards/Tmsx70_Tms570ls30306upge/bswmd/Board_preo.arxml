@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp1 (http://www.altova.com) by Vector Employee (Vector Informatik GmbH) -->
+<!--
+============================================================================
+This file is generated with Eparm 2.0.3.1
+Date: Wed, 05 May 2010 07:35:53 GMT
+============================================================================
+-->
+<AUTOSAR xmlns="http://autosar.org/3.0.1">
+	<TOP-LEVEL-PACKAGES>
+		<AR-PACKAGE UUID="c210476a-2ae2-4a2d-b942-afb31be2a7ff">
+			<SHORT-NAME>MICROSAR</SHORT-NAME>
+			<ELEMENTS>
+				<MODULE-CONFIGURATION UUID="64c7af53-b91c-40c6-8a2c-62186fbb7a42">
+					<SHORT-NAME>Board_Pre</SHORT-NAME>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/Board</DEFINITION-REF>
+					<CONTAINERS>
+						<CONTAINER UUID="4df94c59-0832-4695-80fd-75a7958d3e6e">
+							<SHORT-NAME>BoardGeneral</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Board/BoardGeneral</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Board/BoardGeneral/BoardOsType</DEFINITION-REF>
+									<VALUE>Autosar</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+					</CONTAINERS>
+				</MODULE-CONFIGURATION>
+				<MODULE-CONFIGURATION UUID="aad5c37c-96c1-4f3c-82b8-335dc9e3de3b">
+					<SHORT-NAME>Board_Rec</SHORT-NAME>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/Board</DEFINITION-REF>
+					<IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+					<CONTAINERS>
+						<CONTAINER UUID="a34ac19b-a696-455c-9256-b031dc3639ed">
+							<SHORT-NAME>BoardGeneral</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Board/BoardGeneral</DEFINITION-REF>
+						</CONTAINER>
+					</CONTAINERS>
+				</MODULE-CONFIGURATION>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</TOP-LEVEL-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config name="CBD: Standard-ECU (TMS470)" guid="406DD263-46A2-41cc-9028-15D748CA2444" version="1.0" default="no" xmlns="http://www.vector-informatik.de/CANGen/ModulePreconfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vector-informatik.de/CANGen/ModulePreconfig
+R:\GENTOOL\NextCANGen\VersionCurrent_Develop\PreconfigFiles\preconfig.xsd">
+	<description>Preconfig with 32 bit access</description>
+	<module name="CCL" version="1.4">
+		<description>Configuration of CCLmodule</description>
+		<attribute name="AttrWakeUpByTrcv" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakeUpIntOsekCat2" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrTrcvWakeUpConcept" class="OTModuleInstance">
+			<default value="0"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakePollPortMode" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakePollPortDirection" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakePollPortInit" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakePollPortGetValue" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrST10IsrNumber" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrST10IsrRegBank" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrTrcvWakeIsrTrigger" class="OTChannel">
+			<default value="0"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakeReadWakeUpPin" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakeIsrConfig" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakeIsrClear" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakeIsrEnable" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrWakeIsrDisable" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+		<attribute name="AttrTrcvWakeActiveLevel" class="OTChannel">
+			<default value="0"/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+			<description/>
+		</attribute>
+	</module>
+	<module name="SendTypeMgr" version="1.0">
+		<description>Configuration of SendTypeMgr module</description>
+		<attribute name="UseSignalApi32Bit" class="OTModuleInstance">
+			<default value="false"/>
+			<userlevel value="normal"/>
+			<access value="none"/>
+			<settingkind value="application"/>
+			<configurable value="no"/>
+			<description/>
+		</attribute>
+	</module>
+</config>

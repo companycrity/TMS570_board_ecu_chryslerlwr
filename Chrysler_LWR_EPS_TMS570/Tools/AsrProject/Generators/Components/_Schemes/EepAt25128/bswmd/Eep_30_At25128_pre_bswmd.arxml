@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+***********************************************************************************************************************
+COPYRIGHT
+===============================================================================
+Copyright (c) 2010 by Vector Informatik GmbH.                                         All rights reserved.
+
+    This software is copyright protected and proprietary to Vector Informatik GmbH.
+    Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+    All other rights remain with Vector Informatik GmbH.
+===============================================================================
+FILE DESCRIPTION
+===============================================================================
+File:           		Eep_30_At25128_pre_bswmd.arxml
+Component:      
+Module:         	EepAt25128
+Generator:     	
+
+Description:    -
+*********************************************************************************************************************** 
+-->
+<AUTOSAR xmlns="http://autosar.org/3.0.2">
+	<TOP-LEVEL-PACKAGES>
+		<AR-PACKAGE UUID="5ece9a12-271d-4fc8-97db-2cd37375a10a">
+			<SHORT-NAME>MICROSAR</SHORT-NAME>
+			<ELEMENTS>
+				<MODULE-CONFIGURATION UUID="c3594a4f-fb07-4678-9efc-cf181bcdff73">
+					<SHORT-NAME>EepAt25128_Pre</SHORT-NAME>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/EepAt25128</DEFINITION-REF>
+					<IMPLEMENTATION-CONFIG-VARIANT>VARIANT-POST-BUILD</IMPLEMENTATION-CONFIG-VARIANT>
+					<CONTAINERS>
+						<CONTAINER UUID="a8806175-42e4-4c44-acde-28ba0978f216">
+							<SHORT-NAME>Atmel_At25128</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Atmel AT25128</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>16384</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>64</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="53445fae-1f06-4fa4-a723-41fe568d20de">
+							<SHORT-NAME>Atmel_At25256</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Atmel AT25256</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>32768</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize64</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="22948171-482b-401d-b2c8-c82390491ffc">
+							<SHORT-NAME>Microchip_25LC080A</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Microchip 25LC080A</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>1024</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>16</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="408b3d77-c146-4c5f-86ee-74e1920a6218">
+							<SHORT-NAME>Microchip_25LC080B</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Microchip 25LC080B</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>1024</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize32</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="2aec38dc-2f28-426d-945e-f9eead3d3a7b">
+							<SHORT-NAME>Microchip_25LC160A</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Microchip 25LC160A</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>2048</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize16</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="f44fd063-2e35-495f-9683-b71dca51c382">
+							<SHORT-NAME>Microchip_25LC160B</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Microchip 25LC160B</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>2048</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize32</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="eef010c2-88a1-413e-8236-32b416a812ef">
+							<SHORT-NAME>Microchip_25LC320A</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Microchip 25LC320A</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>4096</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize32</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="e40b371e-0dea-4844-ba13-7abdc02b2592">
+							<SHORT-NAME>Microchip_25LC640A</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Microchip 25LC640A</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>8192</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize32</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="619de5bc-d6f5-4864-87d5-64816bef5fb2">
+							<SHORT-NAME>Microchip_25LC128</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Microchip 25LC128</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>16384</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize64</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="d8698d8d-b7a9-4746-8baf-7074c4b62245">
+							<SHORT-NAME>Microchip_25LC256</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Microchip 25LC256</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>32768</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize64</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+            <CONTAINER UUID="97bdf9f9-07d4-4824-99ef-fc9a1236d5bd">
+              <SHORT-NAME>Seiko_S25C010A</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">Seiko S-25C010A</L-4>
+              </LONG-NAME>
+              <DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+                  <VALUE>128</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+                  <VALUE>EepAddressing8Bit</VALUE>
+                </ENUMERATION-VALUE>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+                  <VALUE>EepPageSize16</VALUE>
+                </ENUMERATION-VALUE>
+              </PARAMETER-VALUES>
+            </CONTAINER>
+            <CONTAINER UUID="4a9240f2-0b28-4506-8ddc-dd8e872b0587">
+              <SHORT-NAME>Seiko_S25C020A</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">Seiko S-25C020A</L-4>
+              </LONG-NAME>
+              <DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+                  <VALUE>256</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+                  <VALUE>EepAddressing8Bit</VALUE>
+                </ENUMERATION-VALUE>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+                  <VALUE>EepPageSize16</VALUE>
+                </ENUMERATION-VALUE>
+              </PARAMETER-VALUES>
+            </CONTAINER>
+            <CONTAINER UUID="b7ffb6a5-4b19-4e97-8b02-92b0680e3d02">
+              <SHORT-NAME>Seiko_S25C040A</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">Seiko S-25C040A</L-4>
+              </LONG-NAME>
+              <DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+                  <VALUE>512</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+                  <VALUE>EepAddressing9Bit</VALUE>
+                </ENUMERATION-VALUE>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+                  <VALUE>EepPageSize16</VALUE>
+                </ENUMERATION-VALUE>
+              </PARAMETER-VALUES>
+            </CONTAINER>
+            <CONTAINER UUID="d45eb746-17c4-4cef-be13-832f66806340">
+              <SHORT-NAME>STMicroelectronics_M35SW08</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">STMicroelectronics M35SW08</L-4>
+              </LONG-NAME>
+              <DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+                  <VALUE>2048</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+                  <VALUE>EepAddressing16Bit</VALUE>
+                </ENUMERATION-VALUE>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+                  <VALUE>32</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+                  <VALUE>EepPageSize32</VALUE>
+                </ENUMERATION-VALUE>
+              </PARAMETER-VALUES>
+            </CONTAINER>
+            <CONTAINER UUID="67e1f639-d1c4-4f51-805d-0e504945cbd9">
+              <SHORT-NAME>STMicroelectronics_M35SW16</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">STMicroelectronics M35SW16</L-4>
+              </LONG-NAME>
+              <DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+                  <VALUE>4096</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+                  <VALUE>EepAddressing16Bit</VALUE>
+                </ENUMERATION-VALUE>
+                <INTEGER-VALUE>
+                  <DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+                  <VALUE>32</VALUE>
+                </INTEGER-VALUE>
+                <ENUMERATION-VALUE>
+                  <DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+                  <VALUE>EepPageSize32</VALUE>
+                </ENUMERATION-VALUE>
+              </PARAMETER-VALUES>
+            </CONTAINER>
+						<CONTAINER UUID="6d767cf3-42de-417b-a2c0-6f963e04272a">
+							<SHORT-NAME>STMicroelectronics_M95080</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">STMicroelectronics M95080</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>1024</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize32</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="da62059e-db69-4557-92cc-667e4a33df90">
+							<SHORT-NAME>STMicroelectronics_M95160</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">STMicroelectronics M95160</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>2048</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize32</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="2078231a-32f0-4086-a4d1-1eca1fe8ab90">
+							<SHORT-NAME>STMicroelectronics_M95320</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">STMicroelectronics M95320</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>4096</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize32</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="1fc99ca0-c3ae-415a-894b-f716667c41b3">
+							<SHORT-NAME>STMicroelectronics_M95640</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">STMicroelectronics M95640</L-4>
+							</LONG-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/EepAt25128/EepDeviceInformation</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipSize</DEFINITION-REF>
+									<VALUE>8192</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepAddressBitWidth</DEFINITION-REF>
+									<VALUE>EepAddressing16Bit</VALUE>
+								</ENUMERATION-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepChipOffset</DEFINITION-REF>
+									<VALUE>0</VALUE>
+								</INTEGER-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/EepAt25128/EepDeviceInformation/EepPageSize</DEFINITION-REF>
+									<VALUE>EepPageSize32</VALUE>
+								</ENUMERATION-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+					</CONTAINERS>
+				</MODULE-CONFIGURATION>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</TOP-LEVEL-PACKAGES>
+</AUTOSAR>

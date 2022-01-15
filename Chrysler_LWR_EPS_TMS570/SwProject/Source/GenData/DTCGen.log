@@ -1,0 +1,692 @@
+----------------------------------------------------------------
+Start of logging 2012-12-19 09:12:33 encoding='utf-8'
+----------------------------------------------------------------
+[09:12:33] I:  Manufacturer: Chrysler (Chrysler)
+[09:12:33] I:  OEM specific Implementation: Car (Car)
+[09:12:33] I:  Priority value support: Yes
+[09:12:33] I:  First confirmed record support: No
+[09:12:33] I:  Most recent record support: No
+[09:12:33] I:  Chrono stack size [elements]: 10
+[09:12:33] I:  Task call cycle [0.1ms]: 100
+[09:12:33] I:  Debug mode (assertions) support: Yes
+[09:12:33] I:  Protocol: UDS
+[09:12:33] I: <-- Variant defaults
+[09:12:33] I:  TestFailedBit support: Yes
+[09:12:33] I:  TestFailedThisOperationCycleBit support: Yes
+[09:12:33] I:  PendingDtcBit support: Yes
+[09:12:33] I:  PreFailedBit support: No
+[09:12:33] I:  ConfirmedDtcBit support: Yes
+[09:12:33] I:  TestNotCompletedSinceLastClearBit support: Yes
+[09:12:33] I:  TestFailedSinceLastClearBit support: Yes
+[09:12:33] I:  TestNotCompletedThisOperationCycleBit support: Yes
+[09:12:33] I:  WarningIndicatorRequestedBit support: Yes
+[09:12:33] I:  HistoricalStack support: No
+[09:12:33] I:  ROELight MOST AddOn support: No
+[09:12:33] I:  Generate Dem-Wrapper: No
+[09:12:33] I: --> Variant defaults
+[09:12:33] I:  DTC byte count [bytes/DTCnumber]: 3
+[09:12:33] I:  Engine Start Delay [ms]: 0
+[09:12:33] I:  Use SC11 as part of ECU Level StorageCondition group: No
+[09:12:33] I:  Ignition Cycle De-Bounce Delay [ms]: 10000
+[09:12:33] I:  PreFailedBit support: No
+[09:12:33] I:  TestNotCompletedThisOperationCycleBit support: Yes
+[09:12:33] I:  TestFailedThisOperationCycleBit support: Yes
+[09:12:33] I:  PendingDtcBit support: No
+[09:12:33] I:  ConfirmedDtcBit support: Yes
+[09:12:33] I:  TestNotCompletedSinceLastClearBit support: Yes
+[09:12:33] I:  TestFailedSinceLastClearBit support: Yes
+[09:12:33] I:  TestNotCompletedThisOperationCycleBit support: No
+[09:12:33] I:  WarningIndicatorRequestedBit support: Yes
+[09:12:33] I:  ResponseOnEventLight support: Yes
+[09:12:33] I:  RoeLight cycle time [ms]: 0
+[09:12:33] I:  RoeLight FIFO [elements]: 4
+[09:12:33] I:  RoeLight node filename: dbk_par.h
+[09:12:33] I:  RoeLight-dbkPut function: dbkPutTxSD_RS_EPS
+[09:12:33] I:  ROELight MOST AddOn support: No
+[09:12:33] I:  DM1-light message support: No
+[09:12:33] I:  DTC property table compression support: Yes
+[09:12:33] I:  HistoricalStack support: No
+[09:12:33] I:  HistoricalStackEnvData support: No
+[09:12:33] I:  Historical stack size [elements]: 1
+[09:12:33] I:  ReadinessGroups support: No
+[09:12:33] I:  Debounce time of EnableConditionGroup Network Communication [ms]: 5000
+[09:12:33] I:  Debounce time of EnableConditionGroup Power Distribution [ms]: 5000
+[09:12:33] I:  Pattern to recognize uninitialized NVRAM support: Yes
+[09:12:33] I:  Checksum for NVRAM support: Yes
+[09:12:33] I:  Runtime configuration support: No
+[09:12:33] I:  DTC de-bounce support: Yes
+[09:12:33] I:  System upper voltage threshold [0.1V]: 160
+[09:12:33] I:  System lower voltage threshold [0.1V]: 100
+[09:12:33] I:  Local upper voltage threshold [0.1V]: 160
+[09:12:33] I:  Local lower voltage threshold [0.1V]: 100
+[09:12:33] I:  Odometer limit for Historical Stack [km]: 0
+[09:12:33] I:  Mutual exclusion matrix support: Yes
+[09:12:33] I:  Generate diagnostic service $19 0A support: Yes
+[09:12:33] I:  Callback ApplFrfmCheckClearDTC() support: Yes
+[09:12:33] I:  Notifications ApplFrfmDtcWillBeCleared()/ApplFrfmDtcWasCleared() support: Yes
+[09:12:33] I:  Ignition-cycle resets 'notTested' flag support: No
+[09:12:33] I:  Generate Dem-Wrapper: No
+[09:12:33] I:  Identity manager support: No
+[09:12:33] I:  NVRAM corruption monitor support: No
+[09:12:33] I:  System overvoltage monitor support: No
+[09:12:33] I:  System undervoltage monitor support: No
+[09:12:33] I:  Local overvoltage monitor support: No
+[09:12:33] I:  Local undervoltage monitor support: No
+[09:12:33] I: Looking for DtcGenAPI.ini file in: C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\Generators\Components
+[09:12:33] I: DtcGenAPI.ini file NOT found - default settings/GENtool info will be used!
+[09:12:33] I: Generator DtcGen.dll version: 03.20.01 (Build: 0001)
+[09:12:33] I: Using CDI document 'C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi' ...
+[09:12:33] I: Loading 'C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi'...
+[09:12:33] I: Checking file 'C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi' against CDI DTD 1.4.1
+[09:12:33] I:   dtd version: file 1.4.1, program 1.4.1
+[09:12:33] I: Importfile C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi was successfully loaded
+[09:12:33] I: done.
+[09:12:33] I: FileSignature: 2600366240
+[09:12:33] I: Looking for DtcGenAPI.ini file in: C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\Generators\Components
+[09:12:33] I: DtcGenAPI.ini file NOT found - default settings/GENtool info will be used!
+[09:12:33] I: <-- GeneratorPass
+[09:12:33] I: <-- PrepareStep
+[09:12:33] I: --> PrepareStep
+[09:12:33] I: <-- ExtractStep
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0x55c100
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0x55c100
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0x612800
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0x612800
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0x612916
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0x612916
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0x612917
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0x612917
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0x612a84
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0x612a84
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0x612a85
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0x612a85
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0x621000
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0x621000
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0x621700
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0x621700
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0x621900
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0x621900
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc00200
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc00200
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc10000
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc10000
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc12100
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc12100
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc14000
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc14000
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc15500
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc15500
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc21200
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc21200
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc40100
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc40100
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc41500
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc41500
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc42200
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc42200
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xc42300
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xc42300
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xd41500
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xd41500
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xd44700
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xd44700
+[09:12:33] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:12:33] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:12:33] W: Changed priority level to "2" for DTC number 0xd60100
+[09:12:33] I: Error ignored, processing continued
+[09:12:33] I: Add DTC Context number: 0xd60100
+[09:12:33] I: --> ExtractStep
+[09:12:33] I: Add DTC Context number: 0x55c100
+[09:12:33] I: Add DTC Context number: 0x612800
+[09:12:33] I: Add DTC Context number: 0x612916
+[09:12:33] I: Add DTC Context number: 0x612917
+[09:12:33] I: Add DTC Context number: 0x612a84
+[09:12:33] I: Add DTC Context number: 0x612a85
+[09:12:33] I: Add DTC Context number: 0x621000
+[09:12:33] I: Add DTC Context number: 0x621700
+[09:12:33] I: Add DTC Context number: 0x621900
+[09:12:33] I: Add DTC Context number: 0xc00200
+[09:12:33] I: Add DTC Context number: 0xc10000
+[09:12:33] I: Add DTC Context number: 0xc12100
+[09:12:33] I: Add DTC Context number: 0xc14000
+[09:12:33] I: Add DTC Context number: 0xc15500
+[09:12:33] I: Add DTC Context number: 0xc21200
+[09:12:33] I: Add DTC Context number: 0xc40100
+[09:12:33] I: Add DTC Context number: 0xc41500
+[09:12:33] I: Add DTC Context number: 0xc42200
+[09:12:33] I: Add DTC Context number: 0xc42300
+[09:12:33] I: Add DTC Context number: 0xd41500
+[09:12:33] I: Add DTC Context number: 0xd44700
+[09:12:33] I: Add DTC Context number: 0xd60100
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x55c100 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612800 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612916 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612917 in the CDD.
+[09:12:33] E: Warning: Error text not unique for DTC 0x612917 - please insert ErrorName for DTC 0x612917 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612a84 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612a85 in the CDD.
+[09:12:33] E: Warning: Error text not unique for DTC 0x612a85 - please insert ErrorName for DTC 0x612a85 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x621700 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x621900 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc00200 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc10000 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc12100 in the CDD.
+[09:12:33] E: Warning: Error text not unique for DTC 0xc12100 - please insert ErrorName for DTC 0xc12100 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc14000 in the CDD.
+[09:12:33] E: Warning: Error text not unique for DTC 0xc14000 - please insert ErrorName for DTC 0xc14000 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc15500 in the CDD.
+[09:12:33] E: Warning: Error text not unique for DTC 0xc15500 - please insert ErrorName for DTC 0xc15500 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc21200 in the CDD.
+[09:12:33] E: Warning: Error text not unique for DTC 0xc21200 - please insert ErrorName for DTC 0xc21200 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc40100 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc41500 in the CDD.
+[09:12:33] E: Warning: Error text not unique for DTC 0xc41500 - please insert ErrorName for DTC 0xc41500 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc42200 in the CDD.
+[09:12:33] E: Warning: Error text not unique for DTC 0xc42200 - please insert ErrorName for DTC 0xc42200 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc42300 in the CDD.
+[09:12:33] E: Warning: Error text not unique for DTC 0xc42300 - please insert ErrorName for DTC 0xc42300 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xd41500 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xd44700 in the CDD.
+[09:12:33] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xd60100 in the CDD.
+[09:12:33] I: <-- ComposeStep
+[09:12:33] I: <-- Compose History subcomponent
+[09:12:33] I: --> Compose History subcomponent
+[09:12:33] I: <-- Compose Include subcomponent
+[09:12:33] I: --> Compose Include subcomponent
+[09:12:33] I: <-- Compose Version subcomponent
+[09:12:33] I: --> Compose Version subcomponent
+[09:12:33] I: <-- Compose Common subcomponent
+[09:12:33] I: --> Compose Common subcomponent
+[09:12:33] I: <-- Compose Debug subcomponent
+[09:12:33] I: --> Compose Debug subcomponent
+[09:12:33] I: <-- Compose Network subcomponent
+[09:12:33] I: --> Compose Network subcomponent
+[09:12:33] I: <-- Compose Controller subcomponent
+[09:12:33] I: --> Compose Controller subcomponent
+[09:12:33] I: <-- Compose RoeLight subcomponent
+[09:12:33] I: --> Compose RoeLight subcomponent
+[09:12:33] I: <-- Compose DM1Light subcomponent
+[09:12:33] I:     No DM1 support for OEM specification: Car
+[09:12:33] I: --> Compose DM1Light subcomponent
+[09:12:33] I: <-- Compose HistoricalStack subcomponent
+[09:12:33] I: --> Compose HistoricalStack subcomponent
+[09:12:33] I: <-- Compose Dtc Debouncing subcomponent
+[09:12:33] I: --> Compose Dtc Debouncing subcomponent
+[09:12:33] I: <-- Compose Monitor subcomponent
+[09:12:33] I: --> Compose Monitor subcomponent
+[09:12:33] I: <-- Compose ExclusionMatrix subcomponent
+[09:12:33] I: --> Compose ExclusionMatrix subcomponent
+[09:12:33] I: <-- Compose DemWrapper subcomponent
+[09:12:33] I: --> Compose DemWrapper subcomponent
+[09:12:33] I: <-- Compose FaultMemory subcomponent
+[09:12:33] I: --> Compose FaultMemory subcomponent
+[09:12:33] I: --> ComposeStep
+[09:12:33] I: <-- ProduceStep
+[09:12:33] I: Writing file C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\SwProject\Source\_GenData\applfrfm.h
+[09:12:33] I: Writing file C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\SwProject\Source\_GenData\frfm.h
+[09:12:33] I: Writing file C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\SwProject\Source\_GenData\frfm.c
+[09:12:33] I: --> ProduceStep
+[09:12:33] I:   Generation Benchmark: 110ms
+[09:12:33] I: --> GeneratorPass
+----------------------------------------------------------------
+Start of logging 2012-12-19 09:29:14 encoding='utf-8'
+----------------------------------------------------------------
+[09:29:14] I: Generator DtcGen.dll version: 03.20.01 (Build: 0001)
+[09:29:14] I: Using CDI document 'C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi' ...
+[09:29:14] I: Loading 'C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi'...
+[09:29:14] I: Checking file 'C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi' against CDI DTD 1.4.1
+[09:29:14] I:   dtd version: file 1.4.1, program 1.4.1
+[09:29:14] I: Importfile C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi was successfully loaded
+[09:29:14] I: done.
+[09:29:14] I: FileSignature: 3746737115
+[09:29:14] I: Current working dir: C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject
+----------------------------------------------------------------
+Start of logging 2012-12-19 09:37:45 encoding='utf-8'
+----------------------------------------------------------------
+[09:37:45] I:  Manufacturer: Chrysler (Chrysler)
+[09:37:45] I:  OEM specific Implementation: Car (Car)
+[09:37:45] I:  Priority value support: Yes
+[09:37:45] I:  First confirmed record support: No
+[09:37:45] I:  Most recent record support: Yes
+[09:37:45] I:  Chrono stack size [elements]: 10
+[09:37:45] I:  Task call cycle [0.1ms]: 100
+[09:37:45] I:  Debug mode (assertions) support: Yes
+[09:37:45] I:  Protocol: UDS
+[09:37:45] I: <-- Variant defaults
+[09:37:45] I:  TestFailedBit support: Yes
+[09:37:45] I:  TestFailedThisOperationCycleBit support: Yes
+[09:37:45] I:  PendingDtcBit support: Yes
+[09:37:45] I:  PreFailedBit support: No
+[09:37:45] I:  ConfirmedDtcBit support: Yes
+[09:37:45] I:  TestNotCompletedSinceLastClearBit support: Yes
+[09:37:45] I:  TestFailedSinceLastClearBit support: Yes
+[09:37:45] I:  TestNotCompletedThisOperationCycleBit support: Yes
+[09:37:45] I:  WarningIndicatorRequestedBit support: Yes
+[09:37:45] I:  HistoricalStack support: No
+[09:37:45] I:  ROELight MOST AddOn support: No
+[09:37:45] I:  Generate Dem-Wrapper: No
+[09:37:45] I: --> Variant defaults
+[09:37:45] I:  DTC byte count [bytes/DTCnumber]: 3
+[09:37:45] I:  Engine Start Delay [ms]: 0
+[09:37:45] I:  Use SC11 as part of ECU Level StorageCondition group: No
+[09:37:45] I:  Ignition Cycle De-Bounce Delay [ms]: 10000
+[09:37:45] I:  PreFailedBit support: No
+[09:37:45] I:  TestNotCompletedThisOperationCycleBit support: Yes
+[09:37:45] I:  TestFailedThisOperationCycleBit support: Yes
+[09:37:45] I:  PendingDtcBit support: No
+[09:37:45] I:  ConfirmedDtcBit support: Yes
+[09:37:45] I:  TestNotCompletedSinceLastClearBit support: Yes
+[09:37:45] I:  TestFailedSinceLastClearBit support: Yes
+[09:37:45] I:  TestNotCompletedThisOperationCycleBit support: No
+[09:37:45] I:  WarningIndicatorRequestedBit support: Yes
+[09:37:45] I:  ResponseOnEventLight support: Yes
+[09:37:45] I:  RoeLight cycle time [ms]: 0
+[09:37:45] I:  RoeLight FIFO [elements]: 4
+[09:37:45] I:  RoeLight node filename: dbk_par.h
+[09:37:45] I:  RoeLight-dbkPut function: dbkPutTxSD_RS_EPS
+[09:37:45] I:  ROELight MOST AddOn support: No
+[09:37:45] I:  DM1-light message support: No
+[09:37:45] I:  DTC property table compression support: Yes
+[09:37:45] I:  HistoricalStack support: No
+[09:37:45] I:  HistoricalStackEnvData support: No
+[09:37:45] I:  Historical stack size [elements]: 1
+[09:37:45] I:  ReadinessGroups support: No
+[09:37:45] I:  Debounce time of EnableConditionGroup Network Communication [ms]: 5000
+[09:37:45] I:  Debounce time of EnableConditionGroup Power Distribution [ms]: 5000
+[09:37:45] I:  Pattern to recognize uninitialized NVRAM support: Yes
+[09:37:45] I:  Checksum for NVRAM support: Yes
+[09:37:45] I:  Runtime configuration support: No
+[09:37:45] I:  DTC de-bounce support: Yes
+[09:37:45] I:  System upper voltage threshold [0.1V]: 160
+[09:37:45] I:  System lower voltage threshold [0.1V]: 100
+[09:37:45] I:  Local upper voltage threshold [0.1V]: 160
+[09:37:45] I:  Local lower voltage threshold [0.1V]: 100
+[09:37:45] I:  Odometer limit for Historical Stack [km]: 0
+[09:37:45] I:  Mutual exclusion matrix support: Yes
+[09:37:45] I:  Generate diagnostic service $19 0A support: Yes
+[09:37:45] I:  Callback ApplFrfmCheckClearDTC() support: Yes
+[09:37:45] I:  Notifications ApplFrfmDtcWillBeCleared()/ApplFrfmDtcWasCleared() support: Yes
+[09:37:45] I:  Ignition-cycle resets 'notTested' flag support: No
+[09:37:45] I:  Generate Dem-Wrapper: No
+[09:37:45] I:  Identity manager support: No
+[09:37:45] I:  NVRAM corruption monitor support: No
+[09:37:45] I:  System overvoltage monitor support: No
+[09:37:45] I:  System undervoltage monitor support: No
+[09:37:45] I:  Local overvoltage monitor support: No
+[09:37:45] I:  Local undervoltage monitor support: No
+[09:37:45] I: Looking for DtcGenAPI.ini file in: C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\Generators\Components
+[09:37:45] I: DtcGenAPI.ini file NOT found - default settings/GENtool info will be used!
+[09:37:45] I: Generator DtcGen.dll version: 03.20.01 (Build: 0001)
+[09:37:45] I: Using CDI document 'C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi' ...
+[09:37:45] I: Loading 'C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi'...
+[09:37:45] I: Checking file 'C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi' against CDI DTD 1.4.1
+[09:37:45] I:   dtd version: file 1.4.1, program 1.4.1
+[09:37:45] I: Importfile C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\GENy\EPS_PN_4102_EI1555.cdi was successfully loaded
+[09:37:45] I: done.
+[09:37:45] I: FileSignature: 3746737115
+[09:37:45] I: Looking for DtcGenAPI.ini file in: C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\Tools\AsrProject\Generators\Components
+[09:37:45] I: DtcGenAPI.ini file NOT found - default settings/GENtool info will be used!
+[09:37:45] I: <-- GeneratorPass
+[09:37:45] I: <-- PrepareStep
+[09:37:45] I: --> PrepareStep
+[09:37:45] I: <-- ExtractStep
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x55c100
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x55c100
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x612800
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x612800
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x612916
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x612916
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x612917
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x612917
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x612a84
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x612a84
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x612a85
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x612a85
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x621000
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x621000
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x621700
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x621700
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x621900
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x621900
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc00200
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc00200
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc10000
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc10000
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc12100
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc12100
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc14000
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc14000
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc15500
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc15500
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc21200
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc21200
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc40100
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc40100
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc41500
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc41500
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc42200
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc42200
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xc42300
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xc42300
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xd41500
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xd41500
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xd44700
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xd44700
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0xd60100
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0xd60100
+[09:37:45] E: Inconsistent value for dtc property "DTC_PRIORITY_VALUE": value "0" not in range 1 - 255
+[09:37:45] E: DTCGen exception (814c). Inconsistent configuration!: 
+Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] E:   Invalid value ("0") for dtc property "DTC_PRIORITY_VALUE" (valid range: 1 - 255).
+[09:37:45] W: Changed priority level to "2" for DTC number 0x55db00
+[09:37:45] I: Error ignored, processing continued
+[09:37:45] I: Add DTC Context number: 0x55db00
+[09:37:45] I: --> ExtractStep
+[09:37:45] I: Add DTC Context number: 0x55c100
+[09:37:45] I: Add DTC Context number: 0x55db00
+[09:37:45] I: Add DTC Context number: 0x612800
+[09:37:45] I: Add DTC Context number: 0x612916
+[09:37:45] I: Add DTC Context number: 0x612917
+[09:37:45] I: Add DTC Context number: 0x612a84
+[09:37:45] I: Add DTC Context number: 0x612a85
+[09:37:45] I: Add DTC Context number: 0x621000
+[09:37:45] I: Add DTC Context number: 0x621700
+[09:37:45] I: Add DTC Context number: 0x621900
+[09:37:45] I: Add DTC Context number: 0xc00200
+[09:37:45] I: Add DTC Context number: 0xc10000
+[09:37:45] I: Add DTC Context number: 0xc12100
+[09:37:45] I: Add DTC Context number: 0xc14000
+[09:37:45] I: Add DTC Context number: 0xc15500
+[09:37:45] I: Add DTC Context number: 0xc21200
+[09:37:45] I: Add DTC Context number: 0xc40100
+[09:37:45] I: Add DTC Context number: 0xc41500
+[09:37:45] I: Add DTC Context number: 0xc42200
+[09:37:45] I: Add DTC Context number: 0xc42300
+[09:37:45] I: Add DTC Context number: 0xd41500
+[09:37:45] I: Add DTC Context number: 0xd44700
+[09:37:45] I: Add DTC Context number: 0xd60100
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x55c100 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612800 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612916 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612917 in the CDD.
+[09:37:45] E: Warning: Error text not unique for DTC 0x612917 - please insert ErrorName for DTC 0x612917 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612a84 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x612a85 in the CDD.
+[09:37:45] E: Warning: Error text not unique for DTC 0x612a85 - please insert ErrorName for DTC 0x612a85 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x621700 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0x621900 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc00200 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc10000 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc12100 in the CDD.
+[09:37:45] E: Warning: Error text not unique for DTC 0xc12100 - please insert ErrorName for DTC 0xc12100 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc14000 in the CDD.
+[09:37:45] E: Warning: Error text not unique for DTC 0xc14000 - please insert ErrorName for DTC 0xc14000 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc15500 in the CDD.
+[09:37:45] E: Warning: Error text not unique for DTC 0xc15500 - please insert ErrorName for DTC 0xc15500 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc21200 in the CDD.
+[09:37:45] E: Warning: Error text not unique for DTC 0xc21200 - please insert ErrorName for DTC 0xc21200 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc40100 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc41500 in the CDD.
+[09:37:45] E: Warning: Error text not unique for DTC 0xc41500 - please insert ErrorName for DTC 0xc41500 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc42200 in the CDD.
+[09:37:45] E: Warning: Error text not unique for DTC 0xc42200 - please insert ErrorName for DTC 0xc42200 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xc42300 in the CDD.
+[09:37:45] E: Warning: Error text not unique for DTC 0xc42300 - please insert ErrorName for DTC 0xc42300 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xd41500 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xd44700 in the CDD.
+[09:37:45] E: Warning: Error text exceeds the maximum number of letters. Please insert ErrorName for DTC 0xd60100 in the CDD.
+[09:37:45] I: <-- ComposeStep
+[09:37:45] I: <-- Compose History subcomponent
+[09:37:45] I: --> Compose History subcomponent
+[09:37:45] I: <-- Compose Include subcomponent
+[09:37:45] I: --> Compose Include subcomponent
+[09:37:45] I: <-- Compose Version subcomponent
+[09:37:45] I: --> Compose Version subcomponent
+[09:37:45] I: <-- Compose Common subcomponent
+[09:37:45] I: --> Compose Common subcomponent
+[09:37:45] I: <-- Compose Debug subcomponent
+[09:37:45] I: --> Compose Debug subcomponent
+[09:37:45] I: <-- Compose Network subcomponent
+[09:37:45] I: --> Compose Network subcomponent
+[09:37:45] I: <-- Compose Controller subcomponent
+[09:37:45] I: --> Compose Controller subcomponent
+[09:37:45] I: <-- Compose RoeLight subcomponent
+[09:37:45] I: --> Compose RoeLight subcomponent
+[09:37:45] I: <-- Compose DM1Light subcomponent
+[09:37:45] I:     No DM1 support for OEM specification: Car
+[09:37:45] I: --> Compose DM1Light subcomponent
+[09:37:45] I: <-- Compose HistoricalStack subcomponent
+[09:37:45] I: --> Compose HistoricalStack subcomponent
+[09:37:45] I: <-- Compose Dtc Debouncing subcomponent
+[09:37:45] I: --> Compose Dtc Debouncing subcomponent
+[09:37:45] I: <-- Compose Monitor subcomponent
+[09:37:45] I: --> Compose Monitor subcomponent
+[09:37:45] I: <-- Compose ExclusionMatrix subcomponent
+[09:37:45] I: --> Compose ExclusionMatrix subcomponent
+[09:37:45] I: <-- Compose DemWrapper subcomponent
+[09:37:45] I: --> Compose DemWrapper subcomponent
+[09:37:45] I: <-- Compose FaultMemory subcomponent
+[09:37:45] I: --> Compose FaultMemory subcomponent
+[09:37:45] I: --> ComposeStep
+[09:37:45] I: <-- ProduceStep
+[09:37:45] I: Writing file C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\SwProject\Source\_GenData\applfrfm.h
+[09:37:45] I: Writing file C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\SwProject\Source\_GenData\frfm.h
+[09:37:45] I: Writing file C:\Synergy\Chrysler_LWR_EPS_TMS570-zz4r1x\Chrysler_LWR_EPS_TMS570\SwProject\Source\_GenData\frfm.c
+[09:37:45] I: --> ProduceStep
+[09:37:45] I:   Generation Benchmark: 16ms
+[09:37:45] I: --> GeneratorPass

@@ -1,0 +1,1570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+============================================================================
+This file is generated with Eparm 2.0.3.5
+Date: Thu, 06 May 2010 15:38:52 GMT
+============================================================================
+-->
+<AUTOSAR xmlns="http://autosar.org/3.0.2">
+	<TOP-LEVEL-PACKAGES>
+		<AR-PACKAGE UUID="9366b5c7-e3f7-4754-b2f9-f906a8477783">
+			<SHORT-NAME>MICROSAR</SHORT-NAME>
+			<ELEMENTS>
+				<BSW-IMPLEMENTATION UUID="3314e040-dec7-438c-b692-2ac8cb0b41b1">
+					<SHORT-NAME>Adc_Impl</SHORT-NAME>
+					<CODE-GENERATOR>MicrosarGen.exe</CODE-GENERATOR>
+					<PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+					<SW-MAJOR-VERSION>1</SW-MAJOR-VERSION>
+					<SW-MINOR-VERSION>02</SW-MINOR-VERSION>
+					<SW-PATCH-VERSION>01</SW-PATCH-VERSION>
+					<VENDOR-ID>30</VENDOR-ID>
+					<AR-MAJOR-VERSION>3</AR-MAJOR-VERSION>
+					<AR-MINOR-VERSION>0</AR-MINOR-VERSION>
+					<AR-PATCH-VERSION>1</AR-PATCH-VERSION>
+					<PRECONFIGURED-CONFIGURATION-REF DEST="MODULE-CONFIGURATION">/MICROSAR/Adc_Pre</PRECONFIGURED-CONFIGURATION-REF>
+					<RECOMMENDED-CONFIGURATION-REF DEST="MODULE-CONFIGURATION">/MICROSAR/Adc_Rec</RECOMMENDED-CONFIGURATION-REF>
+					<VENDOR-SPECIFIC-MODULE-DEF-REF DEST="MODULE-DEF">/MICROSAR/Adc</VENDOR-SPECIFIC-MODULE-DEF-REF>
+				</BSW-IMPLEMENTATION>
+				<MODULE-DEF UUID="39781038-7bf1-4b44-a5fa-151d3c448589">
+					<SHORT-NAME>Adc</SHORT-NAME>
+					<DESC>
+						<L-2 L="EN">Configuration of the Adc (Analog Digital Conversion) module.</L-2>
+					</DESC>
+					<ADMIN-DATA>
+						<DOC-REVISIONS>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.01.00</REVISION-LABEL>
+								<ISSUED-BY>virsla</ISSUED-BY>
+								<DATE>2010-02-24T11:33:21</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Changed description of AdcChannelId, Added mandatory container AdcPublishedInformation</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00041147</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.02.00</REVISION-LABEL>
+								<ISSUED-BY>virsla</ISSUED-BY>
+								<DATE>2010-05-06T08:39:47</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Added support for TMS570PSFD62, added container VectorCommonData, added recommended configuration</L-2>
+										</CHANGE>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.03.00</REVISION-LABEL>
+								<ISSUED-BY>virsla</ISSUED-BY>
+								<DATE>2010-12-06T08:55:21</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Added support for TMS570LS3X, added parameter AdcCfg12BitModeSupported and R11 feature ESCAN00046690</L-2>
+										</CHANGE>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+              <DOC-REVISION>
+								<REVISION-LABEL>1.03.01</REVISION-LABEL>
+								<ISSUED-BY>virsla</ISSUED-BY>
+								<DATE>2010-12-06T08:55:21</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">ESCAN00049161 Default value of AdcChannel corrected, ESCAN00046690 Added SchM recommended configuration file </L-2>
+										</CHANGE>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+						</DOC-REVISIONS>
+					</ADMIN-DATA>
+					<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+					<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+					<REFINED-MODULE-DEF-REF DEST="MODULE-DEF">/AUTOSAR/Adc</REFINED-MODULE-DEF-REF>
+					<SUPPORTED-CONFIG-VARIANTS>
+						<SUPPORTED-CONFIG-VARIANT>VARIANT-POST-BUILD</SUPPORTED-CONFIG-VARIANT>
+					</SUPPORTED-CONFIG-VARIANTS>
+					<CONTAINERS>
+						<!-- Parameter Container Definition: AdcConfigSet -->
+						<PARAM-CONF-CONTAINER-DEF UUID="b2f7762a-7a21-4974-82b1-0c759b88d4bf">
+							<SHORT-NAME>AdcConfigSet</SHORT-NAME>
+							<LONG-NAME>
+								<L-4 L="EN">Configuration Set</L-4>
+							</LONG-NAME>
+							<DESC>
+								<L-2 L="EN">This is the base container that contains the post-build selectable configuration parameters</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>10</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>true</MULTIPLE-CONFIGURATION-CONTAINER>
+							<SUB-CONTAINERS>
+								<!-- Parameter Container Definition: AdcHwUnit -->
+								<PARAM-CONF-CONTAINER-DEF UUID="bd6e289b-8b7d-46da-9a84-b6ead15f93d4">
+									<SHORT-NAME>AdcHwUnit</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Hardware Unit</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This container contains the Driver configuration (parameters).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>2</UPPER-MULTIPLICITY>
+									<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+									<PARAMETERS>
+										<!-- PARAMETER DEFINITION: AdcClockSource -->
+										<INTEGER-PARAM-DEF UUID="d2d9e481-0453-4d7a-8fd3-9fcf1a0dd0f4">
+											<SHORT-NAME>AdcClockSource</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">[NOT USED]</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>0</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: AdcHwUnitId -->
+										<INTEGER-PARAM-DEF UUID="4d4dbac0-7c42-4695-b88e-b65a58d34f2a">
+											<SHORT-NAME>AdcHwUnitId</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">HW Unit Id</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Numeric ID of the HW Unit.
+
+Configure 0 for the first Hardware Unit and 1 for the second Hardware Unit.
+</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>1</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: AdcPrescale -->
+										<INTEGER-PARAM-DEF UUID="1fb84486-a896-4556-a2e1-c71b3b71b69f">
+											<SHORT-NAME>AdcPrescale</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Prescale Factor</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">ADC module specific clock prescale factor.
+</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>32</DEFAULT-VALUE>
+											<MAX>32</MAX>
+											<MIN>1</MIN>
+										</INTEGER-PARAM-DEF>
+									</PARAMETERS>
+									<SUB-CONTAINERS>
+										<!-- Parameter Container Definition: AdcChannel -->
+										<PARAM-CONF-CONTAINER-DEF UUID="e5c8316c-4ee5-4315-82f4-e7319e76f2a8">
+											<SHORT-NAME>AdcChannel</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Channel</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This container contains the channel configuration (parameters).</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+<!--
+-->
+                      <UPPER-MULTIPLICITY>24</UPPER-MULTIPLICITY>
+<!--
+-->
+											<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+											<PARAMETERS>
+												<!-- PARAMETER DEFINITION: AdcChannelConvTime -->
+												<INTEGER-PARAM-DEF UUID="464b37c7-6ed5-4467-afb9-551c1b508265">
+													<SHORT-NAME>AdcChannelConvTime</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Conversion Time</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">[NOT USED]</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>0</DEFAULT-VALUE>
+													<MAX>0</MAX>
+													<MIN>0</MIN>
+												</INTEGER-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcChannelId -->
+												<INTEGER-PARAM-DEF UUID="6eef4141-c7ff-4879-bc6c-12d99afdb1ef">
+													<SHORT-NAME>AdcChannelId</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Channel Id</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Channel input pin. 
+
+<!--
+-->
+Select on which physical channel this software channel is going to be mapped. Select a value between 0 and 23 on hardware unit 0 and between 0 and 15 on hardware unit 1. 
+<!--
+-->
+</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>0</DEFAULT-VALUE>
+<!--
+-->
+													<MAX>23</MAX>
+<!--
+-->
+
+													<MIN>0</MIN>
+												</INTEGER-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcChannelRefVoltsrcHigh -->
+												<INTEGER-PARAM-DEF UUID="90ae5c90-7124-40fa-bd35-e21fd848c759">
+													<SHORT-NAME>AdcChannelRefVoltsrcHigh</SHORT-NAME>
+													<DESC>
+														<L-2 L="EN">[NOT USED]</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>0</DEFAULT-VALUE>
+													<MAX>0</MAX>
+													<MIN>0</MIN>
+												</INTEGER-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcChannelRefVoltsrcLow -->
+												<INTEGER-PARAM-DEF UUID="c3ddd795-ae6c-4372-a589-b4988e66855a">
+													<SHORT-NAME>AdcChannelRefVoltsrcLow</SHORT-NAME>
+													<DESC>
+														<L-2 L="EN">[NOT USED]</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>0</DEFAULT-VALUE>
+													<MAX>0</MAX>
+													<MIN>0</MIN>
+												</INTEGER-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcChannelResolution -->
+												<INTEGER-PARAM-DEF UUID="0b5bf068-1ceb-48ea-94a9-95a71e7563d6">
+													<SHORT-NAME>AdcChannelResolution</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Resolution</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Channel resolution in bits.
+
+Limitation: This parameter has to be equal for all channels of a group.</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+<!--
+-->
+													<DEFAULT-VALUE>12</DEFAULT-VALUE>
+													<MAX>12</MAX>
+<!--
+-->
+													<MIN>8</MIN>
+												</INTEGER-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcChannelSampTime -->
+												<INTEGER-PARAM-DEF UUID="c246a509-79a4-4853-9133-6e74d8e46510">
+													<SHORT-NAME>AdcChannelSampTime</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Sample Time</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Configuration of sampling time, i.e. the time during which the value is sampled, (in clock cycles) for each channel.
+
+Limitation: This parameter has to be equal for all channels of a group.</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>4095</DEFAULT-VALUE>
+													<MAX>4095</MAX>
+													<MIN>2</MIN>
+												</INTEGER-PARAM-DEF>
+											</PARAMETERS>
+										</PARAM-CONF-CONTAINER-DEF>
+										<!-- Parameter Container Definition: AdcGroup -->
+										<PARAM-CONF-CONTAINER-DEF UUID="dafece0d-59de-44ac-9a10-4175416bb3b4">
+											<SHORT-NAME>AdcGroup</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">This container contains the Group configuration (parameters). Use this symbolic group name on the API.
+
+Example:
+
+    Adc_StartGroupConversion(AdcGroup);
+</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>255</UPPER-MULTIPLICITY>
+											<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+											<PARAMETERS>
+												<!-- PARAMETER DEFINITION: AdcGroupAccessMode -->
+												<ENUMERATION-PARAM-DEF UUID="5eaf8c67-6ed1-4616-b489-f8035b1726d1">
+													<SHORT-NAME>AdcGroupAccessMode</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Access Mode</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Type of access mode to group conversion results.
+
+Single Access: Only one result per ADC channel is stored in application result buffer 
+Streaming Access: Several results per ADC channel are stored in application result buffer. 
+
+Select the number of results in 'Number of Samples'-field
+
+Limitation: Streaming access mode is not available for software triggered oneshot groups.</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>ADC_ACCESS_MODE_SINGLE</DEFAULT-VALUE>
+													<LITERALS>
+														<ENUMERATION-LITERAL-DEF UUID="0871923f-5d61-4d1d-830a-239b1a4cfc6a">
+															<SHORT-NAME>ADC_ACCESS_MODE_SINGLE</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="de48d52d-d030-4ce0-93c5-4a2833bc0e1c">
+															<SHORT-NAME>ADC_ACCESS_MODE_STREAMING</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+													</LITERALS>
+												</ENUMERATION-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcGroupConversionMode -->
+												<ENUMERATION-PARAM-DEF UUID="421d8a36-9b00-4609-83ca-209daea25e14">
+													<SHORT-NAME>AdcGroupConversionMode</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Conversion Mode</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Selects if a conversion is performed once or continuously after a single start event (API call / HW trigger signal).</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>ADC_CONV_MODE_ONESHOT</DEFAULT-VALUE>
+													<LITERALS>
+														<ENUMERATION-LITERAL-DEF UUID="4393a904-c5cf-42e3-9768-d9d5ab1dd43c">
+															<SHORT-NAME>ADC_CONV_MODE_CONTINUOUS</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="171207b9-7b23-444f-88fb-e49e63a9095f">
+															<SHORT-NAME>ADC_CONV_MODE_ONESHOT</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+													</LITERALS>
+												</ENUMERATION-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcGroupId -->
+												<INTEGER-PARAM-DEF UUID="5a8d2f99-2895-4749-b0bd-652173428b58">
+													<SHORT-NAME>AdcGroupId</SHORT-NAME>
+													<DESC>
+														<L-2 L="EN">[NOT USED]</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>0</DEFAULT-VALUE>
+													<MAX>254</MAX>
+													<MIN>0</MIN>
+												</INTEGER-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcGroupPriority -->
+												<INTEGER-PARAM-DEF UUID="d8ec8534-426e-4b2c-a46e-19f2b3b5ad0d">
+													<SHORT-NAME>AdcGroupPriority</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Priority</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Priority level of the AdcGroup.
+
+Limitation: HW-triggered groups with HW Trigger Timer = 0 (MibAdc event pin) have to be set to priority 1.</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>0</DEFAULT-VALUE>
+													<MAX>1</MAX>
+													<MIN>0</MIN>
+												</INTEGER-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcGroupReplacement -->
+												<ENUMERATION-PARAM-DEF UUID="94766d28-6d4e-442a-bb0d-017126dd0fdf">
+													<SHORT-NAME>AdcGroupReplacement</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Replacement</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">[NOT USED]</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>ADC_GROUP_REPL_SUSPEND_RESUME</DEFAULT-VALUE>
+													<LITERALS>
+														<ENUMERATION-LITERAL-DEF UUID="5e42068b-7d2b-4d5f-9564-a6791138892f">
+															<SHORT-NAME>ADC_GROUP_REPL_ABORT_RESTART</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="cee13bf2-f23a-44cd-aa84-516c32b146cb">
+															<SHORT-NAME>ADC_GROUP_REPL_SUSPEND_RESUME</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+													</LITERALS>
+												</ENUMERATION-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcGroupTriggSrc -->
+												<ENUMERATION-PARAM-DEF UUID="8b9308c7-0b48-45dd-805c-7dd14161d3a5">
+													<SHORT-NAME>AdcGroupTriggSrc</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Trigger Source</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Type of event that starts a conversion. Events are either triggered by API call (software) or by trigger event (hardware).
+
+Limitation: Hardware triggered conversions are only available for oneshot groups</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>ADC_TRIGG_SRC_SW</DEFAULT-VALUE>
+													<LITERALS>
+														<ENUMERATION-LITERAL-DEF UUID="329044db-4da5-44b4-86da-d4d1e99114d6">
+															<SHORT-NAME>ADC_TRIGG_SRC_HW</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="bbd696e9-4bc1-40ff-a854-0bfbd5dbe86a">
+															<SHORT-NAME>ADC_TRIGG_SRC_SW</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+													</LITERALS>
+												</ENUMERATION-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcHwTrigSignal -->
+												<ENUMERATION-PARAM-DEF UUID="24a6ec63-5865-4d6e-96ab-24db20d4f958">
+													<SHORT-NAME>AdcHwTrigSignal</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Trigger Signal</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Configures on which edge of the hardware trigger signal the driver should react, i.e. start the conversion</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>ADC_HW_TRIG_FALLING_EDGE</DEFAULT-VALUE>
+													<LITERALS>
+														<ENUMERATION-LITERAL-DEF UUID="4f9c0307-070a-4e22-9b18-34761e9c24cf">
+															<SHORT-NAME>ADC_HW_TRIG_FALLING_EDGE</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="3cb48b0d-4962-4876-b644-aa85df9f3e8b">
+															<SHORT-NAME>ADC_HW_TRIG_RISING_EDGE</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+<!--
+-->
+														<ENUMERATION-LITERAL-DEF UUID="3cb48b0d-4962-4876-b644-aa85df9f3e8b">
+															<SHORT-NAME>ADC_HW_TRIG_BOTH_EDGES</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+<!--
+-->
+													</LITERALS>
+												</ENUMERATION-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcHwTrigTimer -->
+												<INTEGER-PARAM-DEF UUID="117407eb-3f09-4e7e-86db-e4e7832ce777">
+													<SHORT-NAME>AdcHwTrigTimer</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Trigger Timer</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Select group hw trigger source. Choose 0 to 7 to get one of the following trigger: 
+
+<!--
+-->
+0: MibAdc event pin
+1: NHET[8]
+2: NHET[10]
+3: RTI compare 0
+4: NHET[17]
+5: NHET[19]
+6: GIOB[0]
+7: GIOB[1]
+<!--
+-->
+</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>0</DEFAULT-VALUE>
+													<MAX>7</MAX>
+													<MIN>0</MIN>
+												</INTEGER-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcNotification -->
+												<FUNCTION-NAME-DEF UUID="8a621b7a-8874-45da-8f8d-8dbe5cbbc36e">
+													<SHORT-NAME>AdcNotification</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Notification Function</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Callback function name for this groups notification function. Leave empty to avoid notification for this group. </L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+												</FUNCTION-NAME-DEF>
+												<!-- PARAMETER DEFINITION: AdcResultBufferPointer -->
+												<LINKER-SYMBOL-DEF UUID="9e7b5e5d-4d8b-43b2-ad72-42e1b951c6c5">
+													<SHORT-NAME>AdcResultBufferPointer</SHORT-NAME>
+													<DESC>
+														<L-2 L="EN">[NOT USED]</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+												</LINKER-SYMBOL-DEF>
+												<!-- PARAMETER DEFINITION: AdcStreamingBufferMode -->
+												<ENUMERATION-PARAM-DEF UUID="5437efe2-4b29-47d1-90c1-fc7bc3710d5a">
+													<SHORT-NAME>AdcStreamingBufferMode</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Streaming Buffer Mode</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Configure streaming buffer as "linear buffer" (i.e. the ADC Driver stops the conversion as soon as the stream buffer is full) or as "ring buffer" (wraps around if the end of the stream buffer is reached).</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>ADC_STREAM_BUFFER_LINEAR</DEFAULT-VALUE>
+													<LITERALS>
+														<ENUMERATION-LITERAL-DEF UUID="d6891af6-e6cf-443d-a2c1-bd13782e58ff">
+															<SHORT-NAME>ADC_STREAM_BUFFER_CIRCULAR</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="666d262a-869c-4d3e-b3fe-cb4809e51c1d">
+															<SHORT-NAME>ADC_STREAM_BUFFER_LINEAR</SHORT-NAME>
+														</ENUMERATION-LITERAL-DEF>
+													</LITERALS>
+												</ENUMERATION-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: AdcStreamingNumSamples -->
+												<INTEGER-PARAM-DEF UUID="60a15899-2a60-4f9a-8531-884e1306f742">
+													<SHORT-NAME>AdcStreamingNumSamples</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Number Of Samples</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Number of ADC values to be acquired per channel in streaming access mode.
+
+Note: In single access mode this parameter assumes value 1, since only one sample per channel is processed.</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>1</DEFAULT-VALUE>
+													<MAX>65535</MAX>
+													<MIN>1</MIN>
+												</INTEGER-PARAM-DEF>
+											</PARAMETERS>
+											<REFERENCES>
+												<!-- Reference Definition: AdcGroupDefinition -->
+												<REFERENCE-PARAM-DEF UUID="e68ccb41-c718-4cc6-beef-df07089ab071">
+													<SHORT-NAME>AdcGroupDefinition</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Group Definition</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Assignment of AdcChannels to a AdcGroup.</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>*</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Adc/AdcConfigSet/AdcHwUnit/AdcChannel</DESTINATION-REF>
+												</REFERENCE-PARAM-DEF>
+											</REFERENCES>
+										</PARAM-CONF-CONTAINER-DEF>
+									</SUB-CONTAINERS>
+								</PARAM-CONF-CONTAINER-DEF>
+							</SUB-CONTAINERS>
+						</PARAM-CONF-CONTAINER-DEF>
+						<!-- Parameter Container Definition: AdcGeneral -->
+						<PARAM-CONF-CONTAINER-DEF UUID="b5d498df-c8fc-429c-aa57-87a40e2bed04">
+							<SHORT-NAME>AdcGeneral</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">General configuration (parameters) of the ADC Driver software module.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<!-- PARAMETER DEFINITION: AdcDeInitApi -->
+								<BOOLEAN-PARAM-DEF UUID="6aecf405-e309-4283-ab35-a0bcb6148c4f">
+									<SHORT-NAME>AdcDeInitApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Adc_DeInit</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Adc_DeInit() from the code.
+true: Adc_DeInit() can be used.
+false: Adc_DeInit() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcDevErrorDetect -->
+								<BOOLEAN-PARAM-DEF UUID="781ba50e-11a8-423f-9305-4eaad15b583f">
+									<SHORT-NAME>AdcDevErrorDetect</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Development Mode</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches the Development Error Detection and Notification ON or OFF.
+true: Enabled.
+false: Disabled.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcEnableQueuing -->
+								<BOOLEAN-PARAM-DEF UUID="353e1c89-3d46-4fef-9a0f-594527600936">
+									<SHORT-NAME>AdcEnableQueuing</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">[NOT USED]</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcEnableStartStopGroupApi -->
+								<BOOLEAN-PARAM-DEF UUID="99a27720-0973-4187-b877-c8fef3e327f8">
+									<SHORT-NAME>AdcEnableStartStopGroupApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Start/StopGroupConversion</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the services Adc_StartGroupConversion() and Adc_StopGroupConversion() from the code.
+true: Adc_StartGroupConversion() and Adc_StopGroupConversion() can be used.
+false: Adc_StartGroupConversion() and Adc_StopGroupConversion() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcGrpNotifCapability -->
+								<BOOLEAN-PARAM-DEF UUID="c5501379-1210-4bac-a65b-5643516e1680">
+									<SHORT-NAME>AdcGrpNotifCapability</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Notification Feature</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Determines, if the group notification mechanism (the functions to enable and disable the notifications) is available at runtime.
+true: Enabled.
+false: Disabled.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcHwTriggerApi -->
+								<BOOLEAN-PARAM-DEF UUID="c0e83dcf-ca82-4a02-950b-f9f105ade0d8">
+									<SHORT-NAME>AdcHwTriggerApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable HwTrigger Feature</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the services Adc_EnableHardwareTrigger() and Adc_DisableHardwareTrigger() from the code.
+true: Adc_EnableHardwareTrigger() and Adc_DisableHardwareTrigger() can be used.
+false: Adc_EnableHardwareTrigger() and Adc_DisableHardwareTrigger() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcPriorityImplementation -->
+								<ENUMERATION-PARAM-DEF UUID="19b4aa1b-4a69-4d8e-adfb-9dde9340a44b">
+									<SHORT-NAME>AdcPriorityImplementation</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">[NOT USED]</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>ADC_PRIORITY_HW</DEFAULT-VALUE>
+									<LITERALS>
+										<ENUMERATION-LITERAL-DEF UUID="0b91cfa7-264c-4e6d-a17e-344777bd05a0">
+											<SHORT-NAME>ADC_PRIORITY_HW</SHORT-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="9df7031e-7802-4356-8255-8f11e87cf55b">
+											<SHORT-NAME>ADC_PRIORITY_HW_SW</SHORT-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="4573fc56-7205-4e74-8665-81b0c9ae4b0f">
+											<SHORT-NAME>ADC_PRIORITY_NONE</SHORT-NAME>
+										</ENUMERATION-LITERAL-DEF>
+									</LITERALS>
+								</ENUMERATION-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcReadGroupApi -->
+								<BOOLEAN-PARAM-DEF UUID="6d2dfd60-1ef7-4835-b9ef-d032063ea265">
+									<SHORT-NAME>AdcReadGroupApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Adc_ReadGroup</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Adc_ReadGroup() and from the code.
+true: Adc_ReadGroup() can be used.
+false: Adc_ReadGroup() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcVersionInfoApi -->
+								<BOOLEAN-PARAM-DEF UUID="edb131f2-c8cd-4966-bcc9-f6c5a40c1bb9">
+									<SHORT-NAME>AdcVersionInfoApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Adc_GetVersionInfo</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Adc_GetVersionInfo() from the code.
+true: Adc_GetVersionInfo() can be used.
+false: Adc_GetVersionInfor() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="e9b1fd2f-462e-4b74-bd36-5164738c6fb8">
+									<SHORT-NAME>AdcCfgDebugReporting</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Development Error Reporting</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches development error reporting on or off
+true: detected development error is reported
+false: detected development error is not reported</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="71174bf5-b2af-462b-8a19-e6dad21b2a27">
+									<SHORT-NAME>AdcCfgChkUninit</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Uninit status</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_UNINIT
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="7f5ca51d-8f04-469c-99d8-5a8a14fba1bc">
+									<SHORT-NAME>AdcCfgChkBusy</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Busy status</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_BUSY
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="16d31fb8-602e-461c-b319-0de645fdacfc">
+									<SHORT-NAME>AdcCfgChkIdle</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check Idle status</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_IDLE
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="b1bf2954-a768-4af0-9331-cae3f6bf879e">
+									<SHORT-NAME>AdcCfgChkAlreadyInitialized</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check AlreadyInitialized</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_ALREADY_INITIALIZED
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="bb2326d2-a403-4089-b8e9-070e6eef8dd8">
+									<SHORT-NAME>AdcCfgChkParamConfig</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Param. ConfigPtr</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_PARAM_CONFIG
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="894a8185-0fc1-48f8-8278-57d7c7badb89">
+									<SHORT-NAME>AdcCfgChkParamGroup</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Param. Group</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_PARAM_GROUP
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="79594c2a-9c93-42fe-99fa-6956ba78389c">
+									<SHORT-NAME>AdcCfgChkWrongConvMode</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check WrongConvMode</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_WRONG_CONV_MODE
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="203f998b-d1f9-4fa8-9f79-d26e2b5c4cca">
+									<SHORT-NAME>AdcCfgChkWrongTriggSrc</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check WrongTriggSrc</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_WRONG_TRIGG_SRC
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="255949d0-364e-4e15-9b81-644e7f33dfbf">
+									<SHORT-NAME>AdcCfgChkNotifCapability</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check NotifCapability</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_NOTIF_CAPABILITY
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="92517f59-3576-48aa-9c7c-1e964b0b4980">
+									<SHORT-NAME>AdcCfgChkBufferUninit</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check BufferUninit</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_BUFFER_UNINIT
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="284b2404-ba28-4a32-ac63-74ebd56dd98a">
+									<SHORT-NAME>AdcCfgChkParamReadBuffer</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Param. DataBufferPtr (ReadGroup)</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_PARAM_READ_BUFFER
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="08a045e8-9a36-4898-86ac-2dcfb502c66a">
+									<SHORT-NAME>AdcCfgChkParamResultBuffer</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Param. DataBufferPtr (ResultBuffer)</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_PARAM_RESULT_BUFFER
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="8e3271a9-afe5-4ad7-8e3f-528b8e6661fb">
+									<SHORT-NAME>AdcCfgChkParamStreamPtr</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Param. PtrToSamplePtr</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_PARAM_STREAM_PTR
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="4b656925-bf9f-4965-aa55-a9ced9bb03d3">
+									<SHORT-NAME>AdcCfgChkParamVinfo</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Param. versioninfo</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enables or disables development error detection of error ADC_E_PARAM_VINFO
+True: Error detection for this development error is active
+False: Error detection for this development error is inactive</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="c829ac98-7f56-4c23-9dc7-fe966b288768">
+									<SHORT-NAME>AdcCfgDoParamCheck</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Check function parameter</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches development error detection for function parameters on or off
+true: enable function parameter checking
+false: disable function parameter checking</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="76a8adf8-c9e3-438f-bf15-17b646e46cee">
+									<SHORT-NAME>AdcCfgIncludeDet</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Include File</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">File name of the header file that contains declaration of development error reporting function.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Det.h</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<FUNCTION-NAME-DEF UUID="3d85a4ec-1db1-4aa6-8236-e6530dd1e2fe">
+									<SHORT-NAME>AdcReportDet</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Error Report Function</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Function name of development error report function</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Det_ReportError</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<STRING-PARAM-DEF UUID="a54f8f6a-b7e9-4f15-8905-e49b1908d9a6">
+									<SHORT-NAME>AdcCfgIncludeListCbk</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Include Files for Notification Callbacks</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Include Files for Notification Callbacks</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>*</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+								</STRING-PARAM-DEF>
+								<ENUMERATION-PARAM-DEF UUID="8ce132db-3942-4e3e-b4cc-8dba3328954b">
+									<SHORT-NAME>AdcNativeIsr</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">ISR implementation</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">ISR implementation</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>ADC_ISR_CAT2</DEFAULT-VALUE>
+									<LITERALS>
+										<ENUMERATION-LITERAL-DEF UUID="4669837d-cb81-4070-9cf7-6f595db32c50">
+											<SHORT-NAME>ADC_ISR_VOID</SHORT-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="6c0a4ec6-5f1f-4425-94a5-ddf0b233c5d4">
+											<SHORT-NAME>ADC_ISR_CAT1</SHORT-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="5c0dd162-20b0-42c8-81d4-2628839b3322">
+											<SHORT-NAME>ADC_ISR_CAT2</SHORT-NAME>
+										</ENUMERATION-LITERAL-DEF>
+									</LITERALS>
+								</ENUMERATION-PARAM-DEF>
+<!--
+-->
+								<BOOLEAN-PARAM-DEF UUID="fee83b44-9ee2-47a5-a785-130c98a4ccc8">
+									<SHORT-NAME>AdcCfg12BitModeSupported</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable 12-Bit Conversion Feature</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Enable this switch for supporting 12 bit conversions. Otherwise only 10 and 8 bit conversions are configurable.
+
+True: 12 bit conversions are supported
+False: 12 bit conversions are not supported</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+<!--
+-->
+							</PARAMETERS>
+							<REFERENCES>
+								<REFERENCE-PARAM-DEF UUID="0832f8e7-09fc-4ae5-a812-8c5d1c11fb64">
+									<SHORT-NAME>AdcIrqHandling</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Crit. Sect. Handling</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Determines the IRQ function set which is used to protect critical sections.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Board/InterruptFunctionality/InterruptFunctionSet</DESTINATION-REF>
+								</REFERENCE-PARAM-DEF>
+							</REFERENCES>
+						</PARAM-CONF-CONTAINER-DEF>
+						<!-- Parameter Container Definition: AdcPublishedInformation -->
+						<PARAM-CONF-CONTAINER-DEF UUID="ECUC:e435c52c-58b2-4506-ae6c-da9a9b76ad99">
+							<SHORT-NAME>AdcPublishedInformation</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">Additional published parameters not covered by CommonPublishedInformation container.
+
+Note that these parameters do not have any configuration class setting, since they are published information.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<!-- PARAMETER DEFINITION: AdcChannelValueSigned -->
+								<BOOLEAN-PARAM-DEF UUID="ECUC:f002ab5c-bf89-4fc2-ba13-6909a2c2e75a">
+									<SHORT-NAME>AdcChannelValueSigned</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Information whether the result value of the ADC driver has sign information (true) or not (false). If the result shall be interpreted as signed value it shall apply to C-language rules.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcGroupFirstChannelFixed -->
+								<BOOLEAN-PARAM-DEF UUID="ECUC:1c22f85b-d656-4563-86ec-1823df41ebed">
+									<SHORT-NAME>AdcGroupFirstChannelFixed</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Information whether the first channel of an ADC Channel group can be configured (false) or is fixed (true) to a value determined by the ADC HW Unit.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: AdcMaxChannelResolution -->
+								<INTEGER-PARAM-DEF UUID="ECUC:8f00599e-47d5-4046-bce8-9cbefac7e41a">
+									<SHORT-NAME>AdcMaxChannelResolution</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Maximum Channel resolution in bits (does not specify accuracy).</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+<!--
+-->
+									<DEFAULT-VALUE>12</DEFAULT-VALUE>
+									<MAX>12</MAX>
+									<MIN>12</MIN>
+<!--
+-->
+								</INTEGER-PARAM-DEF>
+							</PARAMETERS>
+						</PARAM-CONF-CONTAINER-DEF>
+						<PARAM-CONF-CONTAINER-DEF UUID="e57c1c06-9c58-41fe-b8db-4ae5dc83f862">
+							<SHORT-NAME>VectorCommonData</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">This configuration container contains Vector specific vendor data, which are relevant for configuration management purposes.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<PARAMETERS>
+								<STRING-PARAM-DEF UUID="26c38b25-685c-414b-a2e4-597044730333">
+									<SHORT-NAME>BswmdVersion</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter specifies the version of this bswmd file. </L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PUBLISHED-INFORMATION</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>1.03.01</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+							</PARAMETERS>
+						</PARAM-CONF-CONTAINER-DEF>
+					</CONTAINERS>
+				</MODULE-DEF>
+				<MODULE-CONFIGURATION UUID="92048129-64d9-4269-94c0-c4030ebb7182">
+					<SHORT-NAME>Adc_Pre</SHORT-NAME>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/Adc</DEFINITION-REF>
+					<CONTAINERS></CONTAINERS>
+				</MODULE-CONFIGURATION>
+				<MODULE-CONFIGURATION UUID="6f2cbef9-7901-4ed6-aad3-da305feadbb9">
+					<SHORT-NAME>Adc_Rec</SHORT-NAME>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/Adc</DEFINITION-REF>
+					<CONTAINERS>
+						
+					</CONTAINERS>
+				</MODULE-CONFIGURATION>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</TOP-LEVEL-PACKAGES>
+</AUTOSAR>

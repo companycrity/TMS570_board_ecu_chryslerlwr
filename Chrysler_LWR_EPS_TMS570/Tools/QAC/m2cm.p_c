@@ -1,0 +1,66 @@
+-it "ptrdiff_t=int"
+-i "..\..\..\..\StdDef\include"
+-i "..\..\..\..\StdDef\include\TMS570_4_9_5\include"
+-i "..\..\..\..\NxtrLib\include"
+-i "..\..\Source\GenData"
+-i "..\..\Source\GenDataRte"
+-i "..\..\Header"
+-i "..\..\Source\BSW\_Common"
+-i "..\..\Source\BSW\VStdlib"
+-i "..\..\Source\BSW\Can"
+-i "..\..\Source\BSW\Tp"
+-i "..\..\Source\BSW\Il"
+-i "..\..\Source\BSW\Nm"
+-i "..\..\Source\BSW\Ccl"
+-i "..\..\Source\BSW\Dpm"
+-i "..\..\Source\BSW\Xcp"
+-i "..\..\Source\BSW\Nvm"
+-i "..\..\Source\BSW\Dem"
+-i "..\..\Source\BSW\Crc"
+-i "..\..\DfltConfigData\DfltConfigData\include"
+-i "..\..\Source\CDD"
+-i "..\..\..\..\DiagMgr\include"
+-q "..\..\StdDef\include\TMS570_4_9_1\include"
+-q "..\..\..\..\StdDef\include"
+-q "..\..\..\..\StdDef\include\TMS570_4_9_5\include"
+-q "..\..\..\..\NxtrLib\include"
+-q "..\..\Source\GenData"
+-q "..\..\Source\GenDataRte"
+-q "..\..\Header"
+-q "..\..\Source\BSW\_Common"
+-q "..\..\Source\BSW\VStdlib"
+-q "..\..\Source\BSW\Can"
+-q "..\..\Source\BSW\Tp"
+-q "..\..\Source\BSW\Il"
+-q "..\..\Source\BSW\Nm"
+-q "..\..\Source\BSW\Ccl"
+-q "..\..\Source\BSW\Dpm"
+-q "..\..\Source\BSW\Xcp"
+-q "..\..\Source\BSW\Nvm"
+-q "..\..\Source\BSW\Crc"
+-q "..\..\Source\BSW\Dem"
+-q "..\..\DfltConfigData\DfltConfigData\include"
+-q "..\..\Source\CDD"
+-q "..\..\..\..\DiagMgr\include"
+-d "__16bis__=1"
+-d "__inline ="
+-d "_CODE_ACCESS ="
+-d "_DATA_ACCESS ="
+-d "_DATA_ACCESS_NEAR ="
+-d "crc_tbl.h="
+-d "inline ="
+-d "interrupt ="
+-ar+
+-bits+
+-u-
+-a int=2
+-a ldouble=16
+-sl-
+-s int=16
+-s ldouble=128
+-na 31
+-xn 31
+-xc+
+-ex asm
+-ex longlong
+-fpc-

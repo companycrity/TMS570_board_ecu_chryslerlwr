@@ -1,0 +1,322 @@
+File Version     : 4.30
+Directory        : "$(PROJECTROOT)\MtrVel\utp\CBD_UnitTest"
+Backup Directory : "$(PROJECTROOT)\MtrVel\utp\Tessy\backup"
+Configuration    : "$(PROJECTROOT)\UnitTestEnv\config\TMS570_GCC_UDE_CCS4_Config.xml"
+Author           : "Administrator"
+Created          : 03.04.2012 14:28
+Last Changed     : 28.06.2013 19:39
+Comment          : ""
+Project
+   Name    : "CBD_UnitTest"
+   Module
+      Name        : "MtrVel"
+      Comment     : "*************************************************************************************************************\r\n\r\nName of Tester:Sheetal Wadichar\r\nCode File(s) Under Test:Sa_MtrVel.c\r\nCode File(s) Version:13\r\nModule Design Document:Motor_Velocity_MDD.doc\r\nModule Design Document Version:14\r\nUnit Test Plan Version:2\r\nOptimization Level:Level 2\r\nCompiler (CodeGen) Version:TMS470_4.9.5\r\nModel Type:Excel Macro\r\nModel Version:Nexteer EPS Unit Test Tool 2.7b/EPS Library 1.29\r\nSpecial Test Requirements:\r\nTest Date:6/28/2013\r\nComments:""Note1: Inline functions defined in GlobalMacro.h are not unit tested.\nNote2: As per MDD's """"section 9:Known Issues / Limitations With Design"""" values of variables """"MtrVel_OldPosBuf_M_u08"""" and """"MtrVel_OsBufSelect_Cnt_M_u08"""" should not be equal in a test vector for """"RegressionFit"""" and """"MtrVel_Per1"""" function.\nNote3: While entering values for variable """"MtrVel3_TimeBuffer_uS_M_u16p0"""" follow the rules mentioned in the MDD's  """"Section 9: Known Issues / Limitations With Design"""" for  """"RegressionFit"""" and """"MtrVel_Per1"""" function.\nNote4: Typecasting code is added in """"RegressionFit"""" Function for the variable""""PosDiff_Rev_T_sm1p16"""" and also in """"MtrVel_Per1"""" Function for variable """"DeltaPos_Rev_T_sm1p16"""".\nNote5: 100% coverage is not achieved in """" RegressionFit"""" due to usage of """"FPM_Fix_m"""" macro and also usage of  \n """"Limit_m"""" macro for """"D_B1NUMLIMIT_US_S7P24"""" constant.\n\nFuture vector Improvements for improved calcualtion node range coverage (created by Nexteer during UTP review):\nMtrVel_Per1:  Vectors do not provide the worst case range for PredDeltaTheta_Uls_T_f32 to fully exercise the calculation on line 731 of Sa_MtrVel.c.  The range that was observed by running the VBA model for PredDeltaTheta_Uls_T_s1p14 was from -1632 to 7123 counts.  The range of PredDeltaTheta_Uls_T_s1p14 returned from Regression fit is specified as FULL, which is -32768 to 32767 counts.\n\nRegression Fit:  The design of this function takes pointers to output buffers as inputs.  These pointers are PredDeltaThetaPtr, PosAvgPtr, and AvgDeltaPtr.  These parameters should be treated as outputs for the purposes of unit testing.  The AvgDeltaPtr is exercised over the full range of values as specified by the requirements on proper timestamps.  The value assigned to PosAvgPtr and PredDeltaThetaPtr_Uls_T_s1p14 by the vectors does not fully exercise the range of PosAvgPtr and PredDeltaThetaPtr_Uls_T_s1p14.""\r\n\r\n\r\n*************************************************************************************************************"
+      State       : 0x00000004
+      Environment : "TI TMS 570 PLS UDE (Default)"
+      Properties
+         Property
+            Name  : "Compiler Defines"
+            Type  : "String"
+            Flags : 0x90000049
+            Value : "const=,_DATA_ACCESS=,static="
+         End
+         Property
+            Name  : "Compiler Includes"
+            Type  : "Directory"
+            Flags : 0x90000049
+            Value : "$(PROJECTROOT)\NxtrLib\include, $(PROJECTROOT)\StdDef\include, $(PROJECTROOT)\MtrVel\utp\contract, $(PROJECTROOT)\MtrVel\include, $(PROJECTROOT)\MtrVel\utp\contract\Sa_MtrVel, $(ProgramFiles)\Texas Instruments\ccsv4\tools\compiler\tms470_4.9.5\include"
+         End
+      End
+      Source File
+         Name : "Sa_MtrVel.c"
+         Path : "$(PROJECTROOT)\MtrVel\src\"
+         Properties
+         End
+      End
+      Source File
+         Name : "interpolation.c"
+         Path : "$(PROJECTROOT)\NxtrLib\src\"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000001
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "Blend_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "NF_SvUpdate_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "NF_OpUpdate_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "NF_FullUpdate_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "MtrVel_Init1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "MtrVel_Per1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "RegressionFit"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "CalcCoarseVel"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "CorrectVel"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "MtrVelBlend"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_u16_u16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "MtrVel_Per2"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_s16_u16Xs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_u16_u16Xu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_s16_s16Xs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_u16_s16Xu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_u16_u16XMu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_s16_u16XMs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_s16_s16XMs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_u16_s16XMu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_u16_s16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_s16_s16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_s16_u16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_u16_u16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_u16_s16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_s16_s16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_s16_u16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+   End
+End

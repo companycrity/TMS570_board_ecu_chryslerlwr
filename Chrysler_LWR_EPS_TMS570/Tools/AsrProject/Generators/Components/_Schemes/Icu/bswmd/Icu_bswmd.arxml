@@ -1,0 +1,1872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============================================================================
+
+  Copyright (c) 2008 by Vector Informatik GmbH.    All rights reserved.
+
+  This software is copyright protected and proprietary to Vector Informatik GmbH.
+  Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+  All other rights remain with Vector Informatik GmbH.
+
+  ============================================================================
+
+  This file is needed for internal use by MICROSAR EAD.
+  Please do not modify this file, otherwise the software may behave in unexpected way.
+
+  ============================================================================
+-->
+<AUTOSAR xmlns="http://autosar.org/3.0.2">
+	<TOP-LEVEL-PACKAGES>
+		<AR-PACKAGE UUID="DCE:b0e182f2-ebb9-4a35-b577-6a098cd5fcf9">
+			<SHORT-NAME>MICROSAR</SHORT-NAME>
+			<ELEMENTS>
+				<BSW-IMPLEMENTATION UUID="DCE:655a551f-5491-44a3-99e3-357e6ef3a144">
+					<SHORT-NAME>Icu_Impl</SHORT-NAME>
+					<CODE-GENERATOR>cMICROSAR</CODE-GENERATOR>
+					<PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+					<SW-MAJOR-VERSION>1</SW-MAJOR-VERSION>
+					<SW-MINOR-VERSION>1</SW-MINOR-VERSION>
+					<SW-PATCH-VERSION>0</SW-PATCH-VERSION>
+					<VENDOR-ID>30</VENDOR-ID>
+					<AR-MAJOR-VERSION>3</AR-MAJOR-VERSION>
+					<AR-MINOR-VERSION>0</AR-MINOR-VERSION>
+					<AR-PATCH-VERSION>0</AR-PATCH-VERSION>
+					<PRECONFIGURED-CONFIGURATION-REF DEST="MODULE-CONFIGURATION">/MICROSAR/Icu_Pre</PRECONFIGURED-CONFIGURATION-REF>
+					<RECOMMENDED-CONFIGURATION-REF DEST="MODULE-CONFIGURATION">/MICROSAR/Icu_Rec</RECOMMENDED-CONFIGURATION-REF>
+					<VENDOR-SPECIFIC-MODULE-DEF-REF DEST="MODULE-DEF">/MICROSAR/Icu</VENDOR-SPECIFIC-MODULE-DEF-REF>
+				</BSW-IMPLEMENTATION>
+				<MODULE-DEF UUID="DCE:4ef7d7d7-57d9-46da-9467-621f1a367c21">
+					<SHORT-NAME>Icu</SHORT-NAME>
+					<DESC>
+						<L-2 L="EN">Configuration of the Icu (Input Capture Unit) module.</L-2>
+					</DESC>
+					<ADMIN-DATA>
+						<DOC-REVISIONS>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.00.00</REVISION-LABEL>
+								<STATE>beta</STATE>
+								<ISSUED-BY>vircer</ISSUED-BY>
+								<DATE>2008-10-31T13:53:57</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Initial Version Of The File</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">PI_4922</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.00.01</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>vircer</ISSUED-BY>
+								<DATE>2009-03-11T15:16:04</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Removed Default Values Of Notifications, Default Interupt Category Changes to 'CAT 2'</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00032770</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.00.02</REVISION-LABEL>
+								<STATE>released</STATE>
+								<ISSUED-BY>vircer</ISSUED-BY>
+								<DATE>2010-11-08T08:47:51</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Added recommended configuration for the SchM, Removed default value of IcuWakeupNotification so that validation rule V007 works (ESCAN00039708)</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00046684</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+							<DOC-REVISION>
+								<REVISION-LABEL>1.00.03</REVISION-LABEL>
+								<ISSUED-BY>vircer</ISSUED-BY>
+								<DATE>2011-01-21T10:48:34</DATE>
+								<MODIFICATIONS>
+									<MODIFICATION>
+										<CHANGE>
+											<L-2 L="EN">Multiplicity of the component corrected, Long names added for all parameters</L-2>
+										</CHANGE>
+										<REASON>
+											<L-2 L="EN">ESCAN00048079</L-2>
+										</REASON>
+									</MODIFICATION>
+								</MODIFICATIONS>
+							</DOC-REVISION>
+						</DOC-REVISIONS>
+					</ADMIN-DATA>
+					<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+					<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+					<REFINED-MODULE-DEF-REF DEST="MODULE-DEF">/AUTOSAR/Icu</REFINED-MODULE-DEF-REF>
+					<SUPPORTED-CONFIG-VARIANTS>
+						<SUPPORTED-CONFIG-VARIANT>VARIANT-POST-BUILD</SUPPORTED-CONFIG-VARIANT>
+					</SUPPORTED-CONFIG-VARIANTS>
+					<CONTAINERS>
+						<!-- Parameter Container Definition: IcuConfigSet -->
+						<PARAM-CONF-CONTAINER-DEF UUID="DCE:120e1eb3-f8ba-4cc3-b671-a3078832b09d">
+							<SHORT-NAME>IcuConfigSet</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">This container is the base for a multiple configuration set</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>*</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>true</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<!-- PARAMETER DEFINITION: IcuMaxChannel -->
+								<DERIVED-INTEGER-PARAM-DEF UUID="DCE:261cc423-c854-492a-8e22-756ef4a7ebea">
+									<SHORT-NAME>IcuMaxChannel</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">[NOT USED]</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>0</DEFAULT-VALUE>
+									<MAX>100</MAX>
+									<MIN>0</MIN>
+									<CALCULATION-FORMULA>number of configured icu channels</CALCULATION-FORMULA>
+									<CALCULATION-LANGUAGE>INFORMAL</CALCULATION-LANGUAGE>
+								</DERIVED-INTEGER-PARAM-DEF>
+							</PARAMETERS>
+							<SUB-CONTAINERS>
+								<!-- Parameter Container Definition: IcuChannel -->
+								<PARAM-CONF-CONTAINER-DEF UUID="DCE:b0d93dfc-6904-48d3-814b-08e1bb08a1fd">
+									<SHORT-NAME>IcuChannel</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Channel Name</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Configuration of an individual ICU channel.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>15</UPPER-MULTIPLICITY>
+									<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+									<PARAMETERS>
+										<!-- PARAMETER DEFINITION: IcuChannelId -->
+										<INTEGER-PARAM-DEF UUID="DCE:0c12b944-13ad-4d9d-a2ab-f501468a16e4">
+											<SHORT-NAME>IcuChannelId</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">[NOT USED]</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>0</DEFAULT-VALUE>
+											<MAX>100</MAX>
+											<MIN>0</MIN>
+										</INTEGER-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: IcuDefaultStartEdge -->
+										<ENUMERATION-PARAM-DEF UUID="DCE:bfe54508-a35f-4829-ad2d-1d5e43d884ec">
+											<SHORT-NAME>IcuDefaultStartEdge</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Default Start Edge</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Configures the default-activation-edge which shall be used for this channel if there was no activation-edge configured by the call of service Icu_SetActivationCondition().
+
+In case the Measurement Mode is "IcuSignalMeasurement" and the properties "DutyCycle" or "Period" are set, the edge configured here is used as Default Period Start Edge.
+
+Implementation Type: Icu_ActivationType</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>ICU_RISING_EDGE</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="27937ad4-ba5b-4d2d-8b48-9391e88bc2b5">
+													<SHORT-NAME>ICU_BOTH_EDGES</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>Both Edges</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="88cef990-0548-430d-888f-c2c4c681f1da">
+													<SHORT-NAME>ICU_FALLING_EDGE</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>Falling Edge</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="44fef027-0753-468d-a2d9-8c13a25f3b07">
+													<SHORT-NAME>ICU_RISING_EDGE</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>Rising Edge</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: IcuMeasurementMode -->
+										<ENUMERATION-PARAM-DEF UUID="DCE:7f9ff413-19db-4280-a70c-10a9d76d5c5a">
+											<SHORT-NAME>IcuMeasurementMode</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Measurement Mode</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Configures the measurement mode of this channel.
+
+Implementation Type: Icu_MeasurementModeType</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>ICU_MODE_SIGNAL_EDGE_DETECT</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="DCE:1a9d6aca-308b-44c9-9abc-46e6831781f1">
+													<SHORT-NAME>ICU_MODE_TIMESTAMP</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>Timestamping</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="DCE:5c2007b9-02f7-4d6f-9751-bef079d2f98a">
+													<SHORT-NAME>ICU_MODE_SIGNAL_MEASUREMENT</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>Signal Measurement</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="DCE:36970c55-3048-4770-b3fd-0842cf117a03">
+													<SHORT-NAME>ICU_MODE_SIGNAL_EDGE_DETECT</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>Signal Edge Detection</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="DCE:af5f1460-8bd9-4842-9069-f47971900ae7">
+													<SHORT-NAME>ICU_MODE_EDGE_COUNTER</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>Edge Counting</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+										<!-- PARAMETER DEFINITION: IcuWakeupCapability -->
+										<BOOLEAN-PARAM-DEF UUID="DCE:49c8f9b5-bcc2-4657-9d45-b460c455c087">
+											<SHORT-NAME>IcuWakeupCapability</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Wakeup Capability</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Information about the wakeup-capability of this channel.
+true: Channel is wakeup capable.
+false: Channel is not wakeup capable.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>false</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<ENUMERATION-PARAM-DEF UUID="DCE:b006cdc2-7f2c-4a06-a32e-2c66c3b198ba">
+											<SHORT-NAME>IcuPin</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Pin</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">Configures the hardware pin to be used by an ICU channel.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>HET0</DEFAULT-VALUE>
+											<LITERALS>
+												<ENUMERATION-LITERAL-DEF UUID="78129cfb-5100-439b-abb7-e6d6135e13b8">
+													<SHORT-NAME>HET0</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET0</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="fb481c61-552c-49fe-b5a5-8a400f92cf48">
+													<SHORT-NAME>HET1</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET1</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="b571cd83-6014-44b8-8385-5cf87a80cb43">
+													<SHORT-NAME>HET2</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET2</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="7ba0b102-32c3-4c99-a33a-4cd2b205af61">
+													<SHORT-NAME>HET3</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET3</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="e806ee92-ea9d-406e-8baa-984e995b44ff">
+													<SHORT-NAME>HET4</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET4</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="bd48c1dd-4cf8-4ac6-a3e9-4c7fd255b0da">
+													<SHORT-NAME>HET5</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET5</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="70621adc-9b5b-4658-bb42-be08e200cb7b">
+													<SHORT-NAME>HET6</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET6</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="35c4d7be-9c4c-4f2c-87f0-8089642f29d2">
+													<SHORT-NAME>HET7</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET7</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="0d2a94c5-f3b9-4a45-a3bb-f63593ed588e">
+													<SHORT-NAME>HET8</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET8</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="84cced0f-e546-4b29-b12c-1fa7d8cefc20">
+													<SHORT-NAME>HET9</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET9</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="c3db325b-a95e-49e1-b6fe-11128dcbcea7">
+													<SHORT-NAME>HET10</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET10</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="43ff36e1-c818-4ff2-a746-aebf3c71e2fb">
+													<SHORT-NAME>HET11</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET11</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="6a5c0be2-b271-46ae-85e7-072d98b090d4">
+													<SHORT-NAME>HET12</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET12</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="0a087f21-4c24-42cc-97b7-eebfbce017d1">
+													<SHORT-NAME>HET13</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET13</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="f25986e9-733c-4a6b-aeab-162678ecb191">
+													<SHORT-NAME>HET14</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET14</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="d0567ba9-3bf8-4a48-a8af-6eaa05ca636c">
+													<SHORT-NAME>HET15</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET15</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="e89769dd-130a-499c-8d6b-4093ad255b17">
+													<SHORT-NAME>HET16</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET16</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="fbab7f1c-0fe5-4e8f-8233-5029ad2ce34a">
+													<SHORT-NAME>HET17</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET17</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="eddd99e5-3c95-4b01-817c-f6d5db559a4b">
+													<SHORT-NAME>HET18</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET18</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="96839acf-a98a-47c8-b9a2-16793fc52d10">
+													<SHORT-NAME>HET19</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET19</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="ba351e0c-dd63-49e5-b7ef-f4776a130638">
+													<SHORT-NAME>HET20</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET20</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="07d76d85-f35c-4903-aa44-1c1c7ce1020c">
+													<SHORT-NAME>HET21</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET21</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="4cbcc14a-5375-48f4-b82a-508f05f038c4">
+													<SHORT-NAME>HET22</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET22</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="86ef8bd7-c2ce-490e-bc8d-6fdd114a8948">
+													<SHORT-NAME>HET23</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET23</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="3d3aff40-9d6b-455a-b1b0-7f1b27019d5f">
+													<SHORT-NAME>HET24</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET24</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="2b92f5e7-70a9-414a-8ba9-182ade70b836">
+													<SHORT-NAME>HET25</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET25</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="0efd85fa-f0a7-4cbf-a856-be04d497b18a">
+													<SHORT-NAME>HET26</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET26</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="15644031-f3b6-4306-ac2c-c563ab31851a">
+													<SHORT-NAME>HET27</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET27</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="e60fc7f7-e806-4552-be29-8a768a2ae9b5">
+													<SHORT-NAME>HET28</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET28</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="aa40d367-ea9b-4b94-91f2-864c5e0e8358">
+													<SHORT-NAME>HET29</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET29</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="45a1e37f-c46c-4e8c-99b6-ab7504c63740">
+													<SHORT-NAME>HET30</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET30</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+												<ENUMERATION-LITERAL-DEF UUID="88dab52b-3781-484b-a6ac-d30ac417fa16">
+													<SHORT-NAME>HET31</SHORT-NAME>
+													<LONG-NAME>
+														<L-4>NHET31</L-4>
+													</LONG-NAME>
+												</ENUMERATION-LITERAL-DEF>
+											</LITERALS>
+										</ENUMERATION-PARAM-DEF>
+									</PARAMETERS>
+									<SUB-CONTAINERS>
+										<!-- Parameter Container Definition: IcuEdgeCounterMeasurement -->
+										<!-- Parameter Container Definition: IcuSignalEdgeDetection -->
+										<PARAM-CONF-CONTAINER-DEF UUID="DCE:4b87fa11-dfd8-4107-8816-6e5bd62836ef">
+											<SHORT-NAME>IcuSignalEdgeDetection</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">This container contains the configuration (parameters) in case the measurement mode is "IcuSignalEdgeDetection"</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+											<PARAMETERS>
+												<!-- PARAMETER DEFINITION: IcuSignalNotification -->
+												<FUNCTION-NAME-DEF UUID="DCE:ebc1d185-12a9-417b-9bdf-8b767257fe8e">
+													<SHORT-NAME>IcuSignalNotification</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Notification</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Notification function for signal notification.</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+												</FUNCTION-NAME-DEF>
+											</PARAMETERS>
+										</PARAM-CONF-CONTAINER-DEF>
+										<!-- Parameter Container Definition: IcuSignalMeasurement -->
+										<PARAM-CONF-CONTAINER-DEF UUID="DCE:191e6a73-a866-471a-9263-c580791800fa">
+											<SHORT-NAME>IcuSignalMeasurement</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">This container contains the configuration (parameters) in case the measurement mode is "IcuSignalMeasurement"</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+											<PARAMETERS>
+												<!-- PARAMETER DEFINITION: IcuSignalMeasurementProperty -->
+												<ENUMERATION-PARAM-DEF UUID="DCE:f9e59403-5bfa-488f-8d6e-5880a16f8897">
+													<SHORT-NAME>IcuSignalMeasurementProperty</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Measurement Property</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Configures the property that could be measured in case the mode is "IcuSignalMeasurement".
+This property can not be changed during runtime.
+
+Implementation Type: Icu_SignalMeasurementPropertyType</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>ICU_DUTY_CYCLE</DEFAULT-VALUE>
+													<LITERALS>
+														<ENUMERATION-LITERAL-DEF UUID="DCE:35159a2e-9809-4a5e-a983-d7a014bea562">
+															<SHORT-NAME>ICU_DUTY_CYCLE</SHORT-NAME>
+															<LONG-NAME>
+																<L-4>Duty Cycle</L-4>
+															</LONG-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="DCE:c209785b-1a8e-4b98-bb01-c57557a9aaee">
+															<SHORT-NAME>ICU_HIGH_TIME</SHORT-NAME>
+															<LONG-NAME>
+																<L-4>High Time</L-4>
+															</LONG-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="DCE:bf13c4e7-3836-4337-bb43-0c4e857a59b8">
+															<SHORT-NAME>ICU_LOW_TIME</SHORT-NAME>
+															<LONG-NAME>
+																<L-4>Low Time</L-4>
+															</LONG-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="DCE:fc7c1f63-9ab0-447a-9cc8-d20c80311591">
+															<SHORT-NAME>ICU_PERIOD_TIME</SHORT-NAME>
+															<LONG-NAME>
+																<L-4>Period Time</L-4>
+															</LONG-NAME>
+														</ENUMERATION-LITERAL-DEF>
+													</LITERALS>
+												</ENUMERATION-PARAM-DEF>
+												<FUNCTION-NAME-DEF UUID="DCE:96e9d8ee-72ce-41c3-861c-21ba34895c7d">
+													<SHORT-NAME>IcuSignalMeasurementNotification</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Notification</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">This parameter contains the identifier name of a notification callback that will be called if a period is successfully captured.</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>Vector Informatik</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+												</FUNCTION-NAME-DEF>
+											</PARAMETERS>
+										</PARAM-CONF-CONTAINER-DEF>
+										<!-- Parameter Container Definition: IcuTimestampMeasurement -->
+										<PARAM-CONF-CONTAINER-DEF UUID="DCE:e9c0354a-46f3-4367-a75f-f68eee2a4704">
+											<SHORT-NAME>IcuTimestampMeasurement</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">This container contains the configuration (parameters) in case the measurement mode is "IcuTimestamp"</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+											<PARAMETERS>
+												<!-- PARAMETER DEFINITION: IcuTimestampMeasurementProperty -->
+												<ENUMERATION-PARAM-DEF UUID="DCE:f3c822a3-c1fa-491b-b248-8f4a5895d362">
+													<SHORT-NAME>IcuTimestampMeasurementProperty</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Measurement Property</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Configures the handling of the buffer in case the mode is "Timestamp"
+
+Implementation Type: Icu_TimestampBufferType</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+													<DEFAULT-VALUE>ICU_CIRCULAR_BUFFER</DEFAULT-VALUE>
+													<LITERALS>
+														<ENUMERATION-LITERAL-DEF UUID="DCE:3b7cc7d6-2ef4-4fd6-9611-3534467e5c71">
+															<SHORT-NAME>ICU_CIRCULAR_BUFFER</SHORT-NAME>
+															<LONG-NAME>
+																<L-4>Circular Buffer</L-4>
+															</LONG-NAME>
+														</ENUMERATION-LITERAL-DEF>
+														<ENUMERATION-LITERAL-DEF UUID="DCE:45a79ec5-4f79-4279-8d9b-6f489452b49a">
+															<SHORT-NAME>ICU_LINEAR_BUFFER</SHORT-NAME>
+															<LONG-NAME>
+																<L-4>Linear Buffer</L-4>
+															</LONG-NAME>
+														</ENUMERATION-LITERAL-DEF>
+													</LITERALS>
+												</ENUMERATION-PARAM-DEF>
+												<!-- PARAMETER DEFINITION: IcuTimestampNotification -->
+												<FUNCTION-NAME-DEF UUID="DCE:9c7e2f8b-665d-4bf8-9d71-79f11406493c">
+													<SHORT-NAME>IcuTimestampNotification</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Notification</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">Notification function if the number of requested timestamps
+(Notification interval &gt; 0) are acquired.</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+												</FUNCTION-NAME-DEF>
+											</PARAMETERS>
+										</PARAM-CONF-CONTAINER-DEF>
+										<!-- Parameter Container Definition: IcuWakeup -->
+										<PARAM-CONF-CONTAINER-DEF UUID="DCE:a786a009-15ab-4e44-9c1f-db43804f01e9">
+											<SHORT-NAME>IcuWakeup</SHORT-NAME>
+											<DESC>
+												<L-2 L="EN">This container contains the configuration (parameters) needed to configure a wakeup capable channel</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+											<REFERENCES>
+												<!-- Symbolic Name Reference Definition: IcuChannelWakeupInfo -->
+												<SYMBOLIC-NAME-REFERENCE-PARAM-DEF UUID="DCE:6b99abf4-cbd5-4516-9271-81903c1babd4">
+													<SHORT-NAME>IcuChannelWakeupInfo</SHORT-NAME>
+													<LONG-NAME>
+														<L-4 L="EN">Wakeup Source Identifier</L-4>
+													</LONG-NAME>
+													<DESC>
+														<L-2 L="EN">If the wakeup-capability is true the wakeup source referenced  is transmitted to the ECU State Manager (EcuM) .
+
+Implementation Type: reference to EcuM_WakeupSourceType</L-2>
+													</DESC>
+													<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+													<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+													<IMPLEMENTATION-CONFIG-CLASSES>
+														<IMPLEMENTATION-CONFIG-CLASS>
+															<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+															<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+														</IMPLEMENTATION-CONFIG-CLASS>
+													</IMPLEMENTATION-CONFIG-CLASSES>
+													<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+													<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMWakeupSource</DESTINATION-REF>
+												</SYMBOLIC-NAME-REFERENCE-PARAM-DEF>
+											</REFERENCES>
+										</PARAM-CONF-CONTAINER-DEF>
+										<PARAM-CONF-CONTAINER-DEF UUID="13d3f737-2205-4d1e-b999-59b216b9f2bc">
+											<SHORT-NAME>IcuEdgeCounterMeasurement</SHORT-NAME>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+										</PARAM-CONF-CONTAINER-DEF>
+									</SUB-CONTAINERS>
+								</PARAM-CONF-CONTAINER-DEF>
+							</SUB-CONTAINERS>
+						</PARAM-CONF-CONTAINER-DEF>
+						<!-- Parameter Container Definition: IcuGeneral -->
+						<PARAM-CONF-CONTAINER-DEF UUID="DCE:a55745d9-83d1-489e-979d-cdda1c05c46a">
+							<SHORT-NAME>IcuGeneral</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">Configuration of general ICU parameters.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<!-- PARAMETER DEFINITION: IcuDevErrorDetect -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:9d7f203e-bbed-49ae-bcaa-8156d63a8a26">
+									<SHORT-NAME>IcuDevErrorDetect</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Development Mode</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switches the Development Error Detection and Notification
+on or off.
+true: Enabled.
+false: Disabled.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuIndex -->
+								<INTEGER-PARAM-DEF UUID="DCE:ba8a40c0-d48d-4de6-ac1d-462110c990a1">
+									<SHORT-NAME>IcuIndex</SHORT-NAME>
+									<DESC>
+										<L-2 L="EN">Specifies the InstanceId of this module instance. If only one instance is present it shall have the Id 0.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>0</DEFAULT-VALUE>
+									<MAX>0</MAX>
+									<MIN>0</MIN>
+								</INTEGER-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuReportWakeupSource -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:57c1f423-976f-4a96-9f57-2436486cecbd">
+									<SHORT-NAME>IcuReportWakeupSource</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Report Wakeup Source</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Switch for enabling Wakeup source reporting.
+true: Report Wakeup source.
+false: Do not report Wakeup source.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>false</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<FUNCTION-NAME-DEF UUID="DCE:a9a9353f-b683-4f3b-8fa2-48e58b71c3d4">
+									<SHORT-NAME>IcuWakeupNotification</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Wakeup Notification</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter contains the identifier name of the global wakeup notification function.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+								</FUNCTION-NAME-DEF>
+								<STRING-PARAM-DEF UUID="DCE:1356b514-ea5d-4cf3-980e-7f902dda5cdc">
+									<SHORT-NAME>IcuIncludeList</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Additional Include Files</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Include List for callback functions</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>*</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>EcuM_Cbk.h</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<ENUMERATION-PARAM-DEF UUID="DCE:aaa2bee2-ef11-407e-8cac-2f1ffb722563">
+									<SHORT-NAME>IcuIsrType</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">ISR Implementation</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">ISR Implementation - here the user can choose, which kind of interrupt he wants to use:
+- Category 1: use compilers interrupt declaration mechanism
+- Category 2: use OSEK interrupts
+- void Functions</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>ICU_ISR_CAT2</DEFAULT-VALUE>
+									<LITERALS>
+										<ENUMERATION-LITERAL-DEF UUID="DCE:5bdce287-b98b-4462-a8c8-90be691df819">
+											<SHORT-NAME>ICU_ISR_CAT1</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>Category 1</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="DCE:b0cb07b2-05b7-4b10-ad4b-46063bc7152f">
+											<SHORT-NAME>ICU_ISR_CAT2</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>Category 2</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+										<ENUMERATION-LITERAL-DEF UUID="DCE:51a585ab-8d4c-473c-a4db-9d3d1ad4e36a">
+											<SHORT-NAME>ICU_ISR_VOID</SHORT-NAME>
+											<LONG-NAME>
+												<L-4>Void function</L-4>
+											</LONG-NAME>
+										</ENUMERATION-LITERAL-DEF>
+									</LITERALS>
+								</ENUMERATION-PARAM-DEF>
+								<STRING-PARAM-DEF UUID="DCE:175f991b-4e91-4d02-acbb-bd0f2c7ed3c5">
+									<SHORT-NAME>IcuIncludeDet</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Include File</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Name of the include-file which contains the Errorhook function.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Det.h</DEFAULT-VALUE>
+								</STRING-PARAM-DEF>
+								<FUNCTION-NAME-DEF UUID="DCE:13422485-4466-4db6-857d-f3a4416d1dfa">
+									<SHORT-NAME>IcuErrorhook</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Errorhook Function</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter contains the identifier name of the errorhook function to use.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>Det_ReportError</DEFAULT-VALUE>
+								</FUNCTION-NAME-DEF>
+								<FUNCTION-NAME-DEF UUID="0569c2a1-7d16-4e73-bc0f-79f139a81963">
+									<SHORT-NAME>IcuGlobalOvNotification</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Overflow Notification</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This parameter contains the identifier name of the global overflow notification function to use.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+								</FUNCTION-NAME-DEF>
+							</PARAMETERS>
+							<REFERENCES>
+								<REFERENCE-PARAM-DEF UUID="DCE:65e41844-349d-4808-aeb4-eb9e3f325fbd">
+									<SHORT-NAME>IcuIrqHandling</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Critical Section Handling</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">This specifies the used functions to handle Interrupt locking and unlocking. </L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<DESTINATION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Board/InterruptFunctionality/InterruptFunctionSet</DESTINATION-REF>
+								</REFERENCE-PARAM-DEF>
+							</REFERENCES>
+							<SUB-CONTAINERS>
+								<PARAM-CONF-CONTAINER-DEF UUID="DCE:2748a09a-1f88-40e9-a2e5-b9b7a88553cb">
+									<SHORT-NAME>IcuErrorChecks</SHORT-NAME>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<PARAMETERS>
+										<BOOLEAN-PARAM-DEF UUID="DCE:9d7394f8-3d99-4b4a-ad95-13efd567c787">
+											<SHORT-NAME>IcuCfgDoParamChk</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Parameters</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches service parameter checks on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:0249db26-3f42-4844-bfc7-e3ec02460fa8">
+											<SHORT-NAME>IcuCfgChkParamConfig</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Configuration Pointer</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check of the configuration pointer parameter on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:6447b234-0844-4051-b6fb-742580823fc3">
+											<SHORT-NAME>IcuCfgChkParamChannel</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Channel Identifier</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check of the channel identifier parameter on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:3348915c-8a02-4093-8490-ed791710ada7">
+											<SHORT-NAME>IcuCfgChkParamActivation</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Activation</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check of the activation parameter on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:0163eb30-160d-4918-807c-f06d0fff2ab9">
+											<SHORT-NAME>IcuCfgChkBufferPtr</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Buffer Pointer</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check of the buffer pointer parameter on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:3fc7b743-30f8-4e6d-921b-62803e4ef2c0">
+											<SHORT-NAME>IcuCfgChkBufferSize</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Buffer Size</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check of the buffer size parameter on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:c26573a8-3baa-40da-ac58-e7fb15f70ffc">
+											<SHORT-NAME>IcuCfgChkParamMode</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Mode</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check of the mode parameter on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:7db1c044-e091-4fc1-8a14-f5ae41476e2f">
+											<SHORT-NAME>IcuCfgChkUninit</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Uninitialized State</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime uninit check on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:c9b8fd1f-b40f-4af7-ac4c-68d6b4210985">
+											<SHORT-NAME>IcuCfgChkNotStarted</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Channel Run State</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check if a channel is already started on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:5955bef9-6f6b-49b2-9672-8857ae8ff7dd">
+											<SHORT-NAME>IcuCfgChkBusyOperation</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check Busy State On Mode Change</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check for Icu_SetMode is being called during a running operation on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="DCE:d7d873bb-c293-4aaa-a410-6ff5a25e19b4">
+											<SHORT-NAME>IcuCfgChkAlreadyInitialized</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check For Multiple Initialization</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check for Icu_Init being called in initialized state on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="b8a1d4ed-bda7-4367-8805-d3f479dfceb8">
+											<SHORT-NAME>IcuCfgDebugReporting</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Development Error Reporting</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the reporting of development errors to the DET (or another configured error tracking software) on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+										<BOOLEAN-PARAM-DEF UUID="aa5f5bb1-50f0-4881-9990-8fbf57b5ce50">
+											<SHORT-NAME>IcuCfgChkParamVInfo</SHORT-NAME>
+											<LONG-NAME>
+												<L-4 L="EN">Check VersionInfo Pointer</L-4>
+											</LONG-NAME>
+											<DESC>
+												<L-2 L="EN">This parameter switches the runtime check of the versioninfo parameter on or off.
+true: Enabled.
+false: Disabled.</L-2>
+											</DESC>
+											<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+											<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+											<IMPLEMENTATION-CONFIG-CLASSES>
+												<IMPLEMENTATION-CONFIG-CLASS>
+													<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+													<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+												</IMPLEMENTATION-CONFIG-CLASS>
+											</IMPLEMENTATION-CONFIG-CLASSES>
+											<ORIGIN>Vector Informatik</ORIGIN>
+											<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+											<DEFAULT-VALUE>true</DEFAULT-VALUE>
+										</BOOLEAN-PARAM-DEF>
+									</PARAMETERS>
+								</PARAM-CONF-CONTAINER-DEF>
+							</SUB-CONTAINERS>
+						</PARAM-CONF-CONTAINER-DEF>
+						<!-- Parameter Container Definition: IcuOptionalApis -->
+						<PARAM-CONF-CONTAINER-DEF UUID="DCE:b5120199-4c17-4832-9923-16c4e7adad56">
+							<SHORT-NAME>IcuOptionalApis</SHORT-NAME>
+							<DESC>
+								<L-2 L="EN">This container contains all configuration switches for configuring optional API services of the ICU driver.</L-2>
+							</DESC>
+							<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+							<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+							<MULTIPLE-CONFIGURATION-CONTAINER>false</MULTIPLE-CONFIGURATION-CONTAINER>
+							<PARAMETERS>
+								<!-- PARAMETER DEFINITION: IcuDeInitApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:c7a74ea8-f438-4446-a4f4-07142bfe261c">
+									<SHORT-NAME>IcuDeInitApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Icu_DeInit</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Icu_DeInit() from the code.
+true: Icu_DeInit() can be used.
+false: Icu_DeInit() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuDisableWakeupApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:ac16a5d5-fad7-406e-acf7-379a4f062ee4">
+									<SHORT-NAME>IcuDisableWakeupApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Icu_DisableWakeup</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Icu_DisableWakeup() from the code.
+true: Icu_DisableWakeup() can be used.
+false: Icu_DisableWakeup() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuEdgeCountApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:b39b13ea-9348-4a12-87c0-ed6a03a71090">
+									<SHORT-NAME>IcuEdgeCountApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Edge Counting</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes all services related to the edge counting functionality as listed below, from the code: Icu_ResetEdgeCount(), Icu_EnableEdgeCount(), Icu_DisableEdgeCount(), Icu_GetEdgeNumbers().
+true: The services listed above can be used.
+false: The services listed above can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuEnableWakeupApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:771b9492-bf76-4138-9887-fffa0b0b3b16">
+									<SHORT-NAME>IcuEnableWakeupApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Icu_EnableWakeup</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Icu_EnableWakeup() from the code.
+true: Icu_EnableWakeup() can be used.
+false: Icu_EnableWakeup() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuGetDutyCycleValuesApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:609928c7-b963-4833-a144-dd2a9f643454">
+									<SHORT-NAME>IcuGetDutyCycleValuesApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Icu_GetDutyCycleValues</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Icu_GetDutyCycleValues() from the code.
+true: Icu_GetDutyCycleValues() can be used.
+false: Icu_GetDutyCycleValues() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuGetInputStateApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:83825d2d-3e1e-46d9-8285-c664c33ce627">
+									<SHORT-NAME>IcuGetInputStateApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Icu_GetInputState</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Icu_GetInputState() from the code.
+true: Icu_GetInputState() can be used.
+false: Icu_GetInputState() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuGetTimeElapsedApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:a090b56e-7cfc-438b-bbb9-2a12af1ae6d3">
+									<SHORT-NAME>IcuGetTimeElapsedApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Icu_GetTimeElapsed</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Icu_GetTimeElapsed() from the code.
+true: Icu_GetTimeElapsed() can be used.
+false: Icu_GetTimeElapsed() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuGetVersionInfoApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:838e10ed-c833-4714-8ee6-f888af110024">
+									<SHORT-NAME>IcuGetVersionInfoApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Icu_GetVersionInfo</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Icu_GetVersionInfo() from the code.
+true: Icu_GetVersionInfo() can be used.
+false: Icu_GetVersionInfo() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuSetModeApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:5a3a35d9-2161-4072-9f11-2979a571a73a">
+									<SHORT-NAME>IcuSetModeApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Icu_SetMode</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the service Icu_SetMode() from the code.
+true: Icu_SetMode() can be used.
+false: Icu_SetMode() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuSignalMeasurementApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:44d57e71-9b1a-40ca-a6dd-3a4d43868fa4">
+									<SHORT-NAME>IcuSignalMeasurementApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Signal Measurement</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes the services Icu_StartSignalMeasurement() and Icu_StopSignalMeasurement() from the code.
+true: Icu_StartSignalMeasurement() and Icu_StopSignalMeasurement() can be used.
+false: Icu_StartSignalMeasurement() and Icu_StopSignalMeasurement() can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<!-- PARAMETER DEFINITION: IcuTimestampApi -->
+								<BOOLEAN-PARAM-DEF UUID="DCE:34fba38d-2711-4fab-8d5c-620f64aa701f">
+									<SHORT-NAME>IcuTimestampApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Timestamping</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes all services related to the timestamping functionality as listed below from the code: Icu_StartTimestamp(), Icu_StopTimestamp(), Icu_GetTimestampIndex().
+true: The services listed above can be used.
+false: The services listed above can not be used.</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>AUTOSAR_ECUC</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="DCE:936b9216-24fc-46ea-ae8e-3ef540f4f20e">
+									<SHORT-NAME>IcuWakeupFunctionalityApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Wakeup Functionality</L-4>
+									</LONG-NAME>
+									<DESC>
+										<L-2 L="EN">Adds / removes all services related to the wakeup functionality as listed below, from the code: Icu_SetMode(), Icu_EnableWakeup(), Icu_DisableWakeup()
+This switch affects the switches IcuEnableWakeupApi, IcuDisableWakeupApi and IcuSetModeApi</L-2>
+									</DESC>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+								<BOOLEAN-PARAM-DEF UUID="DCE:80ea0e24-d61f-4fc3-8e12-e7c6ff405892">
+									<SHORT-NAME>IcuEdgeDetectionApi</SHORT-NAME>
+									<LONG-NAME>
+										<L-4 L="EN">Enable Edge Detection</L-4>
+									</LONG-NAME>
+									<LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+									<UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+									<IMPLEMENTATION-CONFIG-CLASSES>
+										<IMPLEMENTATION-CONFIG-CLASS>
+											<CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+											<CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+										</IMPLEMENTATION-CONFIG-CLASS>
+									</IMPLEMENTATION-CONFIG-CLASSES>
+									<ORIGIN>Vector Informatik</ORIGIN>
+									<SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+									<DEFAULT-VALUE>true</DEFAULT-VALUE>
+								</BOOLEAN-PARAM-DEF>
+							</PARAMETERS>
+						</PARAM-CONF-CONTAINER-DEF>
+					</CONTAINERS>
+				</MODULE-DEF>
+				<MODULE-CONFIGURATION UUID="4486971f-c6e9-49c8-9b0b-e19242dece7a">
+					<SHORT-NAME>Icu_Pre</SHORT-NAME>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/Icu</DEFINITION-REF>
+					<CONTAINERS>
+						<CONTAINER UUID="301bd2a5-8f8d-4809-9836-62ffb0921eaa">
+							<SHORT-NAME>Icu_Runtime</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Icu/IcuConfigSet</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Icu/IcuConfigSet/IcuMaxChannel</DEFINITION-REF>
+								</INTEGER-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="92fd7796-b0c0-4fab-9ab5-2e798343ebf0">
+							<SHORT-NAME>IcuGeneral</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Icu/IcuGeneral</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuDevErrorDetect</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIndex</DEFINITION-REF>
+								</INTEGER-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuReportWakeupSource</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<FUNCTION-NAME-VALUE>
+									<DEFINITION-REF DEST="FUNCTION-NAME-DEF">/MICROSAR/Icu/IcuGeneral/IcuWakeupNotification</DEFINITION-REF>
+								</FUNCTION-NAME-VALUE>
+								<STRING-VALUE>
+									<DEFINITION-REF DEST="STRING-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIncludeList</DEFINITION-REF>
+								</STRING-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIsrType</DEFINITION-REF>
+								</ENUMERATION-VALUE>
+								<STRING-VALUE>
+									<DEFINITION-REF DEST="STRING-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIncludeDet</DEFINITION-REF>
+								</STRING-VALUE>
+								<FUNCTION-NAME-VALUE>
+									<DEFINITION-REF DEST="FUNCTION-NAME-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorhook</DEFINITION-REF>
+								</FUNCTION-NAME-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuPrescaler</DEFINITION-REF>
+								</ENUMERATION-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuSetTimerControl</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+							</PARAMETER-VALUES>
+							<REFERENCE-VALUES>
+								<REFERENCE-VALUE>
+									<DEFINITION-REF DEST="REFERENCE-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIrqHandling</DEFINITION-REF>
+								</REFERENCE-VALUE>
+							</REFERENCE-VALUES>
+							<SUB-CONTAINERS>
+								<CONTAINER UUID="1b6d3337-68fb-4efe-aa6a-eecbe62f6220">
+									<SHORT-NAME>IcuErrorChecks</SHORT-NAME>
+									<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks</DEFINITION-REF>
+									<PARAMETER-VALUES>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgDoParamChk</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkParamConfig</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkParamChannel</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkParamActivation</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkBufferPtr</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkBufferSize</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkParamMode</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkUninit</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkNotStarted</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkBusyOperation</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkAlreadyInitialized</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+									</PARAMETER-VALUES>
+								</CONTAINER>
+							</SUB-CONTAINERS>
+						</CONTAINER>
+						<CONTAINER UUID="0064c92f-b15e-4ef2-9227-bf2d4376fe22">
+							<SHORT-NAME>IcuOptionalApis</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Icu/IcuOptionalApis</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuDeInitApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuDisableWakeupApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuEdgeCountApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuEnableWakeupApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuGetDutyCycleValuesApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuGetInputStateApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuGetTimeElapsedApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuGetVersionInfoApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuSetModeApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuSignalMeasurementApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuTimestampApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuWakeupFunctionalityApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuEdgeDetectionApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+					</CONTAINERS>
+				</MODULE-CONFIGURATION>
+				<MODULE-CONFIGURATION UUID="da82e148-ace5-4a19-9759-25968416a729">
+					<SHORT-NAME>Icu_Rec</SHORT-NAME>
+					<DEFINITION-REF DEST="MODULE-DEF">/MICROSAR/Icu</DEFINITION-REF>
+					<CONTAINERS>
+						<CONTAINER UUID="bc36691f-4ec8-401c-9809-04ce5cab2ba9">
+							<SHORT-NAME>Icu_Runtime</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Icu/IcuConfigSet</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Icu/IcuConfigSet/IcuMaxChannel</DEFINITION-REF>
+								</INTEGER-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+						<CONTAINER UUID="c2e7aefd-e75b-4ff8-8cb5-0f9a34f7b0c7">
+							<SHORT-NAME>IcuGeneral</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Icu/IcuGeneral</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuDevErrorDetect</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<INTEGER-VALUE>
+									<DEFINITION-REF DEST="INTEGER-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIndex</DEFINITION-REF>
+								</INTEGER-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuReportWakeupSource</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<FUNCTION-NAME-VALUE>
+									<DEFINITION-REF DEST="FUNCTION-NAME-DEF">/MICROSAR/Icu/IcuGeneral/IcuWakeupNotification</DEFINITION-REF>
+								</FUNCTION-NAME-VALUE>
+								<STRING-VALUE>
+									<DEFINITION-REF DEST="STRING-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIncludeList</DEFINITION-REF>
+								</STRING-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIsrType</DEFINITION-REF>
+								</ENUMERATION-VALUE>
+								<STRING-VALUE>
+									<DEFINITION-REF DEST="STRING-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIncludeDet</DEFINITION-REF>
+								</STRING-VALUE>
+								<FUNCTION-NAME-VALUE>
+									<DEFINITION-REF DEST="FUNCTION-NAME-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorhook</DEFINITION-REF>
+								</FUNCTION-NAME-VALUE>
+								<ENUMERATION-VALUE>
+									<DEFINITION-REF DEST="ENUMERATION-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuPrescaler</DEFINITION-REF>
+								</ENUMERATION-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuSetTimerControl</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+							</PARAMETER-VALUES>
+							<REFERENCE-VALUES>
+								<REFERENCE-VALUE>
+									<DEFINITION-REF DEST="REFERENCE-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuIrqHandling</DEFINITION-REF>
+								</REFERENCE-VALUE>
+							</REFERENCE-VALUES>
+							<SUB-CONTAINERS>
+								<CONTAINER UUID="ec3bf1ba-f6ed-46c7-a1a7-5f8deb8e07bc">
+									<SHORT-NAME>IcuErrorChecks</SHORT-NAME>
+									<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks</DEFINITION-REF>
+									<PARAMETER-VALUES>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgDoParamChk</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkParamConfig</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkParamChannel</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkParamActivation</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkBufferPtr</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkBufferSize</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkParamMode</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkUninit</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkNotStarted</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkBusyOperation</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+										<BOOLEAN-VALUE>
+											<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuGeneral/IcuErrorChecks/IcuCfgChkAlreadyInitialized</DEFINITION-REF>
+										</BOOLEAN-VALUE>
+									</PARAMETER-VALUES>
+								</CONTAINER>
+							</SUB-CONTAINERS>
+						</CONTAINER>
+						<CONTAINER UUID="377704d8-e277-471b-8d62-29321c8f7559">
+							<SHORT-NAME>IcuOptionalApis</SHORT-NAME>
+							<DEFINITION-REF DEST="PARAM-CONF-CONTAINER-DEF">/MICROSAR/Icu/IcuOptionalApis</DEFINITION-REF>
+							<PARAMETER-VALUES>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuDeInitApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuDisableWakeupApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuEdgeCountApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuEnableWakeupApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuGetDutyCycleValuesApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuGetInputStateApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuGetTimeElapsedApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuGetVersionInfoApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuSetModeApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuSignalMeasurementApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuTimestampApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuWakeupFunctionalityApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+								<BOOLEAN-VALUE>
+									<DEFINITION-REF DEST="BOOLEAN-PARAM-DEF">/MICROSAR/Icu/IcuOptionalApis/IcuEdgeDetectionApi</DEFINITION-REF>
+								</BOOLEAN-VALUE>
+							</PARAMETER-VALUES>
+						</CONTAINER>
+					</CONTAINERS>
+				</MODULE-CONFIGURATION>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</TOP-LEVEL-PACKAGES>
+</AUTOSAR>

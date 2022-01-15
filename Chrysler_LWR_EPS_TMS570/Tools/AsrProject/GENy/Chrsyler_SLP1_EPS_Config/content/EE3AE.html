@@ -1,0 +1,465 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="../include/style.css">
+		<title>GENy Configuration Description</title>
+	</head>
+	<body>
+<table class="detail" id="EE3AE">
+			<tbody>
+				<tr>
+					<th class="detail"><div class="detailheader">Tp_Iso15765</div></th>
+				</tr>
+				<tr>
+					<td>
+						<table class="detailcontent">
+							<tbody>
+							<tr>
+								<th class="detailcontent" width="50%">Attribute</th>
+								<th class="detailcontent" width="30%">Value</th>
+								<th class="detailcontent" width="10%">Type</th>
+								<th class="detailcontent" width="10%">isDefault</th>
+							</tr>
+							
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											General Settings
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">User Config File</td>
+											<td class="detailcontentitem"></td>
+											<td class="detailcontentitem">string</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											Transport Protocol - Multi Connections (TP-MC)
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">Add Connection Group</td>
+											<td class="detailcontentitem">0</td>
+											<td class="detailcontentitem">void</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">TP Class</td>
+											<td class="detailcontentitem">Static Normal Addressing Single TP</td>
+											<td class="detailcontentitem">object</td>
+											
+												<td class="detailcontentitem">no</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">TP ISO Standard</td>
+											<td class="detailcontentitem">ISO 15765-2:2004</td>
+											<td class="detailcontentitem">string</td>
+											
+												<td class="detailcontentitem">no</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											TP Class Specific Options
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">Append Channel Index</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Own ECU Number</td>
+											<td class="detailcontentitem">0</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Precopy Message Filter</td>
+											<td class="detailcontentitem"></td>
+											<td class="detailcontentitem">string</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Target Address Message Filter</td>
+											<td class="detailcontentitem"></td>
+											<td class="detailcontentitem">string</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											Timing Parameters
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">N_Ar: Rx CAN Confirmation Timeout  [ms]</td>
+											<td class="detailcontentitem">100</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">N_As: Tx CAN Confirmation Timeout  [ms]</td>
+											<td class="detailcontentitem">100</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											Tx
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">Cycle Time [ms]</td>
+											<td class="detailcontentitem">10</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">N_Bs: Flow Control Timeout [ms]</td>
+											<td class="detailcontentitem">150</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">N_Cs: Transmit CF Time Interval [ms]</td>
+											<td class="detailcontentitem">20</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											Rx
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">Cycle Time [ms]</td>
+											<td class="detailcontentitem">10</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">N_Cr: Consecutive Frame Timeout [ms]</td>
+											<td class="detailcontentitem">150</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											Tx
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">STmin from Flow Control Frame</td>
+											<td class="detailcontentitem">true</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											Rx
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">Blocksize [Frames]</td>
+											<td class="detailcontentitem">8</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">STmin [ms]</td>
+											<td class="detailcontentitem">20</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											Advanced Configuration
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">CAN Frame Padding</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Changeable TP-Tx Handle</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Extended API - Overrun Reception</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Extended API Blocksize</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Extended API STmin</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Extended Callback API</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Fast RAM</td>
+											<td class="detailcontentitem">true</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">First Flow Control Parameters</td>
+											<td class="detailcontentitem">true</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Flow Control Transmission within Rx-ISR</td>
+											<td class="detailcontentitem">true</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Guaranteed STmin</td>
+											<td class="detailcontentitem">true</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Maximum Number of Wait Frames</td>
+											<td class="detailcontentitem">0</td>
+											<td class="detailcontentitem">int</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Memory Model Override</td>
+											<td class="detailcontentitem"></td>
+											<td class="detailcontentitem">string</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">No STmin after Flow Control</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Queued Tx Message Transmission within Tx-ISR</td>
+											<td class="detailcontentitem">true</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Rx DLC Check</td>
+											<td class="detailcontentitem">only DLC of 8</td>
+											<td class="detailcontentitem">enum</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Use channel specific Tx WFTmax</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Use far RAM buffers</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Variable DLC for Tx</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											Multiple ECU
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">Multiple ECU Type</td>
+											<td class="detailcontentitem">physical</td>
+											<td class="detailcontentitem">enum</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+								<tr>
+									<td class="detailcontentgroup" colspan="4">
+											Miscellaneous
+									</td>
+								</tr>
+								
+										<tr>
+											<td class="detailcontentitem">Assertions Generated</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Assertions Internal</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Assertions User</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+										<tr>
+											<td class="detailcontentitem">Runtime Checks</td>
+											<td class="detailcontentitem">false</td>
+											<td class="detailcontentitem">bool</td>
+											
+												<td class="detailcontentitem">yes</td>
+											
+										</tr>
+									
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>	</body>
+</html>

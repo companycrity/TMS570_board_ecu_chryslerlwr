@@ -1,0 +1,272 @@
+<RDEF> I Includes
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Ap_VehPwrMd.h 61
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Ap_VehPwrMd.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Type.h 54
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Type.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte.h 42
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/StdDef/include/Std_Types.h 53
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/StdDef/include/Std_Types.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/StdDef/include/Platform_Types.h 56
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/StdDef/include/Std_Types.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/StdDef/include/Compiler.h 57
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/StdDef/include/Compiler.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Compiler_Cfg.h 54
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Type.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 345
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Type.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 350
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Ap_VehPwrMd.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 77
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Ap_VehPwrMd.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 85
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Ap_VehPwrMd.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 176
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Rte_Ap_VehPwrMd.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 251
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/Ap_VehPwrMd_Cfg.h 67
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/CalConstants.h 68
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/CalConstants.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/StdDef/include/Std_Types.h 22
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/Dem.h 69
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 70
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/desc.h 72
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/desc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Tp/tpmc.h 89
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Tp/tpmc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/tp_cfg.h 448
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/tp_cfg.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/can_par.h 48
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/can_par.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/can_cfg.h 48
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/can_cfg.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_cfg.h 48
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/can_par.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h 49
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Header/can_inc.h 48
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Header/can_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/can_cfg.h 40
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Header/can_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_par.h 48
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_par.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_cfg.h 52
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_par.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/_Common/v_def.h 53
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/_Common/v_def.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/VStdLib/vstdlib.h 903
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Header/can_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Can/can_def.h 51
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Can/can_def.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/_Common/v_def.h 287
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_cfg.h 50
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/drv_par.h 51
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/xcp_cfg.h 53
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/xcp_cfg.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h 49
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/nm_cfg.h 54
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/nm_udcfg.h 55
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Tp/tpmc.h 56
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/dbk_cfg.h 57
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_par.h 59
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/xcp_par.h 60
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/xcp_par.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h 48
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/can_par.h 61
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/v_inc.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/dbk_par.h 62
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/dbk_par.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Il/dbk_def.h 52
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Il/dbk_def.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/dbk_cfg.h 244
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/can_par.h C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/GenData/drv_par.h 50
+<DEFINE> D_ENGONRPM_CNT_U16 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 74 N DF OM - - - O
+<LIT> 0x12C U P C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 74 41 N HN - F M
+<DEFINE> D_ENGRPMINVLD_CNT_U16 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 75 N DF OM - - - O
+<LIT> 0xFFFF U P C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 75 33 N HN - F M
+<DEFINE> VEHPWRMD_START_SEC_VAR_CLEARED_BOOLEAN C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 77 N DF OM - - - O
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 78
+<EXTT> CTermActive_Cnt_M_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 79
+<DEFINE> CTermActive_Cnt_M_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 79 N DC OV F I uc S
+<DEFINE> VEHPWRMD_STOP_SEC_VAR_CLEARED_BOOLEAN C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 81 N DF OM - - - O
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 82
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 149
+<EXTD> VehPwrMd_Init1 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 172
+<DEFINE> VehPwrMd_Init1 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 172 N DR OF F X (.,.) -
+<DEFINE> VehPwrMd_Init1 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 172 N DF OF F X (.,.) -
+<RDEF> X Refers-to
+<R>X VehPwrMd_Init1 k_RampDnRt_UlspmS_f32 178 R
+<R>X VehPwrMd_Init1 Rte_Inst_Ap_VehPwrMd 178 R
+<R>X VehPwrMd_Init1 Rte_Inst_Ap_VehPwrMd 179 R
+<CTLG> VehPwrMd_Init1 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 173 183 183 183 
+<S>
+<S>STFIL  C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c
+<S>STNAM  VehPwrMd_Init1
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  0
+<S>STAKI  1
+<S>STLIN  9
+<S>STXLN  2
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  0
+<S>STPTH  1
+<S>STPDN  0.50   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  6
+<S>STAV2  6
+<S>STAV3  6
+<S>STST1  2
+<S>STST2  2
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  0
+<S>STFN1  8
+<S>STFN2  4
+
+<EXTD> VehPwrMd_Per1 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 231
+<DEFINE> VehPwrMd_Per1 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 231 N DR OF F X (.,.) -
+<DEFINE> VehPwrMd_Per1 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 231 N DF OF F X (.,.) -
+<DEFINE> EngONSrlComSvcDft_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 239 N DC OV B N uc -
+<DEFINE> EngONSrlComSvcDft_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 239 N DF OV B N uc -
+<DEFINE> EPSEn_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 240 N DC OV B N uc -
+<DEFINE> EPSEn_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 240 N DF OV B N uc -
+<DEFINE> OperRampRate_XpmS_T_f32 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 241 N DC OV B N fs -
+<DEFINE> OperRampRate_XpmS_T_f32 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 241 N DF OV B N fs -
+<DEFINE> OperRampValue_Uls_T_f32 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 242 N DC OV B N fs -
+<DEFINE> OperRampValue_Uls_T_f32 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 242 N DF OV B N fs -
+<DEFINE> ATermActive_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 243 N DC OV B N uc -
+<DEFINE> ATermActive_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 243 N DF OV B N uc -
+<DEFINE> VehSpdValid_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 244 N DC OV B N uc -
+<DEFINE> VehSpdValid_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 244 N DF OV B N uc -
+<DEFINE> VehSpd_Kph_T_f32 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 245 N DC OV B N fs -
+<DEFINE> VehSpd_Kph_T_f32 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 245 N DF OV B N fs -
+<DEFINE> EngRPM_Cnt_T_u16 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 246 N DC OV B N us -
+<DEFINE> EngRPM_Cnt_T_u16 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 246 N DF OV B N us -
+<DEFINE> EssEngStop_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 247 N DC OV B N uc -
+<DEFINE> EssEngStop_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 247 N DF OV B N uc -
+<DEFINE> SpStPrsnt_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 248 N DC OV B N uc -
+<DEFINE> SpStPrsnt_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 248 N DF OV B N uc -
+<DEFINE> RampDown_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 249 N DC OV B N uc -
+<DEFINE> RampDown_Cnt_T_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 249 N DF OV B N uc -
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 254 R
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 255 R
+<RDEF> C Calls
+<R>C VehPwrMd_Per1 Rte_Call_Ap_VehPwrMd_EpsEn_OP_GET 256
+<R>X VehPwrMd_Per1 Rte_Call_Ap_VehPwrMd_EpsEn_OP_GET 256 R
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 257 R
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 258 R
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 259 R
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 260 R
+<EXTN> DPMShutDownState_Cnt_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 264
+<DEFINE> DPMShutDownState_Cnt_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 264 N DC OV B X ni S
+<R>X VehPwrMd_Per1 DPMShutDownState_Cnt_lgc 265 R
+<R>C VehPwrMd_Per1 DescGetStateSession 265
+<R>X VehPwrMd_Per1 DescGetStateSession 265 R
+<EXTN> k_VehSpdAstLmt_Kph_f32 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 284
+<DEFINE> k_VehSpdAstLmt_Kph_f32 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 284 N DC OV B X ni S
+<R>X VehPwrMd_Per1 k_VehSpdAstLmt_Kph_f32 286 R
+<R>X VehPwrMd_Per1 k_RampDnRt_UlspmS_f32 303 R
+<R>X VehPwrMd_Per1 k_RampUpRtLoSpd_UlspmS_f32 308 R
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 312 R
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 313 R
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 315 R
+<R>X VehPwrMd_Per1 Rte_Inst_Ap_VehPwrMd 316 R
+<EXTN> Rte_Call_VehPwrMd_Per1_CP1_CheckpointReached C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 319
+<DEFINE> Rte_Call_VehPwrMd_Per1_CP1_CheckpointReached C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 319 N DC OF B X (ni,.) -
+<R>C VehPwrMd_Per1 Rte_Call_VehPwrMd_Per1_CP1_CheckpointReached 319
+<R>X VehPwrMd_Per1 Rte_Call_VehPwrMd_Per1_CP1_CheckpointReached 319 R
+<CTLG> VehPwrMd_Per1 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 2 4
+<CTLG> 3 5
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 5 7
+<CTLG> 6 13
+<CTLG> 7 8
+<CTLG> 7 9
+<CTLG> 8 12
+<CTLG> 9 10
+<CTLG> 9 11
+<CTLG> 10 11
+<CTLG> 11 12
+<CTLG> 12 13
+<CTLG> 13 14
+<CTLG> 13 15
+<CTLG> 14 16
+<CTLG> 15 16
+<CTLG> 16 17
+<CTLG> 17 19
+<CTLGN> 232 265 265 265 269 277 277 286 286 294 294 290 281 301 301 306 323 323 323 
+<S>
+<S>STFIL  C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c
+<S>STNAM  VehPwrMd_Per1
+<S>STCYC  6
+<S>STMCC  7 (6:13)
+<S>STMIF  3
+<S>STSUB  3
+<S>STAKI  9
+<S>STLIN  90
+<S>STXLN  38
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  1
+<S>STLCT  11
+<S>STPTH  16
+<S>STPDN  0.42   
+<S>STPBG  1
+<S>STLOP  7
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  6
+<S>STAV2  8
+<S>STAV3  11
+<S>STST1  47
+<S>STST2  38
+<S>STST3  27
+<S>STPAR  0
+<S>STCAL  3
+<S>STFN1  196
+<S>STFN2  110
+
+<R>I C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/utp/contract/MemMap.h 327
+<EXTD> canuint8 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 308
+<DEFINE> canuint8 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 308 I DI OV F X ni S
+<EXTD> NmMsgType C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 494
+<DEFINE> NmMsgType C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 494 I DI OV F X ni S
+<EXTD> kNmBugfixVersion C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 310
+<DEFINE> kNmBugfixVersion C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 310 I DI OV F X ni S
+<DEFINE> CTermActive_Cnt_M_lgc C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c 79 N DI OV F I uc S
+<EXTD> V_MEMROM0 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 308
+<DEFINE> V_MEMROM0 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 308 I DI OV F X ni S
+<EXTD> V_MEMROM2 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 308
+<DEFINE> V_MEMROM2 C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 308 I DI OV F X ni S
+<EXTD> kNmSubVersion C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 309
+<DEFINE> kNmSubVersion C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 309 I DI OV F X ni S
+<EXTD> kNmMainVersion C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 308
+<DEFINE> kNmMainVersion C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 308 I DI OV F X ni S
+<EXTD> NmReturnType C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 489
+<DEFINE> NmReturnType C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/Source/BSW/Nm/n_onmdef.h 489 I DI OV F X ni S
+<S>
+<S>STFIL  C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c
+<S>STNAM  C:/Users/sz1dx6/Documents/Synergy/ccm_wa/sz1dx62/sz1dx61/Chrysler_LWR_EPS_TMS570/SwProject/VehPwrMd/src/Ap_VehPwrMd.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  1
+<S>STECT  5
+<S>STFNC  2
+<S>STFCO  2
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  51
+<S>STOPT  20
+<S>STOPN  51
+<S>STTOT  1130
+<S>STZIP  344
+<S>STHAL  376
+<S>STSHN  1261
+<S>STDIF  22.89  
+<S>STEFF  159074
+<S>STVOL  6949
+<S>STDEV  26.51  
+<S>STBUG  3
+<S>STTPP  347
+<S>STTLN  76
+<S>STM20  124
+<S>STM21  998
+<S>STM22  36
+<S>STM28  19
+<S>STM33  9
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  0.790  
+<S>STBMS  0.917  
+<S>STBME  1.011  
+<S>STTDO  2.286  
+<S>STTDS  2.425  
+<S>STTDE  2.509  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  3.667  
+

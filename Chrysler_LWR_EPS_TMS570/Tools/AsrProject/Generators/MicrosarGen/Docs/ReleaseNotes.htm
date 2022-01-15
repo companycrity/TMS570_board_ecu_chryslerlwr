@@ -1,0 +1,522 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>DaVinci Configurator Pro Release Notes</title>
+    <meta name="vs_showGrid" content="False"/>
+    <style type="text/css">
+      <!-- body { font-size:12pt;font-family:arial,sans-serif; color:#000000; background-color: #E5E5E5;}
+      h1 {font-size:18pt; font-family:arial,sans-serif}
+      h2 {font-size:16pt; font-family:arial,sans-serif}
+      h3 {font-size:12pt; font-family:arial,sans-serif}
+      h4 {font-size:10pt; font-family:arial,sans-serif}
+      p,td,th,address,ul,ol,li {font-size:10pt; font-family:arial,sans-serif}
+      th {background-color: #D0D0E0;}
+      pre {font-size:10pt;}
+      p.small {font-size:8pt; font-family:arial,sans-serif}
+      a {font-family:arial,sans-serif}
+      /* from W3-REC.css: */ @media screen { /* hide from IE3 */ a:hover { background: #FE0 }}
+      //-->
+    </style>
+  </head>
+  <body>
+    <h1><a name="_top">DaVinci Configurator Pro Release Notes</a></h1>
+    <p>Copyright &copy; 2008-2011 by Vector Informatik GmbH</p>
+    <h2>Table of contents</h2>
+    <table border="0">
+      <tr>
+        <td><a href="#4.0 SP6">DaVinci Configurator Pro 4.0 SP6</a></td>
+      </tr>
+      <tr>
+        <td><a href="#4.0 SP5">DaVinci Configurator Pro 4.0 SP5</a></td>
+      </tr>
+      <tr>
+        <td><a href="#4.0 SP4">DaVinci Configurator Pro 4.0 SP4</a></td>
+      </tr>
+      <tr>
+        <td><a href="#4.0 SP3">DaVinci Configurator Pro 4.0 SP3</a></td>
+      </tr>
+      <tr>
+        <td><a href="#4.0 SP2">DaVinci Configurator Pro 4.0 SP2</a></td>
+      </tr>
+      <tr>
+        <td><a href="#4.0 SP1">DaVinci Configurator Pro 4.0 SP1</a></td>
+      </tr>
+      <tr>
+        <td><a href="#4.0">DaVinci Configurator Pro 4.0</a></td>
+      </tr>
+      <tr>
+        <td><a href="#info">Additional Information</a></td>
+      </tr>
+    </table>
+    <!-- #################### -->
+    <h2><a name="4.0 SP6">DaVinci Configurator Pro 4.0 SP6</a></h2>
+    <h3>New features</h3>
+    <ul>
+      <li>Support AUTOSAR 3.2.1 specification</li>
+      <li>ReadOnly mode for GENy components (with each project handling current state of 'lock' itself)</li>
+      <li>Recorder for ECUC changes</li>
+      <li>Create a stripped down package with information for support requests</li>
+      <li>Support sorting according to SymbolicNameValue in GCE view</li>
+      <li>Change order of containers in GCE view with MoveUp and MoveDown option</li>
+      <li>Support extended filter functionality in all combobox columns of tables</li>
+      <li>1st Level Validation should be executed completely and independent of existance of Validation.xml</li>
+      <li>Improved performance for loading and saving large ECUC files</li>
+      <li>Improved performance for applying PreConfiguration and Recommended Configuration</li>
+      <li>Improved performance for opening/switching view with extensive Actions</li>
+      <li>New option '$(Package)' for external tools</li>
+      <li>Allow saving a 'purged' configuration of modules (= without PreConfiguration) into ECUC file</li>
+      <li>Provide 'Find Entitiy ...' as toolbar icon of project explorer for quick access</li>
+      <li>Provide quick access to module preferences in context menu of architecture</li>
+      <li>Harmonisation of ECU contents (for float values and empty elements) with GENy and DaVinci Developer</li>
+      <li>Results of 'Detect Unresolved References' now support Jump-To-Error feature</li>
+    </ul>
+    <h3>MICROSAR Generator</h3>
+    <ul>
+      <li>Omit printing the same (Validation) message too often</li>
+      <li>Use only required modules for conversion of ECUC file to different AUTOSAR revision, not complete ECUC file</li>
+    </ul>
+    <h3>Fixed issues</h3>
+    <ul>
+      <li>F6 key support for opening special dialogs does not always work</li>
+      <li>Architecture 'Compare To ...' dialog mixes 'shown' and 'to-be-saved' values of parameters</li>
+      <li>Package license does not work if UNC-notation is used for path definition</li>
+      <li>Unexpected windows sound on field editing</li>
+      <li>XCopy Installation raises wrong 'No controller information available in ...' error message</li>
+      <li>Correct license activation is not recognized in rare cases</li>
+      <li>Starting with dpa-file for invalid package license results in access violation</li>
+      <li>MODULE-DESCRIPTION-REF is not written into ECUC file</li>
+      <li>F5 key creates new values for some parameters and references</li>
+      <li>XSL-Generation does not work for splitted ECUC</li>
+      <li>Validation with external tools does not work for splitted ECUC</li>
+      <li>Merged ECUC file for external tools uses wrong AUTOSAR revision</li>
+      <li>Scrollbars are not shown if not all input fields fit on view of module</li>
+      <li>Default value is shown in View but will not be saved</li>
+      <li>Reference targets will not be found in Group which uses SUB-PACKAGES in module definition</li>
+      <li>Labels are missing sometimes when using Windows 7</li>
+      <li>'Not empty' check will not be executed correctly for Identifiers of new Container</li>
+      <li>Some Containers are not selectable in GCE view</li>
+      <li>Access violation may occur when deleting UserBlocks in NvM</li>
+      <li>ComSignals can be added while in ReadOnly mode</li>
+      <li>Context menu does not show correct types of Sub-Containers in GCE view</li>
+      <li>After Validation ParameterHelp does no longer work correctly</li>
+      <li>Splitter above Table is not shown correctly</li>
+      <li>Architecture is empty when closing and reopening it</li>
+      <li>PrettyPrint of ECUC file invalidates empty VALUE-REF nodes</li>
+      <li>Minimum relation of Containers is not considered correctly when creating new project</li>
+      <li>DaVinci Project Assistant does not get ECUC-lock when started from 'File/Project Assistant/Project Settings...'</li>
+      <li>PreConfiguration and Recommended Configuration for reference values is not applied correctly</li>
+      <li>Recommended Configuration and Recommended Class Configuration are not applied correctly for ConfigurationSets</li>
+      <li>Commmandline Generation does not accept different camelcase spelling of module</li>
+      <li>Creating 'Dem Events' in 3rd party Dem fails</li>
+      <li>Generation of WdgIf fails for values of WdgExt</li>
+      <li>Cascaded Preconfigured Class Configuration and Recommended Class Configuration are not applied correctly</li>
+      <li>Automatic update of Reference values does not work correctly in some cases</li>
+      <li>Values of Instance-References are not loaded</li>
+      <li>'Del' key is working in locked GCE view</li>
+    </ul>
+    <p><a href="#_top">(top)</a></p>
+    <!-- #################### -->
+    <h2><a name="4.0 SP5">DaVinci Configurator Pro 4.0 SP5</a></h2>
+    <h3>New features</h3>
+    <ul>
+      <li>Support of multi selection with bulk change in GCE and tables</li>
+      <li>AutoComplete and extended search functionality for dropdown lists</li>
+      <li>Enhanced usability in dialog for editing references</li>
+      <li>New validation and generation dialog</li>
+      <li>New 'Compare To...' feature in architecture view with possibility to create a simple report for all changed entity values</li>
+      <li>Introducing new naming 'Code Templates' for user changeable files</li>
+      <li>New project on welcome screen now starts DaVinci Project Assistant</li>
+      <li>The sort order of items in GCE view can be configured</li>
+      <li>The parameter information dialog shows the LONG-NAME of a selected entity</li>
+      <li>Support of simple html tags (&lt;b&gt;, &lt;i&gt;, &lt;u&gt;) in control tooltip</li>
+      <li>Integer values can be displayed in binary format (optional as replacement to dec/hex display)</li>
+      <li>Support of unsigned 64-Bit integer values</li>
+      <li>Create a report which contains all changed entity values</li>
+      <li>Parse package license folder automatically (without usage of System.xml)</li>
+      <li>Improved handling of large Windows fonts (120 dpi)</li>
+      <li>Recalculate derived parameters after opening ECUC file</li>
+    </ul>
+    <h3>MICROSAR Generator</h3>
+    <ul>
+      <li>Switch for conditioned generation becomes project-specific</li>
+    </ul>
+    <h3>Fixed issues</h3>
+    <ul>
+      <li>Show tooltip and parameter information for locked parameters in comfort perspectives</li>
+      <li>Import of Foreign-References does not work correctly (DEST-attribute is not imported)</li>
+      <li>Cryptic error messages if XML schemes are locked by a different tool</li>
+      <li>ImplementationVariant of ECUC file is not considered</li>
+      <li>ActionLists should be executed only within 'own' instance</li>
+      <li>Invalid data of control is not 'ignored' correctly</li>
+      <li>GCE view does not show current instance</li>
+      <li>Performance problem on opening Tools/Preferences dialog with a large set of modules</li>
+      <li>Recommended value information is not displayed correct</li>
+      <li>Identifier function '.Object' does not work if a different module is referenced</li>
+      <li>Parameter information is not shown properly if control affects other controls</li>
+      <li>Imported module configuration does not use AR-PACKAGE of ECUC file</li>
+      <li>Order of module configurations in ECUC file is changed on saving</li>
+      <li>Import does not work for inactive module</li>
+      <li>3rd party modules are not shown in Tools/Preferences dialog if home folder is invalid</li>
+      <li>Saving large ECUC file fails</li>
+      <li>Modules without comfort view are not shown in project explorer</li>
+      <li>Splitted ECUC will not be saved correctly</li>
+      <li>PrettyPrinting of ECUC file differs from PrettyPrinting done by GENy</li>
+      <li>Adding comments results in 'corrupted' ECUC file</li>
+      <li>Automatically created ValueList does not work correctly if literals in module definition use LONG-NAME</li>
+      <li>Change detection does not work correctly for splitted ECUC</li>
+      <li>PreConfiguration of Containers without childs-Values does not work</li>
+      <li>Parameters set for Pre- or PostGeneration cannot be saved</li>
+      <li>Parameter '$(GenDataFolder)' will not be passed correctly to external generator</li>
+      <li>Modules 'renamed' in Identifier.xml (e.g. IoHwAb) will not work correctly for DPA project</li>
+      <li>References to 'not-standard-AUTOSAR' modules will not work correctly for PreConfiguration</li>
+      <li>ValueLists on related Panels of Table will not be updated</li>
+      <li>The option 'Select Values...' in comfort view does not work</li>
+      <li>Copying Containers does not copy sub-Containers correctly (if their MinRelation is larger than 1)</li>
+      <li>When creating Containers the MinRelation of sub-Containers sometimes is not considered correctly</li>
+      <li>Certain Containers are not shown in GCE view</li>
+      <li>Modules not available in DaVinciCFG will be deleted from ECUC file</li>
+      <li>Splitted ECUC using different AUTOSAR revisions results in errors</li>
+      <li>Importing module configurations into splitted ECUC does not work</li>
+      <li>Saving when closing splitted ECUC may invalidate main splitter</li>
+    </ul>
+    <p><a href="#_top">(top)</a></p>
+    <!-- #################### -->
+    <h2><a name="4.0 SP4">DaVinci Configurator Pro 4.0 SP4</a></h2>
+    <h3>New features</h3>
+    <ul>
+      <li>Windows 7 support</li>
+      <li>Multi-User support with splitted ECUC</li>
+      <li>Generate output only if related configuration is modified (switchable in Tools/Preferences)</li>
+      <li>Consider MinRelation of Sub-Containers, Parameters etc when creating new Container</li>
+      <li>PreConfiguration will be applied to multiple instances of a module</li>
+      <li>Internal name of module supports underscores (Note: If internal module name contains underscores, Identifier-notation may not be used for this module)</li>
+      <li>View Tab names of instanceable modules are simplified</li>
+    </ul>
+    <h3>MICROSAR Generator</h3>
+    <ul>
+      <li>Start validation with xsd validation</li>
+    </ul>
+    <h3>Fixed issues</h3>
+    <ul>
+      <li>Checkboxes without value are not shown correctly in tables</li>
+      <li>Scrollbars are not shown correctly for large Panels of TableFrame</li>
+      <li>BSWMD files containing multiple xml-namespaces result in access violation</li>
+      <li>Loading project with TargetFolders set for DaVinci Project Assistant can result in stack overflow</li>
+      <li>PreConfiguration is not entered at correct position when loading ECUC files</li>
+      <li>Screen starts to flicker during extensive actions</li>
+      <li>ValueLists show Containers of inactive modules</li>
+      <li>ShortName of module configuration is fixed if PreConfiguration is used</li>
+      <li>'Save' is disabled although module configuration was changed during loading</li>
+      <li>Sorted Table shows wrong value on related Panels</li>
+      <li>Handling of instancable modules</li>
+      <li>'Recent Projects' list is not shown at correct position on japanese Windows XP</li>
+      <li>References were not updated correctly if target module was renamed</li>
+      <li>'Revert To Initial Values' in Architecture can sometimes result in access violation</li>
+      <li>Access to not existing optional parameter results in index out of bounds exception</li>
+      <li>'Extended' xsd-check (= ShortNames may have up to 128 chars) reports errors for long reference values</li>
+      <li>'Undefined' checkboxes are not shown correctly for related Panels of TreeFrames and TableFrames</li>
+      <li>Controls are not enabled correctly on Os-view</li>
+      <li>MinRelation of Containers, Parameters etc is considered before loading a project instead of after loading it</li>
+      <li>Switching pages in comfort view can result in access violation</li>
+      <li>When switching pages in GCE view sometimes certain values are not shown correctly</li>
+      <li>Selected Choice Containers are not loaded correctly if lower multiplicity is set wrong in module definition</li>
+      <li>In some cases multiple configuration container is not shown correctly in TreeFrame</li>
+      <li>Update module configuration when saving ECUC after 'Revert To Initial Values' was used</li>
+      <li>Saving ECUC fails due to unexplained reason</li>
+      <li>Wrong context is used in ActionLists and for enabling Controls</li>
+    </ul>
+    <p><a href="#_top">(top)</a></p>
+    <!-- #################### -->
+    <h2><a name="4.0 SP3">DaVinci Configurator Pro 4.0 SP3</a></h2>
+    <h3>New features</h3>
+    <ul>
+      <li>Support of Fold Containers in GCE to enhance clarity of GCE tree</li>
+      <li>Support of Cut, Copy and Paste of containers in GCE</li>
+      <li>Create validition log file in XML format where all executed validation rules are signed per ID with status OK or NOK</li>
+      <li>Support use of variable names in folder specifications</li>
+      <li>Extend parameter context menu with new item to undefine a parameter</li>
+      <li>Enhance usability of assigning package license to projects</li>
+      <li>Provide new menu item in Architecture view to revert module configuration to default with optional Recommended Configuration</li>
+      <li>Enhance performance on loading projects and module editors</li>
+      <li>Extend find parameter dialog with possibility to search for parameter comments</li>
+      <li>Extend table context menu to insert or delete selected row</li>
+      <li>Extend project menu with new item to test multiple configuration container names for uniqueness</li>
+      <li>Read and write ECUC files with more than one AR-PACKAGE</li>
+      <li>Support message numbers in all user messages</li>
+      <li>Close nested messages automatically if they only contain uncritical severity messages</li>
+      <li>Harmonize XSD validation with possibility to ignore shortname length violation</li>
+      <li>Extend message context menu with item to open files with unknown file association</li>
+      <li>Support AUTOSAR 3.0 Rev6 and 3.1 Rev4</li>
+      <li>Support bit-operations in formula descriptions</li>
+      <li>Status line reworked for better understandability</li>
+      <li>Consider MinRelation of Containers, Parameters etc when creating new project</li>
+    </ul>
+    <h3>MICROSAR Generator</h3>
+    <ul>
+      <li>Generation.log file format changed to XML</li>
+      <li>Print user notification in module selection dialog for dependencies of modules that become deactivated</li>
+      <li>Support starting generator with dpa-file</li>
+      <li>Provide option to switch off the creating of *.bak files during generation</li>
+      <li>Save user code from Removed Code Area on restart of generation process</li>
+    </ul>
+    <h3>Fixed issues</h3>
+    <ul>
+      <li>Memory leaks removed</li>
+      <li>The parameter help window is empty after insertion of a new row in a table</li>
+      <li>The range of integer or float param is not displayed in the parameter help window</li>
+      <li>Wrong short cut description in context menu for parmeter help found (should be Shift+F1)</li>
+      <li>The project explorer becomes not synchronized in some case</li>
+      <li>Set value to default fails with wrong pasted text in some case</li>
+      <li>Jump-To-Error fails in some cases</li>
+      <li>ECUC change detection shall not be executed if application is not focused</li>
+      <li>Error messages of 3rd party generators are not well-formed if project path contains blank char</li>
+      <li>Button for Hex/Dec format wrongly stays disabled in some case</li>
+      <li>Access violation when changing editors in some case</li>
+      <li>ECUC pretty print becomes not well-formed in some case</li>
+      <li>Path specifications containing '#'  cause errors on creating editors</li>
+      <li>Tooltips are sometimes not readable</li>
+      <li>An existing Recommended Configuration is not considered when a module is added to the project</li>
+      <li>Shortname naming algorithm skips free numbers</li>
+      <li>DaVinci Project Assistant does not save ECUC before "update ecuc project..." is executed</li>
+      <li>The error Messages raised from DaVinci Project Assistant are not displayed completely</li>
+      <li>Relative project paths specified by DaVinci Project Assistant are not generated to the correct folder</li>
+      <li>Loading a file can 're-enter' optional Containers</li>
+      <li>Saving fails if 'MSXML 6.0 SP2' is used</li>
+      <li>Performance issue when opening large comfort views</li>
+      <li>Parameters $(EcucFile) and $(EcucFolder) are passed incorrectly to external Validator/Generator if 'Supply AUTOSAR Revision' option is used</li>
+    </ul>
+    <p><a href="#_top">(top)</a></p>
+    <!-- #################### -->
+    <h2><a name="4.0 SP2">DaVinci Configurator Pro 4.0 SP2</a></h2>
+    <h3>New features</h3>
+    <ul>
+      <li>Display names of module perspectives in project explorer</li>
+      <li>Usage of license.bin becomes obsolete</li>
+      <li>Support PreConfigured and Recommended Class Configuration</li>
+      <li>The display format of Integer parameters can be changed by user to decimal, hex or binary format</li>
+      <li>Support GENy dll for generation of SWC</li>
+      <li>Full integration of new Project Assistent in user interface</li>
+      <ul>
+        <li>Create new ECUC project based on system extract</li>
+        <li>Update current ECUC project with new modified system extract</li>
+        <li>Edit common project settings</li>
+      </ul>
+      <li>Establish context menu for each parameter to support actions to</li>
+      <ul>
+        <li>add or modify a comment string</li>
+        <li>reset the parameter value to the specified default value</li>
+        <li>reset the parameter value to the specified recommended value</li>
+        <li>open a popupwindow with all information raised from definition</li>
+      </ul>
+      <li>Support AUTOSAR release 3.1 (together with accrued patch releases 3.0.3, 3.0.4,  3.1.1, 3.1.2)</li>
+      <li>Support usage of identifier.xml to cover extensions of AUTOSAR specification</li>
+      <li>Support derived parameter types with Vector formula description</li>
+      <li>Support concurrent ECUC access between MICROSAR tools</li>
+    </ul>
+    <h3>MICROSAR Generator</h3>
+    <ul>
+      <li>Restrict loading to necessary dependent BSW modules to enhance performance</li>
+    </ul>
+    <h3>Fixed issues</h3>
+    <ul>
+      <li>Missing external generator will not be reported</li>
+      <li>Renaming SymbolicNameRef parameter results in invalid value</li>
+      <li>If an existing but invalid package license entry is found in any project, the project will not be loaded</li>
+      <li>Save module configuration to ECUC only if really changed</li>
+      <li>Deactivating modules does not work in some cases</li>
+      <li>Parsing definition files fails sometimes if additional files found e.g. /bswmd/project.pj</li>
+      <li>ECUC change detection hangup in a special environment</li>
+      <li>The mousepointer will not be set back to default on leaving project explorer</li>
+      <li>Relative paths are resolved not relative to project folder</li>
+      <li>Import Append fails sometimes</li>
+      <li>Context menu item 'Jump To ...' becomes not enabled</li>
+      <li>Calling external generator removes foreign created temp files</li>
+    </ul>
+    <p><a href="#_top">(top)</a></p>
+    <!-- #################### -->
+    <h2><a name="4.0 SP1">DaVinci Configurator Pro 4.0 SP1</a></h2>
+    <h3>New features</h3>
+    <ul>
+      <li>Provide finding AUTOSAR objects in current configuration</li>
+      <li>Provide new menu item to launch GENy with current project configuration</li>
+      <li>New message register 'Result List' for a message summary grouped by message type </li>
+      <li>Provide new context menu item in architecture for validating module definition file(s)</li>
+      <li>Provide new context menu item in architecture for importing module configuration with replace or append option</li>
+      <li>Provide new context menu item in architecture for opening user added documents</li>
+      <li>Display user notification if current ECUC file is changed from other application (Change Detection)</li>
+      <li>Display dependencies between modules in implementation help window</li>
+      <li>Display AUTOSAR origin, derivation and destination reference in parameter help window</li>
+      <li>Provide new context menu to close selected tab or all tabs except selected one</li>
+      <li>Print warning message on loading a module configuration with a different definition reference except standard definition reference</li>
+      <li>Assign vendor-specific definition on loading a module with a standard AUTOSAR definition</li>
+      <li>Validation of a module can be performed completely and without breaking on first error</li>
+      <li>Provide new menu item to verify UUID values of current project</li>
+      <li>Improvement on calling GENy generator</li>
+      <li>Provide special GCE view for Com- and IPduSignals</li>
+      <li>Provide new .profile setting to launch associated application after creating a report file</li>
+    </ul>
+    <h3>MICROSAR Generator</h3>
+    <ul>
+      <li>Support -tswc command line option to set directory name for generated SWC description files</li>
+      <li>Support -tuser command line option to set the target directory name for generated user-changeable files</li>
+      <li>Support -h command line option for help</li>
+    </ul>
+    <h3>DaVinci Difference Viewer</h3>
+    <ul>
+      <li>Display of semantic differences between AUTOSAR XML files</li>
+      <li>Supports System Description files, SWC Description files and ECU-C files</li>
+      <li>Integrated into Windows Explorer context menu for files with extension .arxml</li>
+    </ul>
+    <h3>Fixed issues</h3>
+    <ul>
+      <li>Extend handling of undefined boolean parameter values</li>
+      <li>3rd party generator cannot be started if its working directory contains blanks in path specification</li>
+      <li>3rd party modules are not shown sometimes in project explorer</li>
+      <li>Wrong architecture mapping for FEE module</li>
+      <li>Create tooltip and Ctrl-F1 to access parameter information for locked parameters in GCE mode</li>
+      <li>Redesign of register 'Changes' in message window</li>
+      <li>Different display of messages, no multiple-selection of messages, missing scrollbars</li>
+      <li>Cursor moves to left position in some GCE dialog</li>
+      <li>Problems with 'Do not display the next time' switch in module selection of validation and generation dialog </li>
+      <li>Bad performance on creating GCE perspective for modules with a large count of entities</li>
+      <li>Display issues with different Windows design schemas</li>
+      <li>'Do not modify ...' comment in generated user-changeable output files</li>
+      <li>Os TimingAnalyzer does not start in some cases</li>
+      <li>'Jump to ...' to does not work properly</li>
+      <li>MyController setting will not be saved in .profile</li>
+      <li>Wrong 'Cannot map data' warnings are printed</li>
+      <li>Implementation-Info will not be shown correctly for split BSWMD files</li>
+      <li>VisualStudio locks generated file and raises exception on rewriting output</li>
+      <li>Loaded InstanceRefs will be deleted on saving</li>
+      <li>Import Append/Replace does not work properly in some cases</li>
+      <li>SymbolicNameReferences have no value list if destination definition file is missing</li>
+      <li>Exception is raised in spin columns</li>
+    </ul>
+    <p><a href="#_top">(top)</a></p>
+    <!-- #################### -->
+    <h2><a name="4.0">DaVinci Configurator Pro 4.0</a></h2>
+    <h3>Tool features</h3>
+    <ul>
+      <li>The combination of DaVinci Configurator Pro lets you configure all of the BSW modules.</li>
+      <li>Conformance to AUTOSAR specifications 2.1.0, 2.1.1, 2.1.2, 2.1.4, 3.0.0, 3.0.1, 3.0.2</li>
+      <li>Simplified representation of complex configuration interrelationships</li>
+      <li>Preselection of valid input values</li>
+      <li>Mature, rule-based validation process</li>
+      <li>Validity and consistency check of individual values over the entire project</li>
+    </ul>
+    <p><a href="#_top">(top)</a></p>
+    <!-- #################### -->
+    <h2><a name="info">Additional Information</a></h2>
+    <h3>Copyright</h3>
+    <dl>
+      <dd>
+        <p>&copy; Vector Informatik GmbH</p>
+      </dd>
+    </dl>
+    <h3>Certified Quality Management System</h3>
+    <dl>
+      <dd>
+        <p>The Quality/Process Management of Vector Informatik GmbH is being certified
+           according to DIN EN ISO 9001:2000-12 (formerly DIN EN ISO 9001:1994-08)
+           throughout since 1998-08-19.</p>
+      </dd>
+    </dl>
+    <h3>Vector Informatik GmbH - Addresses</h3>
+    <dl>
+      <dd>
+        <p>
+          <b>Vector Informatik GmbH</b><br/>
+          Ingersheimer Str. 24<br/>
+          D-70499 Stuttgart, Germany<br/>
+          Tel.: +49 (711) 80670-0<br/>
+          Fax: +49 (711) 80670-100<br/>
+          <a href="mailto:info@vector-informatik.de">info@vector-informatik.de</a><br/>
+          <a href="http://www.vector-informatik.com">http://www.vector-informatik.com</a>
+        </p>
+      </dd>
+    </dl>
+    <h3>Subsidiaries</h3>
+    <dl>
+      <dd>
+        <p>
+          <b>Vector France SAS</b><br/>
+          168, Boulevard Cam&eacute;linat<br/>
+          92240 Malakoff<br/>
+          France<br/>
+          Tel.: +33 1 4231 4000<br/>
+          Fax: +33 1 4231 4009<br/>
+          <a href="mailto:information@vector-france.com">information@vector-france.com</a><br/>
+          <a href="http://www.vector-france.com">http://www.vector-france.com</a>
+        </p>
+      </dd>
+      <dd>
+        <p>
+          <b>Vector Japan Co., Ltd.</b><br/>
+          Seafort Square Center Bld.<br/>
+          18F, 2-3-12,<br/>
+          Higashi-shinagawa, Shinagawa-ku<br/>
+          Tokyo 140-0002<br/>
+          Japan<br/>
+          Tel.: +81 3 5769 6970<br/>
+          Fax: +81 3 5769 6975<br/>
+          <a href="mailto:info@vector-japan.co.jp">info@vector-japan.co.jp</a><br/>
+          <a href="http://www.vector-japan.co.jp">http://www.vector-japan.co.jp</a>
+        </p>
+      </dd>
+      <dd>
+        <p>
+          <b>VecScan AB</b><br/>
+          Theres Svenssons Gata 9<br/>
+          417 55 Gothenburg<br/>
+          Sweden<br/>
+          Tel.: +46 (31) 76476 00<br/>
+          Fax: +46 (31) 76476 19<br/>
+          <a href="mailto:info@vecscan.com">info@vecscan.com</a><br/>
+          <a href="http://www.vecscan.com">http://www.vecscan.com</a>
+        </p>
+      </dd>
+      <dd>
+        <p>
+          <b>Vector CANtech, Inc.</b><br/>
+          39500 Orchard Hill Place<br/>
+          Suite 550<br/>
+          Novi, Michigan 48375<br/>
+          USA<br/>
+          Tel.: +1 (248) 449-9290<br/>
+          Fax: +1 (248) 449-9704<br/>
+          <a href="mailto:info@vector-cantech.com">info@vector-cantech.com</a><br/>
+          <a href="http://www.vector-cantech.com">http://www.vector-cantech.com</a>
+        </p>
+      </dd>
+      <dd>
+        <p>
+          <b>Vector Korea IT Inc.</b><br/>
+          Daerung Post Tower III, 508<br/>
+          182-4 Guro-dong, Guro-gu<br/>
+          Seoul 152-790<br/>
+          Republic of Korea<br/>
+          Tel.: +82(0)2 2028 0600<br/>
+          Fax: +82(0)2 2028 0604<br/>
+          <a href="mailto:info@vector-korea.com">info@vector-korea.com</a><br/>
+          <a href="http://www.vector-korea.com">http://www.vector-korea.com</a>
+        </p>
+      </dd>
+      <dd>
+        <p>
+          <b>Vector GB Ltd.</b><br/>
+          Rhodium<br/>
+          Central Boulevard<br/>
+          Blythe Valley Park<br/>
+          Solihull, Birmingham<br/>
+          West Midlands B90 8AS<br/>
+          United Kingdom<br/>
+          Tel.: +44 (0) 7530 264701<br/>
+          <a href="mailto:info@vector-gb.co.uk">info@vector-gb.co.uk</a><br/>
+          <a href="http://www.vector-gb.co.uk">http://www.vector-gb.co.uk</a>
+        </p>
+      </dd>
+    </dl>
+    <p><a href="#_top">(top)</a></p>
+    <!-- ##################### -->
+  </body>
+</html>

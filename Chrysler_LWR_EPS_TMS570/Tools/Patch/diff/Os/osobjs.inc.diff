@@ -1,0 +1,60 @@
+--- ..\..\..\..\SwProject\Source\GenDataOS\osobjs.inc.bak	2013-07-19 13:20:35.091262400 -0400
++++ ..\..\..\..\SwProject\Source\GenDataOS\osobjs.inc	2013-07-18 11:49:30.000000000 -0400
+@@ -6,14 +6,23 @@
+ /* Version of general code: 5.23c */
+ 
+      . = align(8192);   /* align to region size 8192 */
+-     *(.ossDataAp_10:noinit) {START(_ossAppluDataStartAp_10), SIZE(_ossAppluDataSizeAp_10)}
++     _ossAppluDataStartAp_10=.;
++     /* Nexteer patch for TypeH Data */
++     *(.ossDataAp_10:noinit:typeH) {START(Lnk_TypeH10_Start), SIZE(Lnk_TypeH10_Size)}
++     *(.ossDataAp_10:noinit)
+      _ossAppluDataEndAp_10=.;
++     _ossAppluDataSizeAp_10 = _ossAppluDataEndAp_10 - _ossAppluDataStartAp_10 + 1;
+      . = . + 1;
+      . = align(8192); /* Use 8 subregions with size 1024*/
+ 
+      . = align(8192);   /* align to region size 8192 */
+-     *(.ossDataAp_9:noinit) {START(_ossAppluDataStartAp_9), SIZE(_ossAppluDataSizeAp_9)}
++     _ossAppluDataStartAp_9=.;
++     /* Nexteer patch for TypeH Data */
++     *(.ossDataAp_9:noinit:typeH) {START(Lnk_TypeH9_Start), SIZE(Lnk_TypeH9_Size)}
++     *(.ossDataAp_9:noinit)
++	 *(.bss)
+      _ossAppluDataEndAp_9=.;
++     _ossAppluDataSizeAp_9 = _ossAppluDataEndAp_9 - _ossAppluDataStartAp_9 + 1;
+      . = . + 1;
+      . = align(8192); /* Use 8 subregions with size 1024*/
+ 
+@@ -198,8 +207,12 @@
+      . = align(1024); /* Use 8 subregions with size 128*/
+ 
+      . = align(512);   /* align to region size 512 */
+-     *(.ossDataAp_8:noinit) {START(_ossAppluDataStartAp_8), SIZE(_ossAppluDataSizeAp_8)}
++     _ossAppluDataStartAp_8=.;
++     /* Nexteer patch for TypeH Data */
++     *(.ossDataAp_8:noinit:typeH) {START(Lnk_TypeH8_Start), SIZE(Lnk_TypeH8_Size)}
++     *(.ossDataAp_8:noinit)
+      _ossAppluDataEndAp_8=.;
++     _ossAppluDataSizeAp_8 = _ossAppluDataEndAp_8 - _ossAppluDataStartAp_8 + 1;
+      . = . + 1;
+      . = align(512); /* Use 8 subregions with size 64*/
+ 
+@@ -227,11 +240,14 @@
+      . = . + 1;
+      . = align(512); /* Use 8 subregions with size 64*/
+ 
+-     . = align(0);   /* align to region size 0 */
+-     *(.ossDataAp_0:noinit) {START(_ossAppluDataStartAp_0), SIZE(_ossAppluDataSizeAp_0)}
++     _ossAppluDataStartAp_0=.;
++     /* Nexteer patch for TypeH Data */
++     *(.ossDataAp_0:noinit:typeH) {START(Lnk_TypeH0_Start), SIZE(Lnk_TypeH0_Size)}
++     *(.ossDataAp_0:noinit)
+      _ossAppluDataEndAp_0=.;
++     _ossAppluDataSizeAp_0 = _ossAppluDataEndAp_0 - _ossAppluDataStartAp_0 + 1;
+      . = . + 1;
+-     . = align(0); /* Use no subregions */
++     . = align(512); /* Use 8 subregions with size 64*/
+ 
+      . = align(0);   /* align to region size 0 */
+      *(.ossDataTask_Init_SchM9:noinit) {START(_ossTaskuDataStartTask_Init_SchM9), SIZE(_ossTaskuDataSizeTask_Init_SchM9)}

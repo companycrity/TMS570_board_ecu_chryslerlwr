@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Vector Employee (Vector Informatik GmbH) -->
+<platforms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="R:\GENTOOL\NextCANGen\VersionCurrent_Develop\ProjectAssistant\SupportedTargets.xsd">
+	<platform name="Tms470">
+		<compilers>
+			<compiler name="TexasInstruments">
+				<GENyMapping>
+					<name>TexasInstruments</name>
+					<id>25</id>
+				</GENyMapping>
+				<EadMapping>
+					<compilerName>TexasInstruments</compilerName>
+				</EadMapping>
+			</compiler>
+		</compilers>
+		<derivatives>
+			<derivative name="TMS570LS2125APGEQQ1" testedDerivative="true">
+				<GENyMapping>
+					<name>TMS570LS30316U</name>
+					<id>5</id>
+					<platformName>Hw_Tms470CpuDcan</platformName>
+					<unitName>Hw_Tms470Cpu</unitName>
+				</GENyMapping>
+				<EadMapping>
+					<derivativeName>Tmsx70_Tms570ls30316upge</derivativeName>
+				</EadMapping>
+			</derivative>
+		</derivatives>
+	</platform>
+</platforms>

@@ -1,0 +1,972 @@
+<RDEF> I Includes
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 37
+<DEFINE> _RTE_AP_ARBLMT_H C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 25 I DF OM - - - O
+<DEFINE> RTE_APPLICATION_HEADER_FILE C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 30 I DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 39
+<DEFINE> _RTE_TYPE_H C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 25 I DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 27
+<DEFINE> _RTE_H C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 26 I DF OM - - - O
+<DEFINE> RTE_SW_MAJOR_VERSION C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 28 I DF OM - - - O
+<LIT> 0x02 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 28 32 I HN - F M
+<DEFINE> RTE_SW_MINOR_VERSION C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 29 I DF OM - - - O
+<LIT> 0x11 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 29 32 I HN - F M
+<DEFINE> RTE_SW_PATCH_VERSION C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 30 I DF OM - - - O
+<LIT> 0x02 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 30 32 I HN - F M
+<DEFINE> RTE_VENDOR_ID C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 32 I DF OM - - - O
+<LIT> 0x001E u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 32 25 I HN - F M
+<DEFINE> RTE_AR_MAJOR_VERSION C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 34 I DF OM - - - O
+<LIT> 0x02 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 34 32 I HN - F M
+<DEFINE> RTE_AR_MINOR_VERSION C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 35 I DF OM - - - O
+<LIT> 0x02 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 35 32 I HN - F M
+<DEFINE> RTE_AR_PATCH_VERSION C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 36 I DF OM - - - O
+<LIT> 0x00 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 36 32 I HN - F M
+<DEFINE> RTE_E_OK C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 54 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 54 52 I ON - F M
+<DEFINE> RTE_E_INVALID C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 55 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 55 52 I DN - F M
+<DEFINE> RTE_E_LOST_DATA C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 58 I DF OM - - - O
+<LIT> 64 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 58 51 I DN - F M
+<DEFINE> RTE_E_MAX_AGE_EXCEEDED C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 59 I DF OM - - - O
+<LIT> 64 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 59 51 I DN - F M
+<DEFINE> RTE_E_COM_STOPPED C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 62 I DF OM - - - O
+<LIT> 128 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 62 50 I DN - F M
+<DEFINE> RTE_E_COMMS_ERROR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 63 I DF OM - - - O
+<LIT> 128 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 63 50 I DN - F M
+<DEFINE> RTE_E_TIMEOUT C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 64 I DF OM - - - O
+<LIT> 129 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 64 50 I DN - F M
+<DEFINE> RTE_E_LIMIT C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 65 I DF OM - - - O
+<LIT> 130 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 65 50 I DN - F M
+<DEFINE> RTE_E_NO_DATA C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 66 I DF OM - - - O
+<LIT> 131 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 66 50 I DN - F M
+<DEFINE> RTE_E_TRANSMIT_ACK C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 67 I DF OM - - - O
+<LIT> 132 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 67 50 I DN - F M
+<DEFINE> RTE_MAGIC_NUMBER C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 76 I DF OM - - - O
+<LIT> 1373494855 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte.h 76 29 I DN - F M
+<DEFINE> Rte_TypeDef_Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 34 I DF OM - - - O
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 35 I DC OT F N ni -
+<EXTN> Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 35
+<EXTT> Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 35
+<DEFINE> Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 35 I DC OV F X ni S
+<DEFINE> Rte_TypeDef_Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 37 I DF OM - - - O
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 38 I DC OT F N ni -
+<EXTN> Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 38
+<EXTT> Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 38
+<DEFINE> Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 38 I DC OV F X ni S
+<DEFINE> Float_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 39 I DF OM - - - O
+<DEFINE> Float_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 40 I DF OM - - - O
+<DEFINE> Rte_TypeDef_SInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 42 I DF OM - - - O
+<DEFINE> sint16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 43 I DC OT F N ni -
+<EXTN> SInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 43
+<EXTT> SInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 43
+<DEFINE> SInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 43 I DC OV F X ni S
+<DEFINE> SInt16_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 44 I DF OM - - - O
+<LIT> 32768 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 44 38 I DN - F M
+<DEFINE> SInt16_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 45 I DF OM - - - O
+<LIT> 32767 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 45 37 I DN - F M
+<DEFINE> Rte_TypeDef_SInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 47 I DF OM - - - O
+<DEFINE> sint32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 48 I DC OT F N ni -
+<EXTN> SInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 48
+<EXTT> SInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 48
+<DEFINE> SInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 48 I DC OV F X ni S
+<DEFINE> SInt32_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 49 I DF OM - - - O
+<LIT> 2147483648 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 49 38 I DN - F M
+<DEFINE> SInt32_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 50 I DF OM - - - O
+<LIT> 2147483647 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 50 37 I DN - F M
+<DEFINE> Rte_TypeDef_SInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 52 I DF OM - - - O
+<DEFINE> sint8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 53 I DC OT F N ni -
+<EXTN> SInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 53
+<EXTT> SInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 53
+<DEFINE> SInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 53 I DC OV F X ni S
+<DEFINE> SInt8_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 54 I DF OM - - - O
+<LIT> 128 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 54 36 I DN - F M
+<DEFINE> SInt8_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 55 I DF OM - - - O
+<LIT> 127 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 55 35 I DN - F M
+<DEFINE> Rte_TypeDef_UInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 57 I DF OM - - - O
+<DEFINE> uint16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 58 I DC OT F N ni -
+<EXTN> UInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 58
+<EXTT> UInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 58
+<DEFINE> UInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 58 I DC OV F X ni S
+<DEFINE> UInt16_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 59 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 59 37 I ON - F M
+<DEFINE> UInt16_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 60 I DF OM - - - O
+<LIT> 65535 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 60 37 I DN - F M
+<DEFINE> Rte_TypeDef_UInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 62 I DF OM - - - O
+<DEFINE> uint32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 63 I DC OT F N ni -
+<EXTN> UInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 63
+<EXTT> UInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 63
+<DEFINE> UInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 63 I DC OV F X ni S
+<DEFINE> UInt32_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 64 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 64 37 I ON - F M
+<DEFINE> UInt32_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 65 I DF OM - - - O
+<LIT> 4294967295 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 65 37 I DN - F M
+<DEFINE> Rte_TypeDef_UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 67 I DF OM - - - O
+<DEFINE> uint8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 68 I DC OT F N ni -
+<EXTN> UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 68
+<EXTT> UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 68
+<DEFINE> UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 68 I DC OV F X ni S
+<DEFINE> UInt8_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 69 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 69 35 I ON - F M
+<DEFINE> UInt8_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 70 I DF OM - - - O
+<LIT> 255 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 70 35 I DN - F M
+<DEFINE> Rte_TypeDef_Double C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 78 I DF OM - - - O
+<DEFINE> float64 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 79 I DC OT F N ni -
+<EXTN> Double C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 79
+<EXTT> Double C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 79
+<DEFINE> Double C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 79 I DC OV F X ni S
+<DEFINE> Double_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 80 I DF OM - - - O
+<DEFINE> Double_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 81 I DF OM - - - O
+<DEFINE> Rte_TypeDef_SInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 83 I DF OM - - - O
+<DEFINE> sint8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 84 I DR OT F N ni -
+<EXTN> SInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 84
+<EXTT> SInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 84
+<DEFINE> SInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 84 I DC OV F X ni S
+<DEFINE> SInt4_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 85 I DF OM - - - O
+<LIT> 8 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 85 37 I DN - F M
+<DEFINE> SInt4_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 86 I DF OM - - - O
+<LIT> 7 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 86 36 I DN - F M
+<DEFINE> Rte_TypeDef_UInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 88 I DF OM - - - O
+<DEFINE> uint8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 89 I DR OT F N ni -
+<EXTN> UInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 89
+<EXTT> UInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 89
+<DEFINE> UInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 89 I DC OV F X ni S
+<DEFINE> UInt4_LowerLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 90 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 90 36 I ON - F M
+<DEFINE> UInt4_UpperLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 91 I DF OM - - - O
+<LIT> 15 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 91 36 I DN - F M
+<DEFINE> RTE_CONST_D_FALSE_CNT_LGC C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 105 I DF OM - - - O
+<DEFINE> D_FALSE_CNT_LGC C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 106 I DF OM - - - O
+<DEFINE> RTE_CONST_D_TRUE_CNT_LGC C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 114 I DF OM - - - O
+<DEFINE> D_TRUE_CNT_LGC C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 115 I DF OM - - - O
+<DEFINE> RTE_CONST_D_2MS_SEC_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 123 I DF OM - - - O
+<LIT> 0.002 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 123 36 I FN - F M
+<DEFINE> D_2MS_SEC_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 124 I DF OM - - - O
+<LIT> 0.002 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 124 33 I FN - F M
+<DEFINE> RTE_CONST_D_2PI_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 132 I DF OM - - - O
+<LIT> 6.2831853071796 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 132 36 I FN - F M
+<DEFINE> D_2PI_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 133 I DF OM - - - O
+<LIT> 6.2831853071796 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 133 33 I FN - F M
+<DEFINE> RTE_CONST_D_ONE_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 141 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 141 36 I DN - F M
+<DEFINE> D_ONE_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 142 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 142 33 I DN - F M
+<DEFINE> RTE_CONST_D_PIOVR180_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 150 I DF OM - - - O
+<LIT> 0.0174532925199 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 150 41 I FN - F M
+<DEFINE> D_PIOVR180_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 151 I DF OM - - - O
+<LIT> 0.0174532925199 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 151 38 I FN - F M
+<DEFINE> RTE_CONST_D_PI_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 159 I DF OM - - - O
+<LIT> 3.1415926535898 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 159 35 I FN - F M
+<DEFINE> D_PI_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 160 I DF OM - - - O
+<LIT> 3.1415926535898 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 160 32 I FN - F M
+<DEFINE> RTE_CONST_D_ZERO_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 168 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 168 37 I ON - F M
+<DEFINE> D_ZERO_ULS_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 169 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 169 34 I ON - F M
+<DEFINE> RTE_CONST_D_NEGONE_CNT_S16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 177 I DF OM - - - O
+<LIT> 1 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 177 40 I DN - F M
+<DEFINE> D_NEGONE_CNT_S16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 178 I DF OM - - - O
+<LIT> 1 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 178 38 I DN - F M
+<DEFINE> RTE_CONST_D_ONE_CNT_S16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 186 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 186 36 I DN - F M
+<DEFINE> D_ONE_CNT_S16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 187 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 187 34 I DN - F M
+<DEFINE> RTE_CONST_D_ZERO_CNT_S16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 195 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 195 37 I ON - F M
+<DEFINE> D_ZERO_CNT_S16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 196 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 196 35 I ON - F M
+<DEFINE> RTE_CONST_D_NEGONE_CNT_S32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 204 I DF OM - - - O
+<LIT> 1 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 204 40 I DN - F M
+<DEFINE> D_NEGONE_CNT_S32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 205 I DF OM - - - O
+<LIT> 1 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 205 38 I DN - F M
+<DEFINE> RTE_CONST_D_ONE_CNT_S32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 213 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 213 36 I DN - F M
+<DEFINE> D_ONE_CNT_S32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 214 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 214 34 I DN - F M
+<DEFINE> RTE_CONST_D_ZERO_CNT_S32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 222 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 222 37 I ON - F M
+<DEFINE> D_ZERO_CNT_S32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 223 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 223 35 I ON - F M
+<DEFINE> RTE_CONST_D_NEGONE_CNT_S8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 231 I DF OM - - - O
+<LIT> 1 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 231 39 I DN - F M
+<DEFINE> D_NEGONE_CNT_S8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 232 I DF OM - - - O
+<LIT> 1 - N C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 232 36 I DN - F M
+<DEFINE> RTE_CONST_D_ONE_CNT_S8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 240 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 240 35 I DN - F M
+<DEFINE> D_ONE_CNT_S8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 241 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 241 32 I DN - F M
+<DEFINE> RTE_CONST_D_ZERO_CNT_S8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 249 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 249 36 I ON - F M
+<DEFINE> D_ZERO_CNT_S8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 250 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 250 33 I ON - F M
+<DEFINE> RTE_CONST_D_ONE_CNT_U16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 258 I DF OM - - - O
+<LIT> 1 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 258 36 I DN - F M
+<DEFINE> D_ONE_CNT_U16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 259 I DF OM - - - O
+<LIT> 1 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 259 34 I DN - F M
+<DEFINE> RTE_CONST_D_ZERO_CNT_U16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 267 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 267 37 I ON - F M
+<DEFINE> D_ZERO_CNT_U16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 268 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 268 35 I ON - F M
+<DEFINE> RTE_CONST_D_ONE_CNT_U32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 276 I DF OM - - - O
+<LIT> 1 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 276 36 I DN - F M
+<DEFINE> D_ONE_CNT_U32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 277 I DF OM - - - O
+<LIT> 1 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 277 34 I DN - F M
+<DEFINE> RTE_CONST_D_ZERO_CNT_U32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 285 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 285 37 I ON - F M
+<DEFINE> D_ZERO_CNT_U32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 286 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 286 35 I ON - F M
+<DEFINE> RTE_CONST_D_ONE_CNT_U8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 294 I DF OM - - - O
+<LIT> 1 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 294 35 I DN - F M
+<DEFINE> D_ONE_CNT_U8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 295 I DF OM - - - O
+<LIT> 1 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 295 32 I DN - F M
+<DEFINE> RTE_CONST_D_ZERO_CNT_U8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 303 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 303 36 I ON - F M
+<DEFINE> D_ZERO_CNT_U8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 304 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 304 33 I ON - F M
+<DEFINE> value C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 316 I DC MB F N {eBoolean} -
+<DEFINE> Rte_DE_Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 317 I DC OT F N {s} -
+<DEFINE> value C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 321 I DC MB F N {eUInt8} -
+<DEFINE> Rte_DE_UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 322 I DC OT F N {s} -
+<DEFINE> value C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 326 I DC MB F N {eFloat} -
+<DEFINE> Rte_DE_Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 327 I DC OT F N {s} -
+<DEFINE> Rte_CDS_Ap_ArbLmt C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 334 I DC TG F N {sRte_CDS_Ap_ArbLmt} -
+<DEFINE> Rte_CDS_Ap_ArbLmt C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 334 I DF TG F N {sRte_CDS_Ap_ArbLmt} -
+<DEFINE> Rte_DE_UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 337 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 337 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 337 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 338 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 338 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 338 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 339 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 339 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 339 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 340 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 340 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 340 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 341 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 341 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 341 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 342 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 342 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 342 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 343 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 343 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 343 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 344 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 344 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 344 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 345 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 345 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 345 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 346 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 346 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 346 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 347 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 347 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 347 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 348 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 348 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 348 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 349 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 349 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 349 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 350 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 350 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 350 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 351 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 351 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 351 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 352 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 352 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 352 I DC MB F N {eP2VAR} -
+<DEFINE> Rte_DE_Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 353 I DC MB F N {eP2VAR} -
+<DEFINE> TYPEDEF C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 353 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_AP_ARBLMT_APPL_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 353 I DC MB F N {eP2VAR} -
+<DEFINE> RTE_START_SEC_CONST_UNSPECIFIED C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 357 I DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 358
+<DEFINE> MEMMAP_H C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 19 I DF OM - - - O
+<DEFINE> RTE_STOP_SEC_CONST_UNSPECIFIED C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 362 I DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 363
+<LIT> 1373494855 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 368 28 I DN - P P
+<DEFINE> Rte_InitValue_ActiveFunctionBits_Cnt_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 48 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 48 59 I ON - P M
+<DEFINE> Rte_InitValue_DSTActive_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 49 I DF OM - - - O
+<DEFINE> Rte_InitValue_DSTSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 50 I DF OM - - - O
+<DEFINE> Rte_InitValue_DSTState_Cnt_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 51 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 51 49 I ON - P M
+<DEFINE> Rte_InitValue_DSTTrqOvCmdRqst_HwNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 52 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 52 57 I ON - P M
+<DEFINE> Rte_InitValue_HaLFActive_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 53 I DF OM - - - O
+<DEFINE> Rte_InitValue_HaLFSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 54 I DF OM - - - O
+<DEFINE> Rte_InitValue_HaLFTOState_Cnt_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 55 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 55 52 I ON - P M
+<DEFINE> Rte_InitValue_HaLFTrqOvCmdRqst_MtrNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 56 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 56 59 I ON - P M
+<DEFINE> Rte_InitValue_IpTrqOvr_HwNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 57 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 57 50 I ON - P M
+<DEFINE> Rte_InitValue_OpTrqOvr_MtrNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 58 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 58 51 I ON - P M
+<DEFINE> Rte_InitValue_PAReturnSclFct_Uls_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 59 I DF OM - - - O
+<LIT> 1 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 59 55 I DN - P M
+<DEFINE> Rte_InitValue_PATrqOvCmdRqst_HwNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 60 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 60 56 I ON - P M
+<DEFINE> Rte_InitValue_PICmpDisableLearning_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 61 I DF OM - - - O
+<DEFINE> Rte_InitValue_PrkAssistState_Cnt_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 62 I DF OM - - - O
+<LIT> 0 u P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 62 55 I ON - P M
+<DEFINE> Rte_InitValue_PrkAsstSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 63 I DF OM - - - O
+<DEFINE> Rte_InitValue_VehicleSpeed_Kph_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 64 I DF OM - - - O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 64 53 I ON - P M
+<DEFINE> Rte_IRead_ArbLmt_Per1_DSTActive_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 77 I DF OM - - - F
+<DEFINE> Rte_IRead_ArbLmt_Per1_DSTState_Cnt_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 80 I DF OM - - - F
+<DEFINE> Rte_IRead_ArbLmt_Per1_DSTTrqOvCmdRqst_HwNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 83 I DF OM - - - F
+<DEFINE> Rte_IRead_ArbLmt_Per1_HaLFActive_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 86 I DF OM - - - F
+<DEFINE> Rte_IRead_ArbLmt_Per1_HaLFTOState_Cnt_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 89 I DF OM - - - F
+<DEFINE> Rte_IRead_ArbLmt_Per1_HaLFTrqOvCmdRqst_MtrNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 92 I DF OM - - - F
+<DEFINE> Rte_IRead_ArbLmt_Per1_PATrqOvCmdRqst_HwNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 95 I DF OM - - - F
+<DEFINE> Rte_IRead_ArbLmt_Per1_PrkAssistState_Cnt_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 98 I DF OM - - - F
+<DEFINE> Rte_IRead_ArbLmt_Per1_VehicleSpeed_Kph_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 101 I DF OM - - - F
+<DEFINE> Rte_IWrite_ArbLmt_Per1_ActiveFunctionBits_Cnt_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 106 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ArbLmt_Per1_ActiveFunctionBits_Cnt_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 109 I DF OM - - - F
+<DEFINE> Rte_IWrite_ArbLmt_Per1_DSTSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 114 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ArbLmt_Per1_DSTSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 117 I DF OM - - - F
+<DEFINE> Rte_IWrite_ArbLmt_Per1_HaLFSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 122 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ArbLmt_Per1_HaLFSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 125 I DF OM - - - F
+<DEFINE> Rte_IWrite_ArbLmt_Per1_IpTrqOvr_HwNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 130 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ArbLmt_Per1_IpTrqOvr_HwNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 133 I DF OM - - - F
+<DEFINE> Rte_IWrite_ArbLmt_Per1_OpTrqOvr_MtrNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 138 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ArbLmt_Per1_OpTrqOvr_MtrNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 141 I DF OM - - - F
+<DEFINE> Rte_IWrite_ArbLmt_Per1_PAReturnSclFct_Uls_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 146 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ArbLmt_Per1_PAReturnSclFct_Uls_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 149 I DF OM - - - F
+<DEFINE> Rte_IWrite_ArbLmt_Per1_PICmpDisableLearning_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 154 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ArbLmt_Per1_PICmpDisableLearning_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 157 I DF OM - - - F
+<DEFINE> Rte_IWrite_ArbLmt_Per1_PrkAsstSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 162 I DF OM - - - F
+<DEFINE> Rte_IWriteRef_ArbLmt_Per1_PrkAsstSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 165 I DF OM - - - F
+<DEFINE> RTE_START_SEC_AP_ARBLMT_APPL_CODE C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 170 I DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 171
+<DEFINE> RTE_STOP_SEC_AP_ARBLMT_APPL_CODE C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 224 I DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 225
+<LIT> 1373494855 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Ap_ArbLmt.h 234 28 I DN - P P
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Ap_ArbLmt_Cfg.h 46
+<DEFINE> AP_ARBLMT_CFG_H C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Ap_ArbLmt_Cfg.h 2 I DF OM - - - O
+<EXTN> Rte_Call_ArbLmt_Per1_CP0_CheckpointReached C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Ap_ArbLmt_Cfg.h 4
+<DEFINE> Rte_Call_ArbLmt_Per1_CP0_CheckpointReached C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Ap_ArbLmt_Cfg.h 4 I DC OF B X (.,.) -
+<EXTN> Rte_Call_ArbLmt_Per1_CP1_CheckpointReached C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Ap_ArbLmt_Cfg.h 5
+<DEFINE> Rte_Call_ArbLmt_Per1_CP1_CheckpointReached C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Ap_ArbLmt_Cfg.h 5 I DC OF B X (.,.) -
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 48
+<DEFINE> CALCONSTANTS_H C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 20 I DF OM - - - O
+<EXTN> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 31
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 31 I DC OV P N - R
+<DEFINE> CAL_CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 31 I DC OV P N - R
+<DEFINE> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 31 I DC OF B X (ni,ni,ni) -
+<DEFINE> k_PPPAPriorityVehSpd_Kph_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 31 I DC OV B N ni -
+<DEFINE> k_PPPAPriorityVehSpd_Kph_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 31 I DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 32 I DC OV P N - R
+<DEFINE> CAL_CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 32 I DC OV P N - R
+<DEFINE> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 32 I DR OF B X (ni,ni,ni) -
+<DEFINE> k_RateLimit_UlspS_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 31 I DC OV B N ni -
+<DEFINE> k_RateLimit_UlspS_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 31 I DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 33 I DC OV P N - R
+<DEFINE> CAL_CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 33 I DC OV P N - R
+<DEFINE> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 33 I DR OF B X (ni,ni,ni) -
+<DEFINE> k_DSTSlewRate_NmpS_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 32 I DC OV B N ni -
+<DEFINE> k_DSTSlewRate_NmpS_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 32 I DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 34 I DC OV P N - R
+<DEFINE> CAL_CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 34 I DC OV P N - R
+<DEFINE> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 34 I DR OF B X (ni,ni,ni) -
+<DEFINE> k_HaLFSlewRate_NmpS_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 33 I DC OV B N ni -
+<DEFINE> k_HaLFSlewRate_NmpS_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 33 I DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 35 I DC OV P N - R
+<DEFINE> CAL_CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 35 I DC OV P N - R
+<DEFINE> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 35 I DR OF B X (ni,ni,ni) -
+<DEFINE> k_PPPASlewRate_NmpS_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 34 I DC OV B N ni -
+<DEFINE> k_PPPASlewRate_NmpS_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 34 I DF OV B N ni -
+<DEFINE> sint16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 36 I DC OV P N - R
+<DEFINE> CAL_CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 36 I DC OV P N - R
+<DEFINE> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 36 I DR OF B X (ni,ni,ni) -
+<LIT> 3 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 36 55 I DN ni P D
+<LIT> 10 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 36 58 I DN ni P D
+<DEFINE> t2_AsstY0_MtrNm_s4p11 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 35 I DC OV B N [3,[10,ni]] -
+<DEFINE> t2_AsstY0_MtrNm_s4p11 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 35 I DF OV B N [3,[10,ni]] -
+<DEFINE> uint16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 37 I DC OV P N - R
+<DEFINE> CAL_CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 37 I DC OV P N - R
+<DEFINE> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 37 I DR OF B X (ni,ni,ni) -
+<LIT> 3 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 37 52 I DN ni P D
+<LIT> 10 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 37 55 I DN ni P D
+<DEFINE> t2_HwtX0_HwNm_u8p8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 36 I DC OV B N [3,[10,ni]] -
+<DEFINE> t2_HwtX0_HwNm_u8p8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 36 I DF OV B N [3,[10,ni]] -
+<DEFINE> uint16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 38 I DC OV P N - R
+<DEFINE> CAL_CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 38 I DC OV P N - R
+<DEFINE> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 38 I DR OF B X (ni,ni,ni) -
+<LIT> 3 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 38 55 I DN ni P D
+<DEFINE> t_PPPAVehSpd_Kph_u9p7 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 37 I DC OV B N [3,ni] -
+<DEFINE> t_PPPAVehSpd_Kph_u9p7 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 37 I DF OV B N [3,ni] -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 39 I DC OV P N - R
+<DEFINE> CAL_CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 39 I DC OV P N - R
+<DEFINE> CONST C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 39 I DR OF B X (ni,ni,ni) -
+<DEFINE> k_HalFPICmpThresh_MtrNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 38 I DC OV B N ni -
+<DEFINE> k_HalFPICmpThresh_MtrNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/CalConstants.h 38 I DF OV B N ni -
+<DEFINE> D_4MS_S_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 52 N DF OM - - - O
+<LIT> 0.004 f P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 52 33 N FN - P M
+<DEFINE> D_PPPAFUNCBIT_CNT_U08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 53 N DF OM - - - O
+<LIT> 0x01 U P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 53 33 N HN - P M
+<DEFINE> D_DSTFUNCBIT_CNT_U08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 54 N DF OM - - - O
+<LIT> 0x02 U P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 54 33 N HN - P M
+<DEFINE> D_HALFFUNCBIT_CNT_U08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 55 N DF OM - - - O
+<LIT> 0x04 U P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 55 33 N HN - P M
+<DEFINE> D_PPPALOLMT_MTRNM_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 56 N DF OM - - - O
+<LIT> 0.1 f N C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 56 35 N FN - P M
+<DEFINE> D_PPPAHILMT_MTRNM_F32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 57 N DF OM - - - O
+<LIT> 8.8 f P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 57 33 N FN - P M
+<DEFINE> ARBLMT_START_SEC_VAR_CLEARED_32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 60 N DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 61
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62 N DC OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62 N DF OV B N ni -
+<EXTN> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62 N DC OF B X (ni,ni,ni) -
+<DEFINE> DSTScalarSlew_Uls_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62 N DC OV B N ni -
+<DEFINE> DSTScalarSlew_Uls_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 63 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 63 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 63 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 63 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 63 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFScalarSlew_Uls_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62 N DC OV B N ni -
+<DEFINE> HaLFScalarSlew_Uls_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 62 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 64 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 64 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 64 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 64 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 64 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTSlew_HwNm_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 63 N DC OV B N ni -
+<DEFINE> DSTSlew_HwNm_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 63 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 65 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 65 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 65 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 65 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 65 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFSlew_MtrNm_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 64 N DC OV B N ni -
+<DEFINE> HaLFSlew_MtrNm_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 64 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 66 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 66 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 66 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 66 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 66 N DR OF B X (ni,ni,ni) -
+<DEFINE> PPPASlew_HwNm_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 65 N DC OV B N ni -
+<DEFINE> PPPASlew_HwNm_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 65 N DF OV B N ni -
+<DEFINE> ARBLMT_STOP_SEC_VAR_CLEARED_32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 67 N DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 68
+<DEFINE> ARBLMT_START_SEC_VAR_CLEARED_BOOLEAN C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 70 N DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 71
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 72 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 72 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 72 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 72 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 72 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTLowSpdPri_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 66 N DC OV B N ni -
+<DEFINE> DSTLowSpdPri_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 66 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 73 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 73 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 73 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 73 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 73 N DR OF B X (ni,ni,ni) -
+<DEFINE> PrevDSTActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 72 N DC OV B N ni -
+<DEFINE> PrevDSTActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 72 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 74 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 74 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 74 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 74 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 74 N DR OF B X (ni,ni,ni) -
+<DEFINE> PrevDSTRampActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 73 N DC OV B N ni -
+<DEFINE> PrevDSTRampActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 73 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 75 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 75 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 75 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 75 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 75 N DR OF B X (ni,ni,ni) -
+<DEFINE> PrevHaLFRampActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 74 N DC OV B N ni -
+<DEFINE> PrevHaLFRampActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 74 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 76 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 76 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 76 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 76 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 76 N DR OF B X (ni,ni,ni) -
+<DEFINE> SlewActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 75 N DC OV B N ni -
+<DEFINE> SlewActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 75 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 77 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 77 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 77 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 77 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 77 N DR OF B X (ni,ni,ni) -
+<DEFINE> PrevDSTSlewState_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 76 N DC OV B N ni -
+<DEFINE> PrevDSTSlewState_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 76 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 78 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 78 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 78 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 78 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 78 N DR OF B X (ni,ni,ni) -
+<DEFINE> PrevHaLFSlewState_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 77 N DC OV B N ni -
+<DEFINE> PrevHaLFSlewState_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 77 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 79 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 79 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 79 N DC OV P N - R
+<DEFINE> AP_ARBLMT_VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 79 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 79 N DR OF B X (ni,ni,ni) -
+<DEFINE> PrevPPPASlewState_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 78 N DC OV B N ni -
+<DEFINE> PrevPPPASlewState_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 78 N DF OV B N ni -
+<DEFINE> ARBLMT_STOP_SEC_VAR_CLEARED_BOOLEAN C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 80 N DF OM - - - O
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 81
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 84 N DR OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 84 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 94 N DC OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 94 N DF OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 103 N DC OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 103 N DF OV B N ni -
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 173
+<EXTN> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 232
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 232 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 232 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 232 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 232 N DC OV B N ni -
+<DEFINE> HaLFActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 232 N DF OV B N ni -
+<DEFINE> uint8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 233 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 233 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 233 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 232 N DC OV B N ni -
+<DEFINE> DSTState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 232 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 234 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 234 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 234 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTTrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 233 N DC OV B N ni -
+<DEFINE> DSTTrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 233 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 235 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 235 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 235 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFTrqOvCmdRqst_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 234 N DC OV B N ni -
+<DEFINE> HaLFTrqOvCmdRqst_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 234 N DF OV B N ni -
+<DEFINE> uint8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 236 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 236 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 236 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFTOState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 235 N DC OV B N ni -
+<DEFINE> HaLFTOState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 235 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 237 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 237 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 237 N DR OF B X (ni,ni,ni) -
+<DEFINE> PATrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 236 N DC OV B N ni -
+<DEFINE> PATrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 236 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 238 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 238 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 238 N DR OF B X (ni,ni,ni) -
+<DEFINE> PrkAssistState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 237 N DC OV B N ni -
+<DEFINE> PrkAssistState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 237 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 239 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 239 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 239 N DR OF B X (ni,ni,ni) -
+<DEFINE> VehicleSpeed_Kph_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 238 N DC OV B N ni -
+<DEFINE> VehicleSpeed_Kph_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 238 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 242 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 242 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 242 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTSlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 239 N DC OV B N ni -
+<DEFINE> DSTSlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 239 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 243 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 243 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 243 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTTrqOvCmdOut_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 242 N DC OV B N ni -
+<DEFINE> DSTTrqOvCmdOut_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 242 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 244 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 244 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 244 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTSlewComplete_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 243 N DC OV B N ni -
+<DEFINE> DSTSlewComplete_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 243 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 245 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 245 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 245 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTCmdActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 244 N DC OV B N ni -
+<DEFINE> DSTCmdActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 244 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 248 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 248 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 248 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFSlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 245 N DC OV B N ni -
+<DEFINE> HaLFSlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 245 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 249 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 249 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 249 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFTrqOvCmdOut_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 248 N DC OV B N ni -
+<DEFINE> HaLFTrqOvCmdOut_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 248 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 250 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 250 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 250 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFSlewComplete_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 249 N DC OV B N ni -
+<DEFINE> HaLFSlewComplete_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 249 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 251 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 251 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 251 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFCmdActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 250 N DC OV B N ni -
+<DEFINE> HaLFCmdActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 250 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 254 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 254 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 254 N DR OF B X (ni,ni,ni) -
+<DEFINE> PPPASlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 251 N DC OV B N ni -
+<DEFINE> PPPASlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 251 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 255 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 255 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 255 N DR OF B X (ni,ni,ni) -
+<DEFINE> PPPATrqOvCmdOut_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 254 N DC OV B N ni -
+<DEFINE> PPPATrqOvCmdOut_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 254 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 256 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 256 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 256 N DR OF B X (ni,ni,ni) -
+<DEFINE> PPPASlewComplete_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 255 N DC OV B N ni -
+<DEFINE> PPPASlewComplete_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 255 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 257 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 257 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 257 N DR OF B X (ni,ni,ni) -
+<DEFINE> PPPACmdActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 256 N DC OV B N ni -
+<DEFINE> PPPACmdActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 256 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 260 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 260 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 260 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 257 N DC OV B N ni -
+<DEFINE> HaLFPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 257 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 261 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 261 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 261 N DR OF B X (ni,ni,ni) -
+<DEFINE> PPPAPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 260 N DC OV B N ni -
+<DEFINE> PPPAPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 260 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 262 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 262 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 262 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 261 N DC OV B N ni -
+<DEFINE> DSTPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 261 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 265 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 265 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 265 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTScalar_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 262 N DC OV B N ni -
+<DEFINE> DSTScalar_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 262 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 266 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 266 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 266 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFScalar_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 265 N DC OV B N ni -
+<DEFINE> HaLFScalar_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 265 N DF OV B N ni -
+<DEFINE> sint16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 269 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 269 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 269 N DR OF B X (ni,ni,ni) -
+<DEFINE> VehicleSpeed_Kph_T_s8p7 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 266 N DC OV B N ni -
+<DEFINE> VehicleSpeed_Kph_T_s8p7 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 266 N DF OV B N ni -
+<DEFINE> uint16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 270 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 270 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 270 N DR OF B X (ni,ni,ni) -
+<DEFINE> PPPATrqOvCmdOut_HwNm_T_u8p8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 269 N DC OV B N ni -
+<DEFINE> PPPATrqOvCmdOut_HwNm_T_u8p8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 269 N DF OV B N ni -
+<DEFINE> sint16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 271 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 271 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 271 N DR OF B X (ni,ni,ni) -
+<DEFINE> PPPAMtrNm_MtrNm_T_s4p11 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 270 N DC OV B N ni -
+<DEFINE> PPPAMtrNm_MtrNm_T_s4p11 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 270 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 272 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 272 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 272 N DR OF B X (ni,ni,ni) -
+<DEFINE> PPPAMtrNm_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 271 N DC OV B N ni -
+<DEFINE> PPPAMtrNm_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 271 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 273 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 273 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 273 N DR OF B X (ni,ni,ni) -
+<DEFINE> PICmpDisableLearning_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 272 N DC OV B N ni -
+<DEFINE> PICmpDisableLearning_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 272 N DF OV B N ni -
+<DEFINE> uint8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 276 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 276 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 276 N DR OF B X (ni,ni,ni) -
+<DEFINE> ActiveFunctionBits_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 273 N DC OV B N ni -
+<DEFINE> ActiveFunctionBits_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 273 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 277 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 277 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 277 N DR OF B X (ni,ni,ni) -
+<DEFINE> IpTrqOvr_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 276 N DC OV B N ni -
+<DEFINE> IpTrqOvr_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 276 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 278 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 278 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 278 N DR OF B X (ni,ni,ni) -
+<DEFINE> OpTrqOvr_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 277 N DC OV B N ni -
+<DEFINE> OpTrqOvr_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 277 N DF OV B N ni -
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 279 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 279 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 279 N DR OF B X (ni,ni,ni) -
+<DEFINE> PAReturnSclFct_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 278 N DC OV B N ni -
+<DEFINE> PAReturnSclFct_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 278 N DF OV B N ni -
+<EXTN> Rte_Call_ArbLmt_Per1_CP0_CheckpointReached C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 283
+<DEFINE> Rte_Call_ArbLmt_Per1_CP0_CheckpointReached C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 283 N DR OF B X (ni,) -
+<DEFINE> DSTActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 286 N DC OV B N ni -
+<DEFINE> DSTActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 286 N DF OV B N ni -
+<EXTN> Rte_Inst_Ap_ArbLmt C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 286
+<DEFINE> Rte_Inst_Ap_ArbLmt C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 286 N DC OV B X ni S
+<EXTV> DSTActive_Cnt_T_lgc Rte_Inst_Ap_ArbLmt 286
+<DEFINE> HaLFActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 287 N DR OV B N ni -
+<DEFINE> HaLFActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 287 N DF OV B N ni -
+<EXTV> HaLFActive_Cnt_T_lgc Rte_Inst_Ap_ArbLmt 287
+<DEFINE> DSTState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 288 N DR OV B N ni -
+<DEFINE> DSTState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 288 N DF OV B N ni -
+<EXTV> DSTState_Cnt_T_u08 Rte_Inst_Ap_ArbLmt 288
+<DEFINE> DSTTrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 289 N DR OV B N ni -
+<DEFINE> DSTTrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 289 N DF OV B N ni -
+<EXTV> DSTTrqOvCmdRqst_HwNm_T_f32 Rte_Inst_Ap_ArbLmt 289
+<DEFINE> HaLFTrqOvCmdRqst_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 290 N DR OV B N ni -
+<DEFINE> HaLFTrqOvCmdRqst_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 290 N DF OV B N ni -
+<EXTV> HaLFTrqOvCmdRqst_MtrNm_T_f32 Rte_Inst_Ap_ArbLmt 290
+<DEFINE> HaLFTOState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 291 N DR OV B N ni -
+<DEFINE> HaLFTOState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 291 N DF OV B N ni -
+<EXTV> HaLFTOState_Cnt_T_u08 Rte_Inst_Ap_ArbLmt 291
+<DEFINE> PATrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 292 N DR OV B N ni -
+<DEFINE> PATrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 292 N DF OV B N ni -
+<EXTV> PATrqOvCmdRqst_HwNm_T_f32 Rte_Inst_Ap_ArbLmt 292
+<DEFINE> PrkAssistState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 293 N DR OV B N ni -
+<DEFINE> PrkAssistState_Cnt_T_u08 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 293 N DF OV B N ni -
+<EXTV> PrkAssistState_Cnt_T_u08 Rte_Inst_Ap_ArbLmt 293
+<DEFINE> VehicleSpeed_Kph_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 294 N DR OV B N ni -
+<DEFINE> VehicleSpeed_Kph_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 294 N DF OV B N ni -
+<EXTV> VehicleSpeed_Kph_T_f32 Rte_Inst_Ap_ArbLmt 294
+<LIT> 0x03 U P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 298 33 N HN ui P D
+<LIT> 0x05 U P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 299 33 N HN ui P D
+<LIT> 0x06 U P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 300 33 N HN ui P D
+<LIT> 0x07 U P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 301 33 N HN ui P D
+<EXTN> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 307
+<DEFINE> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 307 N DC OV B X ni S
+<EXTN> ArbiterSlewLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 310
+<DEFINE> ArbiterSlewLimit C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 318 N DC OF B X (ni,ni,ni,ni,pni,pni,pni,pni,pni) -
+<EXTN> Abs_f32_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 328
+<DEFINE> Abs_f32_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 328 N DC OF B X (ni,ni) -
+<EXTN> FLT_EPSILON C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 328
+<DEFINE> FLT_EPSILON C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 328 N DC OV B X ni S
+<LIT> 0x01 U P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 327 35 N HN ui P D
+<LIT> 0x01 U P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 328 44 N HN ui P D
+<EXTN> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 334
+<DEFINE> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 334 N DC OV B X ni S
+<EXTN> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 354
+<DEFINE> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 354 N DC OV B X ni S
+<EXTN> ArbiterRamping C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 378
+<DEFINE> ArbiterRamping C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 384 N DC OF B X (ni,ni,ni,ni,ni,pni,pni) -
+<DEFINE> VehicleSpeed_Kph_T_s8p7 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 389 N DC OV B N ni -
+<DEFINE> VehicleSpeed_Kph_T_s8p7 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 389 N DF OV B N ni -
+<EXTN> FPM_FloatToFixed_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 389
+<EXTV> VehicleSpeed_Kph_T_s8p7 FPM_FloatToFixed_m 389
+<EXTN> s8p7_T C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 389
+<DEFINE> s8p7_T C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 389 N DC OV B X ni S
+<EXTV> VehicleSpeed_Kph_T_s8p7 s8p7_T 389
+<DEFINE> FPM_FloatToFixed_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 389 N DC OF B X (ni,ni,ni) -
+<DEFINE> PPPATrqOvCmdOut_HwNm_T_u8p8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 390 N DC OV B N ni -
+<DEFINE> PPPATrqOvCmdOut_HwNm_T_u8p8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 390 N DF OV B N ni -
+<EXTV> PPPATrqOvCmdOut_HwNm_T_u8p8 FPM_FloatToFixed_m 390
+<EXTV> PPPATrqOvCmdOut_HwNm_T_u8p8 Abs_f32_m 390
+<EXTN> u8p8_T C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 390
+<DEFINE> u8p8_T C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 390 N DC OV B X ni S
+<EXTV> PPPATrqOvCmdOut_HwNm_T_u8p8 u8p8_T 390
+<DEFINE> PPPAMtrNm_MtrNm_T_s4p11 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 391 N DC OV B N ni -
+<DEFINE> PPPAMtrNm_MtrNm_T_s4p11 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 391 N DF OV B N ni -
+<EXTN> BilinearXMYM_s16_u16XMs16YM_Cnt C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 391
+<EXTV> PPPAMtrNm_MtrNm_T_s4p11 BilinearXMYM_s16_u16XMs16YM_Cnt 391
+<EXTN> TableSize_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 395
+<EXTV> PPPAMtrNm_MtrNm_T_s4p11 TableSize_m 395
+<DEFINE> TableSize_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 395 N DC OF B X (ni,pni) -
+<EXTV> PPPAMtrNm_MtrNm_T_s4p11 TableSize_m 398
+<DEFINE> BilinearXMYM_s16_u16XMs16YM_Cnt C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 398 N DC OF B X (ni,ni,ni,pni,ni,pni,pni,ni) -
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 396 56 N ON ni P O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 397 59 N ON ni P O
+<LIT> 0 - P C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 398 68 N ON ni P O
+<DEFINE> PPPAMtrNm_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 399 N DC OV B N ni -
+<DEFINE> PPPAMtrNm_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 399 N DF OV B N ni -
+<EXTN> FPM_FixedToFloat_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 399
+<EXTV> PPPAMtrNm_MtrNm_T_f32 FPM_FixedToFloat_m 399
+<EXTN> s4p11_T C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 399
+<DEFINE> s4p11_T C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 399 N DC OV B X ni S
+<EXTV> PPPAMtrNm_MtrNm_T_f32 s4p11_T 399
+<DEFINE> FPM_FixedToFloat_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 399 N DC OF B X (ni,ni,ni) -
+<DEFINE> PPPAMtrNm_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 400 N DR OV B N ni -
+<DEFINE> PPPAMtrNm_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 400 N DF OV B N ni -
+<EXTN> Limit_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 400
+<EXTV> PPPAMtrNm_MtrNm_T_f32 Limit_m 400
+<DEFINE> Limit_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 400 N DC OF B X (ni,ni,ff,ff) -
+<DEFINE> PPPAMtrNm_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 401 N DR OV B N ni -
+<DEFINE> PPPAMtrNm_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 401 N DF OV B N ni -
+<EXTN> Sign_f32_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 401
+<DEFINE> PPPATrqOvCmdOut_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 401 N DC OV P N - R
+<DEFINE> Sign_f32_m C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 401 N DC OF B X (ni,ni) -
+<EXTN> TRUE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 404
+<DEFINE> TRUE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 404 N DC OV B X ni S
+<DEFINE> OpTrqOvr_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 419 N DC OV B N ni -
+<DEFINE> OpTrqOvr_MtrNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 419 N DF OV B N ni -
+<EXTN> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 441
+<DEFINE> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 441 N DC OV B X ni S
+<EXTN> ArbLmt_Per1_DSTSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 450
+<DEFINE> ArbLmt_Per1_DSTSlewComplete_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 450 N DC OV B X ni S
+<EXTN> ArbLmt_Per1_IpTrqOvr_HwNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 452
+<DEFINE> ArbLmt_Per1_IpTrqOvr_HwNm_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 452 N DC OV B X ni S
+<EXTN> ArbLmt_Per1_PAReturnSclFct_Uls_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 454
+<DEFINE> ArbLmt_Per1_PAReturnSclFct_Uls_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 454 N DC OV B X ni S
+<EXTN> ArbLmt_Per1_PICmpDisableLearning_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 456
+<DEFINE> ArbLmt_Per1_PICmpDisableLearning_Cnt_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 456 N DC OV B X ni S
+<R>I C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/MemMap.h 468
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 494 N DC OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 494 N DF OV B N ni -
+<DEFINE> SlewRateInput_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 506 N DC OV B N ni -
+<DEFINE> SlewRateInput_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 506 N DF OV B N ni -
+<EXTN> TrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 506
+<DEFINE> TrqOvCmdRqst_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 506 N DC OV B X ni S
+<EXTV> SlewRateInput_HwNm_T_f32 TrqOvCmdRqst_HwNm_T_f32 506
+<DEFINE> Slew_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 509 N DC OV B N pni -
+<DEFINE> Slew_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 509 N DF OV B N pni -
+<EXTV> Slew_Uls_T_f32 Limit_m 509
+<EXTN> SlewRate_NmpS_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 510
+<DEFINE> SlewRate_NmpS_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 510 N DC OV B X ni S
+<EXTV> Slew_Uls_T_f32 SlewRate_NmpS_T_f32 510
+<EXTV> Slew_Uls_T_f32 SlewRate_NmpS_T_f32 511
+<EXTN> TrqOvCmdOut_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 515
+<DEFINE> TrqOvCmdOut_HwNm_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 515 N DC OV B X ni S
+<EXTN> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 527
+<DEFINE> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 527 N DC OV B X ni S
+<EXTN> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 534
+<DEFINE> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 534 N DC OV B X ni S
+<EXTN> CmdActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 535
+<DEFINE> CmdActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 535 N DC OV B X ni S
+<EXTN> SlewComplete_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 540
+<DEFINE> SlewComplete_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 540 N DC OV B X ni S
+<DEFINE> PrevSlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 547 N DC OV B N pni -
+<DEFINE> PrevSlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 547 N DF OV B N pni -
+<EXTN> SlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 547
+<DEFINE> SlewState_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 547 N DC OV B X ni S
+<EXTV> PrevSlewState_Cnt_T_lgc SlewState_Cnt_T_lgc 547
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 569 N DC OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 569 N DF OV B N ni -
+<DEFINE> DSTLowSpdPri_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 581 N DC OV B N ni -
+<DEFINE> DSTLowSpdPri_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 581 N DF OV B N ni -
+<EXTN> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 581
+<DEFINE> FALSE C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 581 N DC OV B X ni S
+<EXTV> DSTLowSpdPri_Cnt_M_lgc FALSE 581
+<DEFINE> HaLFPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 582 N DC OV B N pni -
+<DEFINE> HaLFPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 582 N DF OV B N pni -
+<EXTV> HaLFPriActive_Cnt_T_lgc FALSE 582
+<DEFINE> PPPAPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 583 N DC OV B N pni -
+<DEFINE> PPPAPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 583 N DF OV B N pni -
+<EXTV> PPPAPriActive_Cnt_T_lgc FALSE 583
+<DEFINE> DSTPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 584 N DC OV B N pni -
+<DEFINE> DSTPriActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 584 N DF OV B N pni -
+<EXTV> DSTPriActive_Cnt_T_lgc FALSE 584
+<EXTN> DSTLowSpdPri_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 605
+<DEFINE> DSTLowSpdPri_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 605 N DC OV B X ni S
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 639 N DC OV B N ni -
+<DEFINE> STATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 639 N DF OV B N ni -
+<EXTN> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 648
+<DEFINE> float32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 648 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 648 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 648 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFScalarInput_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 648 N DC OV B N ni -
+<DEFINE> HaLFScalarInput_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 648 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 649 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 649 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 649 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 648 N DC OV B N ni -
+<DEFINE> DSTActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 648 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 650 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 650 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 650 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 649 N DC OV B N ni -
+<DEFINE> HaLFActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 649 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 651 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 651 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 651 N DR OF B X (ni,ni,ni) -
+<DEFINE> DSTRampActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 650 N DC OV B N ni -
+<DEFINE> DSTRampActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 650 N DF OV B N ni -
+<DEFINE> boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 652 N DC OV P N - R
+<DEFINE> AUTOMATIC C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 652 N DC OV P N - R
+<DEFINE> VAR C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 652 N DR OF B X (ni,ni,ni) -
+<DEFINE> HaLFRampActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 651 N DC OV B N ni -
+<DEFINE> HaLFRampActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 651 N DF OV B N ni -
+<DEFINE> DSTActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 658 N DR OV B N ni -
+<DEFINE> DSTActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 658 N DF OV B N ni -
+<EXTV> DSTActive_Cnt_T_lgc TRUE 658
+<EXTN> DSTScalarInput_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 662
+<DEFINE> DSTScalarInput_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 662 N DC OV B X ni S
+<DEFINE> HaLFActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 678 N DR OV B N ni -
+<DEFINE> HaLFActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 678 N DF OV B N ni -
+<EXTV> HaLFActive_Cnt_T_lgc TRUE 678
+<DEFINE> DSTScalarSlew_Uls_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 686 N DC OV B N ni -
+<DEFINE> DSTScalarSlew_Uls_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 686 N DF OV B N ni -
+<EXTV> DSTScalarSlew_Uls_M_f32 Limit_m 686
+<EXTN> DSTScalarInput_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 686
+<DEFINE> DSTScalarInput_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 686 N DC OV B X ni S
+<EXTV> DSTScalarSlew_Uls_M_f32 DSTScalarInput_Uls_T_f32 686
+<DEFINE> HaLFScalarSlew_Uls_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 690 N DC OV B N ni -
+<DEFINE> HaLFScalarSlew_Uls_M_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 690 N DF OV B N ni -
+<EXTV> HaLFScalarSlew_Uls_M_f32 Limit_m 690
+<DEFINE> HaLFScalar_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 728 N DC OV B N pni -
+<DEFINE> HaLFScalar_Uls_T_f32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 728 N DF OV B N pni -
+<DEFINE> DSTRampActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 729 N DR OV B N ni -
+<DEFINE> DSTRampActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 729 N DF OV B N ni -
+<EXTV> DSTRampActive_Cnt_T_lgc FALSE 729
+<DEFINE> HaLFRampActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 730 N DR OV B N ni -
+<DEFINE> HaLFRampActive_Cnt_T_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 730 N DF OV B N ni -
+<EXTV> HaLFRampActive_Cnt_T_lgc FALSE 730
+<DEFINE> PrevDSTActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 733 N DC OV B N ni -
+<DEFINE> PrevDSTActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 733 N DF OV B N ni -
+<DEFINE> PrevDSTRampActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 734 N DC OV B N ni -
+<DEFINE> PrevDSTRampActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 734 N DF OV B N ni -
+<DEFINE> PrevHaLFRampActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 735 N DC OV B N ni -
+<DEFINE> PrevHaLFRampActive_Cnt_M_lgc C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c 735 N DF OV B N ni -
+<EXTD> UInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 58
+<DEFINE> UInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 58 I DI OV F X ni S
+<EXTD> UInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 63
+<DEFINE> UInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 63 I DI OV F X ni S
+<EXTD> UInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 89
+<DEFINE> UInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 89 I DI OV F X ni S
+<EXTD> UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 68
+<DEFINE> UInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 68 I DI OV F X ni S
+<EXTD> Double C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 79
+<DEFINE> Double C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 79 I DI OV F X ni S
+<EXTD> SInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 84
+<DEFINE> SInt4 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 84 I DI OV F X ni S
+<EXTD> SInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 53
+<DEFINE> SInt8 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 53 I DI OV F X ni S
+<EXTD> Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 35
+<DEFINE> Boolean C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 35 I DI OV F X ni S
+<EXTD> Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 38
+<DEFINE> Float C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 38 I DI OV F X ni S
+<EXTD> SInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 43
+<DEFINE> SInt16 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 43 I DI OV F X ni S
+<EXTD> SInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 48
+<DEFINE> SInt32 C:/CMSynergy/CBD/sz1dx6/ArbLmt/utp/contract/Ap_ArbLmt/Rte_Type.h 48 I DI OV F X ni S
+<S>
+<S>STFIL  C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c
+<S>STNAM  C:/CMSynergy/CBD/sz1dx6/ArbLmt/src/Ap_ArbLmt.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  0
+<S>STECT  27
+<S>STFNC  13
+<S>STFCO  0
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  137
+<S>STOPT  29
+<S>STOPN  155
+<S>STTOT  2041
+<S>STZIP  1066
+<S>STHAL  1269
+<S>STSHN  4510
+<S>STDIF  15.52  
+<S>STEFF  238288
+<S>STVOL  15356
+<S>STDEV  39.71  
+<S>STBUG  4
+<S>STTPP  750
+<S>STTLN  400
+<S>STM20  820
+<S>STM21  1209
+<S>STM22  154
+<S>STM28  44
+<S>STM33  6
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  1.774  
+<S>STBMS  2.174  
+<S>STBME  2.549  
+<S>STTDO  3.109  
+<S>STTDS  3.281  
+<S>STTDE  3.373  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  0.832  
+

@@ -1,0 +1,86 @@
+File Version     : 4.30
+Directory        : "$(PROJECTROOT)\BkCpPc\utp\CBD_UnitTest"
+Backup Directory : "$(PROJECTROOT)\BkCpPc\utp\Tessy\backup"
+Configuration    : "$(PROJECTROOT)\UnitTestEnv\config\TMS570_GCC_UDE_CCS4_Config.xml"
+Author           : "rz3h1n"
+Created          : 01.12.2011 17:45
+Last Changed     : 27.06.2013 18:34
+Comment          : ""
+Project
+   Name    : "CBD_UnitTest"
+   Module
+      Name        : "BkCpPc"
+      Comment     : "*********************************UNITTEST INFORMATION*****************************************\r\n\r\nName of Tester:Sheetal Wadichar\r\nCode File(s) Under Test:Sa_BkCpPc.c\r\nCode File(s) Version:8\r\nModule Design Document:Bulk_Cap_Precharge_MDD.docx\r\nModule Design Document Version:10.0\r\nUnit Test Plan Version:3\r\nOptimization Level:Level 2\r\nCompiler (CodeGen) Version:TMS470_4.9.5\r\nModel Type:Excel Macro\r\nModel Version:Nexteer EPS Unit Test Tool 2.7b/ EPS Library 1.29\r\nSpecial Test Requirements:\r\nTest Date:6/27/2013\r\nComments:""NOTE1:Inline function defined in """"GlobalMAcro.h"""" are not unit tested.\nNOTE2:100% coverage not possible in """"BkCpPc_Per1"""" function due to""""else do nothing"""" path.\nNOTE 3: In Per1 function, variable """"Batt_Volt_f32"""" is given out of range value to cover """"(OVERRIDESIGDIAGADC_Volt_T_f32 - Vbatt_Volts_T_f32) <= ChargeMinDelta_Volts_T_f32 ) ==> FALSE"""" path.""\r\n\r\n\r\n\r\n*******************************************************************************************************"
+      State       : 0x00000004
+      Environment : "TI TMS 570 PLS UDE (Default)"
+      Properties
+         Property
+            Name  : "Compiler Defines"
+            Type  : "String"
+            Flags : 0x90000049
+            Value : "_DATA_ACCESS=,const="
+         End
+         Property
+            Name  : "Compiler Includes"
+            Type  : "Directory"
+            Flags : 0x90000049
+            Value : "$(PROJECTROOT)\NxtrLib\include, $(PROJECTROOT)\BkCpPc\utp\contract, $(PROJECTROOT)\StdDef\include, $(PROJECTROOT)\BkCpPc\utp\contract\Sa_BkCpPc, $(Compiler Install Path)\include"
+         End
+      End
+      Source File
+         Name : "Sa_BkCpPc.c"
+         Path : "$(PROJECTROOT)\BkCpPc\src\"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "Blend_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "BkCpPc_Per1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BkCpPc_Trns1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BkCpPc_Trns2"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "CapPcDcStub_OP_SET"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+   End
+End

@@ -1,0 +1,236 @@
+File Version     : 4.30
+Directory        : "$(PROJECTROOT)\HaLFTO\utp\CBD_UnitTest"
+Backup Directory : "$(PROJECTROOT)\HaLFTO\utp\tessy\backup"
+Configuration    : "$(PROJECTROOT)\UnitTestEnv\config\TMS570_GCC_UDE_CCS4_Config.xml"
+Author           : "rz3h1n"
+Created          : 06.12.2011 11:36
+Last Changed     : 20.02.2014 10:41
+Comment          : ""
+Project
+   Name    : "CBD_UnitTest"
+   Module
+      Name        : "HalFTO_LWR"
+      Comment     : "*****************************Unit Test Description*******************************************************\r\n\r\nName of Tester:Priti Mangalekar\r\nCode File(s) Under Test:Ap_HaLFTO.c\r\nCode File(s) Version:8\r\nModule Design Document:HaLFTO_MDD.docx\r\nModule Design Document Version:9\r\nData Dictionary Version:4\r\nUnit Test Plan Version:3\r\nOptimization Level:Level 2\r\nCompiler (CodeGen) Version:TMS470_4.9.5\r\nModel Type:Excel Macro\r\nModel Version:Nexteer EPS Unit Test Tool 2.7d/EPS Library 1.30\r\nTotal FLASH Used (Bytes):1290\r\nTotal RAM Used (Bytes):36\r\nTotal CALS Used (Bytes):44\r\nSpecial Test Requirements:\r\nTest Date:2/18/2014\r\nComments:\r\nNote1: Inline functions defined in GlobalMacro.h are not unit tested.\r\n\r\n\nNote2: In """"HaLFTO_Per1"""" function, 100% MCDC coverage is not achieved as \n""""else if((Rte_Mode_SystemState_Mode() == RTE_MODE_StaMd_Mode_OPERATE)=>True &&\n(TRUE == HaLFEnableRqst_Cnt_T_lgc)=>True &&\n(0 == IncorHaLFActvnFailed_Cnt_M_lgc) =>0&&\n(TRUE == HaLFFuncPresent_Cnt_T_lgc) &&\n(TRUE == HaLFSlewComplete_Cnt_T_lgc))"""" condition can not be satisfied because if TRUE value is given to """"IncorHaLFActvnFailed_Cnt_M_lgc"""" variable then control goes into If loop.\r\n\r\n\nNote3: In """"""""HaLFTO_Per1"""""""" function, to cover """"""""switch(HaLFTO_State_Cnt_M_u08)=Default"""""""" condition, out of range value is given to """"""""HaLFTO_State_Cnt_M_u08"""""""" in TS3.30(Pathsheet).""""\n\r\nNote4:""""CBD_Sandbox_dbg.map"""" map file is embedded for reference.""\r\n\r\n\r\n*************************************************************************************************************"
+      State       : 0x00000004
+      Environment : "GNU GCC GNU GVD (Default)"
+      Properties
+         Property
+            Name  : "Compiler Defines"
+            Type  : "String"
+            Flags : 0x90000049
+            Value : "_DATA_ACCESS=,const=,__inline=,SKIP_MAGIC_NUMBER="
+         End
+         Property
+            Name  : "Compiler Includes"
+            Type  : "Directory"
+            Flags : 0x90000049
+            Value : "$(PROJECTROOT)\HaLFTO\utp\contract, $(PROJECTROOT)\HaLFTO\utp\contract\Ap_HaLFTO, $(PROJECTROOT)\StdDef\include, $(PROJECTROOT)\NxtrLib\include, $(Compiler Install Path)\include"
+         End
+         Property
+            Name  : "Enable ASAP"
+            Type  : "Boolean"
+            Flags : 0x40000069
+            Value : "1"
+         End
+      End
+      Source File
+         Name : "Ap_HaLFTO.c"
+         Path : "$(PROJECTROOT)\HaLFTO\src\"
+         Properties
+         End
+      End
+      Source File
+         Name : "interpolation.c"
+         Path : "$(PROJECTROOT)\NxtrLib\src\"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000001
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "Blend_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "HaLFTO_Init1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "HaLFTO_Per1"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "HwTrqVehSpdRevGearCheck"
+         Properties
+            Property
+               Name  : "Execute Testcases Separately"
+               Type  : "Boolean"
+               Flags : 0x40000069
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_s16_u16Xs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXYM_u16_u16Xu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_u16_u16XMu16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_s16_u16XMs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "BilinearXMYM_s16_s16XMs16YM_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_u16_u16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_u16_s16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_s16_s16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplVarXY_s16_u16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_u16_u16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_u16_s16Xu16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_s16_s16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+      TestObject
+         Name    : "IntplFxdX_s16_u16Xs16Y_Cnt"
+         Properties
+            Property
+               Name  : "Hide Functions"
+               Type  : "Boolean"
+               Flags : 0xC0000049
+               Value : "1"
+            End
+         End
+      End
+   End
+End

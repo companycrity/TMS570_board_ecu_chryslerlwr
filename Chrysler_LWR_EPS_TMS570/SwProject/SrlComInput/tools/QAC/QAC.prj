@@ -1,0 +1,15 @@
+VersionTag45
+StartProjectMarker
+FolderName=SrlComInput
+EndContainedFilesMarker
+StartSubProjectMarker
+StartProjectMarker
+FolderName=Ap_SrlComInput
+SourcePath=
+OutputPath=..\..\doc\QAC_Results\
+SubsPers=..\..\..\..\..\QAC\m2cmMessage.p_s
+AnalPers=.\m2cmAnalyser_SrlComInput.p_a
+CompPers=..\..\..\..\..\QAC\m2cm.p_c
+..\..\src\Ap_SrlComInput.c
+EndContainedFilesMarker
+EndSubProjectMarker

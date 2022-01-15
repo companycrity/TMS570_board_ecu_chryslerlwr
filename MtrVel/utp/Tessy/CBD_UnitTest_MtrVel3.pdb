@@ -1,0 +1,53 @@
+File Version     : 4.30
+Directory        : "$(PROJECTROOT)\MtrVel\utp\CBD_UnitTest"
+Backup Directory : "$(PROJECTROOT)\utp\Tessy\Backup"
+Configuration    : "$(PROJECTROOT)\UnitTestEnv\config\TMS570_GCC_UDE_CCS4_Config.xml"
+Author           : "padmalathaG"
+Created          : 20.03.2013 13:14
+Last Changed     : 02.07.2013 11:23
+Comment          : ""
+Project
+   Name    : "CBD_UnitTest"
+   Module
+      Name        : "MtrVel3"
+      Comment     : "Name of Tester:Padmalatha Gudipally\r\nCode File(s) Under Test:Sa_MtrVel3.c\r\nCode File(s) Version:2\r\nModule Design Document:MotorVelocity3_MDD.doc\r\nModule Design Document Version:6\r\nUnit Test Plan Version:2\r\nOptimization Level:Level 2\r\nCompiler (CodeGen) Version:TMS470_4.9.5\r\nModel Type:Excel Macro\r\nModel Version:Nexteer EPS Unit Test Tool 2.7b/EPS Library 1.29\r\nSpecial Test Requirements:None\r\nTest Date:6/27/2013\r\nComments:NOTE1: In MtrVel3_Init and function, typecasting code is added for MtrVel3_TimeBuffer_uS_M_u16p0[][] variable to properly model the desired alorithm behavior in VBA.\r\n"
+      State       : 0x00000004
+      Environment : "TI TMS 570 PLS UDE (Default)"
+      Properties
+         Property
+            Name  : "Compiler Defines"
+            Type  : "String"
+            Flags : 0x90000049
+            Value : "_DATA_ACCESS=,"
+         End
+         Property
+            Name  : "Compiler Includes"
+            Type  : "Directory"
+            Flags : 0x90000049
+            Value : "$(PROJECTROOT)\include, $(PROJECTROOT)\NxtrLib\include, $(PROJECTROOT)\StdDef\include, $(ProgramFiles)\Texas Instruments\ccsv4\tools\compiler\tms470_4.9.5\include, C:\SynergyWorkArea\SGMW_CN100_EPS_TMS570\SwProject\DfltConfigData\utp\contract, C:\SynergyWorkArea\SGMW_CN100_EPS_TMS570\SwProject\DfltConfigData\include"
+         End
+      End
+      Source File
+         Name : "Ap_DfltConfigData.c"
+         Path : "C:\SynergyWorkArea\SGMW_CN100_EPS_TMS570\SwProject\DfltConfigData\src\"
+         Properties
+            Property
+               Name  : "Compiler Includes"
+               Type  : "Directory"
+               Flags : 0x90000049
+               Value : "$(PROJECTROOT)\include, $(PROJECTROOT)\NxtrLib\include, $(PROJECTROOT)\StdDef\include, $(ProgramFiles)\Texas Instruments\ccsv4\tools\compiler\tms470_4.9.5\include, C:\SynergyWorkArea\SGMW_CN100_EPS_TMS570\SwProject\DfltConfigData\utp\contract"
+            End
+         End
+      End
+      TestObject
+         Name    : "Blend_f32"
+         Properties
+         End
+      End
+      TestObject
+         Name    : "DfltConfigData_Init1"
+         Properties
+         End
+      End
+   End
+End

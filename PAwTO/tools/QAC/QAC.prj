@@ -1,0 +1,16 @@
+VersionTag45
+StartProjectMarker
+FolderName=PAwTO
+EndContainedFilesMarker
+StartSubProjectMarker
+StartProjectMarker
+FolderName=Ap_PAwTO
+SourcePath=
+OutputPath=..\..\doc\QAC_Results\
+SubsPers=..\..\..\QAC\m2cmMessage.p_s
+AnalPers=.\m2cmAnalyser_PAwTO.p_a
+CompPers=..\..\..\QAC\m2cm.p_c
+..\..\src\Ap_PAwTO.c
+EndContainedFilesMarker
+EndSubProjectMarker
+
